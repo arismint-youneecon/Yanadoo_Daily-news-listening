@@ -1,300 +1,311 @@
 {
  "date": "2026-10-26",
- "level": 1,
  "items": [
   {
    "id": "2026-10-26-g1",
    "section": "g",
    "icon": "plane",
-   "headline": "US has plans for major Iran strikes if Trump chooses",
    "ko": "미국의 대규모 이란 공습 계획",
    "url": "https://cnn.com/2026/10/26/politics/us-iran-strike-plans-trump",
    "source": "CNN · Times of Israel",
-   "audio": "audio/2026-10-26-g1.mp3",
-   "duration": 109.7,
-   "speed": 0.9,
-   "p": [
-    "Good morning. This is your morning news in English. Today's top story is about the United States and Iran.",
-    "According to U.S. news reports, the U.S. military has plans ready for major attacks on Iran. These plans are not an order. The final decision belongs to President Donald Trump.",
-    "Let's look at the background. In February this year, the United States and Israel started a war with Iran. In April, a ceasefire stopped most of the fighting. A ceasefire means both sides agree to stop fighting for a while. But there have been some attacks since then.",
-    "The United States and Iran have also held peace talks. Qatar and Pakistan have helped with these talks. However, the talks have not made much progress.",
-    "There are two main problems. First, the United States wants Iran to give up its nuclear program. Second, it wants Iran to fully reopen the Strait of Hormuz. This is a narrow sea route. About one fifth of the world's oil and gas usually passes through it.",
-    "Earlier this month, U.S. media reported that the new plans included three days of heavy attacks. The targets could include missile and drone sites, and energy facilities. At that time, President Trump said the U.S. would not attack Iran before the midterm elections on November third. He said the talks were going well.",
-    "Why does this matter to us? If the fighting starts again, oil prices could go up. That could affect gas prices and businesses around the world, including here in Korea.",
-    "To sum up, the U.S. has plans to attack Iran, but President Trump has not made a decision yet. That's all for today's news. Thank you for listening."
-   ],
-   "tr": [
-    "좋은 아침입니다. 영어로 듣는 아침 뉴스입니다. 오늘의 주요 뉴스는 미국과 이란에 관한 소식입니다.",
-    "미국 언론 보도에 따르면, 미군은 이란에 대한 대규모 공격 계획을 준비해 두었습니다. 이 계획은 명령이 아닙니다. 최종 결정은 도널드 트럼프 대통령의 몫입니다.",
-    "배경을 살펴보겠습니다. 올해 2월, 미국과 이스라엘은 이란과 전쟁을 시작했습니다. 4월에는 휴전으로 대부분의 전투가 멈췄습니다. 휴전이란 양측이 한동안 싸움을 멈추기로 합의하는 것을 말합니다. 하지만 그 이후에도 일부 공격이 있었습니다.",
-    "미국과 이란은 평화 회담도 진행해 왔습니다. 카타르와 파키스탄이 이 회담을 도왔습니다. 하지만 회담은 큰 진전을 이루지 못했습니다.",
-    "두 가지 큰 문제가 있습니다. 첫째, 미국은 이란이 핵 프로그램을 포기하기를 원합니다. 둘째, 이란이 호르무즈 해협을 완전히 다시 열기를 원합니다. 이곳은 좁은 바닷길입니다. 평소 전 세계 석유와 가스의 약 5분의 1이 이곳을 지나갑니다.",
-    "이달 초, 미국 언론은 새 계획에 3일간의 강도 높은 공격이 포함되어 있다고 보도했습니다. 공격 목표에는 미사일과 드론 기지, 그리고 에너지 시설이 포함될 수 있습니다. 당시 트럼프 대통령은 11월 3일 중간선거 전에는 미국이 이란을 공격하지 않을 것이라고 말했습니다. 그는 회담이 잘 진행되고 있다고 말했습니다.",
-    "이것이 왜 우리에게 중요할까요? 전투가 다시 시작되면 유가가 오를 수 있습니다. 그러면 한국을 포함한 전 세계의 기름값과 기업에 영향을 줄 수 있습니다.",
-    "정리하면, 미국은 이란을 공격할 계획을 갖고 있지만, 트럼프 대통령은 아직 결정을 내리지 않았습니다. 오늘 뉴스는 여기까지입니다. 들어 주셔서 감사합니다."
-   ],
-   "g": {
-    "according to": "~에 따르면",
-    "military": "군대, 군사의",
-    "major": "대규모의, 주요한",
-    "attack": "공격; 공격하다",
-    "order": "명령",
-    "final": "최종의",
-    "decision": "결정",
-    "belongs to": "~의 몫이다, ~에 속하다",
-    "background": "배경",
-    "war": "전쟁",
-    "ceasefire": "휴전",
-    "fighting": "전투, 싸움",
-    "side": "(대립하는) 쪽, 측",
-    "agree": "합의하다, 동의하다",
-    "for a while": "한동안, 당분간",
-    "since then": "그 이후로",
-    "peace talks": "평화 회담",
-    "talks": "회담",
-    "held": "(회담 등을) 열었다 (hold의 과거형)",
-    "however": "하지만, 그러나",
-    "made much progress": "큰 진전을 이루다 (make progress)",
-    "progress": "진전",
-    "main": "주요한",
-    "give up": "포기하다",
-    "nuclear program": "핵 프로그램 (핵 개발 계획)",
-    "fully": "완전히",
-    "reopen": "다시 열다",
-    "strait of hormuz": "호르무즈 해협 (중동의 좁은 바닷길)",
-    "strait": "해협",
-    "narrow": "좁은",
-    "route": "길, 경로",
-    "one fifth": "5분의 1",
-    "usually": "보통, 대개",
-    "passes through": "~을 통과하다",
-    "media": "언론",
-    "reported": "보도했다 (report의 과거형)",
-    "included": "포함했다",
-    "include": "포함하다",
-    "heavy": "강도 높은, 심한",
-    "target": "공격 목표",
-    "drone": "드론 (무인 비행기)",
-    "site": "장소, 기지",
-    "energy facilities": "에너지 시설 (발전소, 정유 시설 등)",
-    "midterm elections": "(미국) 중간선거",
-    "matter": "중요하다",
-    "oil": "석유",
-    "price": "가격",
-    "go up": "오르다",
-    "affect": "영향을 주다",
-    "business": "기업, 사업",
-    "sum up": "요약하다, 정리하다",
-    "made a decision": "결정을 내렸다",
-    "qatar": "카타르 (중동 국가)",
-    "pakistan": "파키스탄",
-    "israel": "이스라엘",
-    "iran": "이란"
-   },
-   "ph": [
-    "strait of hormuz",
-    "made much progress",
-    "made a decision",
-    "according to",
-    "energy facilities",
-    "midterm elections",
-    "nuclear program",
-    "passes through",
-    "peace talks",
-    "for a while",
-    "belongs to",
-    "since then",
-    "give up",
-    "one fifth",
-    "sum up",
-    "go up"
-   ],
-   "kw": [
-    [
-     "ceasefire",
-     "휴전"
-    ],
-    [
-     "peace talks",
-     "평화 회담"
-    ],
-    [
-     "make progress",
-     "진전을 이루다"
-    ],
-    [
-     "give up",
-     "포기하다"
-    ],
-    [
-     "nuclear program",
-     "핵 프로그램"
-    ],
-    [
-     "strait",
-     "해협 (좁은 바닷길)"
-    ],
-    [
-     "facility",
-     "시설"
-    ],
-    [
-     "to sum up",
-     "정리하면, 요약하면"
-    ]
-   ]
+   "levels": {
+    "3": {
+     "headline": "US has plans for major Iran strikes if Trump chooses",
+     "p": [
+      "Good morning. This is your morning news in English. Today's top story is about the United States and Iran.",
+      "According to U.S. news reports, the U.S. military has plans ready for major attacks on Iran. These plans are not an order. The final decision belongs to President Donald Trump.",
+      "Let's look at the background. In February this year, the United States and Israel started a war with Iran. In April, a ceasefire stopped most of the fighting. A ceasefire means both sides agree to stop fighting for a while. But there have been some attacks since then.",
+      "The United States and Iran have also held peace talks. Qatar and Pakistan have helped with these talks. However, the talks have not made much progress.",
+      "There are two main problems. First, the United States wants Iran to give up its nuclear program. Second, it wants Iran to fully reopen the Strait of Hormuz. This is a narrow sea route. About one fifth of the world's oil and gas usually passes through it.",
+      "Earlier this month, U.S. media reported that the new plans included three days of heavy attacks. The targets could include missile and drone sites, and energy facilities. At that time, President Trump said the U.S. would not attack Iran before the midterm elections on November third. He said the talks were going well.",
+      "Why does this matter to us? If the fighting starts again, oil prices could go up. That could affect gas prices and businesses around the world, including here in Korea.",
+      "To sum up, the U.S. has plans to attack Iran, but President Trump has not made a decision yet. That's all for today's news. Thank you for listening."
+     ],
+     "tr": [
+      "좋은 아침입니다. 영어로 듣는 아침 뉴스입니다. 오늘의 주요 뉴스는 미국과 이란에 관한 소식입니다.",
+      "미국 언론 보도에 따르면, 미군은 이란에 대한 대규모 공격 계획을 준비해 두었습니다. 이 계획은 명령이 아닙니다. 최종 결정은 도널드 트럼프 대통령의 몫입니다.",
+      "배경을 살펴보겠습니다. 올해 2월, 미국과 이스라엘은 이란과 전쟁을 시작했습니다. 4월에는 휴전으로 대부분의 전투가 멈췄습니다. 휴전이란 양측이 한동안 싸움을 멈추기로 합의하는 것을 말합니다. 하지만 그 이후에도 일부 공격이 있었습니다.",
+      "미국과 이란은 평화 회담도 진행해 왔습니다. 카타르와 파키스탄이 이 회담을 도왔습니다. 하지만 회담은 큰 진전을 이루지 못했습니다.",
+      "두 가지 큰 문제가 있습니다. 첫째, 미국은 이란이 핵 프로그램을 포기하기를 원합니다. 둘째, 이란이 호르무즈 해협을 완전히 다시 열기를 원합니다. 이곳은 좁은 바닷길입니다. 평소 전 세계 석유와 가스의 약 5분의 1이 이곳을 지나갑니다.",
+      "이달 초, 미국 언론은 새 계획에 3일간의 강도 높은 공격이 포함되어 있다고 보도했습니다. 공격 목표에는 미사일과 드론 기지, 그리고 에너지 시설이 포함될 수 있습니다. 당시 트럼프 대통령은 11월 3일 중간선거 전에는 미국이 이란을 공격하지 않을 것이라고 말했습니다. 그는 회담이 잘 진행되고 있다고 말했습니다.",
+      "이것이 왜 우리에게 중요할까요? 전투가 다시 시작되면 유가가 오를 수 있습니다. 그러면 한국을 포함한 전 세계의 기름값과 기업에 영향을 줄 수 있습니다.",
+      "정리하면, 미국은 이란을 공격할 계획을 갖고 있지만, 트럼프 대통령은 아직 결정을 내리지 않았습니다. 오늘 뉴스는 여기까지입니다. 들어 주셔서 감사합니다."
+     ],
+     "g": {
+      "according to": "~에 따르면",
+      "military": "군대, 군사의",
+      "major": "대규모의, 주요한",
+      "attack": "공격; 공격하다",
+      "order": "명령",
+      "final": "최종의",
+      "decision": "결정",
+      "belongs to": "~의 몫이다, ~에 속하다",
+      "background": "배경",
+      "war": "전쟁",
+      "ceasefire": "휴전",
+      "fighting": "전투, 싸움",
+      "side": "(대립하는) 쪽, 측",
+      "agree": "합의하다, 동의하다",
+      "for a while": "한동안, 당분간",
+      "since then": "그 이후로",
+      "peace talks": "평화 회담",
+      "talks": "회담",
+      "held": "(회담 등을) 열었다 (hold의 과거형)",
+      "however": "하지만, 그러나",
+      "made much progress": "큰 진전을 이루다 (make progress)",
+      "progress": "진전",
+      "main": "주요한",
+      "give up": "포기하다",
+      "nuclear program": "핵 프로그램 (핵 개발 계획)",
+      "fully": "완전히",
+      "reopen": "다시 열다",
+      "strait of hormuz": "호르무즈 해협 (중동의 좁은 바닷길)",
+      "strait": "해협",
+      "narrow": "좁은",
+      "route": "길, 경로",
+      "one fifth": "5분의 1",
+      "usually": "보통, 대개",
+      "passes through": "~을 통과하다",
+      "media": "언론",
+      "reported": "보도했다 (report의 과거형)",
+      "included": "포함했다",
+      "include": "포함하다",
+      "heavy": "강도 높은, 심한",
+      "target": "공격 목표",
+      "drone": "드론 (무인 비행기)",
+      "site": "장소, 기지",
+      "energy facilities": "에너지 시설 (발전소, 정유 시설 등)",
+      "midterm elections": "(미국) 중간선거",
+      "matter": "중요하다",
+      "oil": "석유",
+      "price": "가격",
+      "go up": "오르다",
+      "affect": "영향을 주다",
+      "business": "기업, 사업",
+      "sum up": "요약하다, 정리하다",
+      "made a decision": "결정을 내렸다",
+      "qatar": "카타르 (중동 국가)",
+      "pakistan": "파키스탄",
+      "israel": "이스라엘",
+      "iran": "이란"
+     },
+     "ph": [
+      "strait of hormuz",
+      "made much progress",
+      "made a decision",
+      "according to",
+      "energy facilities",
+      "midterm elections",
+      "nuclear program",
+      "passes through",
+      "peace talks",
+      "for a while",
+      "belongs to",
+      "since then",
+      "give up",
+      "one fifth",
+      "sum up",
+      "go up"
+     ],
+     "kw": [
+      [
+       "ceasefire",
+       "휴전"
+      ],
+      [
+       "peace talks",
+       "평화 회담"
+      ],
+      [
+       "make progress",
+       "진전을 이루다"
+      ],
+      [
+       "give up",
+       "포기하다"
+      ],
+      [
+       "nuclear program",
+       "핵 프로그램"
+      ],
+      [
+       "strait",
+       "해협 (좁은 바닷길)"
+      ],
+      [
+       "facility",
+       "시설"
+      ],
+      [
+       "to sum up",
+       "정리하면, 요약하면"
+      ]
+     ],
+     "audio": "audio/2026-10-26-g1-L3.mp3",
+     "duration": 109.7,
+     "speed": 0.9,
+     "voice": "af_heart",
+     "words": 281
+    }
+   }
   },
   {
    "id": "2026-10-26-k1",
    "section": "k",
    "icon": "mail",
-   "headline": "N. Korea calls DMZ mine blast a S. Korean fabrication",
    "ko": "북한, DMZ 지뢰 폭발 관련 안보리에 서한",
    "url": "https://www.koreaherald.com/article/10914240",
    "source": "Korea Herald",
-   "audio": "audio/2026-10-26-k1.mp3",
-   "duration": 132.3,
-   "speed": 0.9,
-   "p": [
-    "Good morning. This is your morning news in English. Today's top story is about North Korea, South Korea, and a land mine at the border.",
-    "North Korea has sent a letter to the United Nations Security Council. In the letter, North Korea said a recent mine explosion was a fabrication by South Korea. A fabrication is a false story that someone makes up.",
-    "Here is the background. On September twenty-first, a land mine exploded in the DMZ. The DMZ is a buffer area between North and South Korea. Three South Korean soldiers were injured.",
-    "South Korea's military looked into the explosion. In early October, it said North Korean soldiers had placed the mines on the South Korean side of the border line. The United Nations Command also said this broke the armistice agreement. An armistice is an agreement to stop fighting. The Korean War ended with an armistice in 1953, not a peace treaty.",
-    "Last week, South Korea sent its own letter to the Security Council. It asked North Korea to say sorry and to take responsibility.",
-    "North Korea's letter, sent on Sunday, rejected this. It said South Korea made up the story to stop North Korea from building defenses along the border. It also said South Korean soldiers fired warning shots at North Korean workers. North Korea warned that it may act in self-defense.",
-    "Meanwhile, South Korea has offered to hold military talks with the North. Seoul wants both sides to agree on the exact border line and to reopen military phone lines. So far, North Korea has not replied to this offer.",
-    "Why does this matter? If soldiers on each side have different ideas about where the border is, a small mistake could lead to a bigger clash.",
-    "To sum up, North Korea says South Korea made up the mine story, but South Korea says North Korea is responsible. Tension at the border is rising. That's all for today's news. Thank you for listening."
-   ],
-   "tr": [
-    "좋은 아침입니다. 영어로 듣는 아침 뉴스입니다. 오늘의 주요 뉴스는 남북한과 접경 지역의 지뢰에 관한 소식입니다.",
-    "북한이 유엔 안전보장이사회에 서한을 보냈습니다. 서한에서 북한은 최근 지뢰 폭발이 남한의 조작이라고 주장했습니다. 조작이란 누군가 지어낸 거짓 이야기를 말합니다.",
-    "배경을 살펴보겠습니다. 9월 21일, 비무장지대(DMZ)에서 지뢰가 폭발했습니다. 비무장지대는 남북한 사이의 완충 지역입니다. 이 사고로 한국군 병사 3명이 다쳤습니다.",
-    "한국군은 폭발 원인을 조사했습니다. 10월 초, 군은 북한군이 경계선의 남쪽에 지뢰를 설치했다고 밝혔습니다. 유엔군사령부도 이것이 정전 협정 위반이라고 밝혔습니다. 정전이란 싸움을 멈추기로 한 합의입니다. 한국전쟁은 평화 조약이 아니라 1953년 정전 협정으로 끝났습니다.",
-    "지난주 한국은 안보리에 따로 서한을 보냈습니다. 북한에 사과하고 책임을 지라고 요구했습니다.",
-    "일요일에 보낸 북한의 서한은 이를 거부했습니다. 북한은 남한이 접경 지역의 방어 시설 공사를 막으려고 이야기를 지어냈다고 주장했습니다. 또 한국군이 북한 작업자들에게 경고 사격을 했다고 말했습니다. 북한은 자위권을 행사할 수 있다고 경고했습니다.",
-    "한편 한국은 북한에 군사 회담을 제안했습니다. 정부는 양측이 정확한 경계선에 합의하고, 군 통신선을 다시 열기를 원합니다. 지금까지 북한은 이 제안에 답하지 않았습니다.",
-    "이것이 왜 중요할까요? 양측 군인들이 경계선의 위치를 서로 다르게 알고 있다면, 작은 실수가 더 큰 충돌로 이어질 수 있습니다.",
-    "정리하면, 북한은 남한이 지뢰 사건을 지어냈다고 주장하고, 한국은 북한에 책임이 있다고 말합니다. 접경 지역의 긴장이 높아지고 있습니다. 오늘 뉴스는 여기까지입니다. 들어 주셔서 감사합니다."
-   ],
-   "g": {
-    "land mine": "지뢰",
-    "mine": "지뢰 (land mine)",
-    "border": "국경, 경계 지역",
-    "letter": "서한, 편지",
-    "united nations security council": "유엔 안전보장이사회 (안보리)",
-    "security council": "안보리 (유엔 안전보장이사회)",
-    "recent": "최근의",
-    "explosion": "폭발",
-    "exploded": "폭발했다",
-    "fabrication": "조작, 지어낸 이야기",
-    "false": "거짓의",
-    "makes up": "(이야기를) 지어내다 (make up)",
-    "made up": "지어냈다 (make up의 과거형)",
-    "background": "배경",
-    "dmz": "비무장지대 (남북한 사이의 지역)",
-    "buffer area": "완충 지역 (양쪽 사이에 비워 둔 땅)",
-    "soldier": "군인, 병사",
-    "injured": "다친, 부상을 입은",
-    "military": "군대, 군사의",
-    "looked into": "조사했다 (look into)",
-    "placed": "설치했다, 놓았다",
-    "side": "쪽, 측",
-    "border line": "경계선 (군사분계선)",
-    "united nations command": "유엔군사령부",
-    "broke": "어겼다 (break의 과거형)",
-    "armistice agreement": "정전 협정",
-    "armistice": "정전 (싸움을 멈추기로 한 합의)",
-    "agreement": "합의, 협정",
-    "peace treaty": "평화 조약",
-    "korean war": "한국전쟁 (6·25 전쟁)",
-    "ended": "끝났다",
-    "say sorry": "사과하다",
-    "take responsibility": "책임을 지다",
-    "rejected": "거부했다",
-    "defense": "방어, 방어 시설",
-    "warning shots": "경고 사격",
-    "fired": "(총을) 쐈다",
-    "worker": "작업자, 근로자",
-    "warned": "경고했다",
-    "self-defense": "자기 방어, 자위",
-    "meanwhile": "한편",
-    "offered": "제안했다",
-    "hold": "(회담을) 열다",
-    "military talks": "군사 회담",
-    "exact": "정확한",
-    "agree": "합의하다, 동의하다",
-    "reopen": "다시 열다",
-    "military phone lines": "군 통신선",
-    "so far": "지금까지",
-    "replied": "답했다",
-    "offer": "제안",
-    "matter": "중요하다",
-    "mistake": "실수",
-    "lead to": "~로 이어지다",
-    "clash": "충돌",
-    "sum up": "요약하다, 정리하다",
-    "responsible": "책임이 있는",
-    "tension": "긴장",
-    "rising": "높아지는",
-    "seoul": "서울 (여기서는 한국 정부)"
-   },
-   "ph": [
-    "united nations security council",
-    "united nations command",
-    "military phone lines",
-    "take responsibility",
-    "armistice agreement",
-    "security council",
-    "military talks",
-    "warning shots",
-    "peace treaty",
-    "buffer area",
-    "border line",
-    "looked into",
-    "korean war",
-    "land mine",
-    "makes up",
-    "made up",
-    "say sorry",
-    "lead to",
-    "so far",
-    "sum up"
-   ],
-   "kw": [
-    [
-     "land mine",
-     "지뢰"
-    ],
-    [
-     "explosion",
-     "폭발"
-    ],
-    [
-     "fabrication",
-     "조작, 지어낸 이야기"
-    ],
-    [
-     "make up",
-     "(이야기를) 지어내다"
-    ],
-    [
-     "armistice",
-     "정전 (싸움을 멈추는 합의)"
-    ],
-    [
-     "take responsibility",
-     "책임을 지다"
-    ],
-    [
-     "warning shots",
-     "경고 사격"
-    ],
-    [
-     "tension",
-     "긴장"
-    ]
-   ]
+   "levels": {
+    "3": {
+     "headline": "N. Korea calls DMZ mine blast a S. Korean fabrication",
+     "p": [
+      "Good morning. This is your morning news in English. Today's top story is about North Korea, South Korea, and a land mine at the border.",
+      "North Korea has sent a letter to the United Nations Security Council. In the letter, North Korea said a recent mine explosion was a fabrication by South Korea. A fabrication is a false story that someone makes up.",
+      "Here is the background. On September twenty-first, a land mine exploded in the DMZ. The DMZ is a buffer area between North and South Korea. Three South Korean soldiers were injured.",
+      "South Korea's military looked into the explosion. In early October, it said North Korean soldiers had placed the mines on the South Korean side of the border line. The United Nations Command also said this broke the armistice agreement. An armistice is an agreement to stop fighting. The Korean War ended with an armistice in 1953, not a peace treaty.",
+      "Last week, South Korea sent its own letter to the Security Council. It asked North Korea to say sorry and to take responsibility.",
+      "North Korea's letter, sent on Sunday, rejected this. It said South Korea made up the story to stop North Korea from building defenses along the border. It also said South Korean soldiers fired warning shots at North Korean workers. North Korea warned that it may act in self-defense.",
+      "Meanwhile, South Korea has offered to hold military talks with the North. Seoul wants both sides to agree on the exact border line and to reopen military phone lines. So far, North Korea has not replied to this offer.",
+      "Why does this matter? If soldiers on each side have different ideas about where the border is, a small mistake could lead to a bigger clash.",
+      "To sum up, North Korea says South Korea made up the mine story, but South Korea says North Korea is responsible. Tension at the border is rising. That's all for today's news. Thank you for listening."
+     ],
+     "tr": [
+      "좋은 아침입니다. 영어로 듣는 아침 뉴스입니다. 오늘의 주요 뉴스는 남북한과 접경 지역의 지뢰에 관한 소식입니다.",
+      "북한이 유엔 안전보장이사회에 서한을 보냈습니다. 서한에서 북한은 최근 지뢰 폭발이 남한의 조작이라고 주장했습니다. 조작이란 누군가 지어낸 거짓 이야기를 말합니다.",
+      "배경을 살펴보겠습니다. 9월 21일, 비무장지대(DMZ)에서 지뢰가 폭발했습니다. 비무장지대는 남북한 사이의 완충 지역입니다. 이 사고로 한국군 병사 3명이 다쳤습니다.",
+      "한국군은 폭발 원인을 조사했습니다. 10월 초, 군은 북한군이 경계선의 남쪽에 지뢰를 설치했다고 밝혔습니다. 유엔군사령부도 이것이 정전 협정 위반이라고 밝혔습니다. 정전이란 싸움을 멈추기로 한 합의입니다. 한국전쟁은 평화 조약이 아니라 1953년 정전 협정으로 끝났습니다.",
+      "지난주 한국은 안보리에 따로 서한을 보냈습니다. 북한에 사과하고 책임을 지라고 요구했습니다.",
+      "일요일에 보낸 북한의 서한은 이를 거부했습니다. 북한은 남한이 접경 지역의 방어 시설 공사를 막으려고 이야기를 지어냈다고 주장했습니다. 또 한국군이 북한 작업자들에게 경고 사격을 했다고 말했습니다. 북한은 자위권을 행사할 수 있다고 경고했습니다.",
+      "한편 한국은 북한에 군사 회담을 제안했습니다. 정부는 양측이 정확한 경계선에 합의하고, 군 통신선을 다시 열기를 원합니다. 지금까지 북한은 이 제안에 답하지 않았습니다.",
+      "이것이 왜 중요할까요? 양측 군인들이 경계선의 위치를 서로 다르게 알고 있다면, 작은 실수가 더 큰 충돌로 이어질 수 있습니다.",
+      "정리하면, 북한은 남한이 지뢰 사건을 지어냈다고 주장하고, 한국은 북한에 책임이 있다고 말합니다. 접경 지역의 긴장이 높아지고 있습니다. 오늘 뉴스는 여기까지입니다. 들어 주셔서 감사합니다."
+     ],
+     "g": {
+      "land mine": "지뢰",
+      "mine": "지뢰 (land mine)",
+      "border": "국경, 경계 지역",
+      "letter": "서한, 편지",
+      "united nations security council": "유엔 안전보장이사회 (안보리)",
+      "security council": "안보리 (유엔 안전보장이사회)",
+      "recent": "최근의",
+      "explosion": "폭발",
+      "exploded": "폭발했다",
+      "fabrication": "조작, 지어낸 이야기",
+      "false": "거짓의",
+      "makes up": "(이야기를) 지어내다 (make up)",
+      "made up": "지어냈다 (make up의 과거형)",
+      "background": "배경",
+      "dmz": "비무장지대 (남북한 사이의 지역)",
+      "buffer area": "완충 지역 (양쪽 사이에 비워 둔 땅)",
+      "soldier": "군인, 병사",
+      "injured": "다친, 부상을 입은",
+      "military": "군대, 군사의",
+      "looked into": "조사했다 (look into)",
+      "placed": "설치했다, 놓았다",
+      "side": "쪽, 측",
+      "border line": "경계선 (군사분계선)",
+      "united nations command": "유엔군사령부",
+      "broke": "어겼다 (break의 과거형)",
+      "armistice agreement": "정전 협정",
+      "armistice": "정전 (싸움을 멈추기로 한 합의)",
+      "agreement": "합의, 협정",
+      "peace treaty": "평화 조약",
+      "korean war": "한국전쟁 (6·25 전쟁)",
+      "ended": "끝났다",
+      "say sorry": "사과하다",
+      "take responsibility": "책임을 지다",
+      "rejected": "거부했다",
+      "defense": "방어, 방어 시설",
+      "warning shots": "경고 사격",
+      "fired": "(총을) 쐈다",
+      "worker": "작업자, 근로자",
+      "warned": "경고했다",
+      "self-defense": "자기 방어, 자위",
+      "meanwhile": "한편",
+      "offered": "제안했다",
+      "hold": "(회담을) 열다",
+      "military talks": "군사 회담",
+      "exact": "정확한",
+      "agree": "합의하다, 동의하다",
+      "reopen": "다시 열다",
+      "military phone lines": "군 통신선",
+      "so far": "지금까지",
+      "replied": "답했다",
+      "offer": "제안",
+      "matter": "중요하다",
+      "mistake": "실수",
+      "lead to": "~로 이어지다",
+      "clash": "충돌",
+      "sum up": "요약하다, 정리하다",
+      "responsible": "책임이 있는",
+      "tension": "긴장",
+      "rising": "높아지는",
+      "seoul": "서울 (여기서는 한국 정부)"
+     },
+     "ph": [
+      "united nations security council",
+      "united nations command",
+      "military phone lines",
+      "take responsibility",
+      "armistice agreement",
+      "security council",
+      "military talks",
+      "warning shots",
+      "peace treaty",
+      "buffer area",
+      "border line",
+      "looked into",
+      "korean war",
+      "land mine",
+      "makes up",
+      "made up",
+      "say sorry",
+      "lead to",
+      "so far",
+      "sum up"
+     ],
+     "kw": [
+      [
+       "land mine",
+       "지뢰"
+      ],
+      [
+       "explosion",
+       "폭발"
+      ],
+      [
+       "fabrication",
+       "조작, 지어낸 이야기"
+      ],
+      [
+       "make up",
+       "(이야기를) 지어내다"
+      ],
+      [
+       "armistice",
+       "정전 (싸움을 멈추는 합의)"
+      ],
+      [
+       "take responsibility",
+       "책임을 지다"
+      ],
+      [
+       "warning shots",
+       "경고 사격"
+      ],
+      [
+       "tension",
+       "긴장"
+      ]
+     ],
+     "audio": "audio/2026-10-26-k1-L3.mp3",
+     "duration": 132.3,
+     "speed": 0.9,
+     "voice": "af_heart",
+     "words": 326
+    }
+   }
   }
  ]
 }

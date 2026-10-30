@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-30T00:37:27Z",
+ "updated": "2026-10-30T01:32:56Z",
  "days": [
   {
    "date": "2026-10-29",
@@ -8,8 +8,14 @@
      "id": "2026-10-29-k1",
      "section": "k",
      "icon": "cpu",
-     "headline": "SK hynix posts record profit on AI memory demand",
-     "ko": "SK하이닉스, AI 메모리 수요로 사상 최대 실적"
+     "ko": "SK하이닉스, AI 메모리 수요로 사상 최대 실적",
+     "h": {
+      "1": "SK hynix makes record money from AI chips",
+      "2": "SK hynix earns record profit as AI chip sales grow",
+      "3": "SK hynix posts record profit on AI memory demand",
+      "4": "SK hynix posts record quarterly profit on AI memory demand",
+      "5": "SK hynix smashes profit record on AI-fueled memory boom"
+     }
     }
    ]
   },
@@ -20,15 +26,19 @@
      "id": "2026-10-26-g1",
      "section": "g",
      "icon": "plane",
-     "headline": "US has plans for major Iran strikes if Trump chooses",
-     "ko": "미국의 대규모 이란 공습 계획"
+     "ko": "미국의 대규모 이란 공습 계획",
+     "h": {
+      "3": "US has plans for major Iran strikes if Trump chooses"
+     }
     },
     {
      "id": "2026-10-26-k1",
      "section": "k",
      "icon": "mail",
-     "headline": "N. Korea calls DMZ mine blast a S. Korean fabrication",
-     "ko": "북한, DMZ 지뢰 폭발 관련 안보리에 서한"
+     "ko": "북한, DMZ 지뢰 폭발 관련 안보리에 서한",
+     "h": {
+      "3": "N. Korea calls DMZ mine blast a S. Korean fabrication"
+     }
     }
    ]
   }

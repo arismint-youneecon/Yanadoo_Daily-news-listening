@@ -12,8 +12,10 @@ create table if not exists public.members (
   code_hash   text not null,
   is_admin    boolean not null default false,
   active      boolean not null default true,
+  level       smallint check (level between 1 and 5),  -- 회원이 고른 난이도 (고르기 전에는 비어 있음)
   created_at  timestamptz not null default now()
 );
+alter table public.members add column if not exists level smallint check (level between 1 and 5);
 
 create table if not exists public.visits (
   member_id   uuid not null references public.members(id) on delete cascade,
@@ -98,7 +100,7 @@ begin
   m := public._member(p_code);
   if m.id is null then return null; end if;
   insert into public.visits(member_id, day) values (m.id, public._kst_today()) on conflict do nothing;
-  return json_build_object('name', m.name, 'is_admin', m.is_admin);
+  return json_build_object('name', m.name, 'is_admin', m.is_admin, 'level', m.level);
 end $$;
 
 -- 학습 기록 남기기
@@ -111,6 +113,18 @@ begin
   insert into public.visits(member_id, day) values (m.id, public._kst_today()) on conflict do nothing;
   insert into public.events(member_id, briefing_id, kind, detail)
   values (m.id, left(p_briefing, 40), p_kind, left(p_detail, 80));
+  return true;
+end $$;
+
+-- 난이도(1~5단계) 고르기
+create or replace function public.club_set_level(p_code text, p_level int) returns boolean
+language plpgsql volatile security definer set search_path = public, extensions as $$
+declare m public.members;
+begin
+  if p_level is null or p_level not between 1 and 5 then raise exception 'bad_level'; end if;
+  m := public._member(p_code);
+  if m.id is null then return false; end if;
+  update public.members set level = p_level where id = m.id;
   return true;
 end $$;
 
@@ -148,7 +162,7 @@ begin
   perform public._admin(p_code);
   return (
     select coalesce(json_agg(r order by r.last_visit desc nulls last, r.name), '[]'::json) from (
-      select mb.id, mb.name, mb.is_admin, mb.active, mb.created_at,
+      select mb.id, mb.name, mb.is_admin, mb.active, mb.created_at, mb.level,
         (select max(day) from public.visits v where v.member_id = mb.id) as last_visit,
         (select count(*) from public.visits v where v.member_id = mb.id and v.day > public._kst_today() - 30) as days_30,
         (select count(*) from public.visits v where v.member_id = mb.id) as days_total,
@@ -196,6 +210,7 @@ end $$;
 revoke execute on all functions in schema public from public, anon, authenticated;
 grant execute on function public.club_login(text) to anon;
 grant execute on function public.club_log(text, text, text, text) to anon;
+grant execute on function public.club_set_level(text, int) to anon;
 grant execute on function public.club_my_stats(text) to anon;
 grant execute on function public.club_admin_members(text) to anon;
 grant execute on function public.club_admin_add_member(text, text, boolean) to anon;

@@ -3,9 +3,30 @@
   var CFG = window.CLUB_CONFIG || {};
   var DEMO = !CFG.supabaseUrl;
   var KEY = "enc_code";
+  var LKEY = "enc_level";
   var app = document.getElementById("app");
   var tabs = document.getElementById("tabs");
-  var state = { code: null, me: null, stats: null, index: null, days: {} };
+  var state = { code: null, me: null, level: null, stats: null, index: null, days: {} };
+
+  // 난이도 1~5단계. 같은 뉴스를 단계마다 다르게 써서 읽어 줍니다.
+  var LEVELS = [
+    { n: 1, toeic: "토익 300점 수준", desc: "아주 쉬운 단어와 짧은 문장으로, 문장마다 잠깐씩 쉬면서 천천히 읽어요. 영어 뉴스가 처음이라면 여기서 시작하세요.",
+      en: "Food prices went up this month. Many people now spend more money at the store.",
+      ko: "이번 달에 식료품 가격이 올랐습니다. 많은 사람들이 이제 가게에서 돈을 더 씁니다." },
+    { n: 2, toeic: "토익 500점 수준", desc: "기초 단어로 쓴 짧은 문장이에요. 뉴스에 나오는 말은 쉬운 말로 풀어 주고, 조금 천천히 읽어요.",
+      en: "Food prices rose again this month. Many families say they are spending more money on groceries.",
+      ko: "이번 달에도 식료품 가격이 올랐습니다. 많은 가정이 장보기에 돈을 더 쓰고 있다고 말합니다." },
+    { n: 3, toeic: "토익 700점 수준", desc: "자주 쓰는 뉴스 단어가 나오고, 어려운 말은 한 번씩 풀어 줘요. 보통보다 조금 느린 속도예요.",
+      en: "Food prices rose for the third month in a row. Many families say they are feeling the pressure at the supermarket.",
+      ko: "식료품 가격이 3개월 연속 올랐습니다. 많은 가정이 마트에서 부담을 느낀다고 말합니다." },
+    { n: 4, toeic: "토익 850점 수준", desc: "토익 LC Part 4 같은 라디오 뉴스 말투예요. 뉴스 단어를 풀이 없이 그대로 쓰고, 남성 목소리의 미국 발음이에요.",
+      en: "Consumer prices climbed for a third consecutive month, driven largely by higher costs for fresh food and energy. Households are cutting back on spending as a result.",
+      ko: "소비자 물가가 주로 신선식품과 에너지 비용 상승 때문에 3개월 연속 올랐습니다. 그 결과 가계는 지출을 줄이고 있습니다." },
+    { n: 5, toeic: "토익 만점 수준", desc: "실제 영어 뉴스와 같은 어휘와 긴 문장, 빠른 속도예요. 영국 발음으로 들려줘요.",
+      en: "Inflation edged up for a third straight month, as stubbornly high food and energy costs continued to squeeze household budgets and weigh on consumer sentiment.",
+      ko: "식품과 에너지 비용이 좀처럼 내려가지 않아 가계 예산을 계속 압박하고 소비 심리를 짓누르면서, 물가 상승률이 3개월 연속 소폭 올랐습니다." }
+  ];
+  function levelInfo(n) { return LEVELS[(n || 3) - 1]; }
 
   document.getElementById("brand").textContent = CFG.clubName || "아침 영어 뉴스 클럽";
 
@@ -34,6 +55,7 @@
     return {
       login: function (c) { return rpc("club_login", { p_code: c }); },
       log: function (c, b, k, d) { return rpc("club_log", { p_code: c, p_briefing: b, p_kind: k, p_detail: d == null ? null : d }); },
+      setLevel: function (c, n) { return rpc("club_set_level", { p_code: c, p_level: n }); },
       myStats: function (c) { return rpc("club_my_stats", { p_code: c }); },
       members: function (c) { return rpc("club_admin_members", { p_code: c }); },
       addMember: function (c, n, a) { return rpc("club_admin_add_member", { p_code: c, p_name: n, p_is_admin: !!a }); },
@@ -59,7 +81,8 @@
     function p(v) { return new Promise(function (res) { setTimeout(function () { res(v); }, 60); }); }
     function since(days) { return kst(new Date(Date.now() - days * 864e5)); }
     return {
-      login: function (c) { var d = db(), m = find(d, c); if (!m) return p(null); visit(d, m); put(d); return p({ name: m.name, is_admin: m.is_admin }); },
+      login: function (c) { var d = db(), m = find(d, c); if (!m) return p(null); visit(d, m); put(d); return p({ name: m.name, is_admin: m.is_admin, level: m.level || null }); },
+      setLevel: function (c, n) { var d = db(), m = find(d, c); if (!m) return p(false); d.members.forEach(function (x) { if (x.id === m.id) x.level = n; }); put(d); return p(true); },
       log: function (c, b, k, det) { var d = db(), m = find(d, c); if (!m) return p(false); visit(d, m); d.events.push({ member_id: m.id, briefing_id: b, kind: k, detail: det || null, at: new Date().toISOString() }); put(d); return p(true); },
       myStats: function (c) {
         var d = db(), m = find(d, c); if (!m) return p(null);
@@ -77,7 +100,7 @@
           var vs = d.visits.filter(function (v) { return v.member_id === m.id; }).map(function (v) { return v.day; }).sort();
           var ev = d.events.filter(function (e) { return e.member_id === m.id; });
           var uniq = function (k) { var o = {}; ev.filter(function (e) { return e.kind === k; }).forEach(function (e) { o[e.briefing_id] = 1; }); return Object.keys(o).length; };
-          return { id: m.id, name: m.name, is_admin: m.is_admin, active: m.active, created_at: m.created_at, last_visit: vs[vs.length - 1] || null, days_30: vs.filter(function (x) { return x > since(30); }).length, days_total: vs.length, recent_days: vs.filter(function (x) { return x > since(14); }), played: uniq("play"), completed: uniq("complete"), lookups: ev.filter(function (e) { return e.kind === "lookup"; }).length };
+          return { id: m.id, name: m.name, is_admin: m.is_admin, active: m.active, created_at: m.created_at, level: m.level || null, last_visit: vs[vs.length - 1] || null, days_30: vs.filter(function (x) { return x > since(30); }).length, days_total: vs.length, recent_days: vs.filter(function (x) { return x > since(14); }), played: uniq("play"), completed: uniq("complete"), lookups: ev.filter(function (e) { return e.kind === "lookup"; }).length };
         }));
       },
       addMember: function (c, n, a) { var d = db(); admin(d, c); var code = newCode(), id = "m" + (d.members.length + 1) + Date.now(); d.members.push({ id: id, name: n, code: code, is_admin: !!a, active: true, created_at: new Date().toISOString() }); put(d); return p({ id: id, code: code }); },
@@ -116,8 +139,26 @@
   function errBox(msg) { return el("div", { class: "card pad" }, [el("p", { class: "err", text: msg })]); }
 
   function getJSON(url) { return fetch(url, { cache: "no-cache" }).then(function (r) { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); }); }
-  function getIndex() { return state.index ? Promise.resolve(state.index) : getJSON("data/index.json").then(function (j) { state.index = j; return j; }); }
-  function getDay(date) { return state.days[date] ? Promise.resolve(state.days[date]) : getJSON("data/" + date + ".json").then(function (j) { state.days[date] = j; return j; }); }
+  // 예전 형식(단계 구분 없는 브리핑)은 3단계 버전 하나로 봅니다.
+  function normIndex(j) { (j.days || []).forEach(function (d) { d.items.forEach(function (it) { if (!it.h) { it.h = {}; it.h["3"] = it.headline; } }); }); return j; }
+  function normDay(j) { (j.items || []).forEach(function (it) { if (!it.levels) { var v = {}; ["headline", "p", "tr", "g", "ph", "kw", "audio", "duration"].forEach(function (k) { v[k] = it[k]; }); it.levels = { "3": v }; } }); return j; }
+  function getIndex() { return state.index ? Promise.resolve(state.index) : getJSON("data/index.json").then(function (j) { state.index = normIndex(j); return j; }); }
+  function getDay(date) { return state.days[date] ? Promise.resolve(state.days[date]) : getJSON("data/" + date + ".json").then(function (j) { state.days[date] = normDay(j); return j; }); }
+  // 원하는 단계가 없으면 가장 가까운 단계(같으면 쉬운 쪽)를 고릅니다.
+  function nearestLevel(obj, want) {
+    var have = Object.keys(obj || {}).map(Number).filter(function (n) { return n >= 1 && n <= 5; });
+    if (!have.length) return null;
+    have.sort(function (a, b) { return Math.abs(a - want) - Math.abs(b - want) || a - b; });
+    return have[0];
+  }
+  // 이 기기에 저장하는 단계는 접속 코드와 함께 저장해서, 다른 회원이 같은 기기로 들어와도 섞이지 않게 합니다.
+  function localLevel(code) { var v = String(load(LKEY) || "").split(":"); return v[0] === code && Number(v[1]) >= 1 && Number(v[1]) <= 5 ? Number(v[1]) : null; }
+  function saveLocalLevel(code, n) { save(LKEY, code + ":" + n); }
+  function chooseLevel(n) {
+    state.level = n; saveLocalLevel(state.code, n);
+    if (state.me) state.me.level = n;
+    return api.setLevel(state.code, n).catch(function () { return false; });
+  }
   function refreshStats() { return api.myStats(state.code).then(function (s) { state.stats = s; return s; }).catch(function () { return state.stats; }); }
   function isDone(id) { return !!(state.stats && state.stats.completed && state.stats.completed.indexOf(id) >= 0); }
 
@@ -158,10 +199,14 @@
 
   function briefingCard(it, date) {
     var done = isDone(it.id);
+    // 목록(index.json)은 it.h에, 날짜 파일은 it.levels에 단계별 제목이 있습니다.
+    var heads = it.h || {};
+    if (!it.h && it.levels) Object.keys(it.levels).forEach(function (k) { heads[k] = it.levels[k].headline; });
+    var lv = nearestLevel(heads, state.level || 3);
     return el("a", { class: "card item " + it.section, href: "#/b/" + date + "/" + it.id }, [
       el("span", { class: "tile" }, [icon(it.icon || (it.section === "g" ? "world" : "map-pin"))]),
       el("span", { class: "txt" }, [
-        el("span", { class: "hl", text: it.headline }),
+        el("span", { class: "hl", text: heads[lv] || it.headline || "" }),
         el("span", { class: "sub" }, [el("span", { class: "bd " + it.section, text: sectionName(it.section) }), done ? el("span", { class: "bd done", text: "다 들음" }) : null, it.ko])
       ]),
       el("i", { class: "ti ti-chevron-right chev", "aria-hidden": "true" })
@@ -176,12 +221,16 @@
       return getDay(latest.date).then(function (day) {
         var s = state.stats || {};
         var isToday = latest.date === kstToday();
+        var li = levelInfo(state.level);
         render([
           el("div", null, [
-            el("p", { class: "eyebrow", text: (isToday ? "오늘의 브리핑 · " : "가장 최근 브리핑 · ") + fmtDate(latest.date) + " · 레벨 " + (day.level || 1) }),
+            el("p", { class: "eyebrow", text: (isToday ? "오늘의 브리핑 · " : "가장 최근 브리핑 · ") + fmtDate(latest.date) }),
             el("h1", { text: (state.me ? state.me.name + "님, " : "") + "좋은 아침이에요" })
           ]),
-          s.streak ? el("div", { class: "row small muted" }, [icon("flame"), "연속 " + s.streak + "일째 접속 중"]) : null,
+          el("div", { class: "row small", style: "gap:8px;flex-wrap:wrap" }, [
+            el("a", { class: "lvchip", href: "#/level", "aria-label": "단계 바꾸기, 지금 " + li.n + "단계" }, [icon("stairs-up"), li.n + "단계 · " + li.toeic, el("span", { class: "muted", text: "바꾸기" })]),
+            s.streak ? el("span", { class: "row muted", style: "gap:4px" }, [icon("flame"), "연속 " + s.streak + "일째 접속 중"]) : null
+          ]),
           el("div", { class: "list" }, day.items.map(function (it) { return briefingCard(it, latest.date); })),
           el("p", { class: "small muted", text: "대본 없이 한 번 듣고, 대본을 열어 모르는 단어를 확인한 뒤, 다시 한 번 들어 보세요." })
         ]);
@@ -200,24 +249,37 @@
     }).catch(function () { render([errBox("목록을 불러오지 못했어요.")]); });
   }
 
-  function viewBriefing(date, id) {
+  function viewBriefing(date, id, askLevel) {
     setTab(date === (state.index && state.index.days[0] && state.index.days[0].date) ? "today" : "archive");
     getDay(date).then(function (day) {
-      var it = day.items.filter(function (x) { return x.id === id; })[0];
-      if (!it) { render([errBox("브리핑을 찾을 수 없어요.")]); return; }
+      var story = day.items.filter(function (x) { return x.id === id; })[0];
+      if (!story) { render([errBox("브리핑을 찾을 수 없어요.")]); return; }
+      var myLv = state.level || 3;
+      var lv = nearestLevel(story.levels, askLevel || myLv);
+      var it = story.levels[lv];
+      var tag = "L" + lv;
+
+      // 단계 바꿔 듣기: 이 뉴스만 다른 단계로 봅니다(내 단계는 그대로).
+      var lvPills = LEVELS.map(function (L) {
+        var has = !!story.levels[L.n];
+        return el("a", { class: "pill" + (has ? "" : " off"), href: has ? "#/b/" + date + "/" + id + "/" + L.n : null, "aria-current": L.n === lv ? "true" : null, "aria-disabled": has ? null : "true", "aria-label": L.n + "단계" + (has ? "" : " (없음)"), text: String(L.n) });
+      });
+      var lvNote = null;
+      if (lv !== myLv && !askLevel) lvNote = el("p", { class: "note", text: "이 뉴스는 " + myLv + "단계 버전이 없어서 " + lv + "단계로 보여 드려요." });
+      else if (lv !== myLv) lvNote = el("p", { class: "small muted", style: "margin:0" }, [lv + "단계로 듣는 중이에요. ", el("a", { href: "#/b/" + date + "/" + id, text: "내 단계(" + myLv + "단계)로 돌아가기" })]);
 
       var audio = el("audio", { controls: true, preload: "metadata", src: it.audio || null });
       var completeSent = false;
-      audio.addEventListener("play", function () { logOnce(it.id, "play"); });
+      audio.addEventListener("play", function () { logOnce(story.id, "play", tag); });
       // "끝까지 들음"은 건너뛰기를 빼고 실제로 재생된 시간이 85%를 넘을 때만 기록합니다.
       var listened = 0, lastT = 0;
       audio.addEventListener("seeking", function () { lastT = audio.currentTime; });
       audio.addEventListener("timeupdate", function () {
         var t = audio.currentTime, dt = t - lastT; lastT = t;
         if (dt > 0 && dt < 1.5 * (audio.playbackRate || 1)) listened += dt;
-        if (!completeSent && audio.duration && listened / audio.duration > 0.85) { completeSent = true; logOnce(it.id, "complete"); }
+        if (!completeSent && audio.duration && listened / audio.duration > 0.85) { completeSent = true; logOnce(story.id, "complete", tag); }
       });
-      var noAudio = it.audio ? null : el("p", { class: "note", text: "음성 파일 보관 기간(60일)이 지나 대본만 남아 있어요." });
+      var noAudio = it.audio ? null : el("p", { class: "note", text: "음성 파일 보관 기간(30일)이 지나 대본만 남아 있어요." });
       var speeds = [0.8, 0.9, 1, 1.1];
       var pills = speeds.map(function (sp) {
         return el("button", { type: "button", class: "pill", "aria-pressed": sp === 1 ? "true" : "false", text: sp + "×", onclick: function (e) {
@@ -256,7 +318,7 @@
         info.appendChild(el("span", { class: "im", text: mean || "목록에 없는 단어예요" }));
         info.appendChild(el("a", { class: "btn small", href: "https://en.dict.naver.com/#/search?query=" + encodeURIComponent(word), target: "_blank", rel: "noopener", text: "사전에서 보기" }));
         s.parentNode.after(info); info.hidden = false;
-        logOnce(it.id, "lookup", word.toLowerCase());
+        logOnce(story.id, "lookup", word.toLowerCase());
       }
       scriptBox.addEventListener("click", function (e) { if (e.target.classList && e.target.classList.contains("w")) pick(e.target); });
       scriptBox.addEventListener("keydown", function (e) { if ((e.key === "Enter" || e.key === " ") && e.target.classList && e.target.classList.contains("w")) { e.preventDefault(); pick(e.target); } });
@@ -267,7 +329,7 @@
       function toggle(panel, labelOn, labelOff, kind) {
         var b = el("button", { type: "button", class: "btn small", "aria-expanded": "false", text: labelOff, onclick: function () {
           var open = panel.hidden; panel.hidden = !open; b.setAttribute("aria-expanded", open ? "true" : "false"); b.textContent = open ? labelOn : labelOff;
-          if (open) logOnce(it.id, kind);
+          if (open) logOnce(story.id, kind, tag);
         } });
         return b;
       }
@@ -275,16 +337,66 @@
       render([
         el("a", { href: "#/", class: "small", text: "← 목록으로" }),
         el("div", null, [
-          el("p", { class: "eyebrow" }, [el("span", { class: "bd " + it.section, text: sectionName(it.section) }), fmtDate(date) + " · 레벨 " + (day.level || 1) + (it.duration ? " · " + fmtDur(it.duration) : "")]),
+          el("p", { class: "eyebrow" }, [el("span", { class: "bd " + story.section, text: sectionName(story.section) }), fmtDate(date) + " · " + lv + "단계" + (it.duration ? " · " + fmtDur(it.duration) : "")]),
           el("h1", { class: "hl", style: "font-size:22px", text: it.headline }),
-          el("p", { class: "muted", style: "margin:4px 0 0", text: it.ko })
+          el("p", { class: "muted", style: "margin:4px 0 0", text: story.ko })
         ]),
+        el("div", { class: "speeds", role: "group", "aria-label": "다른 단계로 듣기" }, [el("span", { class: "small muted", text: "단계" })].concat(lvPills)),
+        lvNote,
         noAudio || el("div", { class: "card pad", style: "display:flex;flex-direction:column;gap:10px" }, [audio, el("div", { class: "speeds" }, [el("span", { class: "small muted", text: "속도" })].concat(pills))]),
         el("div", { class: "toggles" }, [toggle(sc, "대본 닫기", "대본 보기", "script"), toggle(tr, "해석 닫기", "해석 보기", "translation"), toggle(kv, "단어 닫기", "핵심 단어 " + (it.kw || []).length, "words")]),
         sc, tr, kv,
-        it.url ? el("a", { class: "small", href: it.url, target: "_blank", rel: "noopener" }, [icon("external-link"), " 원문 기사 보기 (" + (it.source || "") + ")"]) : null
+        story.url ? el("a", { class: "small", href: story.url, target: "_blank", rel: "noopener" }, [icon("external-link"), " 원문 기사 보기 (" + (story.source || "") + ")"]) : null
       ]);
     }).catch(function () { render([errBox("브리핑을 불러오지 못했어요.")]); });
+  }
+
+  // 단계 고르기: 설명, 같은 내용을 단계별로 쓴 예문, 맛보기 음성
+  var sampleAudio = null, sampleBtn = null;
+  function stopSample() {
+    if (sampleAudio) { sampleAudio.pause(); }
+    if (sampleBtn) { sampleBtn.setAttribute("aria-pressed", "false"); sampleBtn.querySelector("i").className = "ti ti-player-play"; sampleBtn.lastChild.textContent = "들어 보기"; }
+    sampleBtn = null;
+  }
+  function viewLevel() {
+    setTab(state.level ? "me" : "");
+    stopSample();
+    var first = !state.level;
+    function playBtn(L) {
+      var b = el("button", { type: "button", class: "btn small", "aria-pressed": "false", "aria-label": L.n + "단계 맛보기 듣기" }, [icon("player-play"), "들어 보기"]);
+      b.addEventListener("click", function () {
+        var same = sampleBtn === b; stopSample(); if (same) return;
+        if (!sampleAudio) { sampleAudio = new Audio(); sampleAudio.addEventListener("ended", stopSample); }
+        sampleAudio.src = "audio/samples/L" + L.n + ".mp3"; sampleAudio.play().catch(function () {});
+        sampleBtn = b; b.setAttribute("aria-pressed", "true"); b.querySelector("i").className = "ti ti-player-stop"; b.lastChild.textContent = "멈추기";
+      });
+      return b;
+    }
+    var cards = LEVELS.map(function (L) {
+      var cur = L.n === state.level;
+      var ex = el("div", { class: "ex" }, [el("p", { class: "ex-en", text: L.en }), el("p", { class: "ex-ko", text: L.ko })]);
+      return el("section", { class: "card pad lv" + (cur ? " cur" : ""), "aria-label": L.n + "단계, " + L.toeic }, [
+        el("div", { class: "lv-top" }, [el("span", { class: "lv-n", text: L.n + "단계" }), el("span", { class: "bd", text: L.toeic }), cur ? el("span", { class: "bd done", text: "지금 단계" }) : null]),
+        el("p", { class: "lv-desc", text: L.desc }),
+        ex,
+        el("div", { class: "form" }, [playBtn(L), el("button", { type: "button", class: "btn small" + (cur ? "" : " primary"), disabled: cur, text: cur ? "선택됨" : L.n + "단계로 할게요", onclick: function () {
+          stopSample();
+          chooseLevel(L.n);
+          var before = location.hash;
+          location.hash = "#/";
+          if (before === "#/" || before === "") route();
+        } })])
+      ]);
+    });
+    render([
+      el("div", null, [
+        el("p", { class: "eyebrow", text: first ? "처음 한 번만 고르면 돼요" : "언제든 바꿀 수 있어요" }),
+        el("h1", { text: "나에게 맞는 단계 고르기" })
+      ]),
+      el("p", { class: "muted", style: "margin:0", text: "매일 같은 뉴스를 1~5단계로 다르게 써서 읽어 드려요. 예문을 들어 보고, 대본 없이 70~80% 정도 알아들을 수 있는 단계를 고르세요. 너무 쉬우면 실력이 잘 늘지 않고, 너무 어려우면 금방 지쳐요." })
+    ].concat(cards).concat([
+      el("p", { class: "small muted", text: "예문은 단계 차이를 보여 드리기 위해 만든 문장이에요. 실제 브리핑은 단계에 따라 1분에서 2분 30초 정도예요." })
+    ]));
   }
 
   function viewMe() {
@@ -302,11 +414,16 @@
         cells.push(el("span", { class: (set[d] ? "on" : "") + (d === today ? " today" : ""), title: d, text: String(Number(d.slice(8, 10))) }));
       }
       function stat(n, l) { return el("div", { class: "stat" }, [el("div", { class: "n", text: String(n) }), el("div", { class: "l", text: l })]); }
+      var li = levelInfo(state.level);
       render([
         el("h1", { text: s.name + "님의 기록" }),
+        el("div", { class: "card pad row", style: "justify-content:space-between;flex-wrap:wrap" }, [
+          el("div", null, [el("div", { class: "small muted", text: "내 단계" }), el("div", { style: "font-weight:700;font-size:17px", text: li.n + "단계 · " + li.toeic })]),
+          el("a", { class: "btn small", href: "#/level", text: "단계 바꾸기" })
+        ]),
         el("div", { class: "tiles" }, [stat(s.streak + "일", "연속 접속"), stat(s.days_30 + "일", "최근 30일 접속"), stat((s.completed || []).length + "개", "끝까지 들은 브리핑"), stat(s.lookups + "번", "찾아본 단어")]),
         el("div", { class: "card pad" }, [el("h2", { text: "최근 5주 접속", style: "margin-bottom:10px" }), el("div", { class: "calh" }, "월화수목금토일".split("").map(function (x) { return el("span", { text: x }); })), el("div", { class: "cal", style: "margin-top:5px" }, cells)]),
-        el("button", { class: "btn", type: "button", text: "이 기기에서 로그아웃", onclick: function () { save(KEY, null); state.code = null; state.me = null; state.stats = null; logged = {}; history.replaceState(null, "", location.pathname); viewLogin(); } })
+        el("button", { class: "btn", type: "button", text: "이 기기에서 로그아웃", onclick: function () { save(KEY, null); save(LKEY, null); state.code = null; state.me = null; state.level = null; state.stats = null; logged = {}; history.replaceState(null, "", location.pathname); viewLogin(); } })
       ]);
     });
   }
@@ -350,7 +467,7 @@
           var dots = [];
           for (var i = 13; i >= 0; i--) { var d = new Date(new Date(today + "T12:00:00Z").getTime() - i * 864e5).toISOString().slice(0, 10); dots.push(el("i", { class: set[d] ? "on" : "", title: d })); }
           listBox.appendChild(el("div", { class: "mem" }, [
-            el("div", { class: "top-line" }, [el("span", { class: "nm", text: m.name }), m.is_admin ? el("span", { class: "bd", text: "관리자" }) : null, !m.active ? el("span", { class: "bd", style: "background:var(--danger-bg);color:var(--danger)", text: "중지됨" }) : null, el("span", { class: "small muted", text: "마지막 접속 " + (m.last_visit ? fmtDate(m.last_visit) : "없음") })]),
+            el("div", { class: "top-line" }, [el("span", { class: "nm", text: m.name }), el("span", { class: "bd" + (m.level ? " done" : ""), text: m.level ? m.level + "단계" : "단계 미선택" }), m.is_admin ? el("span", { class: "bd", text: "관리자" }) : null, !m.active ? el("span", { class: "bd", style: "background:var(--danger-bg);color:var(--danger)", text: "중지됨" }) : null, el("span", { class: "small muted", text: "마지막 접속 " + (m.last_visit ? fmtDate(m.last_visit) : "없음") })]),
             el("div", { class: "dots", "aria-label": "최근 14일 접속" }, dots),
             el("div", { class: "nums" }, [el("span", null, ["30일 접속 ", el("b", { text: String(m.days_30) }), "일"]), el("span", null, ["들은 브리핑 ", el("b", { text: String(m.played) })]), el("span", null, ["끝까지 ", el("b", { text: String(m.completed) })]), el("span", null, ["단어 ", el("b", { text: String(m.lookups) })])]),
             el("div", { class: "form" }, [
@@ -363,8 +480,8 @@
     }
 
     function csv() {
-      var head = ["이름", "관리자", "상태", "마지막 접속", "최근30일 접속일", "전체 접속일", "들은 브리핑", "끝까지 들음", "찾아본 단어"];
-      var lines = [head].concat(rows.map(function (m) { return [m.name, m.is_admin ? "Y" : "", m.active ? "사용" : "중지", m.last_visit || "", m.days_30, m.days_total, m.played, m.completed, m.lookups]; }));
+      var head = ["이름", "단계", "관리자", "상태", "마지막 접속", "최근30일 접속일", "전체 접속일", "들은 브리핑", "끝까지 들음", "찾아본 단어"];
+      var lines = [head].concat(rows.map(function (m) { return [m.name, m.level || "", m.is_admin ? "Y" : "", m.active ? "사용" : "중지", m.last_visit || "", m.days_30, m.days_total, m.played, m.completed, m.lookups]; }));
       var text = "﻿" + lines.map(function (r) { return r.map(function (v) { v = String(v == null ? "" : v); return /[",\n]/.test(v) ? '"' + v.replace(/"/g, '""') + '"' : v; }).join(","); }).join("\n");
       var a = el("a", { href: URL.createObjectURL(new Blob([text], { type: "text/csv" })), download: "club-members-" + kstToday() + ".csv" });
       document.body.appendChild(a); a.click(); a.remove();
@@ -385,7 +502,9 @@
     if (!state.code) return;
     var h = location.hash.replace(/^#/, "") || "/";
     var m;
-    if ((m = h.match(/^\/b\/(\d{4}-\d{2}-\d{2})\/([\w-]+)$/))) return viewBriefing(m[1], m[2]);
+    stopSample();
+    if (h === "/level" || !state.level) return viewLevel();
+    if ((m = h.match(/^\/b\/(\d{4}-\d{2}-\d{2})\/([\w-]+?)(?:\/([1-5]))?$/))) return viewBriefing(m[1], m[2], m[3] ? Number(m[3]) : null);
     if (h === "/archive") return viewArchive();
     if (h === "/me") return viewMe();
     if (h === "/admin") return viewAdmin();
@@ -394,6 +513,11 @@
 
   function start(code, me) {
     state.code = code; state.me = me;
+    // 서버에 저장된 단계가 먼저이고, 서버 저장 전(업데이트 SQL 실행 전)에는 이 기기에 저장한 단계를 씁니다.
+    var local = localLevel(code);
+    state.level = me.level || local || null;
+    if (me.level) saveLocalLevel(code, me.level);
+    else if (local) api.setLevel(code, local).catch(function () {});
     document.getElementById("who").textContent = me.name + "님";
     document.getElementById("adminTab").hidden = !me.is_admin;
     tabs.hidden = false;
