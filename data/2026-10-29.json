@@ -1,0 +1,150 @@
+{
+ "date": "2026-10-29",
+ "level": 1,
+ "items": [
+  {
+   "id": "2026-10-29-k1",
+   "section": "k",
+   "icon": "cpu",
+   "headline": "SK hynix posts record profit on AI memory demand",
+   "ko": "SK하이닉스, AI 메모리 수요로 사상 최대 실적",
+   "url": "https://www.koreaherald.com/article/10917003",
+   "source": "Korea Herald",
+   "audio": "audio/2026-10-29-k1.mp3",
+   "duration": 123.0,
+   "speed": 0.9,
+   "p": [
+    "Good morning. This is your morning news in English. Today's top story is about SK hynix, one of Korea's biggest chip makers.",
+    "SK hynix reported its results for the third quarter of this year on Wednesday. A quarter is a three-month period. The company's sales were more than one hundred trillion won for the first time.",
+    "Its operating profit was about eighty-three trillion won. Operating profit is the money a company makes from its main business. This means the company earned about eighty won for every one hundred won of sales. That is a very high level.",
+    "Why is the company doing so well? The main reason is artificial intelligence, or AI. AI computers need a lot of fast memory chips. SK hynix makes a special chip called HBM. HBM stands for high bandwidth memory. It helps AI processors work with large amounts of data very quickly.",
+    "SK hynix also said it has long-term deals with fourteen major customers. These deals cover more than half of what it can produce in 2027 and 2028. The company expects demand for memory chips to be bigger than supply until 2030.",
+    "The company plans to share its success with investors. It plans to return about one hundred trillion won to shareholders this year, through dividends and by buying back its own shares. It will also invest more next year, as a new factory in Yongin starts full operation.",
+    "Why does this matter to us? Chips are one of Korea's most important exports. Strong chip sales can help the Korean economy and the stock market.",
+    "To sum up, SK hynix made record profits because of strong demand for AI memory chips, and it expects this demand to continue for several years. That's all for today's news. Thank you for listening."
+   ],
+   "tr": [
+    "좋은 아침입니다. 영어로 듣는 아침 뉴스입니다. 오늘의 주요 뉴스는 한국의 대표적인 반도체 회사 중 하나인 SK하이닉스에 관한 소식입니다.",
+    "SK하이닉스는 수요일에 올해 3분기 실적을 발표했습니다. 분기란 3개월 기간을 말합니다. 회사의 매출은 처음으로 100조 원을 넘었습니다.",
+    "영업이익은 약 83조 원이었습니다. 영업이익이란 회사가 주된 사업으로 버는 돈을 말합니다. 이는 회사가 매출 100원당 약 80원을 벌었다는 뜻입니다. 아주 높은 수준입니다.",
+    "회사는 왜 이렇게 잘하고 있을까요? 가장 큰 이유는 인공지능, 즉 AI입니다. AI 컴퓨터에는 빠른 메모리 칩이 많이 필요합니다. SK하이닉스는 HBM이라는 특별한 칩을 만듭니다. HBM은 고대역폭 메모리를 뜻합니다. AI 프로세서가 많은 양의 데이터를 아주 빠르게 처리하도록 돕습니다.",
+    "SK하이닉스는 또 주요 고객 14곳과 장기 계약을 맺었다고 밝혔습니다. 이 계약은 2027년과 2028년 생산 가능량의 절반 이상을 차지합니다. 회사는 2030년까지 메모리 칩 수요가 공급보다 클 것으로 예상합니다.",
+    "회사는 성과를 투자자들과 나눌 계획입니다. 올해 배당과 자사주 매입을 통해 약 100조 원을 주주들에게 돌려줄 계획입니다. 또 용인의 새 공장이 본격적으로 가동되는 내년에는 투자를 늘릴 예정입니다.",
+    "이것이 왜 우리에게 중요할까요? 반도체는 한국의 가장 중요한 수출품 중 하나입니다. 반도체 판매가 좋으면 한국 경제와 주식시장에 도움이 될 수 있습니다.",
+    "정리하면, SK하이닉스는 AI 메모리 칩에 대한 강한 수요 덕분에 사상 최대 이익을 냈고, 이런 수요가 몇 년 동안 이어질 것으로 예상합니다. 오늘 뉴스는 여기까지입니다. 들어 주셔서 감사합니다."
+   ],
+   "g": {
+    "chip": "반도체 칩",
+    "chip makers": "반도체 제조사",
+    "maker": "제조사, 만드는 회사",
+    "reported": "발표했다, 보고했다",
+    "result": "결과, 실적",
+    "third quarter": "3분기",
+    "quarter": "분기 (3개월)",
+    "period": "기간",
+    "sales": "매출, 판매액",
+    "trillion": "조 (1,000,000,000,000)",
+    "for the first time": "처음으로",
+    "operating profit": "영업이익",
+    "profit": "이익",
+    "main business": "주된 사업",
+    "earned": "벌었다 (earn의 과거형)",
+    "level": "수준",
+    "doing so well": "아주 잘하고 있는",
+    "reason": "이유",
+    "artificial intelligence": "인공지능 (AI)",
+    "memory chips": "메모리 칩 (기억 장치 반도체)",
+    "memory": "메모리, 기억 장치",
+    "special": "특별한",
+    "stands for": "~을 뜻하다, ~의 약자이다",
+    "high bandwidth memory": "고대역폭 메모리 (HBM)",
+    "processor": "프로세서 (연산 장치)",
+    "large amounts of": "많은 양의",
+    "data": "데이터, 자료",
+    "quickly": "빠르게",
+    "long-term": "장기의",
+    "deal": "계약, 거래",
+    "major": "주요한",
+    "customer": "고객",
+    "cover": "차지하다, 포함하다",
+    "what it can produce": "그 회사가 생산할 수 있는 양",
+    "produce": "생산하다",
+    "expects": "예상하다 (expect)",
+    "demand": "수요",
+    "supply": "공급",
+    "share": "나누다, 공유하다",
+    "success": "성공, 성과",
+    "investor": "투자자",
+    "return": "돌려주다",
+    "shareholder": "주주",
+    "dividend": "배당금",
+    "buying back": "되사기 (자사주 매입)",
+    "shares": "주식",
+    "invest": "투자하다",
+    "factory": "공장",
+    "full operation": "본격 가동",
+    "matter": "중요하다",
+    "export": "수출품; 수출하다",
+    "economy": "경제",
+    "stock market": "주식시장",
+    "sum up": "요약하다, 정리하다",
+    "record": "기록적인, 사상 최대의",
+    "continue": "계속되다",
+    "several": "몇몇의, 여러"
+   },
+   "ph": [
+    "high bandwidth memory",
+    "artificial intelligence",
+    "what it can produce",
+    "for the first time",
+    "large amounts of",
+    "operating profit",
+    "full operation",
+    "third quarter",
+    "main business",
+    "doing so well",
+    "memory chips",
+    "chip makers",
+    "stock market",
+    "buying back",
+    "stands for",
+    "long-term",
+    "sum up"
+   ],
+   "kw": [
+    [
+     "quarter",
+     "분기 (3개월)"
+    ],
+    [
+     "operating profit",
+     "영업이익"
+    ],
+    [
+     "demand / supply",
+     "수요 / 공급"
+    ],
+    [
+     "long-term deal",
+     "장기 계약"
+    ],
+    [
+     "shareholder",
+     "주주"
+    ],
+    [
+     "dividend",
+     "배당금"
+    ],
+    [
+     "stands for",
+     "~의 약자이다"
+    ],
+    [
+     "export",
+     "수출품, 수출하다"
+    ]
+   ]
+  }
+ ]
+}

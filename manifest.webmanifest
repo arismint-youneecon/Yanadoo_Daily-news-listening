@@ -1,0 +1,15 @@
+{
+  "name": "아침 영어 뉴스 클럽",
+  "short_name": "영어뉴스클럽",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#F3F5F4",
+  "theme_color": "#1E6B5C",
+  "lang": "ko",
+  "icons": [
+    {"src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png"},
+    {"src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png"},
+    {"src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable"}
+  ]
+}
