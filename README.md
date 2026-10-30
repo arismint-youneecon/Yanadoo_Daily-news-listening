@@ -38,6 +38,22 @@ Claude 계정 없이 개인 접속 코드로 들어오며, 관리자는 회원�
 이미 `setup.sql`을 실행한 프로젝트는 새 기능이 생길 때 `supabase/update-*.sql`을 번호 순서대로 한 번씩 SQL Editor에서 실행합니다. 여러 번 실행해도 안전합니다.
 
 - `update-1-levels.sql`: 회원별 단계 저장
+- `update-2-push.sql`: 매일 앱 알림 (아래 '매일 알림' 참고)
+
+새 프로젝트는 `setup.sql` → `update-1-levels.sql` → `update-2-push.sql` 순서로 실행합니다.
+
+## 매일 알림
+
+회원은 `내 기록`에서 이 기기의 알림을 켜고 알림 시간(기본 오전 6:40, 10분 단위)을 고릅니다. 안드로이드는 크롬과 삼성 인터넷에서, 아이폰은 홈 화면에 추가한 앱(iOS 16.4 이상)에서 받을 수 있습니다.
+
+| 부분 | 하는 일 | 위치 |
+|---|---|---|
+| 서비스 워커 | 휴대폰에서 알림을 띄우고, 누르면 앱을 엶 | `sw.js` |
+| 매분 확인 | 알림 시간이 된 회원이 있을 때만 발송 함수를 부름. 오늘 뉴스가 아직 없으면 최대 60분 기다림 | Supabase pg_cron (`update-2-push.sql`) |
+| 발송 함수 | 표준 Web Push로 암호화해 보내고, 없어진 기기는 지움 | Supabase Edge Function `daily-push` (`supabase/functions/daily-push/index.ts`) |
+| 발송 키 | VAPID 개인 키와 발송 비밀값 | Supabase `push_config` 테이블에만 저장 (저장소에 없음) |
+
+설정 순서: `update-2-push.sql` 실행 → Edge Functions에서 `daily-push` 함수를 만들고 이 파일 내용을 붙여 배포 → 함수 설정에서 JWT 확인(Enforce JWT verification) 끄기 → 관리자에게 따로 받은 발송 키 SQL 실행.
 
 ## 보안과 개인정보
 

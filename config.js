@@ -3,5 +3,7 @@
 window.CLUB_CONFIG = {
   clubName: "아침 영어 뉴스 클럽",
   supabaseUrl: "https://idceljjzibugxpgnxtxv.supabase.co",
-  supabaseAnonKey: "sb_publishable_u-4Q1vaO0gO1Kroek0Wt7w_2mcP5s_U"
+  supabaseAnonKey: "sb_publishable_u-4Q1vaO0gO1Kroek0Wt7w_2mcP5s_U",
+  // 앱 알림용 공개 키(VAPID public key). 짝이 되는 개인 키는 Supabase에만 있습니다.
+  vapidPublicKey: "BLUzBwF7UXBuK58SbDULjscahhStns8Qr3nOMV8D2az2gV2sWvGk7NVyYi0DjPzTUaloTNO8d7NL-nvC-gKMY28"
 };

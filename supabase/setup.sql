@@ -1,6 +1,7 @@
 -- 아침 영어 뉴스 클럽: Supabase 설정
 -- Supabase 대시보드 > SQL Editor에 이 파일 전체를 붙여넣고 Run을 누르세요.
 -- 마지막 줄의 '관리자 이름'을 본인 이름으로 바꾼 뒤 실행하면, 결과 칸에 관리자 접속 코드가 나옵니다.
+-- 새 프로젝트라면 이어서 update-1-levels.sql, update-2-push.sql을 차례로 실행하세요.
 
 create extension if not exists pgcrypto with schema extensions;
 

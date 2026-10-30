@@ -6,7 +6,7 @@
   var LKEY = "enc_level";
   var app = document.getElementById("app");
   var tabs = document.getElementById("tabs");
-  var state = { code: null, me: null, level: null, stats: null, index: null, days: {} };
+  var state = { code: null, me: null, level: null, notifyTime: "06:40", stats: null, index: null, days: {} };
 
   // 난이도 1~5단계. 같은 뉴스를 단계마다 다르게 써서 읽어 줍니다.
   var LEVELS = [
@@ -56,6 +56,10 @@
       login: function (c) { return rpc("club_login", { p_code: c }); },
       log: function (c, b, k, d) { return rpc("club_log", { p_code: c, p_briefing: b, p_kind: k, p_detail: d == null ? null : d }); },
       setLevel: function (c, n) { return rpc("club_set_level", { p_code: c, p_level: n }); },
+      pushSubscribe: function (c, ep, k, a, dev) { return rpc("club_push_subscribe", { p_code: c, p_endpoint: ep, p_p256dh: k, p_auth: a, p_device: dev }); },
+      pushUnsubscribe: function (c, ep) { return rpc("club_push_unsubscribe", { p_code: c, p_endpoint: ep }); },
+      setNotifyTime: function (c, t) { return rpc("club_set_notify_time", { p_code: c, p_time: t }); },
+      pushTest: function (c) { return rpc("club_push_test", { p_code: c }); },
       myStats: function (c) { return rpc("club_my_stats", { p_code: c }); },
       members: function (c) { return rpc("club_admin_members", { p_code: c }); },
       addMember: function (c, n, a) { return rpc("club_admin_add_member", { p_code: c, p_name: n, p_is_admin: !!a }); },
@@ -81,7 +85,11 @@
     function p(v) { return new Promise(function (res) { setTimeout(function () { res(v); }, 60); }); }
     function since(days) { return kst(new Date(Date.now() - days * 864e5)); }
     return {
-      login: function (c) { var d = db(), m = find(d, c); if (!m) return p(null); visit(d, m); put(d); return p({ name: m.name, is_admin: m.is_admin, level: m.level || null }); },
+      login: function (c) { var d = db(), m = find(d, c); if (!m) return p(null); visit(d, m); put(d); return p({ name: m.name, is_admin: m.is_admin, level: m.level || null, notify_time: m.notify_time || "06:40" }); },
+      pushSubscribe: function () { return p(true); },
+      pushUnsubscribe: function () { return p(true); },
+      setNotifyTime: function (c, t) { var d = db(), m = find(d, c); if (!m) return p(null); d.members.forEach(function (x) { if (x.id === m.id) x.notify_time = t; }); put(d); return p(t); },
+      pushTest: function () { return p(0); },
       setLevel: function (c, n) { var d = db(), m = find(d, c); if (!m) return p(false); d.members.forEach(function (x) { if (x.id === m.id) x.level = n; }); put(d); return p(true); },
       log: function (c, b, k, det) { var d = db(), m = find(d, c); if (!m) return p(false); visit(d, m); d.events.push({ member_id: m.id, briefing_id: b, kind: k, detail: det || null, at: new Date().toISOString() }); put(d); return p(true); },
       myStats: function (c) {
@@ -100,7 +108,7 @@
           var vs = d.visits.filter(function (v) { return v.member_id === m.id; }).map(function (v) { return v.day; }).sort();
           var ev = d.events.filter(function (e) { return e.member_id === m.id; });
           var uniq = function (k) { var o = {}; ev.filter(function (e) { return e.kind === k; }).forEach(function (e) { o[e.briefing_id] = 1; }); return Object.keys(o).length; };
-          return { id: m.id, name: m.name, is_admin: m.is_admin, active: m.active, created_at: m.created_at, level: m.level || null, last_visit: vs[vs.length - 1] || null, days_30: vs.filter(function (x) { return x > since(30); }).length, days_total: vs.length, recent_days: vs.filter(function (x) { return x > since(14); }), played: uniq("play"), completed: uniq("complete"), lookups: ev.filter(function (e) { return e.kind === "lookup"; }).length };
+          return { id: m.id, name: m.name, is_admin: m.is_admin, active: m.active, created_at: m.created_at, level: m.level || null, notify_time: m.notify_time || "06:40", push_devices: 0, last_visit: vs[vs.length - 1] || null, days_30: vs.filter(function (x) { return x > since(30); }).length, days_total: vs.length, recent_days: vs.filter(function (x) { return x > since(14); }), played: uniq("play"), completed: uniq("complete"), lookups: ev.filter(function (e) { return e.kind === "lookup"; }).length };
         }));
       },
       addMember: function (c, n, a) { var d = db(); admin(d, c); var code = newCode(), id = "m" + (d.members.length + 1) + Date.now(); d.members.push({ id: id, name: n, code: code, is_admin: !!a, active: true, created_at: new Date().toISOString() }); put(d); return p({ id: id, code: code }); },
@@ -351,6 +359,117 @@
     }).catch(function () { render([errBox("브리핑을 불러오지 못했어요.")]); });
   }
 
+  /* ---------- 매일 알림 ---------- */
+  var PUSH_KEY = CFG.vapidPublicKey || "";
+  function pushEnv() {
+    var ua = navigator.userAgent;
+    var ios = /iPhone|iPad|iPod/.test(ua) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+    var standalone = (window.matchMedia && matchMedia("(display-mode: standalone)").matches) || navigator.standalone === true;
+    var supported = "serviceWorker" in navigator && "PushManager" in window && "Notification" in window;
+    var inapp = /KAKAOTALK|NAVER\(|Instagram|FBAN|FBAV|Line\//i.test(ua);
+    return { ios: ios, standalone: standalone, supported: supported, inapp: inapp };
+  }
+  function swReg() { return navigator.serviceWorker.register("sw.js").then(function () { return navigator.serviceWorker.ready; }); }
+  function keyBytes(s) {
+    var b = atob(s.replace(/-/g, "+").replace(/_/g, "/") + "===".slice((s.length + 3) % 4)), out = new Uint8Array(b.length);
+    for (var i = 0; i < b.length; i++) out[i] = b.charCodeAt(i);
+    return out;
+  }
+  function currentSub() { return pushEnv().supported ? swReg().then(function (r) { return r.pushManager.getSubscription(); }) : Promise.resolve(null); }
+  function deviceName() {
+    var u = navigator.userAgent;
+    if (/iPhone/.test(u)) return "iPhone"; if (/iPad/.test(u)) return "iPad";
+    if (/Android/.test(u)) return "Android " + (/SamsungBrowser/.test(u) ? "삼성 인터넷" : "크롬");
+    return /Mac/.test(u) ? "Mac" : /Windows/.test(u) ? "Windows" : "기기";
+  }
+  function sendSub(sub) { var j = sub.toJSON(); return api.pushSubscribe(state.code, j.endpoint, j.keys.p256dh, j.keys.auth, deviceName()); }
+  // 버튼을 누른 바로 그 순간에 권한을 물어야 아이폰에서도 동작합니다.
+  function pushOn() {
+    return Notification.requestPermission().then(function (perm) {
+      if (perm !== "granted") throw new Error("denied");
+      return swReg();
+    }).then(function (reg) {
+      return reg.pushManager.getSubscription().then(function (s) { return s || reg.pushManager.subscribe({ userVisibleOnly: true, applicationServerKey: keyBytes(PUSH_KEY) }); });
+    }).then(function (sub) { return sendSub(sub).then(function () { return sub; }); });
+  }
+  function pushOff() {
+    return currentSub().then(function (sub) {
+      if (!sub) return;
+      var ep = sub.endpoint;
+      return sub.unsubscribe().then(function () { return api.pushUnsubscribe(state.code, ep).catch(function () {}); });
+    });
+  }
+  // 앱을 열 때마다 이 기기의 알림 등록을 서버와 맞춥니다(주소가 바뀌었거나 다른 회원이 쓰던 기기일 때).
+  function resyncPush() {
+    if (DEMO || !PUSH_KEY || !pushEnv().supported || Notification.permission !== "granted") return;
+    currentSub().then(function (sub) { if (sub) sendSub(sub).catch(function () {}); }).catch(function () {});
+  }
+  function setupMissing(e) { return /PGRST202|Could not find the function|schema cache/i.test(String(e && e.message)); }
+  function timeOptions(cur) {
+    var list = [];
+    for (var h = 5; h <= 23; h++) for (var m = 0; m < 60; m += 10) list.push((h < 10 ? "0" : "") + h + ":" + (m < 10 ? "0" : "") + m);
+    if (cur && list.indexOf(cur) < 0) { list.push(cur); list.sort(); }
+    return list;
+  }
+
+  function notifyCard() {
+    var env = pushEnv();
+    var msg = el("p", { class: "small", role: "status", style: "margin:0;min-height:1.4em" });
+    var status = el("p", { class: "small muted", style: "margin:0", text: "확인하는 중…" });
+    var sel = el("select", { class: "sel", "aria-label": "알림 시간" }, timeOptions(state.notifyTime).map(function (t) {
+      var o = el("option", { value: t, text: (Number(t.slice(0, 2)) < 12 ? "오전 " : "오후 ") + (Number(t.slice(0, 2)) % 12 || 12) + ":" + t.slice(3) }); if (t === state.notifyTime) o.selected = true; return o;
+    }));
+    sel.addEventListener("change", function () {
+      var t = sel.value; msg.className = "small"; msg.textContent = "저장하는 중…";
+      api.setNotifyTime(state.code, t).then(function (r) {
+        state.notifyTime = r || t; if (state.me) state.me.notify_time = state.notifyTime;
+        msg.textContent = "알림 시간을 바꿨어요: 매일 " + sel.options[sel.selectedIndex].text;
+      }).catch(function (e) { msg.className = "small err"; msg.textContent = setupMissing(e) ? "관리자 알림 설정이 아직 끝나지 않았어요." : "저장하지 못했어요. 잠시 뒤 다시 해 주세요."; });
+    });
+    var btns = el("div", { class: "form" });
+    function say(t, bad) { msg.className = "small" + (bad ? " err" : ""); msg.textContent = t; }
+    function draw(on) {
+      btns.innerHTML = "";
+      status.textContent = on ? "이 기기에서 알림을 받고 있어요." : "이 기기에서는 알림이 꺼져 있어요.";
+      if (on) {
+        btns.appendChild(el("button", { type: "button", class: "btn small", text: "시험 알림 보내기", onclick: function () {
+          say("요청하는 중…");
+          api.pushTest(state.code).then(function (n) { say(n > 0 ? "1분 안에 시험 알림이 와요." : "이 기기의 알림 등록을 다시 해 주세요(끄고 다시 켜기).", n <= 0); })
+            .catch(function (e) { say(setupMissing(e) ? "관리자 알림 설정이 아직 끝나지 않았어요." : "요청하지 못했어요.", true); });
+        } }));
+        btns.appendChild(el("button", { type: "button", class: "btn small", text: "알림 끄기", onclick: function () {
+          pushOff().then(function () { draw(false); say("이 기기의 알림을 껐어요."); }).catch(function () { say("끄지 못했어요. 잠시 뒤 다시 해 주세요.", true); });
+        } }));
+      } else {
+        btns.appendChild(el("button", { type: "button", class: "btn small primary", text: "알림 켜기", onclick: function () {
+          say("켜는 중…");
+          pushOn().then(function () { draw(true); say("알림을 켰어요. '시험 알림 보내기'로 확인해 보세요."); })
+            .catch(function (e) {
+              if (String(e && e.message) === "denied") say(Notification.permission === "denied" ? "알림이 차단되어 있어요. 휴대폰 설정에서 이 앱(또는 브라우저)의 알림을 허용한 뒤 다시 눌러 주세요." : "알림을 허용해야 받을 수 있어요.", true);
+              else say(setupMissing(e) ? "관리자 알림 설정이 아직 끝나지 않았어요." : "켜지 못했어요. 잠시 뒤 다시 해 주세요.", true);
+            });
+        } }));
+      }
+    }
+
+    var guide = null;
+    if (DEMO) guide = "데모 모드에서는 알림을 보낼 수 없어요. 시간만 바꿔 볼 수 있어요.";
+    else if (!PUSH_KEY) guide = "관리자 알림 설정이 아직 끝나지 않았어요.";
+    else if (env.inapp) guide = "카카오톡 같은 앱 안의 브라우저에서는 알림을 받을 수 없어요. 오른쪽 위 메뉴에서 '다른 브라우저로 열기'를 눌러 크롬이나 사파리로 열어 주세요.";
+    else if (env.ios && !env.standalone) guide = "아이폰은 홈 화면에 추가한 앱에서만 알림을 받을 수 있어요. Safari 아래쪽 공유 버튼 → '홈 화면에 추가'를 누른 뒤, 홈 화면의 '영어뉴스클럽' 앱으로 열어 여기서 알림을 켜 주세요. (iOS 16.4 이상)";
+    else if (!env.supported) guide = "이 브라우저는 알림을 지원하지 않아요. 안드로이드는 크롬이나 삼성 인터넷, 아이폰은 홈 화면에 추가한 앱에서 켜 주세요.";
+
+    if (guide) { status.textContent = guide; status.className = "small note"; }
+    else currentSub().then(function (sub) { draw(!!sub); }).catch(function () { draw(false); });
+
+    return el("div", { class: "card pad", style: "display:flex;flex-direction:column;gap:10px" }, [
+      el("h2", { text: "매일 알림" }),
+      el("label", { class: "row small", style: "gap:10px" }, [el("span", { text: "알림 시간" }), sel]),
+      status, btns, msg,
+      el("p", { class: "small muted", style: "margin:0", text: "알림 시간은 내 모든 기기에 똑같이 적용돼요. 뉴스는 보통 아침 6시 30분 전에 올라오고, 그보다 이른 시간으로 정하면 뉴스가 올라오는 대로(최대 1시간 뒤) 알려 드려요." })
+    ]);
+  }
+
   // 단계 고르기: 설명, 같은 내용을 단계별로 쓴 예문, 맛보기 음성
   var sampleAudio = null, sampleBtn = null;
   function stopSample() {
@@ -421,9 +540,14 @@
           el("div", null, [el("div", { class: "small muted", text: "내 단계" }), el("div", { style: "font-weight:700;font-size:17px", text: li.n + "단계 · " + li.toeic })]),
           el("a", { class: "btn small", href: "#/level", text: "단계 바꾸기" })
         ]),
+        notifyCard(),
         el("div", { class: "tiles" }, [stat(s.streak + "일", "연속 접속"), stat(s.days_30 + "일", "최근 30일 접속"), stat((s.completed || []).length + "개", "끝까지 들은 브리핑"), stat(s.lookups + "번", "찾아본 단어")]),
         el("div", { class: "card pad" }, [el("h2", { text: "최근 5주 접속", style: "margin-bottom:10px" }), el("div", { class: "calh" }, "월화수목금토일".split("").map(function (x) { return el("span", { text: x }); })), el("div", { class: "cal", style: "margin-top:5px" }, cells)]),
-        el("button", { class: "btn", type: "button", text: "이 기기에서 로그아웃", onclick: function () { save(KEY, null); save(LKEY, null); state.code = null; state.me = null; state.level = null; state.stats = null; logged = {}; history.replaceState(null, "", location.pathname); viewLogin(); } })
+        el("button", { class: "btn", type: "button", text: "이 기기에서 로그아웃", onclick: function () {
+          // 로그아웃하면 이 기기의 알림도 끕니다(다른 사람이 같은 기기를 쓸 수 있으므로).
+          var off = (!DEMO && pushEnv().supported) ? pushOff().catch(function () {}) : Promise.resolve();
+          off.then(function () { save(KEY, null); save(LKEY, null); state.code = null; state.me = null; state.level = null; state.stats = null; logged = {}; history.replaceState(null, "", location.pathname); viewLogin(); });
+        } })
       ]);
     });
   }
@@ -469,7 +593,7 @@
           listBox.appendChild(el("div", { class: "mem" }, [
             el("div", { class: "top-line" }, [el("span", { class: "nm", text: m.name }), el("span", { class: "bd" + (m.level ? " done" : ""), text: m.level ? m.level + "단계" : "단계 미선택" }), m.is_admin ? el("span", { class: "bd", text: "관리자" }) : null, !m.active ? el("span", { class: "bd", style: "background:var(--danger-bg);color:var(--danger)", text: "중지됨" }) : null, el("span", { class: "small muted", text: "마지막 접속 " + (m.last_visit ? fmtDate(m.last_visit) : "없음") })]),
             el("div", { class: "dots", "aria-label": "최근 14일 접속" }, dots),
-            el("div", { class: "nums" }, [el("span", null, ["30일 접속 ", el("b", { text: String(m.days_30) }), "일"]), el("span", null, ["들은 브리핑 ", el("b", { text: String(m.played) })]), el("span", null, ["끝까지 ", el("b", { text: String(m.completed) })]), el("span", null, ["단어 ", el("b", { text: String(m.lookups) })])]),
+            el("div", { class: "nums" }, [el("span", null, ["30일 접속 ", el("b", { text: String(m.days_30) }), "일"]), el("span", null, ["들은 브리핑 ", el("b", { text: String(m.played) })]), el("span", null, ["끝까지 ", el("b", { text: String(m.completed) })]), el("span", null, ["단어 ", el("b", { text: String(m.lookups) })]), el("span", null, ["알림 ", el("b", { text: m.push_devices ? (m.notify_time || "06:40") : "꺼짐" })])]),
             el("div", { class: "form" }, [
               el("button", { class: "btn small", type: "button", text: "코드 재발급", onclick: function () { api.resetCode(state.code, m.id).then(function (c) { showCode(m.name + "님의 새 접속 코드", c); window.scrollTo(0, 0); }); } }),
               el("button", { class: "btn small", type: "button", text: m.active ? "접속 중지" : "다시 허용", onclick: function () { api.setActive(state.code, m.id, !m.active).then(loadList).catch(function (er) { showMsg(/cannot_change_self/.test(er.message) ? "본인 계정은 중지할 수 없어요." : "바꾸지 못했어요: " + er.message); }); } })
@@ -480,8 +604,8 @@
     }
 
     function csv() {
-      var head = ["이름", "단계", "관리자", "상태", "마지막 접속", "최근30일 접속일", "전체 접속일", "들은 브리핑", "끝까지 들음", "찾아본 단어"];
-      var lines = [head].concat(rows.map(function (m) { return [m.name, m.level || "", m.is_admin ? "Y" : "", m.active ? "사용" : "중지", m.last_visit || "", m.days_30, m.days_total, m.played, m.completed, m.lookups]; }));
+      var head = ["이름", "단계", "관리자", "상태", "마지막 접속", "최근30일 접속일", "전체 접속일", "들은 브리핑", "끝까지 들음", "찾아본 단어", "알림 시간", "알림 기기 수"];
+      var lines = [head].concat(rows.map(function (m) { return [m.name, m.level || "", m.is_admin ? "Y" : "", m.active ? "사용" : "중지", m.last_visit || "", m.days_30, m.days_total, m.played, m.completed, m.lookups, m.notify_time || "06:40", m.push_devices || 0]; }));
       var text = "﻿" + lines.map(function (r) { return r.map(function (v) { v = String(v == null ? "" : v); return /[",\n]/.test(v) ? '"' + v.replace(/"/g, '""') + '"' : v; }).join(","); }).join("\n");
       var a = el("a", { href: URL.createObjectURL(new Blob([text], { type: "text/csv" })), download: "club-members-" + kstToday() + ".csv" });
       document.body.appendChild(a); a.click(); a.remove();
@@ -516,6 +640,8 @@
     // 서버에 저장된 단계가 먼저이고, 서버 저장 전(업데이트 SQL 실행 전)에는 이 기기에 저장한 단계를 씁니다.
     var local = localLevel(code);
     state.level = me.level || local || null;
+    state.notifyTime = me.notify_time || "06:40";
+    resyncPush();
     if (me.level) saveLocalLevel(code, me.level);
     else if (local) api.setLevel(code, local).catch(function () {});
     document.getElementById("who").textContent = me.name + "님";
