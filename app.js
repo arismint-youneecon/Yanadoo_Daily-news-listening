@@ -16,9 +16,12 @@
   /* ---------- backend ---------- */
   function realApi() {
     function rpc(fn, args) {
+      // 예전 anon key(eyJ...)는 Authorization에도 넣고, 새 publishable key(sb_publishable_...)는 apikey에만 넣습니다.
+      var headers = { "Content-Type": "application/json", apikey: CFG.supabaseAnonKey };
+      if (/^eyJ/.test(CFG.supabaseAnonKey)) headers.Authorization = "Bearer " + CFG.supabaseAnonKey;
       return fetch(CFG.supabaseUrl.replace(/\/$/, "") + "/rest/v1/rpc/" + fn, {
         method: "POST",
-        headers: { "Content-Type": "application/json", apikey: CFG.supabaseAnonKey, Authorization: "Bearer " + CFG.supabaseAnonKey },
+        headers: headers,
         body: JSON.stringify(args)
       }).then(function (r) {
         return r.text().then(function (t) {
