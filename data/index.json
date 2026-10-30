@@ -1,6 +1,50 @@
 {
- "updated": "2026-10-30T01:32:56Z",
+ "updated": "2026-10-30T21:15:01Z",
  "days": [
+  {
+   "date": "2026-10-31",
+   "items": [
+    {
+     "id": "2026-10-31-g1",
+     "section": "g",
+     "icon": "building-bank",
+     "ko": "라가르드 ECB 총재, 조기 사임 발표",
+     "h": {
+      "1": "The head of a big European bank will leave early",
+      "2": "European Central Bank head to step down early",
+      "3": "ECB President Lagarde to step down nine months early",
+      "4": "ECB's Lagarde to leave nine months before end of term",
+      "5": "Lagarde to bow out of ECB early, setting up succession race"
+     }
+    },
+    {
+     "id": "2026-10-31-g2",
+     "section": "g",
+     "icon": "checkbox",
+     "ko": "이스라엘 선관위, 부정선거 주장 일축",
+     "h": {
+      "1": "Israel's election office says there is no proof of cheating",
+      "2": "Israel's election committee rejects claims of a stolen vote",
+      "3": "Israel's election committee: 'No basis' for fraud claims",
+      "4": "Israel's election officials reject Likud's claim of a stolen vote",
+      "5": "Israel's election watchdog dismisses Likud's 'stolen election' charge"
+     }
+    },
+    {
+     "id": "2026-10-31-k1",
+     "section": "k",
+     "icon": "shield",
+     "ko": "무단 외출 64회 장교, 정직 2개월 유지",
+     "h": {
+      "1": "Army officer left his base 64 times",
+      "2": "Court supports punishment for army officer who often left his base",
+      "3": "Court upholds suspension of officer who left base 64 times",
+      "4": "Court backs suspension of officer who left base 64 times",
+      "5": "'I need to feed my lizard': court upholds officer's suspension"
+     }
+    }
+   ]
+  },
   {
    "date": "2026-10-29",
    "items": [
