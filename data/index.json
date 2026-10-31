@@ -1,6 +1,50 @@
 {
- "updated": "2026-10-30T21:15:01Z",
+ "updated": "2026-10-31T21:22:30Z",
  "days": [
+  {
+   "date": "2026-11-01",
+   "items": [
+    {
+     "id": "2026-11-01-g1",
+     "section": "g",
+     "icon": "gavel",
+     "ko": "폴란드 헌법재판소장 직무정지 갈등",
+     "h": {
+      "1": "A big fight over Poland's top court",
+      "2": "Poland's leaders fight over the top court",
+      "3": "Poland's top court in crisis as its head is suspended",
+      "4": "Poland's constitutional court chief suspended, sparking political clash",
+      "5": "Poland's court crisis boils over as tribunal chief is suspended"
+     }
+    },
+    {
+     "id": "2026-11-01-g2",
+     "section": "g",
+     "icon": "bus",
+     "ko": "점령지 올레시키 주민 대피",
+     "h": {
+      "1": "People leave a town held by Russia",
+      "2": "A short ceasefire helps people leave Oleshky",
+      "3": "Rare local ceasefire lets Oleshky residents reach Ukraine",
+      "4": "Oleshky residents reach Ukraine under rare local truce",
+      "5": "Localized truce opens rare escape route from occupied Oleshky"
+     }
+    },
+    {
+     "id": "2026-11-01-k1",
+     "section": "k",
+     "icon": "device-gamepad-2",
+     "ko": "콜오브듀티, 이태원 영상 사과",
+     "h": {
+      "1": "Game company says sorry for Itaewon video",
+      "2": "Call of Duty maker apologizes for Itaewon video",
+      "3": "Call of Duty publisher apologizes for using Itaewon footage",
+      "4": "Activision apologizes, will cut Itaewon footage from Call of Duty",
+      "5": "Activision says sorry over Itaewon footage in new Call of Duty"
+     }
+    }
+   ]
+  },
   {
    "date": "2026-10-31",
    "items": [
