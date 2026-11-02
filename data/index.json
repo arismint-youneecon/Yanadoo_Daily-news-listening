@@ -1,6 +1,50 @@
 {
- "updated": "2026-10-31T21:22:30Z",
+ "updated": "2026-11-02T22:07:00Z",
  "days": [
+  {
+   "date": "2026-11-03",
+   "items": [
+    {
+     "id": "2026-11-03-g1",
+     "section": "g",
+     "icon": "checkbox",
+     "ko": "불가리아 첫 여성 대통령 당선",
+     "h": {
+      "1": "Bulgaria has its first woman president",
+      "2": "Bulgaria elects its first woman president",
+      "3": "Bulgaria elects its first woman president in a runoff",
+      "4": "Iotova becomes Bulgaria's first elected female president",
+      "5": "Bulgaria hands presidency to a woman for the first time"
+     }
+    },
+    {
+     "id": "2026-11-03-g2",
+     "section": "g",
+     "icon": "fridge",
+     "ko": "유럽 마트 냉장고 해킹 피해",
+     "h": {
+      "1": "Hackers attack supermarket fridges in Europe",
+      "2": "Cyberattacks hit supermarket fridges in five countries",
+      "3": "Hackers target supermarket freezers in Europe",
+      "4": "Apparent cyberattacks disrupt supermarket refrigeration across Europe",
+      "5": "Suspected hackers send supermarket freezers into meltdown across Europe"
+     }
+    },
+    {
+     "id": "2026-11-03-k1",
+     "section": "k",
+     "icon": "coffee",
+     "ko": "BTS 지민 부친 카페 1년 뒤 폐업",
+     "h": {
+      "1": "Jimin's father's cafe will close",
+      "2": "Cafe run by Jimin's father to close next year",
+      "3": "Busan cafe run by BTS Jimin's father to close in a year",
+      "4": "Fan favorite cafe run by Jimin's father to close after one more year",
+      "5": "Jimin's father to shutter beloved Busan fan cafe after one final year"
+     }
+    }
+   ]
+  },
   {
    "date": "2026-11-01",
    "items": [

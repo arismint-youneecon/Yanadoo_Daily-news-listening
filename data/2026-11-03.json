@@ -1,0 +1,1919 @@
+{
+ "date": "2026-11-03",
+ "items": [
+  {
+   "id": "2026-11-03-g1",
+   "section": "g",
+   "levels": {
+    "1": {
+     "headline": "Bulgaria has its first woman president",
+     "p": [
+      "Good morning. This is your morning news in English.",
+      "Bulgaria has a new president. Her name is Iliana Iotova. She is the first woman to win this job in a vote. On Sunday, people voted for the second time. She got about 58 percent of the votes.",
+      "Bulgaria is a country in Europe. Before, Iotova was the vice president. In January, the old president left his job. Now he is the prime minister. So Iotova did the president's job for a while.",
+      "In Bulgaria, the president does not have much power. The prime minister leads the country. But this is a first for Bulgaria.",
+      "Again, Iliana Iotova is the new president of Bulgaria. She is the first woman to win the job.",
+      "Thank you for listening."
+     ],
+     "tr": [
+      "좋은 아침입니다. 영어로 듣는 아침 뉴스입니다.",
+      "불가리아에 새 대통령이 생겼습니다. 이름은 일리아나 요토바입니다. 그녀는 투표로 이 자리에 오른 첫 여성입니다. 일요일에 사람들이 두 번째로 투표했습니다. 그녀는 약 58퍼센트의 표를 얻었습니다.",
+      "불가리아는 유럽에 있는 나라입니다. 전에 요토바는 부통령이었습니다. 1월에 이전 대통령이 자리에서 물러났습니다. 지금 그는 총리입니다. 그래서 요토바가 한동안 대통령의 일을 했습니다.",
+      "불가리아에서 대통령은 힘이 많지 않습니다. 나라는 총리가 이끕니다. 하지만 이것은 불가리아에서 처음 있는 일입니다.",
+      "다시 말씀드리면, 일리아나 요토바가 불가리아의 새 대통령입니다. 그녀는 이 자리에 오른 첫 여성입니다.",
+      "들어 주셔서 감사합니다."
+     ],
+     "g": {
+      "bulgaria": "불가리아",
+      "new": "새로운",
+      "president": "대통령",
+      "name": "이름",
+      "iliana iotova": "일리아나 요토바 (인명)",
+      "iotova": "요토바 (인명)",
+      "first": "첫 번째의",
+      "woman": "여성",
+      "win": "이기다, 얻다",
+      "job": "일, 자리",
+      "vote": "투표; 표",
+      "sunday": "일요일",
+      "voted": "투표했다",
+      "for the second time": "두 번째로",
+      "got": "얻었다 (get의 과거)",
+      "about": "약, 대략",
+      "percent": "퍼센트",
+      "country": "나라",
+      "europe": "유럽",
+      "before": "전에",
+      "vice president": "부통령",
+      "january": "1월",
+      "old": "이전의, 예전의",
+      "left": "떠났다 (leave의 과거)",
+      "now": "지금",
+      "prime minister": "총리",
+      "so": "그래서",
+      "did": "했다 (do의 과거)",
+      "for a while": "한동안",
+      "power": "힘, 권력",
+      "much": "많은",
+      "leads": "이끈다",
+      "a first": "처음 있는 일",
+      "again": "다시 (말하면)",
+      "people": "사람들",
+      "this is your morning news": "아침 뉴스입니다",
+      "thank you for listening": "들어 주셔서 감사합니다"
+     },
+     "ph": [
+      "iliana iotova",
+      "for the second time",
+      "vice president",
+      "prime minister",
+      "for a while",
+      "a first",
+      "this is your morning news",
+      "thank you for listening"
+     ],
+     "kw": [
+      [
+       "president",
+       "대통령"
+      ],
+      [
+       "vote",
+       "투표"
+      ],
+      [
+       "vice president",
+       "부통령"
+      ],
+      [
+       "prime minister",
+       "총리"
+      ],
+      [
+       "power",
+       "권력"
+      ]
+     ],
+     "audio": "audio/2026-11-03-g1-L1.mp3",
+     "duration": 64.7,
+     "speed": 0.75,
+     "voice": "af_heart",
+     "words": 126
+    },
+    "2": {
+     "headline": "Bulgaria elects its first woman president",
+     "p": [
+      "Good morning. This is your morning news in English.",
+      "Bulgaria has elected its first woman president. Her name is Iliana Iotova. On Sunday, voters chose between the top two candidates. This second vote is called a runoff. According to news reports, Iotova won about 57.6 percent of the vote. Her rival, Andrey Gyurov, won about 39.5 percent.",
+      "Iotova already knows the job well. She was the vice president. In January, President Rumen Radev quit his job. He wanted to run in a different election for parliament. He won, and now he is the prime minister. Since January, Iotova has done the president's job. Radev's party supported her.",
+      "In Bulgaria, the president has limited power. The prime minister leads the government. Radev and Iotova both want the war in Ukraine to end through talks. Radev has also spoken against sanctions on Russia. Sanctions are punishments, like limits on trade. Bulgaria is a member of the European Union.",
+      "To sum up, Iliana Iotova won Bulgaria's presidential election. She is the first woman elected to the job.",
+      "Thank you for listening."
+     ],
+     "tr": [
+      "좋은 아침입니다. 영어로 듣는 아침 뉴스입니다.",
+      "불가리아가 첫 여성 대통령을 뽑았습니다. 이름은 일리아나 요토바입니다. 일요일에 유권자들은 상위 두 후보 가운데 한 명을 골랐습니다. 이 두 번째 투표를 결선 투표라고 합니다. 보도에 따르면 요토바는 약 57.6퍼센트를 얻었습니다. 경쟁자 안드레이 규로프는 약 39.5퍼센트를 얻었습니다.",
+      "요토바는 이미 이 일을 잘 압니다. 그녀는 부통령이었습니다. 1월에 루멘 라데프 대통령이 자리에서 물러났습니다. 그는 의회를 뽑는 다른 선거에 나가고 싶어 했습니다. 그는 이겼고, 지금은 총리입니다. 1월부터 요토바가 대통령의 일을 해 왔습니다. 라데프의 정당이 그녀를 지지했습니다.",
+      "불가리아에서 대통령의 권한은 제한되어 있습니다. 정부는 총리가 이끕니다. 라데프와 요토바는 둘 다 우크라이나 전쟁이 대화로 끝나기를 바랍니다. 라데프는 러시아에 대한 제재에도 반대해 왔습니다. 제재란 무역 제한 같은 벌을 말합니다. 불가리아는 유럽연합의 회원국입니다.",
+      "정리하면, 일리아나 요토바가 불가리아 대통령 선거에서 이겼습니다. 그녀는 이 자리에 선출된 첫 여성입니다.",
+      "들어 주셔서 감사합니다."
+     ],
+     "g": {
+      "bulgaria": "불가리아",
+      "bulgaria's": "불가리아의",
+      "elected": "선출했다; 선출된",
+      "president": "대통령",
+      "voters": "유권자들",
+      "chose": "골랐다 (choose의 과거)",
+      "top two": "상위 두",
+      "candidates": "후보들",
+      "runoff": "결선 투표",
+      "according to": "~에 따르면",
+      "news reports": "언론 보도",
+      "won": "이겼다, 얻었다 (win의 과거)",
+      "percent": "퍼센트",
+      "rival": "경쟁자",
+      "already": "이미",
+      "vice president": "부통령",
+      "quit": "그만두었다",
+      "run in": "~에 출마하다",
+      "different": "다른",
+      "election": "선거",
+      "parliament": "의회",
+      "prime minister": "총리",
+      "since": "~부터, ~이후로",
+      "done": "한 (do의 과거분사)",
+      "party": "정당",
+      "supported": "지지했다",
+      "limited": "제한된",
+      "power": "권력, 권한",
+      "government": "정부",
+      "war": "전쟁",
+      "ukraine": "우크라이나",
+      "through talks": "대화를 통해",
+      "spoken against": "반대 의견을 말한",
+      "sanctions": "제재",
+      "russia": "러시아",
+      "punishments": "벌, 처벌",
+      "european union": "유럽연합(EU)",
+      "member": "회원(국)",
+      "limits": "제한",
+      "trade": "무역",
+      "to sum up": "정리하면",
+      "presidential": "대통령의",
+      "job": "일, 자리",
+      "thank you for listening": "들어 주셔서 감사합니다"
+     },
+     "ph": [
+      "top two",
+      "according to",
+      "news reports",
+      "vice president",
+      "run in",
+      "prime minister",
+      "through talks",
+      "spoken against",
+      "european union",
+      "to sum up",
+      "thank you for listening"
+     ],
+     "kw": [
+      [
+       "elect",
+       "선출하다"
+      ],
+      [
+       "runoff",
+       "결선 투표"
+      ],
+      [
+       "candidate",
+       "후보"
+      ],
+      [
+       "prime minister",
+       "총리"
+      ],
+      [
+       "limited power",
+       "제한된 권한"
+      ],
+      [
+       "sanctions",
+       "제재"
+      ]
+     ],
+     "audio": "audio/2026-11-03-g1-L2.mp3",
+     "duration": 90.6,
+     "speed": 0.8,
+     "voice": "af_heart",
+     "words": 178
+    },
+    "3": {
+     "headline": "Bulgaria elects its first woman president in a runoff",
+     "p": [
+      "Good morning. This is your morning news in English.",
+      "Bulgaria has elected its first woman president. According to news reports, Iliana Iotova won a runoff election on Sunday. A runoff is a second round of voting between the top two candidates. Iotova received about 57.6 percent of the vote. Her rival, Andrey Gyurov, got about 39.5 percent. Almost 3 percent of voters chose the option \"I support no one.\"",
+      "Iotova is not new to the job. She was the country's vice president under Rumen Radev. In January, Radev resigned as president to run in the parliamentary election. He won that race and is now the prime minister. Since then, Iotova has served as acting president. Acting means she did the job for a time without being elected to it. Radev's party, Progressive Bulgaria, supported her campaign. In the first round on October 25, she came first with about 34.6 percent.",
+      "Why does this matter? In Bulgaria, the president has limited powers. The prime minister usually leads the government. Still, the result makes Radev's political group stronger. Radev has opposed sanctions on Russia. Sanctions are penalties, like trade limits, that countries use to put pressure on another country. Both Radev and Iotova have called for a diplomatic end to the war in Ukraine. Some analysts describe their camp as friendly toward Moscow. Bulgaria is a member of the European Union and NATO, so its partners will watch closely.",
+      "To sum up, Iliana Iotova won Bulgaria's presidential runoff with about 57.6 percent of the vote. She is the first woman ever elected to the job.",
+      "Thank you for listening."
+     ],
+     "tr": [
+      "좋은 아침입니다. 영어로 듣는 아침 뉴스입니다.",
+      "불가리아가 첫 여성 대통령을 뽑았습니다. 보도에 따르면 일리아나 요토바가 일요일 결선 투표에서 이겼습니다. 결선 투표란 상위 두 후보를 두고 하는 두 번째 투표를 말합니다. 요토바는 약 57.6퍼센트를 얻었습니다. 경쟁자 안드레이 규로프는 약 39.5퍼센트를 얻었습니다. 유권자의 3퍼센트 가까이는 '아무도 지지하지 않음'을 골랐습니다.",
+      "요토바에게 이 일은 처음이 아닙니다. 그녀는 루멘 라데프 대통령 아래에서 부통령이었습니다. 1월에 라데프는 총선에 나가기 위해 대통령직을 사임했습니다. 그는 그 선거에서 이겨 지금은 총리입니다. 그 뒤로 요토바가 대통령 권한대행을 맡아 왔습니다. 권한대행이란 선출되지 않은 채 한동안 그 일을 맡는 것을 뜻합니다. 라데프의 정당 '진보 불가리아'가 그녀의 선거 운동을 지지했습니다. 10월 25일 1차 투표에서 그녀는 약 34.6퍼센트로 1위를 했습니다.",
+      "이 일이 왜 중요할까요? 불가리아에서 대통령의 권한은 제한되어 있습니다. 정부는 보통 총리가 이끕니다. 그래도 이번 결과로 라데프의 정치 세력은 더 강해집니다. 라데프는 러시아에 대한 제재에 반대해 왔습니다. 제재란 나라들이 다른 나라에 압력을 넣으려고 쓰는 무역 제한 같은 벌칙입니다. 라데프와 요토바는 둘 다 우크라이나 전쟁을 외교로 끝내자고 요구해 왔습니다. 일부 분석가들은 이들 진영을 모스크바에 우호적이라고 평가합니다. 불가리아는 유럽연합과 나토의 회원국이므로 동맹국들이 주의 깊게 지켜볼 것입니다.",
+      "정리하면, 일리아나 요토바가 약 57.6퍼센트의 득표로 불가리아 대통령 결선 투표에서 이겼습니다. 그녀는 이 자리에 선출된 첫 여성입니다.",
+      "들어 주셔서 감사합니다."
+     ],
+     "g": {
+      "bulgaria": "불가리아",
+      "bulgaria's": "불가리아의",
+      "elected": "선출했다; 선출된",
+      "according to": "~에 따르면",
+      "news reports": "언론 보도",
+      "runoff": "결선 투표",
+      "election": "선거",
+      "round": "(경기·선거의) 회차",
+      "candidates": "후보들",
+      "received": "받았다, 얻었다",
+      "rival": "경쟁자",
+      "voters": "유권자들",
+      "option": "선택지",
+      "i support no one": "아무도 지지하지 않음",
+      "not new to": "~이 처음이 아닌",
+      "vice president": "부통령",
+      "under": "~ 아래에서",
+      "resigned": "사임했다",
+      "run in": "~에 출마하다",
+      "parliamentary": "의회의",
+      "race": "선거전, 경쟁",
+      "prime minister": "총리",
+      "since then": "그 이후로",
+      "served as": "~로 일했다",
+      "acting president": "대통령 권한대행",
+      "acting": "대행의, 임시의",
+      "party": "정당",
+      "progressive": "진보의",
+      "campaign": "선거 운동",
+      "came first": "1위를 했다",
+      "why does this matter": "이것이 왜 중요할까요",
+      "limited": "제한된",
+      "powers": "권한",
+      "government": "정부",
+      "result": "결과",
+      "political": "정치의",
+      "opposed": "반대했다",
+      "sanctions": "제재",
+      "penalties": "벌칙, 처벌",
+      "trade": "무역",
+      "put pressure on": "~에 압력을 가하다",
+      "called for": "~을 요구했다",
+      "diplomatic": "외교적인",
+      "war": "전쟁",
+      "ukraine": "우크라이나",
+      "analysts": "분석가들",
+      "describe": "묘사하다, 평가하다",
+      "camp": "진영",
+      "friendly toward": "~에 우호적인",
+      "moscow": "모스크바 (러시아 정부를 가리킴)",
+      "european union": "유럽연합(EU)",
+      "nato": "나토 (북대서양조약기구)",
+      "member": "회원(국)",
+      "partners": "동맹국, 파트너",
+      "closely": "주의 깊게",
+      "to sum up": "정리하면",
+      "presidential": "대통령의",
+      "ever": "지금까지, 역대"
+     },
+     "ph": [
+      "according to",
+      "news reports",
+      "i support no one",
+      "not new to",
+      "vice president",
+      "run in",
+      "prime minister",
+      "since then",
+      "served as",
+      "acting president",
+      "came first",
+      "why does this matter",
+      "put pressure on",
+      "called for",
+      "friendly toward",
+      "european union",
+      "to sum up"
+     ],
+     "kw": [
+      [
+       "runoff",
+       "결선 투표"
+      ],
+      [
+       "candidate",
+       "후보"
+      ],
+      [
+       "resign",
+       "사임하다"
+      ],
+      [
+       "prime minister",
+       "총리"
+      ],
+      [
+       "acting president",
+       "대통령 권한대행"
+      ],
+      [
+       "limited powers",
+       "제한된 권한"
+      ],
+      [
+       "sanctions",
+       "제재"
+      ],
+      [
+       "diplomatic",
+       "외교적인"
+      ]
+     ],
+     "audio": "audio/2026-11-03-g1-L3.mp3",
+     "duration": 114.8,
+     "speed": 0.9,
+     "voice": "af_heart",
+     "words": 267
+    },
+    "4": {
+     "headline": "Iotova becomes Bulgaria's first elected female president",
+     "p": [
+      "Good morning, and welcome to your morning news in English.",
+      "Bulgaria has elected a woman as president for the first time in its history. According to near-final results, Iliana Iotova won Sunday's runoff with roughly 57.6 percent of the vote, comfortably ahead of challenger Andrey Gyurov, who took about 39.5 percent. Just under 3 percent of ballots were cast for the option \"I support no one,\" and turnout was reported to be low.",
+      "Iotova is hardly a newcomer. She served as vice president under Rumen Radev, who stepped down as head of state in January to contest the parliamentary election. Radev went on to win that vote and now serves as prime minister, while Iotova has been acting president since his resignation. Radev's party, Progressive Bulgaria, backed her campaign. In the first round on October 25, she finished ahead with around 34.6 percent, while Gyurov came second with about 32 percent. The two had been separated by only a few points at that stage.",
+      "The presidency in Bulgaria carries limited powers. Its decisions can be overruled by a simple majority in parliament, and the office is generally seen as secondary to that of the prime minister. Still, the president represents Bulgaria abroad and remains a visible figure in public life. Even so, the result strengthens Radev's political camp. Radev has opposed sanctions on Russia, and analysts quoted in news reports describe the camp as friendly toward Moscow. Both he and Iotova have called for a diplomatic end to the war in Ukraine. Because Bulgaria belongs to both the European Union and NATO, its partners are likely to follow the new president's positions closely.",
+      "To sum up, Iliana Iotova has become Bulgaria's first elected female president, winning the runoff with about 57.6 percent in a result that further strengthens Prime Minister Rumen Radev's camp.",
+      "Thank you for listening."
+     ],
+     "tr": [
+      "좋은 아침입니다. 영어로 듣는 아침 뉴스에 오신 것을 환영합니다.",
+      "불가리아가 역사상 처음으로 여성을 대통령으로 뽑았습니다. 거의 최종 결과에 따르면 일리아나 요토바는 일요일 결선 투표에서 약 57.6퍼센트를 얻어, 약 39.5퍼센트를 얻은 도전자 안드레이 규로프를 여유 있게 앞섰습니다. 3퍼센트가 조금 안 되는 표는 '아무도 지지하지 않음'에 던져졌고, 투표율은 낮았다고 보도됐습니다.",
+      "요토바는 결코 신인이 아닙니다. 그녀는 루멘 라데프 아래에서 부통령을 지냈는데, 라데프는 총선에 출마하려고 1월에 국가원수 자리에서 물러났습니다. 라데프는 그 선거에서 이겨 지금 총리를 맡고 있고, 요토바는 그의 사임 이후 대통령 권한대행을 맡아 왔습니다. 라데프의 정당 '진보 불가리아'가 그녀의 선거 운동을 지원했습니다. 10월 25일 1차 투표에서 그녀는 약 34.6퍼센트로 앞섰고, 규로프는 약 32퍼센트로 2위였습니다. 그 단계에서 두 사람의 차이는 몇 퍼센트포인트에 불과했습니다.",
+      "불가리아 대통령직의 권한은 제한적입니다. 대통령의 결정은 의회의 단순 과반수로 뒤집힐 수 있고, 이 자리는 대체로 총리직보다 부차적인 것으로 여겨집니다. 그래도 대통령은 해외에서 불가리아를 대표하며 공적인 무대에서 눈에 띄는 인물입니다. 그렇더라도 이번 결과는 라데프의 정치 진영을 강화합니다. 라데프는 러시아 제재에 반대해 왔고, 보도에 인용된 분석가들은 이 진영을 모스크바에 우호적이라고 평가합니다. 라데프와 요토바는 모두 우크라이나 전쟁의 외교적 종식을 촉구해 왔습니다. 불가리아는 유럽연합과 나토에 모두 속해 있어, 동맹국들은 새 대통령의 입장을 면밀히 지켜볼 것으로 보입니다.",
+      "정리하면, 일리아나 요토바가 약 57.6퍼센트로 결선 투표에서 승리해 불가리아 최초의 선출직 여성 대통령이 되었고, 이 결과로 루멘 라데프 총리 진영은 더욱 힘을 얻게 됐습니다.",
+      "들어 주셔서 감사합니다."
+     ],
+     "g": {
+      "near-final": "거의 최종의",
+      "results": "결과",
+      "runoff": "결선 투표",
+      "roughly": "대략",
+      "comfortably": "여유 있게",
+      "ahead of": "~보다 앞서",
+      "challenger": "도전자",
+      "just under": "~에 조금 못 미치는",
+      "ballots": "투표용지, 표",
+      "were cast": "(표가) 던져졌다",
+      "option": "선택지",
+      "turnout": "투표율",
+      "reported": "보도된",
+      "hardly": "거의 ~ 아닌",
+      "newcomer": "신참, 신인",
+      "vice president": "부통령",
+      "stepped down": "물러났다",
+      "head of state": "국가원수",
+      "contest": "(선거에) 나가다",
+      "parliamentary": "의회의",
+      "went on to": "이어서 ~하게 되었다",
+      "prime minister": "총리",
+      "acting president": "대통령 권한대행",
+      "resignation": "사임",
+      "backed": "지원했다",
+      "campaign": "선거 운동",
+      "finished ahead": "앞선 채 마쳤다",
+      "came second": "2위를 했다",
+      "presidency": "대통령직",
+      "carries": "지니다",
+      "limited powers": "제한된 권한",
+      "overruled": "뒤집힌, 기각된",
+      "visible figure": "눈에 띄는 인물",
+      "public life": "공적인 생활, 공공 무대",
+      "separated by": "~만큼 차이가 난",
+      "at that stage": "그 단계에서",
+      "simple majority": "단순 과반수",
+      "generally": "대체로",
+      "secondary": "부차적인",
+      "even so": "그렇더라도",
+      "strengthens": "강화하다",
+      "political camp": "정치 진영",
+      "opposed": "반대했다",
+      "sanctions": "제재",
+      "analysts": "분석가들",
+      "quoted": "인용된",
+      "friendly toward": "~에 우호적인",
+      "moscow": "모스크바 (러시아 정부)",
+      "called for": "~을 촉구했다",
+      "diplomatic": "외교적인",
+      "belongs to": "~에 속하다",
+      "european union": "유럽연합(EU)",
+      "nato": "나토",
+      "partners": "동맹국",
+      "likely to": "~할 것 같은",
+      "positions": "입장",
+      "closely": "면밀히",
+      "to sum up": "정리하면",
+      "elected": "선출된",
+      "female": "여성의",
+      "further": "더욱",
+      "bulgaria's": "불가리아의",
+      "ukraine": "우크라이나"
+     },
+     "ph": [
+      "ahead of",
+      "just under",
+      "were cast",
+      "vice president",
+      "stepped down",
+      "head of state",
+      "went on to",
+      "prime minister",
+      "acting president",
+      "finished ahead",
+      "came second",
+      "limited powers",
+      "visible figure",
+      "public life",
+      "separated by",
+      "at that stage",
+      "simple majority",
+      "even so",
+      "political camp",
+      "friendly toward",
+      "called for",
+      "belongs to",
+      "european union",
+      "likely to",
+      "to sum up"
+     ],
+     "kw": [
+      [
+       "runoff",
+       "결선 투표"
+      ],
+      [
+       "turnout",
+       "투표율"
+      ],
+      [
+       "step down",
+       "물러나다"
+      ],
+      [
+       "acting president",
+       "대통령 권한대행"
+      ],
+      [
+       "simple majority",
+       "단순 과반수"
+      ],
+      [
+       "sanctions",
+       "제재"
+      ]
+     ],
+     "audio": "audio/2026-11-03-g1-L4.mp3",
+     "duration": 127.4,
+     "speed": 1.1,
+     "voice": "am_michael",
+     "words": 307
+    },
+    "5": {
+     "headline": "Bulgaria hands presidency to a woman for the first time",
+     "p": [
+      "Good morning, and welcome to your morning news in English.",
+      "Bulgaria has, for the first time, entrusted its presidency to a woman chosen at the ballot box. Iliana Iotova, who had been serving as acting head of state, comfortably carried Sunday's runoff, securing roughly 57.6 percent of the vote, according to near-final results. Her challenger, Andrey Gyurov, trailed with about 39.5 percent, while close to 3 percent of voters opted for the ballot's \"I support no one\" choice. Turnout was reported to be low, a familiar pattern in a country that has held repeated elections in recent years.",
+      "Iotova's victory caps a remarkable reshuffle at the top of Bulgarian politics. She spent years as vice president alongside Rumen Radev, who resigned the presidency in January in order to throw his hat into the ring for parliament. That gamble paid off: Radev's Progressive Bulgaria party won the legislative contest, propelling him into the prime minister's office and leaving Iotova to hold the fort as acting president. With Radev's party firmly behind her, she topped the first round on October 25 with around 34.6 percent, edging out Gyurov, who finished on roughly 32 percent, before pulling decisively ahead in the second.",
+      "Under Bulgaria's system, the presidency wields only limited levers of power; its decisions can be overruled by a simple parliamentary majority, and it is widely regarded as playing second fiddle to the prime minister. Even so, the head of state represents the country abroad and offers a prominent platform in national debate. More significantly, the outcome consolidates Radev's grip on both the government and the presidency. Radev has long opposed sanctions on Russia, and analysts cited in news reports characterize his camp as Kremlin-friendly. Both he and Iotova have advocated a negotiated settlement to the war in Ukraine. For a member of both the European Union and NATO, that stance is likely to draw close scrutiny from allies in Brussels and beyond.",
+      "To sum up, Iliana Iotova has made history as Bulgaria's first elected female president, winning the runoff with nearly 58 percent of the vote and cementing the dominance of Prime Minister Rumen Radev's political camp.",
+      "Thank you for listening."
+     ],
+     "tr": [
+      "좋은 아침입니다. 영어로 듣는 아침 뉴스에 오신 것을 환영합니다.",
+      "불가리아가 처음으로 투표를 통해 뽑은 여성에게 대통령직을 맡겼습니다. 국가원수 권한대행을 맡아 온 일리아나 요토바는 거의 최종 결과에 따르면 일요일 결선 투표에서 약 57.6퍼센트를 얻어 여유 있게 승리했습니다. 도전자 안드레이 규로프는 약 39.5퍼센트로 뒤졌고, 유권자의 3퍼센트 가까이는 투표용지의 '아무도 지지하지 않음'을 택했습니다. 투표율은 낮았다고 보도됐는데, 최근 몇 년 동안 선거를 거듭 치른 이 나라에서는 익숙한 모습입니다.",
+      "요토바의 승리는 불가리아 정치 최상층의 눈에 띄는 재편을 마무리합니다. 그녀는 수년간 루멘 라데프와 함께 부통령을 지냈는데, 라데프는 총선에 뛰어들기 위해 1월에 대통령직을 사임했습니다. 그 승부수는 통했습니다. 라데프의 '진보 불가리아'당이 총선에서 이겨 그를 총리 자리에 올려놓았고, 요토바는 권한대행으로 자리를 지키게 됐습니다. 라데프 정당의 확고한 지원 속에 그녀는 10월 25일 1차 투표에서 약 34.6퍼센트로 약 32퍼센트의 규로프를 근소하게 앞섰고, 2차 투표에서 확실하게 앞서 나갔습니다.",
+      "불가리아 제도에서 대통령직이 쥔 권력 수단은 제한적입니다. 대통령의 결정은 의회 단순 과반수로 뒤집힐 수 있고, 이 자리는 총리보다 한 수 아래의 역할로 널리 여겨집니다. 그렇더라도 국가원수는 해외에서 나라를 대표하고 국내 논쟁에서 눈에 띄는 발언대를 갖습니다. 더 중요한 것은 이번 결과로 라데프가 정부와 대통령직을 모두 장악하게 된다는 점입니다. 라데프는 오랫동안 러시아 제재에 반대해 왔고, 보도에 인용된 분석가들은 그의 진영을 친러시아 성향으로 평가합니다. 라데프와 요토바는 모두 우크라이나 전쟁의 협상을 통한 해결을 주장해 왔습니다. 유럽연합과 나토 회원국인 만큼, 이런 입장은 브뤼셀을 비롯한 동맹국들의 면밀한 관찰을 받을 것으로 보입니다.",
+      "정리하면, 일리아나 요토바는 결선 투표에서 58퍼센트 가까운 표를 얻어 불가리아 최초의 선출직 여성 대통령으로 역사를 썼고, 루멘 라데프 총리 진영의 우위를 굳혔습니다.",
+      "들어 주셔서 감사합니다."
+     ],
+     "g": {
+      "entrusted": "맡겼다, 위임했다",
+      "presidency": "대통령직",
+      "ballot box": "투표함 (선거)",
+      "acting": "대행의",
+      "head of state": "국가원수",
+      "carried": "(선거에서) 이겼다",
+      "runoff": "결선 투표",
+      "securing": "확보하며",
+      "near-final": "거의 최종의",
+      "challenger": "도전자",
+      "trailed": "뒤졌다",
+      "opted for": "~을 택했다",
+      "turnout": "투표율",
+      "familiar pattern": "익숙한 양상",
+      "repeated": "거듭된",
+      "caps": "마무리하다, 정점을 찍다",
+      "remarkable": "주목할 만한",
+      "reshuffle": "개편, 재편",
+      "alongside": "~와 함께",
+      "resigned": "사임했다",
+      "throw his hat into the ring": "출마를 선언하다",
+      "gamble": "도박, 승부수",
+      "paid off": "성과를 거두었다",
+      "legislative": "입법의, 의회의",
+      "contest": "경쟁, 선거",
+      "propelling": "밀어 올리며",
+      "hold the fort": "자리를 지키다",
+      "firmly": "확고하게",
+      "topped": "1위를 했다",
+      "edging out": "근소하게 앞서며",
+      "pulling decisively ahead": "확실하게 앞서 나가며",
+      "wields": "(권력을) 행사하다",
+      "levers of power": "권력 수단",
+      "overruled": "뒤집힌",
+      "simple parliamentary majority": "의회 단순 과반수",
+      "widely regarded as": "널리 ~로 여겨지는",
+      "playing second fiddle": "보조 역할을 하는",
+      "represents": "대표하다",
+      "prominent": "눈에 띄는",
+      "platform": "발언대",
+      "significantly": "중요하게",
+      "outcome": "결과",
+      "consolidates": "공고히 하다",
+      "grip": "장악력",
+      "sanctions": "제재",
+      "cited": "인용된",
+      "characterize": "~로 규정하다",
+      "camp": "진영",
+      "kremlin-friendly": "친러시아(크렘린) 성향의",
+      "advocated": "주장했다",
+      "negotiated settlement": "협상을 통한 해결",
+      "stance": "입장",
+      "scrutiny": "면밀한 조사, 감시",
+      "allies": "동맹국",
+      "brussels": "브뤼셀 (EU 본부 소재지)",
+      "made history": "역사를 썼다",
+      "cementing": "굳히며",
+      "dominance": "우위, 지배",
+      "female": "여성의",
+      "nato": "나토",
+      "european union": "유럽연합(EU)"
+     },
+     "ph": [
+      "ballot box",
+      "head of state",
+      "opted for",
+      "familiar pattern",
+      "throw his hat into the ring",
+      "paid off",
+      "hold the fort",
+      "edging out",
+      "pulling decisively ahead",
+      "levers of power",
+      "simple parliamentary majority",
+      "widely regarded as",
+      "playing second fiddle",
+      "negotiated settlement",
+      "made history",
+      "european union"
+     ],
+     "kw": [
+      [
+       "entrust",
+       "맡기다"
+      ],
+      [
+       "throw one's hat into the ring",
+       "출마하다"
+      ],
+      [
+       "hold the fort",
+       "자리를 지키다"
+      ],
+      [
+       "play second fiddle",
+       "보조 역할을 하다"
+      ],
+      [
+       "consolidate",
+       "공고히 하다"
+      ],
+      [
+       "scrutiny",
+       "면밀한 감시"
+      ]
+     ],
+     "audio": "audio/2026-11-03-g1-L5.mp3",
+     "duration": 132.5,
+     "speed": 1.05,
+     "voice": "bf_emma",
+     "words": 360
+    }
+   },
+   "icon": "checkbox",
+   "ko": "불가리아 첫 여성 대통령 당선",
+   "url": "https://www.csmonitor.com/News-Briefs/Iliana-Iotova-became-the-first-woman-elected-as-president-of-Bulgaria",
+   "source": "CS Monitor (AP)"
+  },
+  {
+   "id": "2026-11-03-g2",
+   "section": "g",
+   "levels": {
+    "1": {
+     "headline": "Hackers attack supermarket fridges in Europe",
+     "p": [
+      "Good morning. This is your morning news in English.",
+      "Some supermarkets in Europe had a big problem. Hackers attacked their fridges and freezers. Hackers are people who break into computers. This is called a cyberattack. It happened in five countries, like Sweden and Belgium.",
+      "In some stores, the freezers got very hot. One freezer went up to 50 degrees. The food went bad. The stores had to throw it away. One company fixed its problem in a few minutes.",
+      "Last month, the same thing happened in France. No one has said who did it.",
+      "Again, hackers attacked supermarket fridges in Europe. Some food went bad.",
+      "Thank you for listening."
+     ],
+     "tr": [
+      "좋은 아침입니다. 영어로 듣는 아침 뉴스입니다.",
+      "유럽의 일부 슈퍼마켓에 큰 문제가 생겼습니다. 해커들이 냉장고와 냉동고를 공격했습니다. 해커는 컴퓨터에 몰래 들어가는 사람들입니다. 이것을 사이버 공격이라고 합니다. 이 일은 스웨덴과 벨기에 같은 다섯 나라에서 일어났습니다.",
+      "어떤 가게에서는 냉동고가 아주 뜨거워졌습니다. 한 냉동고는 50도까지 올라갔습니다. 음식이 상했습니다. 가게들은 그것을 버려야 했습니다. 한 회사는 몇 분 만에 문제를 고쳤습니다.",
+      "지난달에는 프랑스에서 같은 일이 있었습니다. 누가 했는지는 아직 아무도 밝히지 않았습니다.",
+      "다시 말씀드리면, 해커들이 유럽 슈퍼마켓의 냉장고를 공격했습니다. 일부 음식이 상했습니다.",
+      "들어 주셔서 감사합니다."
+     ],
+     "g": {
+      "supermarkets": "슈퍼마켓",
+      "supermarket": "슈퍼마켓",
+      "europe": "유럽",
+      "problem": "문제",
+      "hackers": "해커들",
+      "attacked": "공격했다",
+      "fridges": "냉장고",
+      "freezers": "냉동고",
+      "break into": "~에 몰래 침입하다",
+      "computers": "컴퓨터",
+      "called": "~라고 불리는",
+      "cyberattack": "사이버 공격",
+      "happened": "일어났다",
+      "countries": "나라들",
+      "like": "~ 같은",
+      "sweden": "스웨덴",
+      "belgium": "벨기에",
+      "stores": "가게들",
+      "got very hot": "아주 뜨거워졌다",
+      "went up to": "~까지 올라갔다",
+      "degrees": "(온도) 도",
+      "food": "음식",
+      "went bad": "상했다",
+      "had to": "~해야 했다",
+      "throw it away": "그것을 버리다",
+      "company": "회사",
+      "fixed": "고쳤다",
+      "a few minutes": "몇 분",
+      "last month": "지난달",
+      "the same thing": "같은 일",
+      "france": "프랑스",
+      "no one": "아무도 ~않다",
+      "who did it": "누가 했는지",
+      "again": "다시 (말하면)",
+      "some": "일부의",
+      "thank you for listening": "들어 주셔서 감사합니다"
+     },
+     "ph": [
+      "break into",
+      "got very hot",
+      "went up to",
+      "went bad",
+      "had to",
+      "throw it away",
+      "a few minutes",
+      "last month",
+      "the same thing",
+      "no one",
+      "who did it",
+      "thank you for listening"
+     ],
+     "kw": [
+      [
+       "hacker",
+       "해커"
+      ],
+      [
+       "cyberattack",
+       "사이버 공격"
+      ],
+      [
+       "freezer",
+       "냉동고"
+      ],
+      [
+       "go bad",
+       "상하다"
+      ],
+      [
+       "throw away",
+       "버리다"
+      ]
+     ],
+     "audio": "audio/2026-11-03-g2-L1.mp3",
+     "duration": 56.7,
+     "speed": 0.75,
+     "voice": "af_heart",
+     "words": 109
+    },
+    "2": {
+     "headline": "Cyberattacks hit supermarket fridges in five countries",
+     "p": [
+      "Good morning. This is your morning news in English.",
+      "Supermarkets in five European countries had trouble with their fridges and freezers. Fridges keep food cold, and freezers keep food frozen. According to news reports, hackers attacked the computer systems that control them. This kind of attack is called a cyberattack. The countries were Sweden, Belgium, Luxembourg, Ireland and Estonia.",
+      "In some stores, hackers made the freezers very hot, up to 50 degrees Celsius. The food inside went bad, so stores had to throw it away. In Belgium, one big chain said several dozen stores had problems. In Sweden, another chain said six stores were affected. One company in Estonia said it fixed its problem in a few minutes.",
+      "A similar attack happened in France last month. It hit hundreds of stores. In France, the hackers seemed to target old systems. No one has said who is behind the new attacks. This shows that machines connected to the internet can also be attacked.",
+      "To sum up, hackers attacked supermarket fridges in five countries in Europe. Some stores lost food.",
+      "Thank you for listening."
+     ],
+     "tr": [
+      "좋은 아침입니다. 영어로 듣는 아침 뉴스입니다.",
+      "유럽 다섯 나라의 슈퍼마켓에서 냉장고와 냉동고에 문제가 생겼습니다. 냉장고는 음식을 차갑게, 냉동고는 음식을 얼린 채로 보관합니다. 보도에 따르면 해커들이 이를 제어하는 컴퓨터 시스템을 공격했습니다. 이런 공격을 사이버 공격이라고 합니다. 피해를 입은 나라는 스웨덴, 벨기에, 룩셈부르크, 아일랜드, 에스토니아입니다.",
+      "어떤 가게에서는 해커들이 냉동고를 섭씨 50도까지 뜨겁게 만들었습니다. 안에 있던 음식이 상해서 가게들은 그것을 버려야 했습니다. 벨기에에서는 한 대형 체인이 수십 개 매장에 문제가 생겼다고 밝혔습니다. 스웨덴에서는 다른 체인이 매장 6곳이 피해를 입었다고 밝혔습니다. 에스토니아의 한 회사는 몇 분 만에 문제를 고쳤다고 말했습니다.",
+      "지난달 프랑스에서도 비슷한 공격이 있었습니다. 수백 개 매장이 피해를 입었습니다. 프랑스에서 해커들은 오래된 시스템을 노린 것으로 보였습니다. 이번 공격의 배후가 누구인지는 아무도 밝히지 않았습니다. 이 일은 인터넷에 연결된 기계도 공격받을 수 있다는 것을 보여 줍니다.",
+      "정리하면, 해커들이 유럽 다섯 나라의 슈퍼마켓 냉장고를 공격했습니다. 일부 가게는 음식을 잃었습니다.",
+      "들어 주셔서 감사합니다."
+     ],
+     "g": {
+      "supermarkets": "슈퍼마켓",
+      "supermarket": "슈퍼마켓",
+      "european": "유럽의",
+      "countries": "나라들",
+      "trouble": "문제, 곤란",
+      "fridges": "냉장고",
+      "freezers": "냉동고",
+      "keep": "유지하다, 보관하다",
+      "frozen": "얼린, 냉동된",
+      "according to": "~에 따르면",
+      "news reports": "언론 보도",
+      "hackers": "해커들",
+      "attacked": "공격했다",
+      "computer systems": "컴퓨터 시스템",
+      "control": "제어하다",
+      "cyberattack": "사이버 공격",
+      "sweden": "스웨덴",
+      "belgium": "벨기에",
+      "luxembourg": "룩셈부르크",
+      "ireland": "아일랜드",
+      "estonia": "에스토니아",
+      "celsius": "섭씨",
+      "degrees": "(온도) 도",
+      "inside": "안에",
+      "went bad": "상했다",
+      "throw it away": "그것을 버리다",
+      "chain": "체인점 (여러 매장을 가진 회사)",
+      "several dozen": "수십 개의",
+      "affected": "피해를 입은",
+      "fixed": "고쳤다",
+      "a few minutes": "몇 분",
+      "similar": "비슷한",
+      "hundreds of": "수백의",
+      "seemed to": "~인 것 같았다",
+      "target": "노리다",
+      "old systems": "오래된 시스템",
+      "no one": "아무도 ~않다",
+      "who is behind": "배후가 누구인지",
+      "machines": "기계",
+      "connected to": "~에 연결된",
+      "internet": "인터넷",
+      "to sum up": "정리하면",
+      "lost": "잃었다 (lose의 과거)",
+      "europe": "유럽",
+      "made": "만들었다 (make의 과거)",
+      "france": "프랑스",
+      "thank you for listening": "들어 주셔서 감사합니다"
+     },
+     "ph": [
+      "according to",
+      "news reports",
+      "computer systems",
+      "went bad",
+      "throw it away",
+      "several dozen",
+      "a few minutes",
+      "hundreds of",
+      "seemed to",
+      "old systems",
+      "no one",
+      "who is behind",
+      "connected to",
+      "to sum up",
+      "thank you for listening"
+     ],
+     "kw": [
+      [
+       "hacker",
+       "해커"
+      ],
+      [
+       "cyberattack",
+       "사이버 공격"
+      ],
+      [
+       "control",
+       "제어하다"
+      ],
+      [
+       "chain",
+       "체인점"
+      ],
+      [
+       "affected",
+       "피해를 입은"
+      ],
+      [
+       "similar",
+       "비슷한"
+      ]
+     ],
+     "audio": "audio/2026-11-03-g2-L2.mp3",
+     "duration": 85.9,
+     "speed": 0.8,
+     "voice": "af_heart",
+     "words": 182
+    },
+    "3": {
+     "headline": "Hackers target supermarket freezers in Europe",
+     "p": [
+      "Good morning. This is your morning news in English.",
+      "Supermarkets in several European countries say their fridges and freezers were attacked by hackers. According to the Associated Press, the problems hit stores in Sweden, Belgium, Luxembourg, Ireland and Estonia. In some stores, the temperature inside the units was raised to 50 degrees Celsius. That is hot enough to spoil food very quickly. Some shops had to throw away food that went bad.",
+      "In Sweden, the ICA group said a limited number of its stores were affected. Another chain, Coop, reported problems at six stores. In Belgium, the chain Delhaize called it an \"IT incident.\" It affected several dozen stores, mostly in Belgium and a few in Luxembourg. Carrefour Belgium said 15 of its more than 700 stores were hit. In Estonia, the head of a company that makes the cooling technology said attackers got into a computer that controls the fridges. He said the problem was fixed within minutes.",
+      "This is not the first attack of this kind. Last month, hackers took remote control of cooling systems at hundreds of stores in France. Remote control means controlling something from far away, through the internet. The French attacks seemed to target old systems. So far, no one has said who is behind the new attacks. The cases show that everyday machines connected to the internet can become targets. A cyberattack, or an attack on computer systems, can cause real damage in the physical world.",
+      "To sum up, apparent cyberattacks disrupted fridges and freezers at supermarkets in five European countries, and some stores had to throw out food.",
+      "Thank you for listening."
+     ],
+     "tr": [
+      "좋은 아침입니다. 영어로 듣는 아침 뉴스입니다.",
+      "유럽 여러 나라의 슈퍼마켓들이 냉장고와 냉동고가 해커들의 공격을 받았다고 밝혔습니다. AP 통신에 따르면 피해는 스웨덴, 벨기에, 룩셈부르크, 아일랜드, 에스토니아의 매장에서 일어났습니다. 일부 매장에서는 냉장 설비 안의 온도가 섭씨 50도까지 올라갔습니다. 음식이 아주 빨리 상할 만큼 뜨거운 온도입니다. 일부 가게는 상한 음식을 버려야 했습니다.",
+      "스웨덴에서는 ICA 그룹이 일부 매장이 피해를 입었다고 밝혔습니다. 또 다른 체인 쿱은 매장 6곳에서 문제가 생겼다고 알렸습니다. 벨기에에서는 체인 델하이즈가 이를 'IT 사고'라고 불렀습니다. 이 사고로 대부분 벨기에, 일부는 룩셈부르크에 있는 수십 개 매장이 피해를 입었습니다. 까르푸 벨기에는 700여 개 매장 가운데 15곳이 공격받았다고 밝혔습니다. 에스토니아에서는 냉각 기술을 만드는 회사의 대표가 공격자들이 냉장고를 제어하는 컴퓨터에 침입했다고 말했습니다. 그는 문제가 몇 분 안에 해결됐다고 말했습니다.",
+      "이런 공격은 처음이 아닙니다. 지난달 해커들은 프랑스의 매장 수백 곳에서 냉각 시스템을 원격 조종했습니다. 원격 조종이란 인터넷을 통해 멀리서 무언가를 조종하는 것을 말합니다. 프랑스 공격은 오래된 시스템을 노린 것으로 보였습니다. 지금까지 이번 공격의 배후가 누구인지는 아무도 밝히지 않았습니다. 이번 사건들은 인터넷에 연결된 일상 기계도 공격 대상이 될 수 있다는 것을 보여 줍니다. 사이버 공격, 즉 컴퓨터 시스템에 대한 공격은 현실 세계에 실제 피해를 줄 수 있습니다.",
+      "정리하면, 사이버 공격으로 보이는 일로 유럽 다섯 나라 슈퍼마켓의 냉장고와 냉동고가 고장 났고, 일부 매장은 음식을 버려야 했습니다.",
+      "들어 주셔서 감사합니다."
+     ],
+     "g": {
+      "supermarkets": "슈퍼마켓",
+      "several": "여러",
+      "european": "유럽의",
+      "fridges": "냉장고",
+      "freezers": "냉동고",
+      "attacked": "공격받은",
+      "hackers": "해커들",
+      "according to": "~에 따르면",
+      "associated press": "AP 통신",
+      "sweden": "스웨덴",
+      "belgium": "벨기에",
+      "luxembourg": "룩셈부르크",
+      "ireland": "아일랜드",
+      "estonia": "에스토니아",
+      "temperature": "온도",
+      "units": "(냉장) 설비",
+      "raised": "올려졌다",
+      "celsius": "섭씨",
+      "spoil": "상하게 하다",
+      "throw away": "버리다",
+      "went bad": "상했다",
+      "limited number": "제한된 수, 일부",
+      "affected": "피해를 입은",
+      "chain": "체인점",
+      "reported": "보고했다, 알렸다",
+      "it incident": "IT(전산) 사고",
+      "several dozen": "수십 개의",
+      "mostly": "대부분",
+      "head": "대표, 우두머리",
+      "cooling": "냉각",
+      "technology": "기술",
+      "attackers": "공격자들",
+      "got into": "~에 침입했다",
+      "controls": "제어하다",
+      "within minutes": "몇 분 안에",
+      "of this kind": "이런 종류의",
+      "remote control": "원격 조종",
+      "far away": "멀리",
+      "seemed": "~인 것 같았다",
+      "target": "노리다; 대상",
+      "so far": "지금까지",
+      "who is behind": "배후가 누구인지",
+      "cases": "사건들",
+      "everyday": "일상의",
+      "connected to": "~에 연결된",
+      "targets": "대상, 표적",
+      "cyberattack": "사이버 공격",
+      "cause": "일으키다",
+      "damage": "피해",
+      "physical world": "현실 세계",
+      "to sum up": "정리하면",
+      "apparent": "~인 것으로 보이는",
+      "disrupted": "고장 나게 했다, 방해했다",
+      "throw out": "버리다",
+      "france": "프랑스"
+     },
+     "ph": [
+      "according to",
+      "associated press",
+      "throw away",
+      "went bad",
+      "limited number",
+      "it incident",
+      "several dozen",
+      "got into",
+      "within minutes",
+      "of this kind",
+      "remote control",
+      "far away",
+      "so far",
+      "who is behind",
+      "connected to",
+      "physical world",
+      "to sum up",
+      "throw out"
+     ],
+     "kw": [
+      [
+       "hacker",
+       "해커"
+      ],
+      [
+       "cyberattack",
+       "사이버 공격"
+      ],
+      [
+       "freezer",
+       "냉동고"
+      ],
+      [
+       "spoil",
+       "상하다, 상하게 하다"
+      ],
+      [
+       "affected",
+       "피해를 입은"
+      ],
+      [
+       "remote control",
+       "원격 조종"
+      ],
+      [
+       "target",
+       "노리다; 표적"
+      ],
+      [
+       "disrupt",
+       "방해하다, 고장 내다"
+      ]
+     ],
+     "audio": "audio/2026-11-03-g2-L3.mp3",
+     "duration": 111.7,
+     "speed": 0.9,
+     "voice": "af_heart",
+     "words": 270
+    },
+    "4": {
+     "headline": "Apparent cyberattacks disrupt supermarket refrigeration across Europe",
+     "p": [
+      "Good morning, and welcome to your morning news in English.",
+      "Supermarkets in five European countries have reported disruptions to their refrigeration systems in what appear to be cyberattacks, according to The Associated Press. Stores in Sweden, Belgium, Luxembourg, Ireland and Estonia were affected, and some were forced to discard spoiled food after fridge and freezer temperatures were pushed far above safe levels. The disruptions were reported on Monday.",
+      "In Sweden, the ICA retail group said a limited number of its stores were hit overnight, though it declined to give a figure, while one ICA store in the town of Sjöbo said its units had been set to 50 degrees Celsius. Rival chain Coop reported problems at six stores. Delhaize described an IT incident affecting several dozen stores, mostly in Belgium and a few in Luxembourg. Its fresh and frozen ranges were temporarily limited, but distribution centers and deliveries were not affected. Carrefour Belgium said 15 of its more than 700 stores were affected.",
+      "In Estonia, the chief executive of Kitman Coldtech, which makes the affected technology, said attackers had gained access to a computer controlling a client's refrigeration and raised the temperature, but that the problem was resolved within minutes without significant damage. He declined to name the store. One outlet of the Selver chain was also affected, according to the report.",
+      "The incidents follow a wave of attacks last month in France, where hackers remotely took control of refrigeration systems at hundreds of supermarkets and independent shops, apparently targeting older equipment. No one has publicly identified who is responsible for the latest attacks. The episode highlights how everyday equipment linked to the internet can become a target, with real costs for retailers.",
+      "To sum up, apparent cyberattacks disrupted fridges and freezers at supermarkets across five European countries, forcing some stores to throw away food, just weeks after similar attacks hit France.",
+      "Thank you for listening."
+     ],
+     "tr": [
+      "좋은 아침입니다. 영어로 듣는 아침 뉴스에 오신 것을 환영합니다.",
+      "AP 통신에 따르면 유럽 다섯 나라의 슈퍼마켓들이 사이버 공격으로 보이는 일로 냉장 시스템에 장애가 생겼다고 밝혔습니다. 스웨덴, 벨기에, 룩셈부르크, 아일랜드, 에스토니아의 매장들이 피해를 입었고, 일부 매장은 냉장고와 냉동고 온도가 안전 수준보다 훨씬 높아져 상한 음식을 폐기해야 했습니다. 이 장애는 월요일에 보도됐습니다.",
+      "스웨덴에서는 ICA 유통 그룹이 밤사이 일부 매장이 공격받았다고 밝혔지만 정확한 수는 밝히지 않았고, 셰보에 있는 한 ICA 매장은 냉장 설비가 섭씨 50도로 설정됐었다고 말했습니다. 경쟁 체인 쿱은 매장 6곳에서 문제가 있었다고 알렸습니다. 델하이즈는 대부분 벨기에, 일부는 룩셈부르크에 있는 수십 개 매장에 영향을 준 IT 사고라고 설명했습니다. 신선·냉동 제품 판매가 일시적으로 제한됐지만 물류센터와 배송에는 영향이 없었습니다. 까르푸 벨기에는 700여 개 매장 가운데 15곳이 피해를 입었다고 밝혔습니다.",
+      "에스토니아에서는 해당 기술을 만드는 키트만 콜드텍의 최고경영자가, 공격자들이 한 고객사의 냉장 설비를 제어하는 컴퓨터에 접근해 온도를 올렸지만 문제는 몇 분 안에 큰 피해 없이 해결됐다고 말했습니다. 그는 해당 매장의 이름은 밝히지 않았습니다. 보도에 따르면 셀베르 체인의 한 매장도 피해를 입었습니다.",
+      "이번 사건들은 지난달 프랑스에서 잇따른 공격에 뒤이어 일어났습니다. 당시 해커들은 수백 곳의 슈퍼마켓과 독립 상점에서 냉장 시스템을 원격으로 장악했는데, 오래된 장비를 노린 것으로 보였습니다. 이번 공격의 책임자가 누구인지는 공개적으로 밝혀지지 않았습니다. 이번 일은 인터넷에 연결된 일상 장비가 어떻게 표적이 될 수 있는지, 그리고 유통업체에 실제 비용을 안길 수 있는지를 보여 줍니다.",
+      "정리하면, 사이버 공격으로 보이는 일로 유럽 다섯 나라 슈퍼마켓의 냉장고와 냉동고가 고장 나 일부 매장이 음식을 버려야 했으며, 이는 프랑스에서 비슷한 공격이 있은 지 불과 몇 주 만의 일입니다.",
+      "들어 주셔서 감사합니다."
+     ],
+     "g": {
+      "disruptions": "장애, 혼란",
+      "refrigeration": "냉장",
+      "appear to be": "~인 것으로 보이다",
+      "cyberattacks": "사이버 공격",
+      "associated press": "AP 통신",
+      "affected": "피해를 입은",
+      "forced to": "~하도록 강요된",
+      "discard": "폐기하다",
+      "spoiled": "상한",
+      "pushed": "올려졌다, 밀어붙여졌다",
+      "far above": "~보다 훨씬 높은",
+      "safe levels": "안전 수준",
+      "retail group": "유통 그룹",
+      "limited number": "일부, 제한된 수",
+      "overnight": "밤사이에",
+      "declined to": "~하기를 거절했다",
+      "figure": "수치",
+      "units": "(냉장) 설비",
+      "celsius": "섭씨",
+      "rival": "경쟁하는",
+      "chain": "체인점",
+      "described": "설명했다",
+      "it incident": "IT(전산) 사고",
+      "several dozen": "수십 개의",
+      "fresh and frozen ranges": "신선·냉동 제품군",
+      "temporarily": "일시적으로",
+      "distribution centers": "물류센터",
+      "deliveries": "배송",
+      "chief executive": "최고경영자",
+      "gained access to": "~에 접근했다",
+      "client's": "고객(사)의",
+      "resolved": "해결된",
+      "outlet": "매장, 지점",
+      "selver": "셀베르 (에스토니아 체인)",
+      "declined to name": "이름 밝히기를 거절했다",
+      "within minutes": "몇 분 안에",
+      "significant": "상당한",
+      "damage": "피해",
+      "incidents": "사건들",
+      "a wave of": "일련의, 잇따른",
+      "remotely": "원격으로",
+      "took control of": "~을 장악했다",
+      "independent shops": "독립 상점",
+      "apparently": "보아하니, ~인 것 같은",
+      "targeting": "노리는",
+      "equipment": "장비",
+      "publicly": "공개적으로",
+      "identified": "확인했다, 밝혔다",
+      "responsible for": "~에 책임이 있는",
+      "latest": "최근의",
+      "episode": "사건",
+      "highlights": "부각하다",
+      "linked to": "~에 연결된",
+      "costs": "비용",
+      "retailers": "소매업체, 유통업체",
+      "to sum up": "정리하면",
+      "apparent": "~인 것으로 보이는",
+      "disrupted": "방해했다, 고장 나게 했다",
+      "throw away": "버리다",
+      "similar": "비슷한",
+      "sjöbo": "셰보 (스웨덴의 도시)",
+      "estonia": "에스토니아",
+      "luxembourg": "룩셈부르크"
+     },
+     "ph": [
+      "appear to be",
+      "associated press",
+      "forced to",
+      "far above",
+      "safe levels",
+      "retail group",
+      "limited number",
+      "declined to",
+      "it incident",
+      "several dozen",
+      "fresh and frozen ranges",
+      "distribution centers",
+      "chief executive",
+      "gained access to",
+      "declined to name",
+      "within minutes",
+      "a wave of",
+      "took control of",
+      "independent shops",
+      "responsible for",
+      "linked to",
+      "to sum up",
+      "throw away"
+     ],
+     "kw": [
+      [
+       "disruption",
+       "장애, 혼란"
+      ],
+      [
+       "refrigeration",
+       "냉장"
+      ],
+      [
+       "discard",
+       "폐기하다"
+      ],
+      [
+       "gain access to",
+       "~에 접근하다"
+      ],
+      [
+       "take control of",
+       "~을 장악하다"
+      ],
+      [
+       "retailer",
+       "소매업체"
+      ]
+     ],
+     "audio": "audio/2026-11-03-g2-L4.mp3",
+     "duration": 132.6,
+     "speed": 1.1,
+     "voice": "am_michael",
+     "words": 316
+    },
+    "5": {
+     "headline": "Suspected hackers send supermarket freezers into meltdown across Europe",
+     "p": [
+      "Good morning, and welcome to your morning news in English.",
+      "A spate of apparent cyberattacks has left supermarket fridges and freezers malfunctioning across five European countries, according to The Associated Press, with retailers in Sweden, Belgium, Luxembourg, Ireland and Estonia reporting disruptions. In several cases, intruders appear to have cranked up temperatures to levels that rendered chilled and frozen goods unsellable, forcing stores to write off spoiled stock. The disruptions surfaced on Monday.",
+      "The fallout varied from chain to chain. Sweden's ICA group acknowledged that a limited number of its outlets had been hit overnight, though it declined to put a figure on it, while one ICA store in Sjöbo said its units had been set to a scorching 50 degrees Celsius. Competitor Coop reported problems at six stores. Delhaize, meanwhile, characterized the episode as an IT incident affecting several dozen locations, chiefly in Belgium with a handful in Luxembourg; its fresh and frozen ranges were temporarily curtailed, although distribution centers and deliveries were spared. Carrefour Belgium played down the impact, saying just 15 of its more than 700 stores were affected.",
+      "In Estonia, Jann Mutso, chief executive of Kitman Coldtech, which manufactures the targeted technology, said attackers had broken into a computer controlling one client's refrigeration and pushed the temperature up, but the breach was contained within minutes and caused no significant damage. He declined to name the client, although one outlet of the Selver chain was reported to have been affected.",
+      "The latest disruption comes hard on the heels of a similar campaign in France last month, when hackers seized remote control of cooling systems at hundreds of supermarkets and independent shops, seemingly exploiting outdated equipment. No one has publicly claimed responsibility for the new attacks, and no culprit has been named. Even so, the incidents underscore an uncomfortable reality: as mundane equipment is increasingly hooked up to networks, digital intrusions can translate into tangible losses on supermarket shelves.",
+      "To sum up, suspected cyberattacks have disrupted refrigeration at supermarkets in five European countries, leaving some retailers to dump spoiled food, only weeks after a comparable wave struck France.",
+      "Thank you for listening."
+     ],
+     "tr": [
+      "좋은 아침입니다. 영어로 듣는 아침 뉴스에 오신 것을 환영합니다.",
+      "AP 통신에 따르면 사이버 공격으로 보이는 일이 잇따르면서 유럽 다섯 나라에서 슈퍼마켓 냉장고와 냉동고가 오작동했고, 스웨덴, 벨기에, 룩셈부르크, 아일랜드, 에스토니아의 유통업체들이 장애를 보고했습니다. 여러 사례에서 침입자들이 온도를 크게 올려 냉장·냉동 상품을 팔 수 없게 만든 것으로 보이며, 매장들은 상한 재고를 손실 처리해야 했습니다. 이 장애는 월요일에 드러났습니다.",
+      "피해 정도는 체인마다 달랐습니다. 스웨덴의 ICA 그룹은 밤사이 일부 매장이 공격받았다고 인정했지만 숫자는 밝히지 않았고, 셰보의 한 ICA 매장은 냉장 설비가 섭씨 50도라는 뜨거운 온도로 설정됐었다고 말했습니다. 경쟁사 쿱은 매장 6곳에서 문제가 있었다고 알렸습니다. 한편 델하이즈는 이번 일을 주로 벨기에, 일부 룩셈부르크에 있는 수십 개 지점에 영향을 준 IT 사고라고 규정했습니다. 신선·냉동 제품군이 일시적으로 줄었지만 물류센터와 배송은 피해를 면했습니다. 까르푸 벨기에는 700여 개 매장 가운데 15곳만 영향을 받았다며 피해를 축소했습니다.",
+      "에스토니아에서는 공격 대상이 된 기술을 만드는 키트만 콜드텍의 얀 무초 최고경영자가, 공격자들이 한 고객사의 냉장 설비를 제어하는 컴퓨터에 침입해 온도를 올렸지만 침입은 몇 분 만에 차단됐고 큰 피해는 없었다고 말했습니다. 그는 고객사의 이름은 밝히지 않았지만, 셀베르 체인의 한 매장이 피해를 입은 것으로 보도됐습니다.",
+      "이번 장애는 지난달 프랑스에서 벌어진 비슷한 공격에 바로 뒤이어 일어났습니다. 당시 해커들은 수백 곳의 슈퍼마켓과 독립 상점에서 냉각 시스템을 원격으로 장악했는데, 낡은 장비의 허점을 이용한 것으로 보였습니다. 이번 공격에 대해 책임을 주장한 곳은 없고, 범인도 지목되지 않았습니다. 그렇지만 이번 사건들은 불편한 현실을 드러냅니다. 평범한 장비가 점점 더 네트워크에 연결되면서, 디지털 침입이 슈퍼마켓 진열대의 실질적인 손실로 이어질 수 있다는 것입니다.",
+      "정리하면, 사이버 공격으로 의심되는 일로 유럽 다섯 나라 슈퍼마켓의 냉장 설비가 고장 나 일부 유통업체가 상한 음식을 버려야 했으며, 이는 프랑스에서 비슷한 공격이 휩쓴 지 불과 몇 주 만의 일입니다.",
+      "들어 주셔서 감사합니다."
+     ],
+     "g": {
+      "a spate of": "잇따른",
+      "apparent": "~인 것으로 보이는",
+      "malfunctioning": "오작동하는",
+      "associated press": "AP 통신",
+      "retailers": "소매업체, 유통업체",
+      "disruptions": "장애, 혼란",
+      "intruders": "침입자들",
+      "cranked up": "크게 올렸다",
+      "rendered": "~하게 만들었다",
+      "chilled": "냉장된",
+      "unsellable": "팔 수 없는",
+      "write off": "손실 처리하다",
+      "spoiled stock": "상한 재고",
+      "fallout": "여파, 피해",
+      "varied": "달랐다",
+      "from chain to chain": "체인마다",
+      "acknowledged": "인정했다",
+      "outlets": "매장, 지점",
+      "overnight": "밤사이에",
+      "declined to": "~하기를 거절했다",
+      "put a figure on": "~의 수치를 밝히다",
+      "units": "(냉장) 설비",
+      "scorching": "몹시 뜨거운",
+      "competitor": "경쟁사",
+      "meanwhile": "한편",
+      "characterized": "규정했다",
+      "episode": "사건",
+      "it incident": "IT(전산) 사고",
+      "chiefly": "주로",
+      "a handful": "소수",
+      "ranges": "제품군",
+      "temporarily": "일시적으로",
+      "curtailed": "축소된, 줄어든",
+      "distribution centers": "물류센터",
+      "spared": "피해를 면한",
+      "played down": "축소해 말했다",
+      "impact": "영향, 피해",
+      "chief executive": "최고경영자",
+      "manufactures": "제조하다",
+      "broken into": "~에 침입한",
+      "breach": "(보안) 침해",
+      "client": "고객(사)",
+      "surfaced": "드러났다",
+      "selver": "셀베르 (에스토니아 체인)",
+      "contained": "억제된, 차단된",
+      "significant": "상당한",
+      "hard on the heels of": "~의 바로 뒤에",
+      "campaign": "(일련의) 공격, 활동",
+      "seized": "장악했다",
+      "remote control": "원격 조종",
+      "seemingly": "겉보기에",
+      "exploiting": "악용하며",
+      "outdated": "낡은, 구식의",
+      "claimed responsibility": "책임을 주장했다",
+      "culprit": "범인",
+      "underscore": "강조하다, 드러내다",
+      "uncomfortable reality": "불편한 현실",
+      "mundane": "평범한, 일상적인",
+      "increasingly": "점점 더",
+      "hooked up to": "~에 연결된",
+      "intrusions": "침입",
+      "translate into": "~로 이어지다",
+      "tangible": "실질적인, 만질 수 있는",
+      "losses": "손실",
+      "suspected": "의심되는",
+      "refrigeration": "냉장",
+      "dump": "버리다",
+      "comparable": "비슷한, 견줄 만한",
+      "struck": "강타했다 (strike의 과거)",
+      "sjöbo": "셰보 (스웨덴의 도시)"
+     },
+     "ph": [
+      "a spate of",
+      "associated press",
+      "cranked up",
+      "write off",
+      "spoiled stock",
+      "from chain to chain",
+      "declined to",
+      "put a figure on",
+      "it incident",
+      "a handful",
+      "distribution centers",
+      "played down",
+      "chief executive",
+      "broken into",
+      "hard on the heels of",
+      "remote control",
+      "claimed responsibility",
+      "uncomfortable reality",
+      "hooked up to",
+      "translate into"
+     ],
+     "kw": [
+      [
+       "a spate of",
+       "잇따른"
+      ],
+      [
+       "write off",
+       "손실 처리하다"
+      ],
+      [
+       "play down",
+       "축소하다"
+      ],
+      [
+       "breach",
+       "보안 침해"
+      ],
+      [
+       "hard on the heels of",
+       "~의 바로 뒤에"
+      ],
+      [
+       "tangible",
+       "실질적인"
+      ]
+     ],
+     "audio": "audio/2026-11-03-g2-L5.mp3",
+     "duration": 134.9,
+     "speed": 1.05,
+     "voice": "bf_emma",
+     "words": 354
+    }
+   },
+   "icon": "fridge",
+   "ko": "유럽 마트 냉장고 해킹 피해",
+   "url": "https://www.csmonitor.com/News-Briefs/Supermarkets-in-five-countries-reported-disruptions-to-refrigeration-systems-apparently-by-cyberattacks",
+   "source": "CS Monitor (AP)"
+  },
+  {
+   "id": "2026-11-03-k1",
+   "section": "k",
+   "levels": {
+    "1": {
+     "headline": "Jimin's father's cafe will close",
+     "p": [
+      "Good morning. This is your morning news in English.",
+      "There is a cafe in Busan. Jimin's father runs this cafe. Jimin is a singer in BTS. BTS is a very famous K-pop group.",
+      "The cafe will close in one year. It told fans this on Instagram. It did not say why.",
+      "Many BTS fans visit the cafe. Busan is Jimin's hometown. Inside, there are BTS things and pictures of Jimin. There are also gifts from fans. Sometimes Jimin's father says hello to fans.",
+      "The cafe said thank you to the fans. It wants to make more happy memories this year.",
+      "Again, Jimin's father's cafe will close in one year.",
+      "Thank you for listening."
+     ],
+     "tr": [
+      "좋은 아침입니다. 영어로 듣는 아침 뉴스입니다.",
+      "부산에 한 카페가 있습니다. 지민의 아버지가 이 카페를 운영합니다. 지민은 BTS의 가수입니다. BTS는 아주 유명한 케이팝 그룹입니다.",
+      "이 카페는 1년 뒤에 문을 닫습니다. 카페는 인스타그램으로 팬들에게 이 소식을 알렸습니다. 이유는 말하지 않았습니다.",
+      "많은 BTS 팬들이 이 카페를 찾습니다. 부산은 지민의 고향입니다. 안에는 BTS 물건과 지민의 그림이 있습니다. 팬들이 보낸 선물도 있습니다. 가끔 지민의 아버지가 팬들에게 인사합니다.",
+      "카페는 팬들에게 고맙다고 말했습니다. 올해 더 많은 행복한 추억을 만들고 싶어 합니다.",
+      "다시 말씀드리면, 지민 아버지의 카페가 1년 뒤에 문을 닫습니다.",
+      "들어 주셔서 감사합니다."
+     ],
+     "g": {
+      "cafe": "카페",
+      "busan": "부산",
+      "jimin's": "지민의",
+      "father": "아버지",
+      "runs": "운영한다",
+      "jimin": "지민 (BTS 멤버)",
+      "singer": "가수",
+      "bts": "방탄소년단",
+      "famous": "유명한",
+      "k-pop": "케이팝",
+      "group": "그룹",
+      "close": "문을 닫다",
+      "in one year": "1년 뒤에",
+      "told": "알렸다 (tell의 과거)",
+      "fans": "팬들",
+      "instagram": "인스타그램",
+      "say why": "이유를 말하다",
+      "many": "많은",
+      "visit": "방문하다",
+      "hometown": "고향",
+      "inside": "안에",
+      "things": "물건들",
+      "pictures": "그림, 사진",
+      "also": "또한",
+      "gifts": "선물",
+      "sometimes": "가끔",
+      "says hello": "인사한다",
+      "said thank you": "고맙다고 말했다",
+      "wants": "원한다",
+      "make": "만들다",
+      "happy": "행복한",
+      "memories": "추억",
+      "this year": "올해",
+      "again": "다시 (말하면)",
+      "did not": "~하지 않았다",
+      "thank you for listening": "들어 주셔서 감사합니다"
+     },
+     "ph": [
+      "in one year",
+      "say why",
+      "says hello",
+      "said thank you",
+      "this year",
+      "did not",
+      "thank you for listening"
+     ],
+     "kw": [
+      [
+       "cafe",
+       "카페"
+      ],
+      [
+       "close",
+       "문을 닫다"
+      ],
+      [
+       "fan",
+       "팬"
+      ],
+      [
+       "hometown",
+       "고향"
+      ],
+      [
+       "memory",
+       "추억"
+      ]
+     ],
+     "audio": "audio/2026-11-03-k1-L1.mp3",
+     "duration": 59.6,
+     "speed": 0.75,
+     "voice": "af_heart",
+     "words": 113
+    },
+    "2": {
+     "headline": "Cafe run by Jimin's father to close next year",
+     "p": [
+      "Good morning. This is your morning news in English.",
+      "A popular cafe in Busan will close in one year. Jimin's father runs the cafe. Jimin is a member of BTS, a world-famous K-pop group. According to The Korea Herald, the cafe shared the news on Instagram on November 1. The post said only \"365 days\" were left. It did not give a reason.",
+      "Many BTS fans visit this cafe. Busan is the hometown of Jimin and another member, Jungkook. The cafe has BTS goods, pictures of Jimin and gifts from fans. Visitors can write messages in guest books. Sometimes Jimin's father meets fans and signs his name for them.",
+      "In its post, the cafe thanked fans for their support. It also thanked people who came from far away. The cafe hopes the last year will be a special time. It wants to make more happy memories with fans.",
+      "To sum up, the cafe run by Jimin's father will close in one year. Fans still have one more year to visit.",
+      "Thank you for listening."
+     ],
+     "tr": [
+      "좋은 아침입니다. 영어로 듣는 아침 뉴스입니다.",
+      "부산의 인기 있는 한 카페가 1년 뒤에 문을 닫습니다. 지민의 아버지가 이 카페를 운영합니다. 지민은 세계적으로 유명한 케이팝 그룹 BTS의 멤버입니다. 코리아헤럴드에 따르면 카페는 11월 1일 인스타그램으로 이 소식을 알렸습니다. 게시물에는 '365일'만 남았다고 쓰여 있었습니다. 이유는 밝히지 않았습니다.",
+      "많은 BTS 팬들이 이 카페를 찾습니다. 부산은 지민과 또 다른 멤버 정국의 고향입니다. 카페에는 BTS 굿즈, 지민의 그림, 팬들이 보낸 선물이 있습니다. 방문객들은 방명록에 메시지를 남길 수 있습니다. 가끔 지민의 아버지가 팬들을 만나 사인을 해 줍니다.",
+      "카페는 게시물에서 팬들의 응원에 감사했습니다. 멀리서 찾아온 사람들에게도 고마움을 전했습니다. 카페는 남은 1년이 특별한 시간이 되기를 바랍니다. 팬들과 더 많은 행복한 추억을 만들고 싶어 합니다.",
+      "정리하면, 지민의 아버지가 운영하는 카페가 1년 뒤에 문을 닫습니다. 팬들에게는 아직 1년의 방문 기회가 남아 있습니다.",
+      "들어 주셔서 감사합니다."
+     ],
+     "g": {
+      "popular": "인기 있는",
+      "cafe": "카페",
+      "busan": "부산",
+      "in one year": "1년 뒤에",
+      "jimin's": "지민의",
+      "runs": "운영한다",
+      "member": "멤버, 구성원",
+      "bts": "방탄소년단",
+      "world-famous": "세계적으로 유명한",
+      "k-pop": "케이팝",
+      "according to": "~에 따르면",
+      "korea herald": "코리아헤럴드 (신문)",
+      "shared": "알렸다, 공유했다",
+      "instagram": "인스타그램",
+      "post": "게시물",
+      "were left": "남아 있었다",
+      "give a reason": "이유를 밝히다",
+      "hometown": "고향",
+      "jungkook": "정국 (BTS 멤버)",
+      "goods": "굿즈, 상품",
+      "pictures": "그림, 사진",
+      "gifts": "선물",
+      "visitors": "방문객들",
+      "messages": "메시지",
+      "guest books": "방명록",
+      "sometimes": "가끔",
+      "signs his name": "사인을 해 준다",
+      "thanked": "감사했다",
+      "support": "응원, 지지",
+      "far away": "멀리",
+      "hopes": "바란다",
+      "last year": "마지막 1년",
+      "special": "특별한",
+      "memories": "추억",
+      "to sum up": "정리하면",
+      "run by": "~가 운영하는",
+      "still": "아직",
+      "one more year": "1년 더",
+      "close": "문을 닫다",
+      "fans": "팬들",
+      "another": "또 다른",
+      "thank you for listening": "들어 주셔서 감사합니다"
+     },
+     "ph": [
+      "in one year",
+      "according to",
+      "korea herald",
+      "were left",
+      "give a reason",
+      "guest books",
+      "signs his name",
+      "far away",
+      "last year",
+      "to sum up",
+      "run by",
+      "one more year",
+      "thank you for listening"
+     ],
+     "kw": [
+      [
+       "popular",
+       "인기 있는"
+      ],
+      [
+       "run a cafe",
+       "카페를 운영하다"
+      ],
+      [
+       "hometown",
+       "고향"
+      ],
+      [
+       "guest book",
+       "방명록"
+      ],
+      [
+       "support",
+       "응원, 지지"
+      ],
+      [
+       "memory",
+       "추억"
+      ]
+     ],
+     "audio": "audio/2026-11-03-k1-L2.mp3",
+     "duration": 78.1,
+     "speed": 0.8,
+     "voice": "af_heart",
+     "words": 174
+    },
+    "3": {
+     "headline": "Busan cafe run by BTS Jimin's father to close in a year",
+     "p": [
+      "Good morning. This is your morning news in English.",
+      "A cafe in Busan that is very popular with K-pop fans will close in one year. According to The Korea Herald, the cafe is run by the father of Jimin, a member of the boy band BTS. The cafe announced the news in an Instagram post on November 1. The post said there were \"365 days\" left to spend with customers. The cafe did not give a reason for closing.",
+      "The cafe has become a special place for BTS fans. Busan is the hometown of Jimin and another member, Jungkook. So many fans visit the city to see places linked to the band. Inside the cafe, there are BTS goods, artwork of Jimin and gifts from fans. Visitors can write messages in guest books and buy merchandise. Merchandise means goods with a band's name or pictures on them. Sometimes Jimin's father even greets fans and signs autographs.",
+      "Why does this matter? Places like this cafe draw visitors from around the world. For many fans, the cafe is a way to feel closer to the singer and his family. In its post, the cafe thanked fans for their support over the years. It also thanked people who traveled a long way to visit. The cafe said it hopes the last year will be a precious time to make more happy memories together.",
+      "To sum up, the Busan cafe run by BTS member Jimin's father will close in one year. Until then, it hopes to share more happy memories with fans.",
+      "Thank you for listening."
+     ],
+     "tr": [
+      "좋은 아침입니다. 영어로 듣는 아침 뉴스입니다.",
+      "케이팝 팬들에게 아주 인기 있는 부산의 한 카페가 1년 뒤에 문을 닫습니다. 코리아헤럴드에 따르면 이 카페는 보이 밴드 BTS의 멤버 지민의 아버지가 운영합니다. 카페는 11월 1일 인스타그램 게시물로 이 소식을 알렸습니다. 게시물에는 손님들과 함께할 날이 '365일' 남았다고 쓰여 있었습니다. 카페는 문을 닫는 이유를 밝히지 않았습니다.",
+      "이 카페는 BTS 팬들에게 특별한 장소가 되었습니다. 부산은 지민과 또 다른 멤버 정국의 고향입니다. 그래서 많은 팬들이 그룹과 관련된 장소를 보러 이 도시를 찾습니다. 카페 안에는 BTS 굿즈, 지민을 그린 작품, 팬들이 보낸 선물이 있습니다. 방문객들은 방명록에 메시지를 쓰고 기념품을 살 수 있습니다. 기념품(머천다이즈)이란 그룹의 이름이나 사진이 들어간 상품을 말합니다. 가끔은 지민의 아버지가 직접 팬들을 맞이하고 사인을 해 주기도 합니다.",
+      "이 소식이 왜 중요할까요? 이 카페 같은 곳은 세계 곳곳에서 방문객을 끌어들입니다. 많은 팬들에게 이 카페는 가수와 그의 가족을 더 가깝게 느끼는 방법입니다. 카페는 게시물에서 그동안 보내 준 팬들의 응원에 감사했습니다. 먼 길을 찾아온 사람들에게도 고마움을 전했습니다. 카페는 남은 1년이 함께 더 많은 행복한 추억을 만드는 소중한 시간이 되기를 바란다고 말했습니다.",
+      "정리하면, BTS 멤버 지민의 아버지가 운영하는 부산의 카페가 1년 뒤에 문을 닫습니다. 그때까지 카페는 팬들과 더 많은 행복한 추억을 나누기를 바랍니다.",
+      "들어 주셔서 감사합니다."
+     ],
+     "g": {
+      "busan": "부산",
+      "popular with": "~에게 인기 있는",
+      "k-pop": "케이팝",
+      "in one year": "1년 뒤에",
+      "according to": "~에 따르면",
+      "korea herald": "코리아헤럴드 (신문)",
+      "is run by": "~가 운영한다",
+      "member": "멤버, 구성원",
+      "boy band": "보이 밴드 (남성 그룹)",
+      "bts": "방탄소년단",
+      "announced": "발표했다, 알렸다",
+      "instagram": "인스타그램",
+      "post": "게시물",
+      "left": "남은",
+      "spend": "(시간을) 보내다",
+      "customers": "손님들",
+      "reason": "이유",
+      "closing": "문을 닫음, 폐업",
+      "special": "특별한",
+      "hometown": "고향",
+      "jungkook": "정국 (BTS 멤버)",
+      "linked to": "~와 관련된",
+      "band": "밴드, 그룹",
+      "goods": "상품, 굿즈",
+      "artwork": "미술 작품",
+      "gifts": "선물",
+      "visitors": "방문객들",
+      "guest books": "방명록",
+      "merchandise": "기념품, 굿즈 (판매 상품)",
+      "greets": "맞이하다, 인사하다",
+      "signs autographs": "사인을 해 주다",
+      "why does this matter": "이것이 왜 중요할까요",
+      "draw": "끌어들이다",
+      "from around the world": "세계 곳곳에서",
+      "feel closer to": "~에게 더 가깝게 느끼다",
+      "singer": "가수",
+      "thanked": "감사했다",
+      "support": "응원, 지지",
+      "over the years": "그동안, 여러 해 동안",
+      "traveled a long way": "먼 길을 왔다",
+      "hopes": "바란다",
+      "precious": "소중한",
+      "memories": "추억",
+      "together": "함께",
+      "to sum up": "정리하면",
+      "until then": "그때까지",
+      "share": "나누다",
+      "even": "심지어, 직접",
+      "jimin's": "지민의",
+      "jimin": "지민 (BTS 멤버)"
+     },
+     "ph": [
+      "popular with",
+      "in one year",
+      "according to",
+      "korea herald",
+      "is run by",
+      "boy band",
+      "linked to",
+      "guest books",
+      "signs autographs",
+      "why does this matter",
+      "from around the world",
+      "feel closer to",
+      "over the years",
+      "traveled a long way",
+      "to sum up",
+      "until then"
+     ],
+     "kw": [
+      [
+       "popular with",
+       "~에게 인기 있는"
+      ],
+      [
+       "run",
+       "운영하다"
+      ],
+      [
+       "announce",
+       "발표하다"
+      ],
+      [
+       "hometown",
+       "고향"
+      ],
+      [
+       "merchandise",
+       "기념품, 굿즈"
+      ],
+      [
+       "autograph",
+       "사인"
+      ],
+      [
+       "draw visitors",
+       "방문객을 끌어들이다"
+      ],
+      [
+       "precious",
+       "소중한"
+      ]
+     ],
+     "audio": "audio/2026-11-03-k1-L3.mp3",
+     "duration": 96.8,
+     "speed": 0.9,
+     "voice": "af_heart",
+     "words": 262
+    },
+    "4": {
+     "headline": "Fan favorite cafe run by Jimin's father to close after one more year",
+     "p": [
+      "Good morning, and welcome to your morning news in English.",
+      "A Busan cafe that has become a pilgrimage site for BTS fans is set to close its doors in a year's time. According to The Korea Herald, the cafe, which is run by the father of BTS member Jimin, announced the decision in an Instagram post on November 1, saying it had \"365 days\" left with its customers. No reason was given for the closure.",
+      "BTS, a seven-member group, is one of the best-known music acts in the world, and the cafe has long been a must-visit stop for fans traveling to Busan, the hometown of both Jimin and fellow member Jungkook. Part fan space and part tribute from a father to his son, it is filled with BTS memorabilia, artwork of Jimin and gifts sent by fans. Visitors can leave notes in guest books and purchase merchandise, and on occasion, Jimin's father himself greets fans and signs autographs.",
+      "In its announcement, the cafe thanked customers and fans for their support over the years, singling out those who had traveled long distances to visit. It expressed hope that the final twelve months would be a valuable time for creating more happy memories together. The post gave no details about what will happen to the space afterward.",
+      "Busan, Korea's second-largest city, already attracts many tourists with its beaches and seafood markets, and for K-pop fans, sites linked to their favorite artists are often a key part of the trip. For many of them, this cafe offered a rare personal connection to one of the group's members and his family.",
+      "To sum up, the Busan cafe run by BTS member Jimin's father plans to close in a year, giving fans one last stretch of time to visit a well-loved spot.",
+      "Thank you for listening."
+     ],
+     "tr": [
+      "좋은 아침입니다. 영어로 듣는 아침 뉴스에 오신 것을 환영합니다.",
+      "BTS 팬들의 성지가 된 부산의 한 카페가 1년 뒤 문을 닫을 예정입니다. 코리아헤럴드에 따르면 BTS 멤버 지민의 아버지가 운영하는 이 카페는 11월 1일 인스타그램 게시물로 이 결정을 알리며, 손님들과 함께할 날이 '365일' 남았다고 밝혔습니다. 폐업 이유는 밝히지 않았습니다.",
+      "7인조 그룹 BTS는 세계에서 가장 잘 알려진 음악 그룹 가운데 하나이고, 이 카페는 오랫동안 지민과 같은 그룹 멤버 정국의 고향인 부산을 찾는 팬들이 꼭 들르는 곳이었습니다. 팬들을 위한 공간이자 아버지가 아들에게 바치는 헌사이기도 한 이곳은 BTS 기념품, 지민을 그린 작품, 팬들이 보낸 선물로 가득합니다. 방문객들은 방명록에 글을 남기고 굿즈를 살 수 있으며, 때로는 지민의 아버지가 직접 팬들을 맞이하고 사인을 해 줍니다.",
+      "카페는 공지에서 그동안 응원해 준 손님과 팬들에게 감사하며, 특히 먼 거리를 찾아온 이들을 언급했습니다. 그리고 마지막 열두 달이 함께 더 많은 행복한 추억을 만드는 소중한 시간이 되기를 바란다고 밝혔습니다. 게시물에는 폐업 이후 이 공간이 어떻게 될지에 대한 내용은 없었습니다.",
+      "한국 제2의 도시 부산은 이미 해변과 수산시장으로 많은 관광객을 끌어들이고 있으며, 케이팝 팬들에게는 좋아하는 아티스트와 관련된 장소가 여행의 중요한 부분인 경우가 많습니다. 그런 팬들 상당수에게 이 카페는 멤버 한 명과 그 가족을 개인적으로 가깝게 느낄 수 있는 드문 곳이었습니다.",
+      "정리하면, BTS 멤버 지민의 아버지가 운영하는 부산의 카페가 1년 뒤 문을 닫을 계획이며, 팬들에게는 사랑받아 온 이곳을 찾을 마지막 1년이 주어졌습니다.",
+      "들어 주셔서 감사합니다."
+     ],
+     "g": {
+      "pilgrimage site": "성지, 순례지",
+      "is set to": "~할 예정이다",
+      "close its doors": "문을 닫다, 폐업하다",
+      "in a year's time": "1년 후에",
+      "according to": "~에 따르면",
+      "korea herald": "코리아헤럴드 (신문)",
+      "is run by": "~가 운영한다",
+      "announced": "발표했다",
+      "decision": "결정",
+      "instagram": "인스타그램",
+      "post": "게시물",
+      "customers": "손님들",
+      "closure": "폐업, 폐쇄",
+      "seven-member": "7인조의",
+      "best-known": "가장 잘 알려진",
+      "music acts": "음악 그룹, 공연자",
+      "must-visit": "꼭 가 봐야 할",
+      "stop": "들르는 곳",
+      "hometown": "고향",
+      "fellow member": "같은 그룹 멤버",
+      "jungkook": "정국 (BTS 멤버)",
+      "tribute": "헌사, 경의의 표시",
+      "is filled with": "~로 가득하다",
+      "memorabilia": "기념품",
+      "artwork": "미술 작품",
+      "guest books": "방명록",
+      "purchase": "구입하다",
+      "merchandise": "굿즈, 판매 상품",
+      "on occasion": "때때로",
+      "greets": "맞이하다",
+      "signs autographs": "사인을 해 주다",
+      "announcement": "발표, 공지",
+      "support": "응원, 지지",
+      "over the years": "그동안",
+      "singling out": "특별히 언급하며",
+      "long distances": "먼 거리",
+      "expressed hope": "희망을 나타냈다",
+      "final": "마지막의",
+      "valuable": "소중한",
+      "second-largest": "두 번째로 큰",
+      "attracts": "끌어들이다",
+      "tourists": "관광객",
+      "beaches": "해변",
+      "seafood markets": "수산시장",
+      "sites": "장소",
+      "linked to": "~와 관련된",
+      "artists": "아티스트",
+      "key part": "중요한 부분",
+      "rare": "드문",
+      "gave no details": "자세한 내용을 밝히지 않았다",
+      "afterward": "그 후에",
+      "personal connection": "개인적인 유대",
+      "to sum up": "정리하면",
+      "one last stretch": "마지막 한 기간",
+      "well-loved": "사랑받는",
+      "spot": "장소",
+      "busan": "부산",
+      "bts": "방탄소년단"
+     },
+     "ph": [
+      "pilgrimage site",
+      "is set to",
+      "close its doors",
+      "in a year's time",
+      "according to",
+      "korea herald",
+      "is run by",
+      "music acts",
+      "fellow member",
+      "is filled with",
+      "guest books",
+      "on occasion",
+      "signs autographs",
+      "over the years",
+      "singling out",
+      "long distances",
+      "expressed hope",
+      "seafood markets",
+      "linked to",
+      "key part",
+      "gave no details",
+      "personal connection",
+      "to sum up",
+      "one last stretch"
+     ],
+     "kw": [
+      [
+       "pilgrimage site",
+       "성지, 순례지"
+      ],
+      [
+       "be set to",
+       "~할 예정이다"
+      ],
+      [
+       "tribute",
+       "헌사"
+      ],
+      [
+       "memorabilia",
+       "기념품"
+      ],
+      [
+       "single out",
+       "특별히 언급하다"
+      ],
+      [
+       "attract",
+       "끌어들이다"
+      ]
+     ],
+     "audio": "audio/2026-11-03-k1-L4.mp3",
+     "duration": 114.7,
+     "speed": 1.1,
+     "voice": "am_michael",
+     "words": 302
+    },
+    "5": {
+     "headline": "Jimin's father to shutter beloved Busan fan cafe after one final year",
+     "p": [
+      "Good morning, and welcome to your morning news in English.",
+      "A Busan cafe that has become something of a shrine for BTS devotees will shut its doors a year from now. According to The Korea Herald, the venue, run by the father of BTS member Jimin, broke the news in an Instagram post on November 1, telling patrons that it had \"365 days\" left in their company. The cafe offered no explanation for the decision, leaving fans to savor the time that remains.",
+      "Over the years, the cafe has evolved into an essential port of call for admirers of the seven-member group, one of the most recognizable acts on the global music scene. Busan, the coastal city where both Jimin and bandmate Jungkook grew up, already draws a steady stream of fans retracing the stars' roots, and the cafe stands out among those destinations. Equal parts fan hangout and a father's homage to his son, its interior brims with BTS memorabilia, portraits of Jimin and keepsakes sent in by fans. Visitors pen messages in guest books and pick up merchandise, and every so often, Jimin's father makes an appearance himself, greeting well-wishers and obliging them with autographs.",
+      "In its farewell notice, the cafe expressed gratitude to customers and fans for their loyalty, reserving special thanks for those who had made long journeys to drop by. It voiced the hope that its final year would prove a cherished chapter, filled with fresh moments of joy and memories forged together. The notice left open what will become of the space once the doors close, and no details were offered about any future plans.",
+      "For a city that already pulls in visitors with its beaches and bustling seafood markets, the impending closure means the loss of a distinctive landmark on the K-pop map, one that offered fans a rare, personal link to an artist and his family.",
+      "To sum up, the Busan cafe run by BTS member Jimin's father will close in a year, giving fans one final stretch to pay a visit to a much-loved gathering place before it closes for good.",
+      "Thank you for listening."
+     ],
+     "tr": [
+      "좋은 아침입니다. 영어로 듣는 아침 뉴스에 오신 것을 환영합니다.",
+      "BTS 팬들에게 일종의 성지가 된 부산의 한 카페가 1년 뒤 문을 닫습니다. 코리아헤럴드에 따르면 BTS 멤버 지민의 아버지가 운영하는 이 카페는 11월 1일 인스타그램 게시물을 통해 손님들과 함께할 날이 '365일' 남았다고 알렸습니다. 카페는 결정의 이유를 설명하지 않았고, 팬들은 남은 시간을 소중히 즐기게 됐습니다.",
+      "여러 해에 걸쳐 이 카페는 세계 음악계에서 가장 잘 알려진 그룹 중 하나인 7인조 그룹의 팬들이 꼭 들르는 곳으로 자리 잡았습니다. 지민과 동료 멤버 정국이 자란 해안 도시 부산에는 이미 스타들의 뿌리를 따라가 보려는 팬들이 꾸준히 찾아오는데, 이 카페는 그중에서도 두드러지는 목적지입니다. 팬들의 아지트이자 아버지가 아들에게 바치는 헌사인 이곳의 내부는 BTS 기념품, 지민의 초상화, 팬들이 보낸 기념 선물로 가득합니다. 방문객들은 방명록에 메시지를 쓰고 굿즈를 사며, 이따금 지민의 아버지가 직접 나와 팬들을 맞이하고 기꺼이 사인을 해 줍니다.",
+      "카페는 작별 공지에서 손님과 팬들의 변함없는 사랑에 감사를 표하며, 먼 길을 마다하지 않고 들러 준 이들에게 특별한 감사를 전했습니다. 그리고 마지막 1년이 새로운 기쁨의 순간과 함께 만든 추억으로 가득한 소중한 시간이 되기를 바란다고 밝혔습니다. 공지는 문을 닫은 뒤 이 공간이 어떻게 될지는 열어 두었고, 앞으로의 계획에 대한 설명도 없었습니다.",
+      "해변과 활기찬 수산시장으로 이미 방문객을 끌어들이는 이 도시에서, 다가오는 폐업은 케이팝 지도 위의 독특한 명소 하나를 잃는다는 뜻입니다. 이곳은 팬들에게 한 아티스트와 그 가족과의 드문 개인적인 연결고리가 되어 주었습니다.",
+      "정리하면, BTS 멤버 지민의 아버지가 운영하는 부산의 카페가 1년 뒤 문을 닫으며, 팬들에게는 많은 사랑을 받아 온 이 모임 장소가 완전히 문을 닫기 전에 찾을 마지막 기간이 주어졌습니다.",
+      "들어 주셔서 감사합니다."
+     ],
+     "g": {
+      "something of a": "일종의",
+      "shrine": "성지",
+      "devotees": "열성 팬들",
+      "shut its doors": "문을 닫다",
+      "a year from now": "지금부터 1년 후",
+      "korea herald": "코리아헤럴드 (신문)",
+      "venue": "장소, 업소",
+      "broke the news": "소식을 알렸다",
+      "patrons": "단골손님들",
+      "in their company": "그들과 함께",
+      "offered no explanation": "아무 설명도 하지 않았다",
+      "savor": "음미하다, 만끽하다",
+      "evolved into": "~로 발전했다",
+      "essential": "필수적인",
+      "port of call": "들르는 곳",
+      "admirers": "팬, 찬미자들",
+      "seven-member": "7인조의",
+      "recognizable": "알아보기 쉬운, 유명한",
+      "acts": "공연자, 그룹",
+      "music scene": "음악계",
+      "coastal": "해안의",
+      "bandmate": "같은 밴드 멤버",
+      "jungkook": "정국 (BTS 멤버)",
+      "grew up": "자랐다",
+      "a steady stream of": "꾸준히 이어지는",
+      "retracing": "되짚어 가며",
+      "roots": "뿌리, 출신",
+      "stands out": "두드러지다",
+      "destinations": "목적지",
+      "equal parts": "반반씩",
+      "hangout": "아지트, 모이는 곳",
+      "homage": "헌사, 경의",
+      "interior": "내부",
+      "brims with": "~로 가득하다",
+      "memorabilia": "기념품",
+      "portraits": "초상화",
+      "keepsakes": "기념 선물",
+      "pen": "(글을) 쓰다",
+      "guest books": "방명록",
+      "pick up": "사다, 구하다",
+      "merchandise": "굿즈, 판매 상품",
+      "every so often": "이따금",
+      "makes an appearance": "모습을 드러내다",
+      "well-wishers": "응원하는 사람들",
+      "obliging": "기꺼이 들어주며",
+      "autographs": "사인",
+      "farewell notice": "작별 공지",
+      "expressed gratitude": "감사를 표했다",
+      "loyalty": "충성심, 변함없는 지지",
+      "reserving": "남겨 두며",
+      "long journeys": "먼 여정",
+      "drop by": "들르다",
+      "voiced the hope": "희망을 밝혔다",
+      "prove": "~임이 드러나다",
+      "cherished": "소중한",
+      "chapter": "(인생의) 한 시기",
+      "forged": "만들어진, 다져진",
+      "pulls in": "끌어들이다",
+      "bustling": "북적이는",
+      "seafood markets": "수산시장",
+      "impending": "임박한",
+      "closure": "폐업",
+      "distinctive": "독특한",
+      "landmark": "명소",
+      "personal link": "개인적인 연결고리",
+      "to sum up": "정리하면",
+      "final stretch": "마지막 기간",
+      "pay a visit": "방문하다",
+      "much-loved": "많은 사랑을 받는",
+      "gathering place": "모임 장소",
+      "left open": "미정으로 남겨 두었다",
+      "what will become of": "~이 어떻게 될지",
+      "for good": "영원히, 완전히"
+     },
+     "ph": [
+      "something of a",
+      "shut its doors",
+      "a year from now",
+      "korea herald",
+      "broke the news",
+      "in their company",
+      "offered no explanation",
+      "evolved into",
+      "port of call",
+      "music scene",
+      "grew up",
+      "a steady stream of",
+      "stands out",
+      "equal parts",
+      "brims with",
+      "guest books",
+      "pick up",
+      "every so often",
+      "makes an appearance",
+      "farewell notice",
+      "expressed gratitude",
+      "long journeys",
+      "drop by",
+      "voiced the hope",
+      "pulls in",
+      "seafood markets",
+      "personal link",
+      "to sum up",
+      "final stretch",
+      "pay a visit",
+      "gathering place",
+      "left open",
+      "what will become of",
+      "for good"
+     ],
+     "kw": [
+      [
+       "shrine",
+       "성지"
+      ],
+      [
+       "port of call",
+       "들르는 곳"
+      ],
+      [
+       "homage",
+       "헌사, 경의"
+      ],
+      [
+       "brim with",
+       "~로 가득하다"
+      ],
+      [
+       "memorabilia",
+       "기념품"
+      ],
+      [
+       "impending",
+       "임박한"
+      ]
+     ],
+     "audio": "audio/2026-11-03-k1-L5.mp3",
+     "duration": 117.0,
+     "speed": 1.05,
+     "voice": "bf_emma",
+     "words": 354
+    }
+   },
+   "icon": "coffee",
+   "ko": "BTS 지민 부친 카페 1년 뒤 폐업",
+   "url": "https://www.koreaherald.com/article/10921962",
+   "source": "Korea Herald"
+  }
+ ]
+}
