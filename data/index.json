@@ -1,6 +1,50 @@
 {
- "updated": "2026-11-02T22:07:00Z",
+ "updated": "2026-11-03T21:37:58Z",
  "days": [
+  {
+   "date": "2026-11-04",
+   "items": [
+    {
+     "id": "2026-11-04-g1",
+     "section": "g",
+     "icon": "ship",
+     "ko": "이란, 호르무즈 이틀 내 재개방 제안",
+     "h": {
+      "1": "Iran says it can open a sea road in two days",
+      "2": "Iran says it can reopen a key sea route in two days",
+      "3": "Iran offers to reopen the Strait of Hormuz in two days",
+      "4": "Iran offers two-day plan to reopen Hormuz if US meets demands",
+      "5": "Tehran dangles two-day Hormuz reopening, with strings attached"
+     }
+    },
+    {
+     "id": "2026-11-04-g2",
+     "section": "g",
+     "icon": "steering-wheel",
+     "ko": "안토넬리, 역대 최연소 F1 챔피언",
+     "h": {
+      "1": "A 20-year-old wins the top car racing prize",
+      "2": "Kimi Antonelli becomes the youngest Formula One champion",
+      "3": "Antonelli, 20, becomes Formula One's youngest-ever champion",
+      "4": "Antonelli clinches F1 title to become youngest-ever champion",
+      "5": "Antonelli, 20, rewrites F1 history as its youngest-ever champion"
+     }
+    },
+    {
+     "id": "2026-11-04-k1",
+     "section": "k",
+     "icon": "run",
+     "ko": "샤이니 민호, 마라톤 논란 사과",
+     "h": {
+      "1": "Minho says sorry after his marathon",
+      "2": "SHINee's Minho apologizes after marathon video",
+      "3": "Shinee's Minho apologizes over marathon controversy",
+      "4": "SHINee's Minho apologizes, rejects marathon result over pacing row",
+      "5": "SHINee's Minho renounces marathon time amid pacing controversy"
+     }
+    }
+   ]
+  },
   {
    "date": "2026-11-03",
    "items": [
