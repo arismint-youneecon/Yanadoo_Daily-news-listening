@@ -1,6 +1,50 @@
 {
- "updated": "2026-11-03T21:37:58Z",
+ "updated": "2026-11-04T21:20:50Z",
  "days": [
+  {
+   "date": "2026-11-05",
+   "items": [
+    {
+     "id": "2026-11-05-g1",
+     "section": "g",
+     "icon": "building-bank",
+     "ko": "트럼프, 이스라엘 연 40억 달러 원조 중단 예고",
+     "h": {
+      "1": "The United States will stop giving money to Israel",
+      "2": "Trump says US aid to Israel will end next year",
+      "3": "Trump says the US will end yearly aid to Israel in 2027",
+      "4": "Trump says annual US military aid to Israel will end in 2027",
+      "5": "Trump moves to wind down Israel's $4 billion in annual US aid"
+     }
+    },
+    {
+     "id": "2026-11-05-g2",
+     "section": "g",
+     "icon": "shield",
+     "ko": "그린란드 의회, 미·덴마크 안보협정 승인",
+     "h": {
+      "1": "Greenland says yes to a safety deal",
+      "2": "Greenland approves a security deal with Denmark and the US",
+      "3": "Greenland lawmakers approve a security deal with Denmark and the US",
+      "4": "Greenland ratifies trilateral security pact with Denmark and US",
+      "5": "Greenland signs off on Arctic security pact after months of US pressure"
+     }
+    },
+    {
+     "id": "2026-11-05-k1",
+     "section": "k",
+     "icon": "school",
+     "ko": "QS 아시아 대학 순위, 국내 대학 절반 하락",
+     "h": {
+      "1": "Many Korean universities go down in an Asia ranking",
+      "2": "Half of Korean universities drop in Asia ranking",
+      "3": "More than half of Korean universities fall in QS Asia ranking",
+      "4": "Korean universities slide in QS Asia ranking as regional schools struggle",
+      "5": "QS Asia rankings: Korea's elite hold firm as regional universities lose ground"
+     }
+    }
+   ]
+  },
   {
    "date": "2026-11-04",
    "items": [
