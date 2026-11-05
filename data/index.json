@@ -1,6 +1,50 @@
 {
- "updated": "2026-11-04T21:20:50Z",
+ "updated": "2026-11-05T21:16:23Z",
  "days": [
+  {
+   "date": "2026-11-06",
+   "items": [
+    {
+     "id": "2026-11-06-g1",
+     "section": "g",
+     "icon": "gavel",
+     "ko": "나이지리아 법원, 야당 대선 후보 무효",
+     "h": {
+      "1": "A court in Nigeria stops a top candidate",
+      "2": "Nigerian court cancels a top candidate's run for president",
+      "3": "Nigerian court voids leading opposition candidate's bid",
+      "4": "Nigerian court voids Atiku Abubakar's presidential candidacy",
+      "5": "Nigerian court strikes down Atiku's candidacy weeks before the vote"
+     }
+    },
+    {
+     "id": "2026-11-06-g2",
+     "section": "g",
+     "icon": "scale",
+     "ko": "조슈아 웡, 징역 10년 추가 선고",
+     "h": {
+      "1": "Hong Kong activist gets ten more years in prison",
+      "2": "Joshua Wong gets ten more years in prison",
+      "3": "Hong Kong activist Joshua Wong sentenced to ten more years",
+      "4": "Joshua Wong handed ten more years for foreign collusion",
+      "5": "Joshua Wong jailed for another decade as Hong Kong crackdown grinds on"
+     }
+    },
+    {
+     "id": "2026-11-06-k1",
+     "section": "k",
+     "icon": "package",
+     "ko": "주한미군 2명, 합성 대마 밀반입 혐의",
+     "h": {
+      "1": "Two American soldiers in Korea are accused of bringing in drugs",
+      "2": "Two US service members accused of mailing fake cannabis to Korea",
+      "3": "Two US service members accused of smuggling synthetic cannabis by military mail",
+      "4": "Customs refers two US service members to prosecutors over cannabinoid smuggling",
+      "5": "Military mail exposed as smuggling route as two US troops face cannabinoid charges"
+     }
+    }
+   ]
+  },
   {
    "date": "2026-11-05",
    "items": [
