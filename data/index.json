@@ -1,6 +1,50 @@
 {
- "updated": "2026-11-05T21:16:23Z",
+ "updated": "2026-11-06T21:18:06Z",
  "days": [
+  {
+   "date": "2026-11-07",
+   "items": [
+    {
+     "id": "2026-11-07-g1",
+     "section": "g",
+     "icon": "tent",
+     "ko": "수단 난민 1,540만 명 쉼터 위기",
+     "h": {
+      "1": "Millions in Sudan need a safe place to live",
+      "2": "UN: Millions in Sudan need shelter, but money is short",
+      "3": "UN warns millions of Sudanese may lose shelter",
+      "4": "UN agencies warn millions in Sudan risk losing shelter",
+      "5": "UN sounds alarm as Sudan's shelter crisis deepens"
+     }
+    },
+    {
+     "id": "2026-11-07-g2",
+     "section": "g",
+     "icon": "plane-departure",
+     "ko": "유럽 방송사·항공편 폭탄 위협",
+     "h": {
+      "1": "Fake bomb warnings worry Europe",
+      "2": "Bomb threat emails reach TV stations in Europe",
+      "3": "Bomb threats hit European newsrooms after flight scares",
+      "4": "Hoax bomb threats spread from airlines to European newsrooms",
+      "5": "Hoax bomb threat campaign widens to European broadcasters"
+     }
+    },
+    {
+     "id": "2026-11-07-k1",
+     "section": "k",
+     "icon": "trending-down",
+     "ko": "AI 우려에 코스피 6% 급락",
+     "h": {
+      "1": "Korean stock prices fall a lot",
+      "2": "The Kospi drops 6 percent on AI worries",
+      "3": "Kospi falls 6 percent as AI fears hit chip stocks",
+      "4": "Kospi plunges 6 percent as AI sell-off deepens",
+      "5": "Kospi tumbles 6 percent in brutal AI-driven rout"
+     }
+    }
+   ]
+  },
   {
    "date": "2026-11-06",
    "items": [
