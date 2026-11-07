@@ -1,6 +1,57 @@
 {
- "updated": "2026-11-07T01:32:14Z",
+ "updated": "2026-11-07T21:28:45Z",
  "days": [
+  {
+   "date": "2026-11-08",
+   "items": [
+    {
+     "id": "2026-11-08-g1",
+     "section": "g",
+     "icon": "alert-triangle",
+     "tag": "주요",
+     "ko": "예멘 수도 인근 공습, 최소 22명 사망",
+     "h": {
+      "1": "Bombs hit a village in Yemen",
+      "2": "Airstrikes near Yemen's capital kill at least 22",
+      "3": "Airstrikes near Yemen's capital kill at least 22 people",
+      "4": "Airstrikes near Sanaa kill at least 22; Houthis blame Saudi Arabia",
+      "5": "Deadly strikes near Sanaa deepen fears for Yemen's fragile truce"
+     }
+    },
+    {
+     "id": "2026-11-08-g2",
+     "section": "g",
+     "icon": "ball-football",
+     "tag": "화제",
+     "ko": "호날두, 포르투갈 대표팀 은퇴 발표",
+     "h": {
+      "1": "Ronaldo stops playing for Portugal",
+      "2": "Ronaldo says goodbye to Portugal's national team",
+      "3": "Ronaldo retires from Portugal's national team",
+      "4": "Cristiano Ronaldo ends his record-breaking career with Portugal",
+      "5": "Ronaldo bows out of international football, ending a record-shattering era"
+     }
+    },
+    {
+     "id": "2026-11-08-k1",
+     "section": "k",
+     "icon": "bike",
+     "tag": null,
+     "ko": "여행 유튜버, 볼리비아서 사고로 숨져",
+     "h": {
+      "1": "A Korean cycling YouTuber dies in Bolivia",
+      "2": "Korean travel YouTuber killed in Bolivia road accident",
+      "3": "Korean cycling YouTuber 'Jin's Travel' dies in Bolivia hit-and-run",
+      "4": "Korean travel YouTuber killed in hit-and-run during Bolivia cycling trip",
+      "5": "Cycling YouTuber 'Jin's Travel' killed in Bolivian hit-and-run"
+     }
+    }
+   ],
+   "video": {
+    "id": "TuUX11pTBV4",
+    "title": "Thanks, Harry!"
+   }
+  },
   {
    "date": "2026-11-07",
    "items": [
