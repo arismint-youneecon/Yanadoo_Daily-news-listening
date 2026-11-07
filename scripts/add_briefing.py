@@ -8,6 +8,7 @@ Every story is written at 5 levels (1 = TOEIC ~300 ... 5 = TOEIC ~990). Run this
 item.json fields:
   slot      "g1" | "g2" | "k1"   (section + order; the story id becomes <date>-<slot>)
   icon      Tabler icon name without "ti-" (optional; shared by all levels)
+  tag       short Korean label shown after 해외/국내, e.g. "주요" for g1 and "화제" for g2 (optional; shared)
   ko        short Korean summary (shared by all levels)
   url       original article URL (shared)
   source    "CS Monitor (AP)" or "Korea Herald" (shared)
@@ -32,7 +33,7 @@ LEVELS = (1, 2, 3, 4, 5)
 VOICE = {1: "af_heart", 2: "af_heart", 3: "af_heart", 4: "am_michael", 5: "bf_emma"}
 SPEED = {1: 0.75, 2: 0.8, 3: 0.9, 4: 1.1, 5: 1.05}
 SENTENCE_GAP = {1: 0.5, 2: 0.3, 3: 0.0, 4: 0.0, 5: 0.0}
-SHARED = ("icon", "ko", "url", "source")
+SHARED = ("icon", "tag", "ko", "url", "source")
 PER_LEVEL = ("headline", "p", "tr", "g", "ph", "kw")
 WORDS = {1: (100, 140), 2: (170, 210), 3: (250, 300), 4: (300, 350), 5: (350, 420)}
 ORDER = {"g1": 0, "g2": 1, "g3": 2, "k1": 3, "k2": 4, "k3": 5}
@@ -82,7 +83,7 @@ def rebuild_index():
     for path in sorted(glob.glob(os.path.join(DATA, "????-??-??.json")), reverse=True):
         d = read_json(path)
         days.append({"date": d["date"], "items": [
-            {"id": it["id"], "section": it["section"], "icon": it.get("icon"), "ko": it.get("ko"),
+            {"id": it["id"], "section": it["section"], "icon": it.get("icon"), "tag": it.get("tag"), "ko": it.get("ko"),
              "h": {lv: v.get("headline") for lv, v in sorted(it.get("levels", {}).items())}}
             for it in d["items"]]})
     write_json(os.path.join(DATA, "index.json"),

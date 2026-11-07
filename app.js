@@ -61,6 +61,7 @@
       setNotifyTime: function (c, t) { return rpc("club_set_notify_time", { p_code: c, p_time: t }); },
       pushTest: function (c) { return rpc("club_push_test", { p_code: c }); },
       myStats: function (c) { return rpc("club_my_stats", { p_code: c }); },
+      board: function (c) { return rpc("club_board", { p_code: c }); },
       members: function (c) { return rpc("club_admin_members", { p_code: c }); },
       addMember: function (c, n, a) { return rpc("club_admin_add_member", { p_code: c, p_name: n, p_is_admin: !!a }); },
       resetCode: function (c, id) { return rpc("club_admin_reset_code", { p_code: c, p_member: id }); },
@@ -102,6 +103,18 @@
         var uniq = function (k) { var o = {}; ev.filter(function (e) { return e.kind === k; }).forEach(function (e) { o[e.briefing_id] = 1; }); return Object.keys(o); };
         return p({ name: m.name, streak: streak, days_total: days.length, days_30: days.filter(function (x) { return x > since(30); }).length, visit_days: days.filter(function (x) { return x > since(35); }).sort(), played: uniq("play").length, completed: uniq("complete"), lookups: ev.filter(function (e) { return e.kind === "lookup"; }).length });
       },
+      board: function (c) {
+        var d = db(), me = find(d, c); if (!me) return p(null);
+        var today = kst(), dt = new Date(today + "T00:00:00Z"), wk = kst(new Date(dt.getTime() - ((dt.getUTCDay() + 6) % 7) * 864e5 - 9 * 3600e3));
+        return p({ today: today, week_start: wk, members: d.members.filter(function (m) { return m.active; }).map(function (m) {
+          var vs = d.visits.filter(function (v) { return v.member_id === m.id; }).map(function (v) { return v.day; });
+          var set = {}; vs.forEach(function (x) { set[x] = 1; });
+          var streak = 0, t = new Date(); if (!set[kst(t)]) t = new Date(t.getTime() - 864e5);
+          while (set[kst(t)]) { streak++; t = new Date(t.getTime() - 864e5); }
+          var done = function (from, to) { var o = {}; d.events.filter(function (e) { var day = kst(new Date(e.at)); return e.member_id === m.id && e.kind === "complete" && day >= from && (!to || day <= to); }).forEach(function (e) { o[e.briefing_id] = 1; }); return Object.keys(o).length; };
+          return { name: m.name, level: m.level || null, is_me: m.id === me.id, week_days: vs.filter(function (x) { return x >= wk; }).length, week_visits: vs.filter(function (x) { return x >= wk; }).sort(), week_done: done(wk), today_done: done(today, today), today_visit: !!set[today], total_done: done("0000"), streak: streak };
+        }).sort(function (a, b) { return b.week_done - a.week_done || b.week_days - a.week_days || b.streak - a.streak || a.name.localeCompare(b.name); }) });
+      },
       members: function (c) {
         var d = db(); admin(d, c);
         return p(d.members.map(function (m) {
@@ -142,6 +155,7 @@
   }
   function fmtDur(s) { s = Math.round(s || 0); return Math.floor(s / 60) + "분 " + (s % 60) + "초"; }
   function sectionName(s) { return s === "g" ? "해외" : "국내"; }
+  function sectionLabel(it) { return sectionName(it.section) + (it.tag ? " · " + it.tag : ""); }
   function render(nodes) { app.innerHTML = ""; nodes.forEach(function (n) { if (n) app.appendChild(n); }); window.scrollTo(0, 0); }
   function setTab(name) { Array.prototype.forEach.call(tabs.querySelectorAll("a"), function (a) { if (a.dataset.tab === name) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current"); }); }
   function errBox(msg) { return el("div", { class: "card pad" }, [el("p", { class: "err", text: msg })]); }
@@ -215,7 +229,7 @@
       el("span", { class: "tile" }, [icon(it.icon || (it.section === "g" ? "world" : "map-pin"))]),
       el("span", { class: "txt" }, [
         el("span", { class: "hl", text: heads[lv] || it.headline || "" }),
-        el("span", { class: "sub" }, [el("span", { class: "bd " + it.section, text: sectionName(it.section) }), done ? el("span", { class: "bd done", text: "다 들음" }) : null, it.ko])
+        el("span", { class: "sub" }, [el("span", { class: "bd " + it.section, text: sectionLabel(it) }), done ? el("span", { class: "bd done", text: "다 들음" }) : null, it.ko])
       ]),
       el("i", { class: "ti ti-chevron-right chev", "aria-hidden": "true" })
     ]);
@@ -345,7 +359,7 @@
       render([
         el("a", { href: "#/", class: "small", text: "← 목록으로" }),
         el("div", null, [
-          el("p", { class: "eyebrow" }, [el("span", { class: "bd " + story.section, text: sectionName(story.section) }), fmtDate(date) + " · " + lv + "단계" + (it.duration ? " · " + fmtDur(it.duration) : "")]),
+          el("p", { class: "eyebrow" }, [el("span", { class: "bd " + story.section, text: sectionLabel(story) }), fmtDate(date) + " · " + lv + "단계" + (it.duration ? " · " + fmtDur(it.duration) : "")]),
           el("h1", { class: "hl", style: "font-size:22px", text: it.headline }),
           el("p", { class: "muted", style: "margin:4px 0 0", text: story.ko })
         ]),
@@ -518,6 +532,65 @@
     ]));
   }
 
+  // 함께: 이번 주 회원들의 학습 현황 (월요일마다 새로 시작)
+  function viewClub() {
+    setTab("club");
+    render([el("p", { class: "muted", text: "불러오는 중…" })]);
+    api.board(state.code).then(function (b) {
+      if (!b) { render([errBox("다시 로그인해 주세요.")]); return; }
+      var ms = b.members || [], days = [], wk = new Date(b.week_start + "T12:00:00Z");
+      for (var i = 0; i < 7; i++) days.push(new Date(wk.getTime() + i * 864e5).toISOString().slice(0, 10));
+      var rank = 0, prev = null;
+      ms.forEach(function (m, i) { var key = m.week_done + "/" + m.week_days; if (key !== prev) { rank = i + 1; prev = key; } m.rank = rank; });
+      var me = ms.filter(function (m) { return m.is_me; })[0];
+      var listened = ms.filter(function (m) { return m.today_done > 0; }).length;
+      var total = ms.reduce(function (a, m) { return a + m.week_done; }, 0);
+      var rows = ms.map(function (m) {
+        var set = {}; (m.week_visits || []).forEach(function (x) { set[x] = 1; });
+        var strip = el("div", { class: "wk", "aria-label": "이번 주 접속 " + m.week_days + "일" }, days.map(function (d, i) {
+          return el("span", { class: (set[d] ? "on" : "") + (d === b.today ? " today" : ""), "aria-hidden": "true", text: "월화수목금토일"[i] });
+        }));
+        var status = m.today_done > 0 ? el("span", { class: "bd ok", text: "오늘 " + m.today_done + "개 들음" }) : (m.today_visit ? el("span", { class: "bd", text: "오늘 접속" }) : null);
+        return el("div", { class: "card mrow" + (m.is_me ? " me" : "") }, [
+          el("span", { class: "rank" + (m.rank <= 3 && m.week_done > 0 ? " podium" : ""), text: String(m.rank) }),
+          el("div", null, [
+            el("div", { class: "mtop" }, [el("span", { class: "mname", text: m.name }), m.is_me ? el("span", { class: "bd done", text: "나" }) : null, m.level ? el("span", { class: "bd", text: m.level + "단계" }) : null, status]),
+            strip,
+            el("div", { class: "mstat" }, [
+              el("span", null, ["이번 주 끝까지 들음 ", el("b", { text: m.week_done + "개" })]),
+              el("span", null, ["접속 ", el("b", { text: m.week_days + "일" })]),
+              m.streak > 1 ? el("span", { class: "row", style: "gap:2px" }, [icon("flame"), "연속 " + m.streak + "일"]) : null
+            ])
+          ])
+        ]);
+      });
+      // 바로 위 순위와의 차이를 정확히 알려 줍니다.
+      var cheer = "";
+      if (me && me.week_done === 0) cheer = "오늘 브리핑 하나로 이번 주를 시작해 보세요.";
+      else if (me && me.rank === 1) cheer = "이번 주 1위예요. 지금처럼 이어 가세요.";
+      else if (me) {
+        var above = ms.filter(function (m) { return m.rank < me.rank; }).pop();
+        var gap = above ? above.week_done - me.week_done : 0;
+        cheer = "이번 주 " + me.rank + "위예요. " + (gap > 0 ? "브리핑 " + (gap + 1) + "개를 더 끝까지 들으면 " + above.rank + "위로 올라가요." : "하루 더 접속하면 순위가 올라갈 수 있어요.");
+      }
+      render([
+        el("div", null, [
+          el("p", { class: "eyebrow", text: "이번 주 · " + fmtDate(days[0]) + " ~ " + fmtDate(days[6]) }),
+          el("h1", { text: "함께 듣기" })
+        ]),
+        el("div", { class: "tiles" }, [
+          el("div", { class: "stat" }, [el("div", { class: "n", text: listened + "/" + ms.length + "명" }), el("div", { class: "l", text: "오늘 들은 회원" })]),
+          el("div", { class: "stat" }, [el("div", { class: "n", text: total + "개" }), el("div", { class: "l", text: "이번 주 함께 들은 브리핑" })])
+        ]),
+        cheer ? el("p", { class: "small", style: "margin:0", text: cheer }) : null,
+        el("div", { class: "board" }, rows),
+        el("p", { class: "small muted", text: "월요일마다 새로 시작해요. 순위는 이번 주 끝까지 들은 브리핑 수, 접속한 날 순서예요. 다른 회원에게는 이름, 단계, 접속일, 들은 개수만 보여요." })
+      ]);
+    }).catch(function (e) {
+      render([errBox(setupMissing(e) ? "관리자 설정(업데이트 3)이 아직 끝나지 않았어요. 조금만 기다려 주세요." : "불러오지 못했어요. 잠시 뒤 다시 열어 주세요.")]);
+    });
+  }
+
   function viewMe() {
     setTab("me");
     refreshStats().then(function (s) {
@@ -631,6 +704,7 @@
     if ((m = h.match(/^\/b\/(\d{4}-\d{2}-\d{2})\/([\w-]+?)(?:\/([1-5]))?$/))) return viewBriefing(m[1], m[2], m[3] ? Number(m[3]) : null);
     if (h === "/archive") return viewArchive();
     if (h === "/me") return viewMe();
+    if (h === "/club") return viewClub();
     if (h === "/admin") return viewAdmin();
     return viewToday();
   }

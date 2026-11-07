@@ -56,7 +56,7 @@ button{font:inherit;color:inherit}
 main{max-width:640px;margin:0 auto;padding:16px max(16px,env(safe-area-inset-right,0px)) calc(96px + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px));display:flex;flex-direction:column;gap:14px}
 .tabs{position:fixed;left:0;right:0;bottom:0;z-index:5;background:var(--card);border-top:1px solid var(--line);padding-bottom:env(safe-area-inset-bottom,0px)}
 .tabs-in{max-width:640px;margin:0 auto;display:flex}
-.tabs a{flex:1;display:flex;flex-direction:column;align-items:center;gap:2px;padding:8px 4px 10px;font-size:11px;color:var(--faint);text-decoration:none}
+.tabs a{flex:1;min-width:0;white-space:nowrap;display:flex;flex-direction:column;align-items:center;gap:2px;padding:8px 4px 10px;font-size:11px;color:var(--faint);text-decoration:none}
 .tabs a i{font-size:22px}
 .tabs a[aria-current="page"]{color:var(--accent)}
 
@@ -118,6 +118,21 @@ a.pill[aria-current="true"]{color:var(--accent-ink)}
 .ex-en{font-family:var(--f-en);font-size:16px;line-height:1.6;margin:0 0 4px}
 .ex-ko{font-size:12.5px;color:var(--muted);margin:0;line-height:1.6}
 .btn:disabled{opacity:.6;cursor:default}
+/* club board */
+.board{display:flex;flex-direction:column;gap:8px}
+.mrow{display:grid;grid-template-columns:28px minmax(0,1fr);gap:4px 10px;align-items:start;padding:12px 14px}
+.mrow.me{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent) inset}
+.rank{font-weight:700;font-size:17px;color:var(--muted);text-align:center;line-height:1.5}
+.rank.podium{color:var(--accent)}
+.mtop{display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+.mname{font-weight:700;font-size:15px}
+.wk{display:flex;gap:4px;margin:6px 0 4px}
+.wk span{width:24px;height:24px;border-radius:7px;background:var(--chip);color:var(--faint);font-size:10px;display:flex;align-items:center;justify-content:center}
+.wk span.on{background:var(--accent);color:var(--accent-ink)}
+.wk span.today{outline:1.5px solid var(--accent);outline-offset:1px}
+.mstat{font-size:12.5px;color:var(--muted);display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.mstat b{color:var(--ink)}
+.bd.ok{background:var(--chip);color:var(--ok)}
 .sel{font:inherit;font-size:15px;padding:7px 10px;border-radius:10px;border:1px solid var(--line);background:var(--card);color:var(--ink);min-height:40px}
 .note.small{font-size:13px}
 
@@ -168,9 +183,10 @@ a.pill[aria-current="true"]{color:var(--accent-ink)}
 <main id="app" aria-live="polite"><p class="muted">불러오는 중…</p></main>
 <nav class="tabs" id="tabs" hidden aria-label="메뉴"><div class="tabs-in">
   <a href="#/" data-tab="today"><i class="ti ti-headphones" aria-hidden="true"></i>오늘</a>
-  <a href="#/archive" data-tab="archive"><i class="ti ti-calendar" aria-hidden="true"></i>지난 브리핑</a>
+  <a href="#/archive" data-tab="archive"><i class="ti ti-calendar" aria-hidden="true"></i>지난 뉴스</a>
+  <a href="#/club" data-tab="club"><i class="ti ti-users-group" aria-hidden="true"></i>함께</a>
   <a href="#/me" data-tab="me"><i class="ti ti-chart-dots" aria-hidden="true"></i>내 기록</a>
-  <a href="#/admin" data-tab="admin" id="adminTab" hidden><i class="ti ti-users" aria-hidden="true"></i>관리</a>
+  <a href="#/admin" data-tab="admin" id="adminTab" hidden><i class="ti ti-settings" aria-hidden="true"></i>관리</a>
 </div></nav>
 <script src="config.js"></script>
 <script src="app.js"></script>
