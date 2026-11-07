@@ -267,6 +267,7 @@
     return el("section", { class: "card pad vcard", "aria-label": label }, [
       el("p", { class: "eyebrow", style: "margin:0" }, [el("span", { class: "bd v", text: "영상" }), label]),
       el("h2", { class: "hl", style: "margin:0;font-size:17px", text: v.title }),
+      el("p", { class: "small muted", style: "margin:0", text: [v.series ? "Pororo " + v.series : null, v.length ? v.length.replace(/^(\d+):(\d\d)$/, "$1분 $2초") : null, "공식 채널"].filter(Boolean).join(" · ") }),
       box,
       el("div", { class: "row", style: "gap:8px;flex-wrap:wrap" }, [
         el("a", { class: "btn small", href: v.url || ("https://www.youtube.com/watch?v=" + encodeURIComponent(v.id)), target: "_blank", rel: "noopener" }, [icon("brand-youtube"), "YouTube에서 보기"])
