@@ -249,6 +249,40 @@
     ]);
   }
 
+  // 오늘의 뽀로로: 공식 채널 영상을 앱 안에서 봅니다. 데이터를 아끼려고 누를 때 플레이어를 엽니다.
+  function videoCard(v, label) {
+    var box = el("div", { class: "vbox" });
+    var thumb = el("button", { type: "button", class: "vthumb", "aria-label": "영상 재생: " + v.title }, [
+      el("img", { src: "https://i.ytimg.com/vi/" + encodeURIComponent(v.id) + "/hqdefault.jpg", alt: "", loading: "lazy" }),
+      el("span", { class: "vplay", "aria-hidden": "true" }, [icon("player-play")])
+    ]);
+    thumb.addEventListener("click", function () {
+      box.innerHTML = "";
+      box.appendChild(el("iframe", {
+        src: "https://www.youtube-nocookie.com/embed/" + encodeURIComponent(v.id) + "?autoplay=1&playsinline=1&rel=0&cc_load_policy=1&cc_lang_pref=en&hl=ko",
+        title: v.title, allow: "autoplay; encrypted-media; picture-in-picture; fullscreen", allowfullscreen: true, referrerpolicy: "strict-origin-when-cross-origin"
+      }));
+    });
+    box.appendChild(thumb);
+    return el("section", { class: "card pad vcard", "aria-label": label }, [
+      el("p", { class: "eyebrow", style: "margin:0" }, [el("span", { class: "bd v", text: "영상" }), label]),
+      el("h2", { class: "hl", style: "margin:0;font-size:17px", text: v.title }),
+      box,
+      el("div", { class: "row", style: "gap:8px;flex-wrap:wrap" }, [
+        el("a", { class: "btn small", href: v.url || ("https://www.youtube.com/watch?v=" + encodeURIComponent(v.id)), target: "_blank", rel: "noopener" }, [icon("brand-youtube"), "YouTube에서 보기"])
+      ]),
+      el("p", { class: "small muted", style: "margin:0", text: "영어 자막이 켜져서 시작해요. 안 보이면 영상의 CC(자막) 버튼을 누르세요. 대사 전체를 글로 보려면 YouTube 앱에서 영상 설명 → '스크립트 표시'를 누르세요." })
+    ]);
+  }
+
+  function viewVideo(date) {
+    setTab("archive");
+    getDay(date).then(function (day) {
+      if (!day.video) { render([errBox("이 날은 영상이 없어요.")]); return; }
+      render([el("a", { class: "small", href: "#/archive", text: "← 지난 뉴스" }), videoCard(day.video, "뽀로로 · " + fmtDate(date))]);
+    }).catch(function () { render([errBox("영상을 불러오지 못했어요.")]); });
+  }
+
   function viewToday() {
     setTab("today");
     Promise.all([getIndex(), refreshStats()]).then(function (r) {
@@ -268,7 +302,8 @@
             s.streak ? el("span", { class: "row muted", style: "gap:4px" }, [icon("flame"), "연속 " + s.streak + "일째 접속 중"]) : null
           ]),
           el("div", { class: "list" }, day.items.map(function (it) { return briefingCard(it, latest.date); })),
-          el("p", { class: "small muted", text: "대본 없이 한 번 듣고, 대본을 열어 모르는 단어를 확인한 뒤, 다시 한 번 들어 보세요." })
+          el("p", { class: "small muted", text: "대본 없이 한 번 듣고, 대본을 열어 모르는 단어를 확인한 뒤, 다시 한 번 들어 보세요." }),
+          day.video ? videoCard(day.video, "오늘의 뽀로로") : null
         ]);
       });
     }).catch(function () { render([errBox("브리핑을 불러오지 못했어요. 잠시 뒤 다시 열어 주세요.")]); });
@@ -279,8 +314,12 @@
     Promise.all([getIndex(), refreshStats()]).then(function (r) {
       var days = (r[0].days || []);
       if (!days.length) { render([el("div", { class: "card empty", text: "지난 브리핑이 아직 없어요." })]); return; }
-      render([el("h1", { text: "지난 브리핑" })].concat(days.map(function (d) {
-        return el("section", { class: "list" }, [el("h2", { text: fmtDate(d.date) })].concat(d.items.map(function (it) { return briefingCard(it, d.date); })));
+      render([el("h1", { text: "지난 뉴스" })].concat(days.map(function (d) {
+        var vrow = d.video ? el("a", { class: "card item v", href: "#/v/" + d.date }, [
+          el("span", { class: "tile" }, [icon("player-play")]),
+          el("span", { class: "txt" }, [el("span", { class: "hl", text: d.video.title }), el("span", { class: "sub" }, [el("span", { class: "bd v", text: "뽀로로 영상" })])])
+        ]) : null;
+        return el("section", { class: "list" }, [el("h2", { text: fmtDate(d.date) })].concat(d.items.map(function (it) { return briefingCard(it, d.date); })).concat([vrow]));
       })));
     }).catch(function () { render([errBox("목록을 불러오지 못했어요.")]); });
   }
@@ -767,6 +806,7 @@
     if (h === "/level" || !state.level) return viewLevel();
     if ((m = h.match(/^\/b\/(\d{4}-\d{2}-\d{2})\/([\w-]+?)(?:\/([1-5]))?$/))) return viewBriefing(m[1], m[2], m[3] ? Number(m[3]) : null);
     if (h === "/archive") return viewArchive();
+    if ((m = h.match(/^\/v\/(\d{4}-\d{2}-\d{2})$/))) return viewVideo(m[1]);
     if (h === "/me") return viewMe();
     if (h === "/club") return viewClub("month");
     if (h === "/club/week") return viewClub("week");

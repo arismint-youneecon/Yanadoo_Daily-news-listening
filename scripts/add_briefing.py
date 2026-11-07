@@ -82,10 +82,13 @@ def rebuild_index():
     days = []
     for path in sorted(glob.glob(os.path.join(DATA, "????-??-??.json")), reverse=True):
         d = read_json(path)
-        days.append({"date": d["date"], "items": [
+        day_entry = {"date": d["date"], "items": [
             {"id": it["id"], "section": it["section"], "icon": it.get("icon"), "tag": it.get("tag"), "ko": it.get("ko"),
              "h": {lv: v.get("headline") for lv, v in sorted(it.get("levels", {}).items())}}
-            for it in d["items"]]})
+            for it in d["items"]]}
+        if d.get("video"):
+            day_entry["video"] = {"id": d["video"]["id"], "title": d["video"].get("title")}
+        days.append(day_entry)
     write_json(os.path.join(DATA, "index.json"),
                {"updated": datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"), "days": days})
     return len(days)

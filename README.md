@@ -28,6 +28,9 @@ Claude 계정 없이 개인 접속 코드로 들어오며, 관리자는 회원�
 | 해외 · 주요 | 지난 36시간 동안 세계적으로 가장 중요한 뉴스 | CS Monitor News Briefs (AP) |
 | 해외 · 화제 | 과학, 우주, 동물, 기술, 스포츠 기록, 문화처럼 이야깃거리가 되는 가벼운 뉴스 (전쟁, 범죄, 정치, 연예인 사생활 제외) | CS Monitor, 없으면 AP, Reuters, BBC, Smithsonian 등 |
 | 국내 | 오늘의 속보, 없으면 인기 순위 1위 | Korea Herald |
+| 오늘의 뽀로로 | 공식 채널 최신 에피소드 영상 1개 (쇼츠, 긴 모음 영상 제외, 반복 없음). 앱 안에서 YouTube 플레이어로 보고 영어 자막(CC)이 켜진 채 시작 | Pororo the Little Penguin 공식 YouTube 채널 (`scripts/add_video.py`) |
+
+영상은 링크만 저장하고 YouTube 공식 플레이어로 보여 줍니다. 대사 원문은 저작권이 있어 사이트에 옮기지 않습니다(자막은 YouTube에서 제공).
 
 ## 함께 (회원 달별·이번 주 현황)
 
