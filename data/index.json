@@ -1,6 +1,57 @@
 {
- "updated": "2026-11-07T21:28:45Z",
+ "updated": "2026-11-08T21:20:13Z",
  "days": [
+  {
+   "date": "2026-11-09",
+   "items": [
+    {
+     "id": "2026-11-09-g1",
+     "section": "g",
+     "icon": "alert-triangle",
+     "tag": "주요",
+     "ko": "폴란드 크라쿠프 광장 총격, 6명 사망",
+     "h": {
+      "1": "A Sad Day in a Famous Square",
+      "2": "Gunman Attacks Famous Square in Poland",
+      "3": "Gunman Kills Six in Krakow's Main Square",
+      "4": "Gunman Kills Six in Krakow's Historic Main Square",
+      "5": "Lone Gunman Kills Six in Krakow, Shaking a Nation Unused to Mass Shootings"
+     }
+    },
+    {
+     "id": "2026-11-09-g2",
+     "section": "g",
+     "icon": "car",
+     "tag": "화제",
+     "ko": "테슬라, 사이버트럭 생산 중단 예고",
+     "h": {
+      "1": "Tesla Will Stop Making a Strange Truck",
+      "2": "Tesla to End Cybertruck Production",
+      "3": "Tesla Will Stop Making the Cybertruck",
+      "4": "Tesla to Wind Down Cybertruck Production by Mid-2027",
+      "5": "Tesla Pulls the Plug on the Cybertruck to Bet Big on Robotaxis"
+     }
+    },
+    {
+     "id": "2026-11-09-k1",
+     "section": "k",
+     "icon": "snowflake",
+     "tag": null,
+     "ko": "서울 첫눈, 작년보다 26일 빨라",
+     "h": {
+      "1": "First Snow in Seoul Comes Early",
+      "2": "Seoul's First Snow Arrives Early",
+      "3": "Seoul Sees Its First Snow Almost a Month Early",
+      "4": "Seoul Records First Snowfall 26 Days Earlier Than Last Year",
+      "5": "Seoul's First Snow Lands Nearly a Month Early as Cold Snap Bites"
+     }
+    }
+   ],
+   "video": {
+    "id": "GIQhMS3-7VY",
+    "title": "The Genius Cook"
+   }
+  },
   {
    "date": "2026-11-08",
    "items": [
