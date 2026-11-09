@@ -1,6 +1,57 @@
 {
- "updated": "2026-11-08T21:20:13Z",
+ "updated": "2026-11-09T21:16:45Z",
  "days": [
+  {
+   "date": "2026-11-10",
+   "items": [
+    {
+     "id": "2026-11-10-g1",
+     "section": "g",
+     "icon": "gavel",
+     "tag": "주요",
+     "ko": "대만 공산당 대표, 中 지원 혐의 구금",
+     "h": {
+      "1": "Taiwan Party Leader Must Stay in Custody",
+      "2": "Taiwan Court Detains Small Party Leader",
+      "3": "Taiwan Detains Party Leader Over Alleged Chinese Support",
+      "4": "Taiwan Detains Communist Party Chief in China Funding Probe",
+      "5": "Taiwan Detains Fringe Communist Leader Amid Beijing Meddling Claims"
+     }
+    },
+    {
+     "id": "2026-11-10-g2",
+     "section": "g",
+     "icon": "planet",
+     "tag": "화제",
+     "ko": "화성, 아직 화산 활동 중일 수도",
+     "h": {
+      "1": "Is Mars Still Hot Inside?",
+      "2": "Strange Gas Suggests Mars Is Not Asleep",
+      "3": "Mysterious Gas Hints Mars May Still Be Volcanically Active",
+      "4": "Puzzling Gas Over Mars Volcano Hints at Hidden Magma",
+      "5": "Seasonal Gas Burst Revives Debate Over Martian Volcanism"
+     }
+    },
+    {
+     "id": "2026-11-10-k1",
+     "section": "k",
+     "icon": "world",
+     "tag": null,
+     "ko": "한미 합의, 미 의회가 새 변수",
+     "h": {
+      "1": "Korea's Deal With America May Be Slow",
+      "2": "US Election Could Slow Korea's Deal With Trump",
+      "3": "Korea-US Deal Now Depends on Two Powers in Washington",
+      "4": "Seoul's Deal With Trump Faces a Divided Washington",
+      "5": "Divided Washington Clouds Seoul's Grand Bargain With Trump"
+     }
+    }
+   ],
+   "video": {
+    "id": "7uXLxPr0miY",
+    "title": "I’m Super Crong"
+   }
+  },
   {
    "date": "2026-11-09",
    "items": [
