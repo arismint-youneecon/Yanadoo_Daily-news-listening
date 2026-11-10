@@ -325,6 +325,42 @@
     }).catch(function () { render([errBox("목록을 불러오지 못했어요.")]); });
   }
 
+  /* ---------- 음성 재생기 ----------
+     재생기 하나를 계속 다시 씁니다. 아이폰은 사람이 누르지 않은 재생을 막는데,
+     한 번 눌러 재생한 재생기는 다음 뉴스로 바꿔도 이어서 재생할 수 있기 때문입니다. */
+  var AFTER = [["stop", "멈춤"], ["repeat", "다시 듣기"], ["next", "다음 뉴스"]];
+  function afterMode() { var m = load("enc_after"); return m === "repeat" || m === "next" ? m : "stop"; }
+  var player = { el: null, ctx: null, speed: 1, autoplay: false };
+  function getPlayer() {
+    if (player.el) return player.el;
+    var a = el("audio", { controls: true, preload: "metadata" });
+    a.addEventListener("play", function () { var c = player.ctx; if (c) logOnce(c.id, "play", c.tag); });
+    // "끝까지 들음"은 건너뛰기를 빼고 실제로 재생된 시간이 85%를 넘을 때만 기록합니다.
+    a.addEventListener("seeking", function () { if (player.ctx) player.ctx.lastT = a.currentTime; });
+    a.addEventListener("timeupdate", function () {
+      var c = player.ctx; if (!c) return;
+      var t = a.currentTime, dt = t - c.lastT; c.lastT = t;
+      if (dt > 0 && dt < 1.5 * (a.playbackRate || 1)) c.listened += dt;
+      if (!c.completeSent && a.duration && c.listened / a.duration > 0.85) { c.completeSent = true; logOnce(c.id, "complete", c.tag); }
+    });
+    // 끝나면: '다시 듣기'는 a.loop로 처리되어 여기까지 오지 않습니다. '다음 뉴스'면 다음 뉴스로 넘어가 이어서 재생합니다.
+    a.addEventListener("ended", function () {
+      var c = player.ctx; if (!c || afterMode() !== "next") return;
+      if (c.next) { player.autoplay = true; location.hash = c.next; }
+      else if (c.endNote) c.endNote.hidden = false;
+    });
+    player.el = a;
+    return a;
+  }
+  function setSession(c, title, sub) {
+    if (!("mediaSession" in navigator)) return;
+    try {
+      if (window.MediaMetadata) navigator.mediaSession.metadata = new MediaMetadata({ title: title, artist: sub, album: "아침 영어 뉴스 클럽", artwork: [{ src: "icons/icon-512.png", sizes: "512x512", type: "image/png" }] });
+      navigator.mediaSession.setActionHandler("nexttrack", c.next ? function () { player.autoplay = true; location.hash = c.next; } : null);
+      navigator.mediaSession.setActionHandler("previoustrack", c.prev ? function () { player.autoplay = true; location.hash = c.prev; } : null);
+    } catch (e) {}
+  }
+
   function viewBriefing(date, id, askLevel) {
     setTab(date === (state.index && state.index.days[0] && state.index.days[0].date) ? "today" : "archive");
     getDay(date).then(function (day) {
@@ -344,24 +380,42 @@
       if (lv !== myLv && !askLevel) lvNote = el("p", { class: "note", text: "이 뉴스는 " + myLv + "단계 버전이 없어서 " + lv + "단계로 보여 드려요." });
       else if (lv !== myLv) lvNote = el("p", { class: "small muted", style: "margin:0" }, [lv + "단계로 듣는 중이에요. ", el("a", { href: "#/b/" + date + "/" + id, text: "내 단계(" + myLv + "단계)로 돌아가기" })]);
 
-      var audio = el("audio", { controls: true, preload: "metadata", src: it.audio || null });
-      var completeSent = false;
-      audio.addEventListener("play", function () { logOnce(story.id, "play", tag); });
-      // "끝까지 들음"은 건너뛰기를 빼고 실제로 재생된 시간이 85%를 넘을 때만 기록합니다.
-      var listened = 0, lastT = 0;
-      audio.addEventListener("seeking", function () { lastT = audio.currentTime; });
-      audio.addEventListener("timeupdate", function () {
-        var t = audio.currentTime, dt = t - lastT; lastT = t;
-        if (dt > 0 && dt < 1.5 * (audio.playbackRate || 1)) listened += dt;
-        if (!completeSent && audio.duration && listened / audio.duration > 0.85) { completeSent = true; logOnce(story.id, "complete", tag); }
-      });
       var noAudio = it.audio ? null : el("p", { class: "note", text: "음성 파일 보관 기간(30일)이 지나 대본만 남아 있어요." });
-      var speeds = [0.8, 0.9, 1, 1.1];
-      var pills = speeds.map(function (sp) {
-        return el("button", { type: "button", class: "pill", "aria-pressed": sp === 1 ? "true" : "false", text: sp + "×", onclick: function (e) {
-          audio.playbackRate = sp; pills.forEach(function (p) { p.setAttribute("aria-pressed", "false"); }); e.currentTarget.setAttribute("aria-pressed", "true");
-        } });
-      });
+      var audio = null, pills = [], afterPills = [], endNote = null, playNote = null;
+      if (it.audio) {
+        // 같은 날 뉴스 중 음성이 있는 앞뒤 뉴스 (같은 단계로 이어 듣기)
+        var idx = day.items.indexOf(story);
+        var hashFor = function (s) { var L = nearestLevel(s.levels, askLevel || myLv); return s.levels[L] && s.levels[L].audio ? "#/b/" + date + "/" + s.id + (askLevel ? "/" + L : "") : null; };
+        var nextHash = null, prevHash = null, k;
+        for (k = idx + 1; k < day.items.length && !nextHash; k++) nextHash = hashFor(day.items[k]);
+        for (k = idx - 1; k >= 0 && !prevHash; k--) prevHash = hashFor(day.items[k]);
+        endNote = el("p", { class: "small muted", style: "margin:0", text: "이 날 뉴스를 모두 들었어요." }); endNote.hidden = true;
+        playNote = el("p", { class: "small muted", style: "margin:0", text: "▶ 버튼을 누르면 이어서 들을 수 있어요." }); playNote.hidden = true;
+
+        audio = getPlayer();
+        var ctx = { id: story.id, tag: tag, listened: 0, lastT: 0, completeSent: false, next: nextHash, prev: prevHash, endNote: endNote };
+        player.ctx = ctx;
+        if (audio.getAttribute("src") !== it.audio) audio.src = it.audio;
+        audio.loop = afterMode() === "repeat";
+        audio.defaultPlaybackRate = audio.playbackRate = player.speed;
+        setSession(ctx, it.headline, sectionLabel(story) + " · " + lv + "단계");
+
+        var speeds = [0.8, 0.9, 1, 1.1];
+        pills = speeds.map(function (sp) {
+          return el("button", { type: "button", class: "pill", "aria-pressed": sp === player.speed ? "true" : "false", text: sp + "×", onclick: function (e) {
+            player.speed = sp; audio.defaultPlaybackRate = audio.playbackRate = sp;
+            pills.forEach(function (p) { p.setAttribute("aria-pressed", "false"); }); e.currentTarget.setAttribute("aria-pressed", "true");
+          } });
+        });
+        afterPills = AFTER.map(function (o) {
+          return el("button", { type: "button", class: "pill", "aria-pressed": afterMode() === o[0] ? "true" : "false", text: o[1], onclick: function (e) {
+            save("enc_after", o[0]); audio.loop = o[0] === "repeat"; endNote.hidden = true;
+            afterPills.forEach(function (p) { p.setAttribute("aria-pressed", "false"); }); e.currentTarget.setAttribute("aria-pressed", "true");
+          } });
+        });
+      } else {
+        player.ctx = null;
+      }
 
       // 대본: 단어를 누르면 뜻이 나옵니다.
       var G = it.g || {};
@@ -419,11 +473,22 @@
         ]),
         el("div", { class: "speeds", role: "group", "aria-label": "다른 단계로 듣기" }, [el("span", { class: "small muted", text: "단계" })].concat(lvPills)),
         lvNote,
-        noAudio || el("div", { class: "card pad", style: "display:flex;flex-direction:column;gap:10px" }, [audio, el("div", { class: "speeds" }, [el("span", { class: "small muted", text: "속도" })].concat(pills))]),
+        noAudio || el("div", { class: "card pad", style: "display:flex;flex-direction:column;gap:10px" }, [
+          audio,
+          el("div", { class: "speeds", role: "group", "aria-label": "재생 속도" }, [el("span", { class: "small muted", text: "속도" })].concat(pills)),
+          el("div", { class: "speeds", role: "group", "aria-label": "다 들으면" }, [el("span", { class: "small muted", text: "끝나면" })].concat(afterPills)),
+          endNote, playNote
+        ]),
         el("div", { class: "toggles" }, [toggle(sc, "대본 닫기", "대본 보기", "script"), toggle(tr, "해석 닫기", "해석 보기", "translation"), toggle(kv, "단어 닫기", "핵심 단어 " + (it.kw || []).length, "words")]),
         sc, tr, kv,
         story.url ? el("a", { class: "small", href: story.url, target: "_blank", rel: "noopener" }, [icon("external-link"), " 원문 기사 보기 (" + (story.source || "") + ")"]) : null
       ]);
+      // '다음 뉴스'로 넘어왔으면 화면을 그린 뒤 이어서 재생합니다.
+      var auto = player.autoplay; player.autoplay = false;
+      if (auto && audio) {
+        var pr = audio.play();
+        if (pr && pr.catch) pr.catch(function () { playNote.hidden = false; });
+      }
     }).catch(function () { render([errBox("브리핑을 불러오지 못했어요.")]); });
   }
 
