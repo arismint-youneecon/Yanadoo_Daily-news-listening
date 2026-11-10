@@ -1,6 +1,57 @@
 {
- "updated": "2026-11-09T21:16:45Z",
+ "updated": "2026-11-10T21:21:01Z",
  "days": [
+  {
+   "date": "2026-11-11",
+   "items": [
+    {
+     "id": "2026-11-11-g1",
+     "section": "g",
+     "icon": "messages",
+     "tag": "주요",
+     "ko": "러시아·우크라이나, 아부다비 평화 회담",
+     "h": {
+      "1": "Russia and Ukraine Talk Again",
+      "2": "Russia and Ukraine Hold New Peace Talks",
+      "3": "Russia, Ukraine and the US Hold Talks in Abu Dhabi",
+      "4": "US-Mediated Russia-Ukraine Talks Resume in Abu Dhabi",
+      "5": "Russia and Ukraine Return to the Table in Abu Dhabi, Still Far Apart"
+     }
+    },
+    {
+     "id": "2026-11-11-g2",
+     "section": "g",
+     "icon": "atom",
+     "tag": "화제",
+     "ko": "CERN, 100억 분의 1 입자 붕괴 포착",
+     "h": {
+      "1": "Scientists Find a Very Rare Change",
+      "2": "CERN Finds Signs of a One-in-Ten-Billion Event",
+      "3": "After 40 Years, CERN Finds Evidence of an Ultra-Rare Decay",
+      "4": "CERN Experiment Reports Evidence of One-in-Ten-Billion Particle Decay",
+      "5": "CERN Physicists Glimpse a Decay Four Decades in the Making"
+     }
+    },
+    {
+     "id": "2026-11-11-k1",
+     "section": "k",
+     "icon": "cpu",
+     "tag": null,
+     "ko": "엔비디아 논란, 韓 반도체 수출 부담",
+     "h": {
+      "1": "A Problem at Nvidia Worries Korean Chip Makers",
+      "2": "Nvidia Controversy Worries Korean Chipmakers",
+      "3": "Nvidia Controversy Raises Export Worries for Korean Chipmakers",
+      "4": "Nvidia Probe Puts Korean Chipmakers on Alert Over Export Rules",
+      "5": "Nvidia Espionage Questions Cast a Shadow Over Korea's Chip Exporters"
+     }
+    }
+   ],
+   "video": {
+    "id": "TspCk-4_tUM",
+    "title": "Who Did This"
+   }
+  },
   {
    "date": "2026-11-10",
    "items": [

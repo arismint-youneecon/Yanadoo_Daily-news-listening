@@ -1,0 +1,1905 @@
+{
+ "date": "2026-11-11",
+ "items": [
+  {
+   "id": "2026-11-11-g1",
+   "section": "g",
+   "levels": {
+    "1": {
+     "headline": "Russia and Ukraine Talk Again",
+     "p": [
+      "Good morning. This is your morning news in English.",
+      "Can talks stop a long war?",
+      "Russia and Ukraine had new talks on Tuesday. The talks were in Abu Dhabi. Abu Dhabi is a city in the Middle East. The United States helped the two sides talk.",
+      "It was their first meeting since February. But the two sides still want very different things. Russia wants Ukraine to leave some areas. Russia also wants Ukraine to stay out of NATO. NATO is a group of Western countries. Ukraine says no. Ukraine wants other countries to promise to protect it.",
+      "The war started in 2022. Many people died. Many people lost their homes. This war is important for the whole world.",
+      "Again, Russia and Ukraine had new peace talks. But they still do not agree.",
+      "Thank you for listening."
+     ],
+     "tr": [
+      "좋은 아침입니다. 영어로 듣는 아침 뉴스입니다.",
+      "회담으로 긴 전쟁을 멈출 수 있을까요?",
+      "러시아와 우크라이나가 화요일에 새 회담을 했습니다. 회담은 아부다비에서 열렸습니다. 아부다비는 중동에 있는 도시입니다. 미국이 양측의 대화를 도왔습니다.",
+      "2월 이후 첫 만남이었습니다. 하지만 양측은 여전히 아주 다른 것을 원합니다. 러시아는 우크라이나가 일부 지역에서 떠나기를 원합니다. 러시아는 또 우크라이나가 나토에 들어오지 않기를 원합니다. 나토는 서방 국가들의 모임입니다. 우크라이나는 거절합니다. 우크라이나는 다른 나라들이 자국을 지켜 주겠다고 약속하기를 원합니다.",
+      "전쟁은 2022년에 시작됐습니다. 많은 사람이 숨졌습니다. 많은 사람이 집을 잃었습니다. 이 전쟁은 전 세계에 중요합니다.",
+      "다시 말해, 러시아와 우크라이나가 새 평화 회담을 했습니다. 하지만 아직 합의하지 못했습니다.",
+      "들어 주셔서 감사합니다."
+     ],
+     "g": {
+      "talks": "회담",
+      "stop": "멈추다",
+      "war": "전쟁",
+      "russia": "러시아",
+      "ukraine": "우크라이나",
+      "tuesday": "화요일",
+      "abu dhabi": "아부다비(아랍에미리트 수도)",
+      "middle east": "중동",
+      "the united states": "미국",
+      "help": "돕다",
+      "sides": "(대립하는) 쪽, 측",
+      "first": "첫 번째의",
+      "meeting": "만남, 회의",
+      "since": "~이후로",
+      "february": "2월",
+      "still": "여전히",
+      "different": "다른",
+      "leave": "떠나다",
+      "areas": "지역",
+      "stay out of": "~에 들어가지 않다",
+      "nato": "나토(북대서양조약기구)",
+      "group": "모임, 집단",
+      "western": "서방의",
+      "countries": "나라들",
+      "says no": "거절하다",
+      "promise": "약속하다",
+      "protect": "보호하다, 지키다",
+      "start": "시작하다",
+      "died": "죽었다",
+      "lost": "잃었다 (lose의 과거)",
+      "homes": "집",
+      "important": "중요한",
+      "whole": "전체의",
+      "again": "다시 (말해)",
+      "peace": "평화",
+      "agree": "합의하다, 동의하다",
+      "listening": "듣기"
+     },
+     "ph": [
+      "abu dhabi",
+      "middle east",
+      "the united states",
+      "stay out of",
+      "says no"
+     ],
+     "kw": [
+      [
+       "talks",
+       "회담"
+      ],
+      [
+       "war",
+       "전쟁"
+      ],
+      [
+       "peace",
+       "평화"
+      ],
+      [
+       "promise",
+       "약속하다"
+      ],
+      [
+       "agree",
+       "합의하다"
+      ]
+     ],
+     "audio": "audio/2026-11-11-g1-L1.mp3",
+     "duration": 70.1,
+     "speed": 0.75,
+     "voice": "af_heart",
+     "words": 136
+    },
+    "2": {
+     "headline": "Russia and Ukraine Hold New Peace Talks",
+     "p": [
+      "Good morning. This is your morning news in English.",
+      "Can a few days of talks bring a long war closer to an end?",
+      "According to news reports, Russia, Ukraine and the United States held peace talks on Tuesday. The meeting took place in Abu Dhabi, in the United Arab Emirates. The United States worked as a mediator. That means it helped the two sides talk to each other. It was their first meeting like this since February.",
+      "The two sides are still far apart. Russia wants Ukraine to pull its soldiers out of four regions. It also wants Ukraine to give up its plan to join NATO, a group of Western countries that defend each other. Ukraine says no. It wants strong promises that other countries will protect it in the future.",
+      "President Volodymyr Zelenskyy said the first day of talks was constructive, which means useful. President Donald Trump said the war could end soon. But the attacks did not stop. The night before the talks, Russia sent more than one hundred sixty drones into Ukraine.",
+      "The war began in February 2022. It affects food, energy and safety around the world.",
+      "To sum up, the three countries held new peace talks, but Russia and Ukraine still disagree on land and safety.",
+      "Thank you for listening."
+     ],
+     "tr": [
+      "좋은 아침입니다. 영어로 듣는 아침 뉴스입니다.",
+      "며칠간의 회담으로 긴 전쟁이 끝에 더 가까워질 수 있을까요?",
+      "보도에 따르면 러시아, 우크라이나, 미국이 화요일에 평화 회담을 열었습니다. 회담은 아랍에미리트의 아부다비에서 열렸습니다. 미국은 중재자 역할을 했습니다. 즉 양측이 서로 대화하도록 도왔다는 뜻입니다. 이런 회담은 2월 이후 처음이었습니다.",
+      "양측의 입장 차이는 여전히 큽니다. 러시아는 우크라이나가 네 개 지역에서 군인을 빼기를 원합니다. 또 우크라이나가 서로를 지켜 주는 서방 국가들의 모임인 나토에 가입하려는 계획을 포기하기를 원합니다. 우크라이나는 거절합니다. 우크라이나는 앞으로 다른 나라들이 자국을 지켜 주겠다는 확실한 약속을 원합니다.",
+      "볼로디미르 젤렌스키 대통령은 첫날 회담이 건설적, 즉 유익했다고 말했습니다. 도널드 트럼프 대통령은 전쟁이 곧 끝날 수 있다고 말했습니다. 하지만 공격은 멈추지 않았습니다. 회담 전날 밤 러시아는 160대가 넘는 드론을 우크라이나로 보냈습니다.",
+      "전쟁은 2022년 2월에 시작됐습니다. 이 전쟁은 전 세계의 식량, 에너지, 안전에 영향을 줍니다.",
+      "요약하면, 세 나라가 새 평화 회담을 열었지만 러시아와 우크라이나는 여전히 땅과 안전 문제에서 의견이 다릅니다.",
+      "들어 주셔서 감사합니다."
+     ],
+     "g": {
+      "talks": "회담",
+      "closer to": "~에 더 가까이",
+      "according to": "~에 따르면",
+      "news reports": "언론 보도",
+      "russia": "러시아",
+      "ukraine": "우크라이나",
+      "held": "열었다 (hold의 과거)",
+      "peace": "평화",
+      "took place": "열렸다, 일어났다",
+      "abu dhabi": "아부다비",
+      "united arab emirates": "아랍에미리트",
+      "mediator": "중재자",
+      "each other": "서로",
+      "far apart": "(의견이) 크게 다른",
+      "pull": "빼다, 끌어내다",
+      "soldiers": "군인",
+      "regions": "지역",
+      "give up": "포기하다",
+      "join": "가입하다",
+      "nato": "나토(북대서양조약기구)",
+      "western": "서방의",
+      "defend": "방어하다, 지키다",
+      "says no": "거절하다",
+      "promises": "약속",
+      "protect": "보호하다",
+      "future": "미래",
+      "president": "대통령",
+      "constructive": "건설적인",
+      "useful": "유익한",
+      "attacks": "공격",
+      "drones": "드론(무인기)",
+      "began": "시작했다 (begin의 과거)",
+      "affect": "영향을 주다",
+      "energy": "에너지",
+      "safety": "안전",
+      "to sum up": "요약하면",
+      "disagree": "의견이 다르다",
+      "land": "땅, 영토"
+     },
+     "ph": [
+      "closer to",
+      "according to",
+      "news reports",
+      "took place",
+      "abu dhabi",
+      "united arab emirates",
+      "each other",
+      "far apart",
+      "give up",
+      "says no",
+      "to sum up"
+     ],
+     "kw": [
+      [
+       "peace talks",
+       "평화 회담"
+      ],
+      [
+       "mediator",
+       "중재자"
+      ],
+      [
+       "far apart",
+       "의견 차이가 큰"
+      ],
+      [
+       "give up",
+       "포기하다"
+      ],
+      [
+       "constructive",
+       "건설적인"
+      ],
+      [
+       "disagree",
+       "의견이 다르다"
+      ]
+     ],
+     "audio": "audio/2026-11-11-g1-L2.mp3",
+     "duration": 95.0,
+     "speed": 0.8,
+     "voice": "af_heart",
+     "words": 215
+    },
+    "3": {
+     "headline": "Russia, Ukraine and the US Hold Talks in Abu Dhabi",
+     "p": [
+      "Good morning. This is your morning news in English.",
+      "Can talks in a desert city help end a war that has lasted almost five years?",
+      "According to news reports, officials from Russia, Ukraine and the United States met in Abu Dhabi on Tuesday. Abu Dhabi is the capital of the United Arab Emirates. The United States acted as a mediator. A mediator is someone who helps two sides talk and find an agreement. The American team was led by special envoy Steve Witkoff and Jared Kushner. It was the first meeting of this kind since February.",
+      "The two sides are still far apart. Russia wants Ukraine to pull its troops out of four regions in the east and south. Russia also wants Ukraine to give up its plan to join NATO, a military alliance of Western countries. Ukraine rejects these demands. It wants security guarantees, which are promises from the United States and its allies to protect Ukraine in the future.",
+      "Ukrainian President Volodymyr Zelenskyy called the first day of talks constructive, which means useful and positive. President Donald Trump said he believes the war will end soon. But there was no clear sign of progress yet. The attacks also continued. The night before the talks, Russia launched more than one hundred sixty drones at Ukraine.",
+      "Russia started its full invasion of Ukraine in February 2022. Since then, the war has changed security in Europe. It has also pushed up prices for energy and food in many countries.",
+      "This is why the world is watching. Even small steps in these talks could make a big difference for millions of people.",
+      "To sum up, Russia, Ukraine and the United States held new peace talks in Abu Dhabi, but the two sides still disagree on land and security.",
+      "Thank you for listening."
+     ],
+     "tr": [
+      "좋은 아침입니다. 영어로 듣는 아침 뉴스입니다.",
+      "사막 도시에서 열린 회담이 5년 가까이 이어진 전쟁을 끝내는 데 도움이 될까요?",
+      "보도에 따르면 러시아, 우크라이나, 미국 당국자들이 화요일 아부다비에서 만났습니다. 아부다비는 아랍에미리트의 수도입니다. 미국은 중재자 역할을 했습니다. 중재자란 양측이 대화하고 합의를 찾도록 돕는 사람을 말합니다. 미국 측은 스티브 위트코프 특사와 재러드 쿠슈너가 이끌었습니다. 이런 형식의 회담은 2월 이후 처음이었습니다.",
+      "양측의 입장 차이는 여전히 큽니다. 러시아는 우크라이나가 동부와 남부의 네 개 지역에서 군대를 철수하기를 원합니다. 또 서방 국가들의 군사 동맹인 나토 가입 계획을 포기하기를 원합니다. 우크라이나는 이 요구를 거부합니다. 우크라이나는 안전 보장, 즉 앞으로 미국과 동맹국들이 우크라이나를 지켜 주겠다는 약속을 원합니다.",
+      "볼로디미르 젤렌스키 우크라이나 대통령은 첫날 회담이 건설적, 즉 유익하고 긍정적이었다고 말했습니다. 도널드 트럼프 대통령은 전쟁이 곧 끝날 것이라고 믿는다고 말했습니다. 하지만 아직 뚜렷한 진전의 신호는 없었습니다. 공격도 계속됐습니다. 회담 전날 밤 러시아는 160대가 넘는 드론을 우크라이나에 발사했습니다.",
+      "러시아는 2022년 2월 우크라이나를 전면 침공했습니다. 그 뒤로 이 전쟁은 유럽의 안보를 바꿔 놓았습니다. 또 많은 나라에서 에너지와 식량 가격을 끌어올렸습니다.",
+      "그래서 세계가 지켜보고 있습니다. 이번 회담에서 작은 진전만 있어도 수백만 명에게 큰 변화가 될 수 있습니다.",
+      "요약하면, 러시아, 우크라이나, 미국이 아부다비에서 새 평화 회담을 열었지만 양측은 여전히 영토와 안보 문제에서 의견이 다릅니다.",
+      "들어 주셔서 감사합니다."
+     ],
+     "g": {
+      "desert": "사막",
+      "lasted": "지속됐다",
+      "according to": "~에 따르면",
+      "news reports": "언론 보도",
+      "officials": "당국자, 관리",
+      "abu dhabi": "아부다비",
+      "capital": "수도",
+      "united arab emirates": "아랍에미리트",
+      "acted as": "~의 역할을 했다",
+      "mediator": "중재자",
+      "agreement": "합의",
+      "led": "이끌었다 (lead의 과거)",
+      "special envoy": "특사",
+      "far apart": "(의견이) 크게 다른",
+      "pull": "빼다",
+      "troops": "군대",
+      "regions": "지역",
+      "give up": "포기하다",
+      "join": "가입하다",
+      "nato": "나토(북대서양조약기구)",
+      "military alliance": "군사 동맹",
+      "western": "서방의",
+      "rejects": "거부하다",
+      "demands": "요구",
+      "security guarantees": "안전 보장",
+      "allies": "동맹국",
+      "protect": "보호하다",
+      "ukrainian": "우크라이나의",
+      "constructive": "건설적인",
+      "positive": "긍정적인",
+      "clear": "뚜렷한",
+      "sign": "신호, 조짐",
+      "progress": "진전",
+      "attacks": "공격",
+      "continued": "계속됐다",
+      "launched": "발사했다",
+      "drones": "드론(무인기)",
+      "full invasion": "전면 침공",
+      "pushed up": "끌어올렸다",
+      "prices": "가격",
+      "watching": "지켜보는",
+      "steps": "단계, 조치",
+      "make a big difference": "큰 변화를 가져오다",
+      "millions": "수백만",
+      "to sum up": "요약하면",
+      "held": "열었다 (hold의 과거)",
+      "peace talks": "평화 회담",
+      "disagree": "의견이 다르다",
+      "security": "안보, 안전"
+     },
+     "ph": [
+      "according to",
+      "news reports",
+      "abu dhabi",
+      "united arab emirates",
+      "acted as",
+      "special envoy",
+      "far apart",
+      "give up",
+      "military alliance",
+      "security guarantees",
+      "full invasion",
+      "pushed up",
+      "make a big difference",
+      "to sum up",
+      "peace talks"
+     ],
+     "kw": [
+      [
+       "mediator",
+       "중재자"
+      ],
+      [
+       "far apart",
+       "의견 차이가 큰"
+      ],
+      [
+       "troops",
+       "군대"
+      ],
+      [
+       "military alliance",
+       "군사 동맹"
+      ],
+      [
+       "security guarantees",
+       "안전 보장"
+      ],
+      [
+       "constructive",
+       "건설적인"
+      ],
+      [
+       "progress",
+       "진전"
+      ],
+      [
+       "invasion",
+       "침공"
+      ]
+     ],
+     "audio": "audio/2026-11-11-g1-L3.mp3",
+     "duration": 117.3,
+     "speed": 0.9,
+     "voice": "af_heart",
+     "words": 300
+    },
+    "4": {
+     "headline": "US-Mediated Russia-Ukraine Talks Resume in Abu Dhabi",
+     "p": [
+      "Good morning, and welcome to your morning news in English.",
+      "For the first time since February, negotiators from Russia, Ukraine and the United States sat down at the same table this week.",
+      "According to news reports, the three-way talks opened on Tuesday in Abu Dhabi, the capital of the United Arab Emirates. The American side was led by special envoy Steve Witkoff and Jared Kushner, President Donald Trump's son-in-law. Ukraine sent a delegation headed by Rustem Umerov, while the Russian team was led by Kremlin aide Vladimir Medinsky.",
+      "Despite the renewed diplomacy, the two sides remain far apart on the core issues. Moscow is demanding that Ukraine withdraw its forces from four regions that Russia claims as its own: Donetsk, Luhansk, Zaporizhzhia and Kherson. It also wants Kyiv to abandon its bid to join NATO and to accept limits on its military. Ukrainian President Volodymyr Zelenskyy has rejected those terms, insisting that any deal must include security guarantees from the United States and its European allies.",
+      "After the first day, Zelenskyy described the talks as constructive, and an American official said negotiators were cautiously optimistic. President Trump told reporters that both countries are tired of fighting and that the war could end soon. Still, there was no clear sign of a breakthrough, and the fighting has not slowed. On the night before the talks, Russia reportedly launched more than one hundred sixty drones and a ballistic missile at Ukraine.",
+      "Russia launched its full-scale invasion of Ukraine in February 2022. The conflict has reshaped European security and disrupted global markets for energy and grain, which is why any progress at the table would be felt far beyond the region.",
+      "To sum up, US-mediated peace talks between Russia and Ukraine have resumed in Abu Dhabi, but deep disagreements over territory and security remain.",
+      "Thank you for listening."
+     ],
+     "tr": [
+      "좋은 아침입니다. 영어로 듣는 아침 뉴스에 오신 것을 환영합니다.",
+      "이번 주, 2월 이후 처음으로 러시아, 우크라이나, 미국의 협상 대표들이 같은 테이블에 앉았습니다.",
+      "보도에 따르면 3자 회담은 화요일 아랍에미리트의 수도 아부다비에서 시작됐습니다. 미국 측은 스티브 위트코프 특사와 도널드 트럼프 대통령의 사위인 재러드 쿠슈너가 이끌었습니다. 우크라이나는 루스템 우메로우가 이끄는 대표단을 보냈고, 러시아 대표단은 크렘린 보좌관 블라디미르 메딘스키가 이끌었습니다.",
+      "외교가 재개됐지만 양측은 핵심 쟁점에서 여전히 입장 차이가 큽니다. 러시아는 우크라이나가 러시아가 자국 땅이라고 주장하는 도네츠크, 루한스크, 자포리자, 헤르손 네 개 지역에서 군대를 철수할 것을 요구하고 있습니다. 또 우크라이나가 나토 가입 시도를 포기하고 군사력 제한을 받아들이기를 원합니다. 볼로디미르 젤렌스키 우크라이나 대통령은 이 조건을 거부하며, 어떤 합의든 미국과 유럽 동맹국들의 안전 보장이 포함돼야 한다고 주장하고 있습니다.",
+      "첫날 회담 후 젤렌스키 대통령은 회담이 건설적이었다고 평가했고, 미국의 한 당국자는 협상단이 조심스럽게 낙관하고 있다고 말했습니다. 트럼프 대통령은 기자들에게 두 나라 모두 싸움에 지쳤고 전쟁이 곧 끝날 수 있다고 말했습니다. 그래도 돌파구의 뚜렷한 신호는 없었고 전투도 줄지 않았습니다. 보도에 따르면 회담 전날 밤 러시아는 160대가 넘는 드론과 탄도 미사일 한 발을 우크라이나에 발사했습니다.",
+      "러시아는 2022년 2월 우크라이나를 전면 침공했습니다. 이 전쟁은 유럽의 안보 구도를 바꾸고 세계 에너지와 곡물 시장을 흔들었습니다. 그래서 협상에서 진전이 있으면 그 영향은 이 지역을 훨씬 넘어 느껴질 것입니다.",
+      "요약하면, 미국이 중재하는 러시아와 우크라이나의 평화 회담이 아부다비에서 재개됐지만 영토와 안보를 둘러싼 깊은 이견은 여전합니다.",
+      "들어 주셔서 감사합니다."
+     ],
+     "g": {
+      "negotiators": "협상 대표",
+      "three-way": "3자의",
+      "abu dhabi": "아부다비",
+      "united arab emirates": "아랍에미리트",
+      "special envoy": "특사",
+      "son-in-law": "사위",
+      "delegation": "대표단",
+      "headed by": "~가 이끄는",
+      "kremlin": "크렘린(러시아 정부)",
+      "aide": "보좌관",
+      "despite": "~에도 불구하고",
+      "renewed": "재개된",
+      "diplomacy": "외교",
+      "far apart": "(의견이) 크게 다른",
+      "core issues": "핵심 쟁점",
+      "moscow": "모스크바(러시아 정부)",
+      "demanding": "요구하는",
+      "withdraw": "철수하다",
+      "forces": "군대, 병력",
+      "regions": "지역",
+      "claims": "주장하다",
+      "kyiv": "키이우(우크라이나 정부)",
+      "abandon": "포기하다",
+      "bid": "시도, 노력",
+      "nato": "나토",
+      "limits": "제한",
+      "rejected": "거부했다",
+      "terms": "조건",
+      "insisting": "주장하는",
+      "security guarantees": "안전 보장",
+      "allies": "동맹국",
+      "described": "묘사했다, 평가했다",
+      "constructive": "건설적인",
+      "official": "당국자",
+      "cautiously optimistic": "조심스럽게 낙관하는",
+      "tired of": "~에 지친",
+      "breakthrough": "돌파구",
+      "slowed": "느려졌다, 줄었다",
+      "reportedly": "보도에 따르면",
+      "launched": "발사했다; 시작했다",
+      "drones": "드론",
+      "ballistic missile": "탄도 미사일",
+      "full-scale invasion": "전면 침공",
+      "conflict": "분쟁",
+      "reshaped": "재편했다",
+      "disrupted": "혼란에 빠뜨렸다",
+      "global markets": "세계 시장",
+      "grain": "곡물",
+      "progress": "진전",
+      "felt": "느껴졌다 (feel의 과거분사)",
+      "beyond": "~을 넘어",
+      "to sum up": "요약하면",
+      "us-mediated": "미국이 중재한",
+      "resumed": "재개됐다",
+      "disagreements": "이견, 불일치",
+      "territory": "영토",
+      "remain": "여전히 남아 있다"
+     },
+     "ph": [
+      "abu dhabi",
+      "united arab emirates",
+      "special envoy",
+      "headed by",
+      "far apart",
+      "core issues",
+      "security guarantees",
+      "cautiously optimistic",
+      "tired of",
+      "ballistic missile",
+      "full-scale invasion",
+      "global markets",
+      "to sum up"
+     ],
+     "kw": [
+      [
+       "negotiators",
+       "협상 대표"
+      ],
+      [
+       "delegation",
+       "대표단"
+      ],
+      [
+       "withdraw",
+       "철수하다"
+      ],
+      [
+       "security guarantees",
+       "안전 보장"
+      ],
+      [
+       "cautiously optimistic",
+       "조심스럽게 낙관하는"
+      ],
+      [
+       "breakthrough",
+       "돌파구"
+      ]
+     ],
+     "audio": "audio/2026-11-11-g1-L4.mp3",
+     "duration": 127.5,
+     "speed": 1.1,
+     "voice": "am_michael",
+     "words": 305
+    },
+    "5": {
+     "headline": "Russia and Ukraine Return to the Table in Abu Dhabi, Still Far Apart",
+     "p": [
+      "Good morning, and welcome to your morning news in English.",
+      "After months of diplomatic stalemate, the guns have not fallen silent, but the negotiators are talking again.",
+      "According to news reports, delegations from Russia, Ukraine and the United States convened in Abu Dhabi on Tuesday for their first trilateral talks since February. Washington's team was spearheaded by special envoy Steve Witkoff and Jared Kushner, the president's son-in-law. Kyiv's delegation was headed by Rustem Umerov, a veteran of earlier rounds, while Moscow dispatched Kremlin aide Vladimir Medinsky alongside senior military and diplomatic officials.",
+      "The gulf between the two sides remains formidable. The Kremlin is pressing Ukraine to withdraw from four regions it claims to have annexed in 2022, namely Donetsk, Luhansk, Zaporizhzhia and Kherson, and to renounce its aspirations to join NATO while accepting curbs on its armed forces. President Volodymyr Zelenskyy has flatly rejected those conditions, arguing that Ukraine must retain the right to defend itself and needs ironclad security guarantees from Washington and its European partners. Russian Foreign Minister Sergei Lavrov, for his part, said security issues would top the agenda.",
+      "Zelenskyy characterized the opening day as constructive, and an American official said negotiators were cautiously optimistic, describing the meeting as a starting point for more complex bargaining. President Donald Trump struck an upbeat note, insisting that both countries are weary of fighting and that the war will end soon. Yet there was little tangible evidence of a breakthrough, and the violence continued unabated: on the eve of the talks, Russia reportedly fired more than one hundred sixty drones and a ballistic missile at Ukraine.",
+      "Nearly five years after Russia launched its full-scale invasion in February 2022, the war has redrawn Europe's security map and rattled global energy and grain markets. In recent weeks, both sides have also intensified long-range strikes, with Russia hammering Ukraine's power grid and Ukraine targeting Russian oil refineries. That is why even incremental progress in the Gulf would reverberate well beyond the battlefield.",
+      "To sum up, Russia and Ukraine are back at the negotiating table under American mediation, but territory and security guarantees remain stubborn sticking points.",
+      "Thank you for listening."
+     ],
+     "tr": [
+      "좋은 아침입니다. 영어로 듣는 아침 뉴스에 오신 것을 환영합니다.",
+      "몇 달간의 외교적 교착 끝에, 총성은 멎지 않았지만 협상 대표들은 다시 대화하고 있습니다.",
+      "보도에 따르면 러시아, 우크라이나, 미국 대표단이 화요일 아부다비에 모여 2월 이후 첫 3자 회담을 열었습니다. 미국 측은 스티브 위트코프 특사와 대통령의 사위인 재러드 쿠슈너가 앞장섰습니다. 우크라이나 대표단은 이전 회담 경험이 많은 루스템 우메로우가 이끌었고, 러시아는 크렘린 보좌관 블라디미르 메딘스키와 함께 고위 군사·외교 당국자들을 보냈습니다.",
+      "양측의 간극은 여전히 매우 큽니다. 러시아 정부는 우크라이나가 러시아가 2022년에 병합했다고 주장하는 네 개 지역, 즉 도네츠크, 루한스크, 자포리자, 헤르손에서 철수하고, 나토 가입 열망을 포기하며 군사력 제한을 받아들이라고 압박하고 있습니다. 볼로디미르 젤렌스키 대통령은 이 조건을 단호히 거부하며, 우크라이나는 스스로를 방어할 권리를 지켜야 하고 미국과 유럽 동맹국들의 확고한 안전 보장이 필요하다고 주장했습니다. 한편 세르게이 라브로프 러시아 외무장관은 안보 문제가 의제의 맨 앞에 놓일 것이라고 말했습니다.",
+      "젤렌스키 대통령은 첫날 회담을 건설적이었다고 평가했고, 미국의 한 당국자는 협상단이 조심스럽게 낙관하고 있다며 이번 회담을 더 복잡한 협상의 출발점이라고 설명했습니다. 도널드 트럼프 대통령은 두 나라 모두 전쟁에 지쳤으며 전쟁이 곧 끝날 것이라고 낙관적인 태도를 보였습니다. 그러나 돌파구의 구체적인 증거는 거의 없었고 폭력은 수그러들지 않았습니다. 보도에 따르면 회담 전날 러시아는 160대가 넘는 드론과 탄도 미사일 한 발을 우크라이나에 발사했습니다.",
+      "러시아가 2022년 2월 전면 침공을 시작한 지 5년 가까이 지나면서, 이 전쟁은 유럽의 안보 지도를 다시 그리고 세계 에너지와 곡물 시장을 뒤흔들었습니다. 최근 몇 주 동안 양측은 장거리 공격도 강화해, 러시아는 우크라이나의 전력망을 맹타했고 우크라이나는 러시아 정유 시설을 겨냥했습니다. 그래서 걸프 지역에서 나오는 작은 진전도 전장을 훨씬 넘어 큰 파장을 일으킬 것입니다.",
+      "요약하면, 러시아와 우크라이나가 미국의 중재로 협상 테이블에 돌아왔지만, 영토와 안전 보장은 여전히 쉽게 풀리지 않는 걸림돌로 남아 있습니다.",
+      "들어 주셔서 감사합니다."
+     ],
+     "g": {
+      "diplomatic": "외교적인",
+      "stalemate": "교착 상태",
+      "fallen silent": "잠잠해졌다",
+      "negotiators": "협상 대표",
+      "delegations": "대표단",
+      "convened": "모였다, 소집됐다",
+      "abu dhabi": "아부다비",
+      "trilateral": "3자의",
+      "spearheaded": "앞장서 이끌었다",
+      "special envoy": "특사",
+      "son-in-law": "사위",
+      "kyiv": "키이우(우크라이나 정부)",
+      "headed by": "~가 이끄는",
+      "veteran": "베테랑, 경험 많은 사람",
+      "rounds": "(회담의) 회차",
+      "moscow": "모스크바(러시아 정부)",
+      "dispatched": "파견했다",
+      "kremlin": "크렘린(러시아 정부)",
+      "aide": "보좌관",
+      "alongside": "~와 함께",
+      "senior": "고위의",
+      "gulf": "간극; (대문자) 걸프 지역",
+      "formidable": "엄청난, 만만찮은",
+      "pressing": "압박하는",
+      "withdraw": "철수하다",
+      "annexed": "병합했다",
+      "namely": "즉",
+      "renounce": "포기하다, 단념하다",
+      "aspirations": "열망",
+      "curbs": "제한",
+      "armed forces": "군대",
+      "flatly": "단호히",
+      "conditions": "조건",
+      "retain": "유지하다",
+      "ironclad": "확고한, 철통같은",
+      "security guarantees": "안전 보장",
+      "for his part": "한편 그는",
+      "top the agenda": "의제의 최우선이 되다",
+      "characterized": "규정했다, 평가했다",
+      "constructive": "건설적인",
+      "cautiously optimistic": "조심스럽게 낙관하는",
+      "starting point": "출발점",
+      "bargaining": "협상, 흥정",
+      "struck an upbeat note": "낙관적인 태도를 보였다",
+      "weary of": "~에 지친",
+      "tangible": "구체적인, 실체가 있는",
+      "breakthrough": "돌파구",
+      "unabated": "수그러들지 않는",
+      "on the eve of": "~의 전날에",
+      "reportedly": "보도에 따르면",
+      "ballistic missile": "탄도 미사일",
+      "full-scale invasion": "전면 침공",
+      "redrawn": "다시 그렸다 (redraw의 과거분사)",
+      "rattled": "뒤흔들었다",
+      "grain": "곡물",
+      "incremental": "점진적인, 작은",
+      "reverberate": "반향을 일으키다",
+      "battlefield": "전장",
+      "negotiating table": "협상 테이블",
+      "mediation": "중재",
+      "territory": "영토",
+      "stubborn": "완강한, 잘 풀리지 않는",
+      "sticking points": "걸림돌, 쟁점",
+      "intensified": "강화했다",
+      "long-range strikes": "장거리 공격",
+      "hammering": "맹타하는",
+      "power grid": "전력망",
+      "refineries": "정유 시설"
+     },
+     "ph": [
+      "fallen silent",
+      "abu dhabi",
+      "special envoy",
+      "headed by",
+      "armed forces",
+      "security guarantees",
+      "for his part",
+      "top the agenda",
+      "cautiously optimistic",
+      "starting point",
+      "struck an upbeat note",
+      "weary of",
+      "on the eve of",
+      "ballistic missile",
+      "full-scale invasion",
+      "negotiating table",
+      "sticking points",
+      "long-range strikes",
+      "power grid"
+     ],
+     "kw": [
+      [
+       "stalemate",
+       "교착 상태"
+      ],
+      [
+       "trilateral",
+       "3자의"
+      ],
+      [
+       "renounce",
+       "포기하다"
+      ],
+      [
+       "ironclad",
+       "확고한"
+      ],
+      [
+       "tangible",
+       "구체적인"
+      ],
+      [
+       "sticking points",
+       "걸림돌"
+      ]
+     ],
+     "audio": "audio/2026-11-11-g1-L5.mp3",
+     "duration": 137.1,
+     "speed": 1.05,
+     "voice": "bf_emma",
+     "words": 357
+    }
+   },
+   "icon": "messages",
+   "tag": "주요",
+   "ko": "러시아·우크라이나, 아부다비 평화 회담",
+   "url": "https://proof.csmonitor.com/News-Briefs/US-mediated-talks-on-ending-Russia-Ukraine-war-began",
+   "source": "CS Monitor (AP)"
+  },
+  {
+   "id": "2026-11-11-g2",
+   "section": "g",
+   "levels": {
+    "1": {
+     "headline": "Scientists Find a Very Rare Change",
+     "p": [
+      "Good morning. This is your morning news in English.",
+      "Can you wait forty years for one small thing?",
+      "Scientists study very small particles. A particle is a tiny piece of everything around us. At CERN, a big science lab in Europe, scientists saw a very rare change. One particle broke into two other particles.",
+      "This change almost never happens. It happens about one time in ten billion. Scientists looked for it for more than forty years!",
+      "How did they find it? They made their big machine better. Now it collects much more data. They also used smart computers to look at the data.",
+      "This is exciting. It helps scientists check their ideas about our world. But they want more data to be sure.",
+      "Again, after forty years, scientists found a very rare change in tiny particles.",
+      "Thank you for listening."
+     ],
+     "tr": [
+      "좋은 아침입니다. 영어로 듣는 아침 뉴스입니다.",
+      "작은 것 하나를 위해 40년을 기다릴 수 있나요?",
+      "과학자들은 아주 작은 입자를 연구합니다. 입자는 우리 주변 모든 것을 이루는 아주 작은 조각입니다. 유럽의 큰 과학 연구소인 CERN에서 과학자들이 아주 드문 변화를 보았습니다. 입자 하나가 다른 입자 두 개로 쪼개졌습니다.",
+      "이 변화는 거의 일어나지 않습니다. 약 100억 번에 한 번 일어납니다. 과학자들은 40년 넘게 이것을 찾았습니다!",
+      "어떻게 찾았을까요? 큰 기계를 더 좋게 만들었습니다. 이제 기계가 훨씬 더 많은 데이터를 모읍니다. 또 똑똑한 컴퓨터로 데이터를 살펴보았습니다.",
+      "신나는 일입니다. 이 발견은 과학자들이 우리 세계에 대한 생각을 확인하는 데 도움이 됩니다. 하지만 확실히 하려면 데이터가 더 필요합니다.",
+      "다시 말해, 40년 만에 과학자들이 아주 작은 입자에서 매우 드문 변화를 찾았습니다.",
+      "들어 주셔서 감사합니다."
+     ],
+     "g": {
+      "wait": "기다리다",
+      "forty": "40",
+      "scientists": "과학자",
+      "study": "연구하다",
+      "particles": "입자",
+      "tiny": "아주 작은",
+      "piece": "조각",
+      "everything": "모든 것",
+      "around": "주변에",
+      "cern": "CERN(유럽입자물리연구소)",
+      "science lab": "과학 연구소",
+      "europe": "유럽",
+      "rare": "드문",
+      "change": "변화",
+      "broke into": "~로 쪼개졌다",
+      "almost never": "거의 ~하지 않다",
+      "happen": "일어나다",
+      "ten billion": "100억",
+      "looked for": "찾았다",
+      "find": "찾다",
+      "machine": "기계",
+      "better": "더 좋게",
+      "collects": "모으다",
+      "data": "데이터, 자료",
+      "smart": "똑똑한",
+      "computers": "컴퓨터",
+      "exciting": "신나는",
+      "check": "확인하다",
+      "ideas": "생각",
+      "world": "세계",
+      "sure": "확실한",
+      "again": "다시 (말해)",
+      "found": "찾았다 (find의 과거)",
+      "listening": "듣기"
+     },
+     "ph": [
+      "science lab",
+      "broke into",
+      "almost never",
+      "ten billion",
+      "looked for"
+     ],
+     "kw": [
+      [
+       "particle",
+       "입자"
+      ],
+      [
+       "rare",
+       "드문"
+      ],
+      [
+       "scientist",
+       "과학자"
+      ],
+      [
+       "data",
+       "데이터"
+      ],
+      [
+       "machine",
+       "기계"
+      ]
+     ],
+     "audio": "audio/2026-11-11-g2-L1.mp3",
+     "duration": 70.6,
+     "speed": 0.75,
+     "voice": "af_heart",
+     "words": 140
+    },
+    "2": {
+     "headline": "CERN Finds Signs of a One-in-Ten-Billion Event",
+     "p": [
+      "Good morning. This is your morning news in English.",
+      "What happens only once in ten billion times?",
+      "According to a report from CERN, scientists have found signs of a very rare event. CERN is a famous science lab in Europe. There, scientists smash tiny particles together to learn how the universe works.",
+      "The scientists watched a particle called a B meson. Sometimes it breaks apart and becomes two other particles called muons. But this happens only about once in ten billion times. Scientists have looked for it for more than forty years.",
+      "So how did they finally see it? In 2024, their detector, a giant machine that records particles, came back after a big upgrade. Now it collects data about five times faster than before. The team also used machine learning, a kind of computer program that learns from examples.",
+      "Did you know? CERN's biggest machine is a ring about twenty-seven kilometers long, under the ground.",
+      "The result matches the main theory about tiny particles. But scientists call it evidence, not a full discovery. They need more data to be sure.",
+      "To sum up, after more than forty years, scientists at CERN found signs of a particle change that happens only once in ten billion times.",
+      "Thank you for listening."
+     ],
+     "tr": [
+      "좋은 아침입니다. 영어로 듣는 아침 뉴스입니다.",
+      "100억 번에 한 번만 일어나는 일은 무엇일까요?",
+      "CERN의 발표에 따르면 과학자들이 아주 드문 현상의 징후를 찾았습니다. CERN은 유럽의 유명한 과학 연구소입니다. 이곳에서 과학자들은 아주 작은 입자들을 서로 충돌시켜 우주가 어떻게 움직이는지 배웁니다.",
+      "과학자들은 B 중간자라는 입자를 관찰했습니다. 이 입자는 가끔 쪼개져 뮤온이라는 다른 입자 두 개가 됩니다. 하지만 이 일은 약 100억 번에 한 번만 일어납니다. 과학자들은 40년 넘게 이것을 찾아왔습니다.",
+      "그렇다면 어떻게 마침내 보았을까요? 2024년, 입자를 기록하는 거대한 기계인 검출기가 큰 업그레이드를 마치고 돌아왔습니다. 이제 이 검출기는 전보다 약 다섯 배 빠르게 데이터를 모읍니다. 연구팀은 또 예시로부터 배우는 컴퓨터 프로그램인 머신러닝을 사용했습니다.",
+      "알고 계셨나요? CERN에서 가장 큰 기계는 땅속에 있는 길이 약 27킬로미터의 고리입니다.",
+      "이번 결과는 아주 작은 입자에 관한 주요 이론과 맞습니다. 하지만 과학자들은 이를 완전한 발견이 아니라 증거라고 부릅니다. 확실히 하려면 데이터가 더 필요합니다.",
+      "요약하면, 40년이 넘는 연구 끝에 CERN의 과학자들이 100억 번에 한 번만 일어나는 입자 변화의 징후를 찾았습니다.",
+      "들어 주셔서 감사합니다."
+     ],
+     "g": {
+      "ten billion": "100억",
+      "according to": "~에 따르면",
+      "report": "발표, 보고",
+      "cern": "CERN(유럽입자물리연구소)",
+      "signs": "징후, 신호",
+      "rare": "드문",
+      "event": "현상, 사건",
+      "famous": "유명한",
+      "science lab": "과학 연구소",
+      "smash": "세게 부딪치다",
+      "particles": "입자",
+      "universe": "우주",
+      "works": "작동하다, 움직이다",
+      "b meson": "B 중간자",
+      "breaks apart": "쪼개지다",
+      "becomes": "~이 되다",
+      "muons": "뮤온(입자의 한 종류)",
+      "looked for": "찾았다",
+      "finally": "마침내",
+      "detector": "검출기",
+      "giant": "거대한",
+      "records": "기록하다",
+      "upgrade": "업그레이드, 개선",
+      "collects": "모으다",
+      "data": "데이터",
+      "five times": "다섯 배",
+      "machine learning": "머신러닝, 기계 학습",
+      "examples": "예시",
+      "did you know": "알고 계셨나요",
+      "ring": "고리",
+      "kilometers": "킬로미터",
+      "under the ground": "땅속에",
+      "result": "결과",
+      "matches": "~와 맞다",
+      "theory": "이론",
+      "evidence": "증거",
+      "discovery": "발견",
+      "sure": "확실한",
+      "to sum up": "요약하면",
+      "found": "찾았다 (find의 과거)"
+     },
+     "ph": [
+      "ten billion",
+      "according to",
+      "science lab",
+      "b meson",
+      "breaks apart",
+      "looked for",
+      "five times",
+      "machine learning",
+      "did you know",
+      "under the ground",
+      "to sum up"
+     ],
+     "kw": [
+      [
+       "particle",
+       "입자"
+      ],
+      [
+       "rare",
+       "드문"
+      ],
+      [
+       "detector",
+       "검출기"
+      ],
+      [
+       "machine learning",
+       "머신러닝"
+      ],
+      [
+       "evidence",
+       "증거"
+      ],
+      [
+       "discovery",
+       "발견"
+      ]
+     ],
+     "audio": "audio/2026-11-11-g2-L2.mp3",
+     "duration": 99.0,
+     "speed": 0.8,
+     "voice": "af_heart",
+     "words": 210
+    },
+    "3": {
+     "headline": "After 40 Years, CERN Finds Evidence of an Ultra-Rare Decay",
+     "p": [
+      "Good morning. This is your morning news in English.",
+      "Imagine waiting more than forty years to see something that happens only once in ten billion tries.",
+      "That is what physicists at CERN, the famous science lab in Europe, say they have finally done. According to a report from CERN, scientists working on an experiment called LHCb found evidence of a very rare particle decay. A decay is when a tiny particle breaks apart and turns into other particles.",
+      "The particle in this story is called a B meson. Scientists predicted that it would sometimes turn into two particles called muons. But this should happen only about once in every ten billion decays. Physicists have been hunting for it for more than forty years.",
+      "So how did they find it? In 2024, the LHCb detector came back after a major upgrade. A detector is a giant machine that records what happens when particles crash together. Now it collects data about five times faster than before. The team also used machine learning, a type of artificial intelligence, to pick out the rare signals from a huge amount of background noise.",
+      "Did you know? CERN's Large Hadron Collider is a ring about twenty-seven kilometers long, buried deep under the ground.",
+      "Why is this exciting? Rare decays like this are a powerful way to test the Standard Model, the main theory that explains tiny particles. If unknown particles exist, they could change how often the decay happens. So far, the result matches the theory. Still, scientists call it evidence, not a confirmed discovery, because they need even more data to be certain.",
+      "To sum up, after more than forty years of searching, CERN scientists have found evidence of a particle decay that happens only once in about ten billion times.",
+      "Thank you for listening."
+     ],
+     "tr": [
+      "좋은 아침입니다. 영어로 듣는 아침 뉴스입니다.",
+      "100억 번에 한 번만 일어나는 일을 보려고 40년 넘게 기다린다고 상상해 보세요.",
+      "유럽의 유명한 과학 연구소 CERN의 물리학자들이 마침내 그 일을 해냈다고 말합니다. CERN의 발표에 따르면 LHCb라는 실험에 참여하는 과학자들이 매우 드문 입자 붕괴의 증거를 찾았습니다. 붕괴란 아주 작은 입자가 쪼개져 다른 입자로 바뀌는 것을 말합니다.",
+      "이 이야기의 주인공 입자는 B 중간자입니다. 과학자들은 이 입자가 가끔 뮤온이라는 입자 두 개로 바뀔 것이라고 예측했습니다. 하지만 이 일은 붕괴 약 100억 번에 한 번꼴로만 일어날 것으로 봤습니다. 물리학자들은 40년 넘게 이것을 찾아 왔습니다.",
+      "그렇다면 어떻게 찾았을까요? 2024년 LHCb 검출기가 대대적인 업그레이드를 마치고 돌아왔습니다. 검출기는 입자들이 충돌할 때 일어나는 일을 기록하는 거대한 기계입니다. 이제 이 검출기는 전보다 약 다섯 배 빠르게 데이터를 모읍니다. 연구팀은 또 인공지능의 한 종류인 머신러닝을 사용해 엄청난 양의 배경 잡음 속에서 드문 신호를 골라냈습니다.",
+      "알고 계셨나요? CERN의 대형 강입자 충돌기는 땅속 깊이 묻힌 길이 약 27킬로미터의 고리입니다.",
+      "왜 흥미로울까요? 이런 드문 붕괴는 아주 작은 입자를 설명하는 주요 이론인 표준 모형을 시험하는 강력한 방법입니다. 알려지지 않은 입자가 있다면 이 붕괴가 일어나는 빈도가 달라질 수 있습니다. 지금까지 결과는 이론과 맞습니다. 그래도 과학자들은 확실히 하려면 데이터가 더 필요하기 때문에 이를 확정된 발견이 아니라 증거라고 부릅니다.",
+      "요약하면, 40년 넘는 탐색 끝에 CERN 과학자들이 약 100억 번에 한 번만 일어나는 입자 붕괴의 증거를 찾았습니다.",
+      "들어 주셔서 감사합니다."
+     ],
+     "g": {
+      "imagine": "상상하다",
+      "ten billion": "100억",
+      "tries": "시도",
+      "physicists": "물리학자",
+      "cern": "CERN(유럽입자물리연구소)",
+      "science lab": "과학 연구소",
+      "finally": "마침내",
+      "according to": "~에 따르면",
+      "experiment": "실험",
+      "lhcb": "LHCb(CERN의 실험 이름)",
+      "evidence": "증거",
+      "rare": "드문",
+      "particle": "입자",
+      "decay": "붕괴",
+      "breaks apart": "쪼개지다",
+      "turns into": "~로 바뀌다",
+      "b meson": "B 중간자",
+      "predicted": "예측했다",
+      "muons": "뮤온(입자의 한 종류)",
+      "hunting for": "~을 찾는",
+      "detector": "검출기",
+      "major": "대대적인",
+      "upgrade": "업그레이드, 개선",
+      "giant": "거대한",
+      "records": "기록하다",
+      "crash together": "서로 충돌하다",
+      "collects": "모으다",
+      "five times": "다섯 배",
+      "machine learning": "머신러닝",
+      "artificial intelligence": "인공지능",
+      "pick out": "골라내다",
+      "signals": "신호",
+      "background noise": "배경 잡음",
+      "did you know": "알고 계셨나요",
+      "large hadron collider": "대형 강입자 충돌기",
+      "buried": "묻힌",
+      "exciting": "흥미로운",
+      "powerful": "강력한",
+      "standard model": "표준 모형(입자물리 이론)",
+      "theory": "이론",
+      "unknown": "알려지지 않은",
+      "exist": "존재하다",
+      "so far": "지금까지",
+      "matches": "~와 맞다",
+      "confirmed": "확정된",
+      "discovery": "발견",
+      "certain": "확실한",
+      "to sum up": "요약하면",
+      "searching": "탐색",
+      "found": "찾았다 (find의 과거)"
+     },
+     "ph": [
+      "ten billion",
+      "science lab",
+      "according to",
+      "breaks apart",
+      "turns into",
+      "b meson",
+      "hunting for",
+      "crash together",
+      "five times",
+      "machine learning",
+      "artificial intelligence",
+      "pick out",
+      "background noise",
+      "did you know",
+      "large hadron collider",
+      "standard model",
+      "so far",
+      "to sum up"
+     ],
+     "kw": [
+      [
+       "physicist",
+       "물리학자"
+      ],
+      [
+       "experiment",
+       "실험"
+      ],
+      [
+       "particle decay",
+       "입자 붕괴"
+      ],
+      [
+       "predicted",
+       "예측했다"
+      ],
+      [
+       "detector",
+       "검출기"
+      ],
+      [
+       "machine learning",
+       "머신러닝"
+      ],
+      [
+       "evidence",
+       "증거"
+      ],
+      [
+       "confirmed discovery",
+       "확정된 발견"
+      ]
+     ],
+     "audio": "audio/2026-11-11-g2-L3.mp3",
+     "duration": 120.7,
+     "speed": 0.9,
+     "voice": "af_heart",
+     "words": 300
+    },
+    "4": {
+     "headline": "CERN Experiment Reports Evidence of One-in-Ten-Billion Particle Decay",
+     "p": [
+      "Good morning, and welcome to your morning news in English.",
+      "Physicists have been chasing it for more than four decades, and now they finally have something to show for it.",
+      "According to a report released by CERN, the European particle physics laboratory, the LHCb experiment has found evidence of one of the rarest processes ever studied. The team observed signs of a B meson, a particle containing a beauty quark, decaying into a pair of muons. Under the Standard Model, the leading theory of particle physics, this is expected to happen only about once in every ten billion such decays. For comparison, a closely related decay of a different B meson is predicted to happen about thirty times more often.",
+      "The breakthrough was made possible by a major upgrade. Since 2024, the LHCb detector has been collecting data at roughly five times its earlier rate. Researchers also relied on machine learning to separate the faint signal from an overwhelming amount of background. The new measurement reached a statistical significance of 3.2 sigma, which counts as evidence. A full discovery, however, requires five sigma, so more data will be needed before physicists can claim it with certainty.",
+      "So why does such a tiny event matter? Rare decays act as a sensitive test of the Standard Model. Heavy particles that are too massive to be produced directly at the Large Hadron Collider could still leave subtle fingerprints on how often the decay occurs. For now, the results agree with the theory, which narrows down where new physics might be hiding.",
+      "Looking ahead, the High-Luminosity upgrade of the Large Hadron Collider, scheduled to begin in 2030, along with further detector improvements, is expected to provide far more data.",
+      "To sum up, after more than forty years of searching, CERN's LHCb experiment has reported evidence of an extremely rare particle decay, and the result so far supports the Standard Model.",
+      "Thank you for listening."
+     ],
+     "tr": [
+      "좋은 아침입니다. 영어로 듣는 아침 뉴스에 오신 것을 환영합니다.",
+      "물리학자들이 40년 넘게 쫓아온 것이 있는데, 마침내 그 성과를 보여 줄 수 있게 됐습니다.",
+      "유럽 입자물리 연구소 CERN이 발표한 보고에 따르면, LHCb 실험이 지금까지 연구된 가장 드문 과정 중 하나의 증거를 찾았습니다. 연구팀은 보텀(뷰티) 쿼크를 포함한 입자인 B 중간자가 뮤온 한 쌍으로 붕괴하는 징후를 관측했습니다. 입자물리학의 대표 이론인 표준 모형에 따르면 이런 붕괴는 약 100억 번에 한 번꼴로만 일어날 것으로 예상됩니다. 비교하자면, 다른 B 중간자의 비슷한 붕괴는 약 30배 더 자주 일어날 것으로 예측됩니다.",
+      "이번 성과는 대대적인 업그레이드 덕분에 가능했습니다. 2024년부터 LHCb 검출기는 이전보다 약 다섯 배 빠른 속도로 데이터를 모으고 있습니다. 연구진은 또 머신러닝을 활용해 압도적인 양의 배경 신호에서 희미한 신호를 분리했습니다. 이번 측정은 통계적 유의성 3.2시그마에 도달해 증거로 인정됩니다. 하지만 완전한 발견에는 5시그마가 필요하므로, 물리학자들이 확실히 주장하려면 더 많은 데이터가 필요합니다.",
+      "그렇다면 이렇게 작은 사건이 왜 중요할까요? 드문 붕괴는 표준 모형을 정밀하게 시험하는 역할을 합니다. 너무 무거워서 대형 강입자 충돌기에서 직접 만들 수 없는 입자도 이 붕괴가 일어나는 빈도에 미묘한 흔적을 남길 수 있습니다. 현재로서는 결과가 이론과 일치하며, 이는 새로운 물리 현상이 숨어 있을 만한 범위를 좁혀 줍니다.",
+      "앞으로 2030년 시작 예정인 대형 강입자 충돌기의 고광도 업그레이드와 추가적인 검출기 개선으로 훨씬 더 많은 데이터를 얻을 것으로 기대됩니다.",
+      "요약하면, 40년 넘는 탐색 끝에 CERN의 LHCb 실험이 매우 드문 입자 붕괴의 증거를 보고했으며, 지금까지의 결과는 표준 모형을 뒷받침합니다.",
+      "들어 주셔서 감사합니다."
+     ],
+     "g": {
+      "physicists": "물리학자",
+      "chasing": "쫓는",
+      "decades": "수십 년",
+      "something to show for it": "내세울 만한 성과",
+      "according to": "~에 따르면",
+      "released": "발표된",
+      "cern": "CERN(유럽입자물리연구소)",
+      "particle physics": "입자물리학",
+      "laboratory": "연구소",
+      "lhcb": "LHCb(CERN의 실험 이름)",
+      "experiment": "실험",
+      "evidence": "증거",
+      "rarest": "가장 드문",
+      "processes": "과정",
+      "observed": "관측했다",
+      "b meson": "B 중간자",
+      "containing": "포함하는",
+      "beauty quark": "뷰티(보텀) 쿼크",
+      "decaying into": "~로 붕괴하는",
+      "a pair of": "한 쌍의",
+      "muons": "뮤온",
+      "standard model": "표준 모형",
+      "leading theory": "대표 이론",
+      "breakthrough": "획기적 성과",
+      "upgrade": "업그레이드",
+      "detector": "검출기",
+      "roughly": "대략",
+      "rate": "속도, 비율",
+      "relied on": "~에 의존했다",
+      "machine learning": "머신러닝",
+      "separate": "분리하다",
+      "faint": "희미한",
+      "overwhelming": "압도적인",
+      "background": "배경 (신호)",
+      "measurement": "측정",
+      "statistical significance": "통계적 유의성",
+      "sigma": "시그마(통계 단위)",
+      "requires": "필요로 하다",
+      "sensitive": "민감한, 정밀한",
+      "massive": "무거운, 질량이 큰",
+      "produced": "만들어진",
+      "large hadron collider": "대형 강입자 충돌기",
+      "subtle": "미묘한",
+      "fingerprints": "흔적, 지문",
+      "occurs": "일어나다",
+      "for now": "현재로서는",
+      "narrows down": "좁히다",
+      "hiding": "숨어 있는",
+      "looking ahead": "앞으로",
+      "high-luminosity": "고광도",
+      "scheduled": "예정된",
+      "improvements": "개선",
+      "extremely": "극도로",
+      "supports": "뒷받침하다",
+      "for comparison": "비교하자면",
+      "closely related": "밀접하게 관련된",
+      "claim": "주장하다",
+      "certainty": "확실성"
+     },
+     "ph": [
+      "something to show for it",
+      "according to",
+      "particle physics",
+      "b meson",
+      "beauty quark",
+      "decaying into",
+      "a pair of",
+      "standard model",
+      "leading theory",
+      "relied on",
+      "machine learning",
+      "statistical significance",
+      "large hadron collider",
+      "for now",
+      "narrows down",
+      "looking ahead",
+      "for comparison",
+      "closely related"
+     ],
+     "kw": [
+      [
+       "laboratory",
+       "연구소"
+      ],
+      [
+       "observed",
+       "관측했다"
+      ],
+      [
+       "detector",
+       "검출기"
+      ],
+      [
+       "statistical significance",
+       "통계적 유의성"
+      ],
+      [
+       "subtle",
+       "미묘한"
+      ],
+      [
+       "narrow down",
+       "좁히다"
+      ]
+     ],
+     "audio": "audio/2026-11-11-g2-L4.mp3",
+     "duration": 131.1,
+     "speed": 1.1,
+     "voice": "am_michael",
+     "words": 320
+    },
+    "5": {
+     "headline": "CERN Physicists Glimpse a Decay Four Decades in the Making",
+     "p": [
+      "Good morning, and welcome to your morning news in English.",
+      "Some scientific quests demand extraordinary patience, and few have tested it quite like this one.",
+      "According to a report released by CERN, Europe's flagship particle physics laboratory, the LHCb collaboration has uncovered evidence of a phenomenon so elusive that it is predicted to occur only about once in ten billion decays of beauty particles. Specifically, the team detected signs of a neutral B meson transforming into a muon and its antimatter counterpart, an antimuon, a process physicists have been pursuing for more than forty years. For comparison, its better-known sibling, the strange B meson, undergoes the same transformation roughly thirty times more often, a decay first observed in a joint analysis by LHCb and the rival CMS experiment in 2015.",
+      "The feat hinged on a sweeping overhaul of the LHCb detector, which since 2024 has been harvesting data at roughly five times its previous rate. To tease out the vanishingly faint signal from a deluge of background events, researchers enlisted machine learning algorithms. The combined analysis reached a statistical significance of 3.2 sigma, comfortably clearing the bar for evidence, though still short of the five-sigma threshold that particle physicists demand before declaring a discovery.",
+      "Did you know? The Large Hadron Collider occupies a circular tunnel roughly twenty-seven kilometers in circumference, straddling the border between France and Switzerland.",
+      "Why does such an infinitesimally rare event command so much attention? Physicists regard it as a golden channel for probing beyond the Standard Model, the remarkably durable framework that describes the subatomic world. Hypothetical heavy particles, far too massive to be created directly in the collider, could nonetheless leave telltale imprints on how frequently the decay takes place. Thus far, the measurement dovetails with theoretical predictions, effectively narrowing the hiding places for exotic new physics. Researchers involved in the analysis noted that upcoming upgrades, including the High-Luminosity phase slated for 2030, should allow far more precise measurements.",
+      "To sum up, after a pursuit spanning more than four decades, CERN's LHCb experiment has reported evidence of a one-in-ten-billion particle decay, and the Standard Model has once again held its ground.",
+      "Thank you for listening."
+     ],
+     "tr": [
+      "좋은 아침입니다. 영어로 듣는 아침 뉴스에 오신 것을 환영합니다.",
+      "어떤 과학적 탐구는 엄청난 인내를 요구하는데, 이번만큼 인내심을 시험한 경우는 드뭅니다.",
+      "유럽을 대표하는 입자물리 연구소 CERN이 발표한 보고에 따르면, LHCb 공동연구단이 뷰티 입자 붕괴 약 100억 번에 한 번꼴로만 일어날 것으로 예측되는 매우 포착하기 어려운 현상의 증거를 찾아냈습니다. 구체적으로 연구팀은 중성 B 중간자가 뮤온과 그 반물질 짝인 반뮤온으로 바뀌는 징후를 검출했는데, 이는 물리학자들이 40년 넘게 추적해 온 과정입니다. 비교하자면, 더 잘 알려진 형제 입자인 스트레인지 B 중간자는 같은 변환을 약 30배 더 자주 겪는데, 이 붕괴는 2015년 LHCb와 경쟁 실험인 CMS의 공동 분석에서 처음 관측됐습니다.",
+      "이번 성과는 LHCb 검출기의 전면적인 개선에 달려 있었습니다. 검출기는 2024년부터 이전보다 약 다섯 배 빠른 속도로 데이터를 수집하고 있습니다. 연구진은 쏟아지는 배경 사건 속에서 극도로 희미한 신호를 가려내기 위해 머신러닝 알고리즘을 동원했습니다. 통합 분석은 통계적 유의성 3.2시그마에 도달해 증거 기준을 넉넉히 넘었지만, 입자물리학자들이 발견을 선언하기 전에 요구하는 5시그마 기준에는 아직 못 미칩니다.",
+      "알고 계셨나요? 대형 강입자 충돌기는 프랑스와 스위스 국경에 걸쳐 있는 둘레 약 27킬로미터의 원형 터널에 자리하고 있습니다.",
+      "이렇게 극히 드문 사건이 왜 이토록 주목받을까요? 물리학자들은 이를 아원자 세계를 설명하는, 놀랍도록 견고한 이론 체계인 표준 모형 너머를 탐색하는 '황금 채널'로 여깁니다. 충돌기에서 직접 만들기에는 너무 무거운 가상의 무거운 입자도 이 붕괴가 일어나는 빈도에 뚜렷한 흔적을 남길 수 있습니다. 지금까지 측정 결과는 이론적 예측과 맞아떨어져, 사실상 새로운 이색 물리 현상이 숨을 곳을 좁혀 주고 있습니다. 분석에 참여한 연구자들은 2030년 예정된 고광도 단계를 포함한 향후 업그레이드로 훨씬 더 정밀한 측정이 가능해질 것이라고 밝혔습니다.",
+      "요약하면, 40년 넘는 추적 끝에 CERN의 LHCb 실험이 100억 분의 1 확률의 입자 붕괴 증거를 보고했으며, 표준 모형은 이번에도 굳건히 자리를 지켰습니다.",
+      "들어 주셔서 감사합니다."
+     ],
+     "g": {
+      "quests": "탐구, 탐색",
+      "demand": "요구하다",
+      "extraordinary": "엄청난, 비범한",
+      "patience": "인내",
+      "according to": "~에 따르면",
+      "cern": "CERN(유럽입자물리연구소)",
+      "flagship": "대표적인, 주력의",
+      "particle physics": "입자물리학",
+      "laboratory": "연구소",
+      "lhcb": "LHCb(CERN의 실험 이름)",
+      "collaboration": "공동연구단",
+      "uncovered": "찾아냈다",
+      "phenomenon": "현상",
+      "elusive": "포착하기 어려운",
+      "predicted": "예측된",
+      "beauty particles": "뷰티 입자(b 쿼크를 포함한 입자)",
+      "specifically": "구체적으로",
+      "detected": "검출했다",
+      "neutral": "중성의",
+      "b meson": "B 중간자",
+      "antimatter": "반물질",
+      "counterpart": "짝, 상대",
+      "antimuon": "반뮤온",
+      "pursuing": "추적하는",
+      "feat": "위업, 성과",
+      "hinged on": "~에 달려 있었다",
+      "sweeping": "전면적인",
+      "overhaul": "정비, 개편",
+      "harvesting": "수집하는",
+      "tease out": "가려내다",
+      "vanishingly": "거의 없을 정도로",
+      "deluge": "홍수, 쇄도",
+      "enlisted": "동원했다",
+      "machine learning": "머신러닝",
+      "algorithms": "알고리즘",
+      "statistical significance": "통계적 유의성",
+      "sigma": "시그마(통계 단위)",
+      "clearing the bar": "기준을 넘는",
+      "short of": "~에 못 미치는",
+      "threshold": "기준점, 문턱",
+      "declaring": "선언하는",
+      "did you know": "알고 계셨나요",
+      "large hadron collider": "대형 강입자 충돌기",
+      "circumference": "둘레",
+      "straddling": "~에 걸쳐 있는",
+      "infinitesimally": "극미하게",
+      "command": "(관심을) 받다",
+      "golden channel": "황금 채널(최적의 탐색 경로)",
+      "probing": "탐색하는",
+      "standard model": "표준 모형",
+      "durable": "견고한",
+      "framework": "체계, 틀",
+      "subatomic": "아원자의",
+      "hypothetical": "가상의",
+      "nonetheless": "그럼에도",
+      "telltale": "뚜렷한, 숨길 수 없는",
+      "imprints": "흔적",
+      "takes place": "일어나다",
+      "thus far": "지금까지",
+      "dovetails with": "~와 꼭 맞다",
+      "narrowing": "좁히는",
+      "exotic": "이색적인",
+      "slated for": "~로 예정된",
+      "pursuit": "추적, 추구",
+      "spanning": "~에 걸친",
+      "held its ground": "자리를 지켰다, 버텼다",
+      "for comparison": "비교하자면",
+      "sibling": "형제, 자매",
+      "undergoes": "겪다",
+      "transformation": "변환",
+      "joint analysis": "공동 분석",
+      "rival": "경쟁하는",
+      "cms": "CMS(CERN의 다른 실험)"
+     },
+     "ph": [
+      "according to",
+      "particle physics",
+      "beauty particles",
+      "b meson",
+      "hinged on",
+      "tease out",
+      "machine learning",
+      "statistical significance",
+      "clearing the bar",
+      "short of",
+      "did you know",
+      "large hadron collider",
+      "golden channel",
+      "standard model",
+      "takes place",
+      "thus far",
+      "dovetails with",
+      "slated for",
+      "held its ground",
+      "for comparison",
+      "joint analysis"
+     ],
+     "kw": [
+      [
+       "elusive",
+       "포착하기 어려운"
+      ],
+      [
+       "hinge on",
+       "~에 달려 있다"
+      ],
+      [
+       "tease out",
+       "가려내다"
+      ],
+      [
+       "threshold",
+       "기준점"
+      ],
+      [
+       "dovetail with",
+       "~와 꼭 맞다"
+      ],
+      [
+       "hold one's ground",
+       "자리를 지키다"
+      ]
+     ],
+     "audio": "audio/2026-11-11-g2-L5.mp3",
+     "duration": 142.3,
+     "speed": 1.05,
+     "voice": "bf_emma",
+     "words": 360
+    }
+   },
+   "icon": "atom",
+   "tag": "화제",
+   "ko": "CERN, 100억 분의 1 입자 붕괴 포착",
+   "url": "https://www.sciencedaily.com/releases/2026/11/261108233047.htm",
+   "source": "ScienceDaily (CERN)"
+  },
+  {
+   "id": "2026-11-11-k1",
+   "section": "k",
+   "levels": {
+    "1": {
+     "headline": "A Problem at Nvidia Worries Korean Chip Makers",
+     "p": [
+      "Good morning. This is your morning news in English.",
+      "Can a problem at one company worry a whole country?",
+      "Nvidia is a big American company. It makes chips for AI computers. Now there is a problem. People are asking about its boss and a Chinese businesswoman. Some reports say she may have helped China. But nobody has proved this.",
+      "Why does Korea care? Samsung and SK hynix sell memory chips to Nvidia. America may check chip sales more closely. Then Korean companies may need to do more work. Their costs may go up.",
+      "There is no new rule yet. Korea says its Nvidia chips are still coming.",
+      "Again, a problem at Nvidia worries Korean chip makers. But nothing has changed yet.",
+      "Thank you for listening."
+     ],
+     "tr": [
+      "좋은 아침입니다. 영어로 듣는 아침 뉴스입니다.",
+      "한 회사의 문제가 한 나라 전체를 걱정하게 할 수 있을까요?",
+      "엔비디아는 미국의 큰 회사입니다. 이 회사는 AI 컴퓨터용 칩을 만듭니다. 지금 문제가 생겼습니다. 사람들이 이 회사의 대표와 한 중국인 사업가에 대해 묻고 있습니다. 일부 보도는 그녀가 중국을 도왔을 수 있다고 말합니다. 하지만 아무도 이것을 증명하지 못했습니다.",
+      "한국은 왜 신경을 쓸까요? 삼성과 SK하이닉스는 엔비디아에 메모리 칩을 팝니다. 미국이 칩 판매를 더 꼼꼼히 확인할 수 있습니다. 그러면 한국 회사들은 일을 더 해야 할 수 있습니다. 비용도 오를 수 있습니다.",
+      "아직 새 규칙은 없습니다. 한국 정부는 주문한 엔비디아 칩이 계속 들어오고 있다고 말합니다.",
+      "다시 말해, 엔비디아의 문제가 한국 반도체 회사들을 걱정시키고 있습니다. 하지만 아직 바뀐 것은 없습니다.",
+      "들어 주셔서 감사합니다."
+     ],
+     "g": {
+      "problem": "문제",
+      "company": "회사",
+      "worry": "걱정시키다",
+      "whole": "전체의",
+      "country": "나라",
+      "nvidia": "엔비디아(미국 반도체 회사)",
+      "american": "미국의",
+      "chips": "칩, 반도체",
+      "ai": "인공지능",
+      "computers": "컴퓨터",
+      "asking about": "~에 대해 묻는",
+      "boss": "대표, 사장",
+      "chinese": "중국의",
+      "businesswoman": "여성 사업가",
+      "reports": "보도",
+      "china": "중국",
+      "nobody": "아무도 ~않다",
+      "proved": "증명했다",
+      "care": "신경 쓰다",
+      "samsung": "삼성",
+      "sk hynix": "SK하이닉스",
+      "sell": "팔다",
+      "memory chips": "메모리 칩",
+      "america": "미국",
+      "check": "확인하다",
+      "sales": "판매",
+      "closely": "꼼꼼히",
+      "costs": "비용",
+      "go up": "오르다",
+      "rule": "규칙",
+      "yet": "아직",
+      "still": "여전히",
+      "coming": "오는",
+      "again": "다시 (말해)",
+      "chip makers": "반도체 회사",
+      "changed": "바뀌었다",
+      "listening": "듣기"
+     },
+     "ph": [
+      "asking about",
+      "sk hynix",
+      "memory chips",
+      "go up",
+      "chip makers"
+     ],
+     "kw": [
+      [
+       "chips",
+       "칩, 반도체"
+      ],
+      [
+       "company",
+       "회사"
+      ],
+      [
+       "memory chips",
+       "메모리 칩"
+      ],
+      [
+       "costs",
+       "비용"
+      ],
+      [
+       "rule",
+       "규칙"
+      ]
+     ],
+     "audio": "audio/2026-11-11-k1-L1.mp3",
+     "duration": 65.8,
+     "speed": 0.75,
+     "voice": "af_heart",
+     "words": 125
+    },
+    "2": {
+     "headline": "Nvidia Controversy Worries Korean Chipmakers",
+     "p": [
+      "Good morning. This is your morning news in English.",
+      "Can trouble at one American company cause problems for Korea?",
+      "According to the Korea Herald, a controversy at Nvidia is worrying Korea's chip industry. Nvidia makes most of the chips used for AI. News reports say its CEO, Jensen Huang, had close contact with a Chinese businesswoman. She once worked for a data center company in Singapore. Some reports say American officials thought she might be working for Chinese spies. But this has not been proven.",
+      "Nvidia's board is now looking into the matter. It says company secrets were not leaked, and Huang is still the CEO.",
+      "Why does this matter to Korea? Samsung Electronics and SK hynix sell special memory chips to Nvidia. If the United States checks chip exports more strictly, Korean companies may need more paperwork. That could raise costs and slow down shipments.",
+      "So far, there are no new rules. Korea's government says Nvidia chips it ordered are still arriving.",
+      "To sum up, the Nvidia controversy is making Korean chipmakers nervous, but no new export rules have been made yet.",
+      "Thank you for listening."
+     ],
+     "tr": [
+      "좋은 아침입니다. 영어로 듣는 아침 뉴스입니다.",
+      "미국 회사 한 곳의 문제가 한국에 문제를 일으킬 수 있을까요?",
+      "코리아헤럴드에 따르면 엔비디아를 둘러싼 논란이 한국 반도체 업계를 걱정시키고 있습니다. 엔비디아는 AI에 쓰이는 칩 대부분을 만듭니다. 보도에 따르면 이 회사의 최고경영자 젠슨 황이 한 중국인 여성 사업가와 가깝게 접촉했습니다. 그녀는 예전에 싱가포르의 데이터센터 회사에서 일했습니다. 일부 보도는 미국 당국자들이 그녀가 중국 정보기관을 위해 일하고 있을지 모른다고 생각했다고 전합니다. 하지만 이는 증명되지 않았습니다.",
+      "엔비디아 이사회는 지금 이 문제를 조사하고 있습니다. 이사회는 회사 기밀이 새어 나가지 않았다고 말하며, 젠슨 황은 여전히 최고경영자입니다.",
+      "이 일이 한국에 왜 중요할까요? 삼성전자와 SK하이닉스는 엔비디아에 특수 메모리 칩을 팝니다. 미국이 반도체 수출을 더 엄격하게 확인하면 한국 기업들은 서류 작업을 더 해야 할 수 있습니다. 그러면 비용이 오르고 배송이 늦어질 수 있습니다.",
+      "지금까지 새 규칙은 없습니다. 한국 정부는 주문한 엔비디아 칩이 계속 들어오고 있다고 말합니다.",
+      "요약하면, 엔비디아 논란이 한국 반도체 기업들을 긴장시키고 있지만 아직 새 수출 규칙은 나오지 않았습니다.",
+      "들어 주셔서 감사합니다."
+     ],
+     "g": {
+      "trouble": "문제, 곤란",
+      "cause": "일으키다",
+      "according to": "~에 따르면",
+      "korea herald": "코리아헤럴드(신문)",
+      "controversy": "논란",
+      "nvidia": "엔비디아",
+      "worrying": "걱정시키는",
+      "chip industry": "반도체 업계",
+      "ai": "인공지능",
+      "news reports": "언론 보도",
+      "ceo": "최고경영자",
+      "close contact": "가까운 접촉",
+      "businesswoman": "여성 사업가",
+      "data center": "데이터센터",
+      "singapore": "싱가포르",
+      "officials": "당국자",
+      "spies": "스파이, 첩보원",
+      "proven": "증명된",
+      "board": "이사회",
+      "looking into": "~을 조사하는",
+      "matter": "문제, 일; 중요하다",
+      "secrets": "기밀, 비밀",
+      "leaked": "유출됐다",
+      "samsung electronics": "삼성전자",
+      "sk hynix": "SK하이닉스",
+      "memory chips": "메모리 칩",
+      "exports": "수출",
+      "strictly": "엄격하게",
+      "paperwork": "서류 작업",
+      "raise": "올리다",
+      "slow down": "늦추다",
+      "shipments": "배송, 출하",
+      "so far": "지금까지",
+      "rules": "규칙",
+      "government": "정부",
+      "ordered": "주문했다",
+      "arriving": "도착하는",
+      "to sum up": "요약하면",
+      "chipmakers": "반도체 회사",
+      "nervous": "긴장한, 불안한"
+     },
+     "ph": [
+      "according to",
+      "korea herald",
+      "chip industry",
+      "news reports",
+      "close contact",
+      "data center",
+      "looking into",
+      "samsung electronics",
+      "sk hynix",
+      "memory chips",
+      "slow down",
+      "so far",
+      "to sum up"
+     ],
+     "kw": [
+      [
+       "controversy",
+       "논란"
+      ],
+      [
+       "chip industry",
+       "반도체 업계"
+      ],
+      [
+       "board",
+       "이사회"
+      ],
+      [
+       "exports",
+       "수출"
+      ],
+      [
+       "paperwork",
+       "서류 작업"
+      ],
+      [
+       "shipments",
+       "배송, 출하"
+      ]
+     ],
+     "audio": "audio/2026-11-11-k1-L2.mp3",
+     "duration": 89.4,
+     "speed": 0.8,
+     "voice": "af_heart",
+     "words": 187
+    },
+    "3": {
+     "headline": "Nvidia Controversy Raises Export Worries for Korean Chipmakers",
+     "p": [
+      "Good morning. This is your morning news in English.",
+      "Can a controversy at one American company make business harder for Korea's biggest chipmakers?",
+      "According to the Korea Herald, questions about Nvidia are raising concerns in Korea's chip industry. Nvidia is the American company that makes most of the world's AI chips. News reports say its CEO, Jensen Huang, had close contact with a Chinese businesswoman. She was once an executive at a data center company in Singapore. That company has been under US investigation since 2024. Investigators suspected that some restricted Nvidia chips were sent to China.",
+      "The New York Times reported that American investigators thought the woman may have been recruited by Chinese intelligence. But this has not been proven, and China has called the reports groundless. Nvidia's board is reviewing the case. It says there is no reason to believe company secrets were leaked, and Huang remains CEO.",
+      "So why does Korea care? Samsung Electronics and SK hynix supply high-bandwidth memory, or HBM, to Nvidia. HBM is a very fast memory chip used in AI systems. If Washington tightens export controls, which are government rules on selling products abroad, Korean firms may have to check more carefully where their chips end up. That could mean higher costs and slower shipments. And if Nvidia sells fewer chips to China, demand for Korean HBM could fall.",
+      "No new rules have been announced, however. Korea's vice science minister said Nvidia chips ordered by the government are still being delivered.",
+      "To sum up, the Nvidia controversy has not changed any rules yet, but Korean chipmakers are preparing for tougher checks on chip exports.",
+      "Thank you for listening."
+     ],
+     "tr": [
+      "좋은 아침입니다. 영어로 듣는 아침 뉴스입니다.",
+      "미국 회사 한 곳의 논란이 한국 최대 반도체 기업들의 사업을 더 어렵게 만들 수 있을까요?",
+      "코리아헤럴드에 따르면 엔비디아를 둘러싼 의혹이 한국 반도체 업계에 우려를 낳고 있습니다. 엔비디아는 세계 AI 칩 대부분을 만드는 미국 기업입니다. 보도에 따르면 이 회사의 최고경영자 젠슨 황이 한 중국인 여성 사업가와 가깝게 접촉했습니다. 그녀는 싱가포르의 한 데이터센터 회사 임원이었습니다. 이 회사는 2024년부터 미국의 조사를 받고 있습니다. 조사 당국은 수출이 제한된 엔비디아 칩 일부가 중국으로 보내졌다고 의심했습니다.",
+      "뉴욕타임스는 미국 조사관들이 이 여성이 중국 정보기관에 포섭됐을 수 있다고 봤다고 보도했습니다. 하지만 이는 증명되지 않았고, 중국은 이 보도가 근거 없다고 말했습니다. 엔비디아 이사회는 이 사안을 검토하고 있습니다. 이사회는 회사 기밀이 유출됐다고 볼 이유가 없다고 밝혔으며, 젠슨 황은 계속 최고경영자를 맡고 있습니다.",
+      "그렇다면 한국은 왜 신경을 쓸까요? 삼성전자와 SK하이닉스는 엔비디아에 고대역폭 메모리, 즉 HBM을 공급합니다. HBM은 AI 시스템에 쓰이는 매우 빠른 메모리 칩입니다. 미국 정부가 해외 제품 판매에 관한 정부 규칙인 수출 통제를 강화하면, 한국 기업들은 자사 칩이 최종적으로 어디로 가는지 더 꼼꼼히 확인해야 할 수 있습니다. 그러면 비용이 늘고 출하가 늦어질 수 있습니다. 또 엔비디아가 중국에 칩을 덜 팔게 되면 한국산 HBM 수요가 줄 수 있습니다.",
+      "하지만 아직 새 규칙은 발표되지 않았습니다. 한국의 과학기술 담당 차관은 정부가 주문한 엔비디아 칩이 여전히 납품되고 있다고 말했습니다.",
+      "요약하면, 엔비디아 논란으로 아직 바뀐 규칙은 없지만 한국 반도체 기업들은 더 엄격한 수출 점검에 대비하고 있습니다.",
+      "들어 주셔서 감사합니다."
+     ],
+     "g": {
+      "controversy": "논란",
+      "chipmakers": "반도체 회사",
+      "according to": "~에 따르면",
+      "korea herald": "코리아헤럴드(신문)",
+      "raising concerns": "우려를 낳는",
+      "chip industry": "반도체 업계",
+      "nvidia": "엔비디아",
+      "news reports": "언론 보도",
+      "ceo": "최고경영자",
+      "close contact": "가까운 접촉",
+      "businesswoman": "여성 사업가",
+      "executive": "임원",
+      "data center": "데이터센터",
+      "singapore": "싱가포르",
+      "investigation": "조사",
+      "investigators": "조사관",
+      "suspected": "의심했다",
+      "restricted": "제한된",
+      "recruited": "포섭됐다, 모집됐다",
+      "intelligence": "정보기관",
+      "proven": "증명된",
+      "groundless": "근거 없는",
+      "board": "이사회",
+      "reviewing": "검토하는",
+      "secrets": "기밀",
+      "leaked": "유출됐다",
+      "remains": "여전히 ~이다",
+      "samsung electronics": "삼성전자",
+      "sk hynix": "SK하이닉스",
+      "supply": "공급하다",
+      "high-bandwidth memory": "고대역폭 메모리(HBM)",
+      "systems": "시스템",
+      "washington": "워싱턴(미국 정부)",
+      "tightens": "강화하다",
+      "export controls": "수출 통제",
+      "abroad": "해외에",
+      "firms": "기업",
+      "end up": "결국 ~에 이르다",
+      "costs": "비용",
+      "shipments": "출하, 배송",
+      "demand": "수요",
+      "announced": "발표됐다",
+      "vice science minister": "과학 담당 차관",
+      "delivered": "납품된",
+      "preparing for": "~에 대비하는",
+      "tougher": "더 엄격한"
+     },
+     "ph": [
+      "according to",
+      "korea herald",
+      "raising concerns",
+      "chip industry",
+      "news reports",
+      "close contact",
+      "data center",
+      "samsung electronics",
+      "sk hynix",
+      "high-bandwidth memory",
+      "export controls",
+      "end up",
+      "vice science minister",
+      "preparing for"
+     ],
+     "kw": [
+      [
+       "controversy",
+       "논란"
+      ],
+      [
+       "investigation",
+       "조사"
+      ],
+      [
+       "groundless",
+       "근거 없는"
+      ],
+      [
+       "board",
+       "이사회"
+      ],
+      [
+       "supply",
+       "공급하다"
+      ],
+      [
+       "export controls",
+       "수출 통제"
+      ],
+      [
+       "demand",
+       "수요"
+      ],
+      [
+       "shipments",
+       "출하"
+      ]
+     ],
+     "audio": "audio/2026-11-11-k1-L3.mp3",
+     "duration": 120.5,
+     "speed": 0.9,
+     "voice": "af_heart",
+     "words": 275
+    },
+    "4": {
+     "headline": "Nvidia Probe Puts Korean Chipmakers on Alert Over Export Rules",
+     "p": [
+      "Good morning, and welcome to your morning news in English.",
+      "A controversy surrounding the world's most valuable chip designer is now sending ripples through Korea's semiconductor industry.",
+      "According to the Korea Herald, Samsung Electronics and SK hynix could face stricter export requirements as questions mount over Nvidia chief executive Jensen Huang. News reports say Huang had close ties with a Chinese businesswoman who was formerly an executive at Megaspeed, a Singapore-based data center operator. US authorities have been investigating Megaspeed since 2024 over the suspected diversion of restricted Nvidia chips to China.",
+      "The New York Times reported that American investigators suspected the woman had been recruited by Chinese intelligence, although that claim has not been established. Beijing has dismissed the reports as unfounded. Nvidia's independent directors, working with outside lawyers, are examining whether Huang was targeted, but the board says it has no reason to believe secrets were compromised and has expressed confidence in him. Three US House committee chairs have requested a closed-door briefing on November 18.",
+      "For Korea, the main concern is what Washington might do next. If regulators tighten oversight of AI chip exports through third countries, Korean memory makers, which supply high-bandwidth memory for Nvidia's accelerators, may face more end-user checks, higher compliance costs and shipping delays. Any measures that reduce Nvidia's sales to China could also weaken demand for Korean HBM. On the other hand, an industry official noted that as big tech firms design their own AI chips, Korean suppliers could gain new customers.",
+      "Meanwhile, Huang's daughter, a senior Nvidia executive, canceled a planned trip to Seoul. Korea's vice science minister said deliveries of Nvidia chips ordered by the government are proceeding as planned.",
+      "To sum up, no new US restrictions have been announced, but the Nvidia probe has Korean chipmakers bracing for tougher export scrutiny.",
+      "Thank you for listening."
+     ],
+     "tr": [
+      "좋은 아침입니다. 영어로 듣는 아침 뉴스에 오신 것을 환영합니다.",
+      "세계에서 가장 가치 있는 반도체 설계 기업을 둘러싼 논란이 한국 반도체 업계에 파장을 일으키고 있습니다.",
+      "코리아헤럴드에 따르면 엔비디아 최고경영자 젠슨 황을 둘러싼 의혹이 커지면서 삼성전자와 SK하이닉스가 더 엄격한 수출 요건에 직면할 수 있습니다. 보도에 따르면 젠슨 황은 싱가포르의 데이터센터 운영사 메가스피드의 전 임원이었던 중국인 여성 사업가와 가까운 관계였습니다. 미국 당국은 수출이 제한된 엔비디아 칩이 중국으로 빼돌려졌다는 의혹으로 2024년부터 메가스피드를 조사해 왔습니다.",
+      "뉴욕타임스는 미국 조사관들이 이 여성이 중국 정보기관에 포섭됐다고 의심했다고 보도했지만, 이 주장은 확인되지 않았습니다. 중국 정부는 이 보도를 근거 없다고 일축했습니다. 엔비디아 사외이사들은 외부 변호사들과 함께 젠슨 황이 표적이 됐는지 조사하고 있지만, 이사회는 기밀이 유출됐다고 볼 이유가 없다며 그에 대한 신뢰를 표명했습니다. 미국 하원 위원장 세 명은 11월 18일 비공개 브리핑을 요청했습니다.",
+      "한국의 주된 관심사는 미국 정부가 다음에 무엇을 할지입니다. 규제 당국이 제3국을 거치는 AI 칩 수출 감독을 강화하면, 엔비디아 가속기에 고대역폭 메모리를 공급하는 한국 메모리 기업들은 최종 사용자 확인이 늘고 규정 준수 비용이 오르며 배송이 지연될 수 있습니다. 엔비디아의 대중국 판매를 줄이는 조치는 한국산 HBM 수요도 약화시킬 수 있습니다. 반면 한 업계 관계자는 빅테크 기업들이 자체 AI 칩을 설계하면서 한국 공급업체들이 새 고객을 얻을 수도 있다고 말했습니다.",
+      "한편 엔비디아 고위 임원인 젠슨 황의 딸은 계획했던 서울 방문을 취소했습니다. 한국의 과학 담당 차관은 정부가 주문한 엔비디아 칩의 납품이 계획대로 진행되고 있다고 말했습니다.",
+      "요약하면, 미국의 새 규제는 아직 발표되지 않았지만 엔비디아 조사로 한국 반도체 기업들은 더 엄격한 수출 심사에 대비하고 있습니다.",
+      "들어 주셔서 감사합니다."
+     ],
+     "g": {
+      "controversy": "논란",
+      "surrounding": "~을 둘러싼",
+      "valuable": "가치 있는",
+      "chip designer": "반도체 설계 기업",
+      "ripples": "파장, 파문",
+      "semiconductor": "반도체",
+      "according to": "~에 따르면",
+      "korea herald": "코리아헤럴드(신문)",
+      "samsung electronics": "삼성전자",
+      "sk hynix": "SK하이닉스",
+      "stricter": "더 엄격한",
+      "requirements": "요건",
+      "mount": "커지다, 증가하다",
+      "chief executive": "최고경영자",
+      "close ties": "가까운 관계",
+      "formerly": "이전에",
+      "executive": "임원",
+      "singapore-based": "싱가포르에 본사를 둔",
+      "operator": "운영사",
+      "authorities": "당국",
+      "investigating": "조사하는",
+      "suspected": "의심되는; 의심했다",
+      "diversion": "빼돌림, 전용",
+      "restricted": "제한된",
+      "recruited": "포섭됐다",
+      "intelligence": "정보기관",
+      "established": "확인된, 입증된",
+      "beijing": "베이징(중국 정부)",
+      "dismissed": "일축했다",
+      "unfounded": "근거 없는",
+      "independent directors": "사외이사",
+      "examining": "조사하는",
+      "targeted": "표적이 된",
+      "compromised": "유출된, 위태로워진",
+      "confidence": "신뢰",
+      "house": "(미국) 하원",
+      "committee chairs": "위원장들",
+      "closed-door briefing": "비공개 브리핑",
+      "washington": "워싱턴(미국 정부)",
+      "regulators": "규제 당국",
+      "oversight": "감독",
+      "third countries": "제3국",
+      "accelerators": "가속기",
+      "end-user checks": "최종 사용자 확인",
+      "compliance costs": "규정 준수 비용",
+      "delays": "지연",
+      "measures": "조치",
+      "weaken": "약화시키다",
+      "demand": "수요",
+      "on the other hand": "반면에",
+      "industry official": "업계 관계자",
+      "suppliers": "공급업체",
+      "meanwhile": "한편",
+      "canceled": "취소했다",
+      "to sum up": "요약하면",
+      "probe": "조사",
+      "bracing for": "~에 대비하는",
+      "scrutiny": "심사, 정밀 조사",
+      "vice science minister": "과학 담당 차관",
+      "deliveries": "납품, 배송",
+      "proceeding": "진행되는",
+      "as planned": "계획대로"
+     },
+     "ph": [
+      "chip designer",
+      "according to",
+      "korea herald",
+      "samsung electronics",
+      "sk hynix",
+      "chief executive",
+      "close ties",
+      "independent directors",
+      "committee chairs",
+      "closed-door briefing",
+      "third countries",
+      "end-user checks",
+      "compliance costs",
+      "on the other hand",
+      "industry official",
+      "to sum up",
+      "bracing for",
+      "vice science minister",
+      "as planned"
+     ],
+     "kw": [
+      [
+       "ripples",
+       "파장"
+      ],
+      [
+       "diversion",
+       "빼돌림"
+      ],
+      [
+       "unfounded",
+       "근거 없는"
+      ],
+      [
+       "oversight",
+       "감독"
+      ],
+      [
+       "compliance costs",
+       "규정 준수 비용"
+      ],
+      [
+       "bracing for",
+       "~에 대비하는"
+      ]
+     ],
+     "audio": "audio/2026-11-11-k1-L4.mp3",
+     "duration": 140.0,
+     "speed": 1.1,
+     "voice": "am_michael",
+     "words": 306
+    },
+    "5": {
+     "headline": "Nvidia Espionage Questions Cast a Shadow Over Korea's Chip Exporters",
+     "p": [
+      "Good morning, and welcome to your morning news in English.",
+      "When the world's most valuable chipmaker catches a cold, Korea's semiconductor industry is bound to feel a chill.",
+      "According to the Korea Herald, mounting scrutiny of Nvidia and its chief executive, Jensen Huang, is stoking concern that Samsung Electronics and SK hynix could be caught up in tighter export regulations. At the heart of the matter are reports that Huang maintained close ties with a Chinese businesswoman who once served as an executive at Megaspeed, a Singapore-based data center operator. Megaspeed has been under US investigation since 2024 over the suspected diversion of restricted Nvidia hardware to China.",
+      "The New York Times reported that American investigators suspected the woman had been recruited by Chinese intelligence, an allegation that remains unsubstantiated and that Beijing has brushed off as groundless. Nvidia's independent directors have retained outside counsel to examine whether Huang was the target of a foreign intelligence operation, though the board insists it has no reason to believe national security or trade secrets were compromised and has publicly stood by its chief. On Capitol Hill, three House committee chairs have requested a closed-door briefing on November 18.",
+      "For Seoul, the stakes lie in how Washington responds. Should regulators clamp down on AI chip exports routed through third countries, Korea's memory giants, which supply the high-bandwidth memory at the core of Nvidia's accelerators, could face more rigorous end-user verification, mounting compliance costs and shipment delays. Any curbs on Nvidia's sales to China would also ripple through to demand for Korean HBM. Yet there may be a silver lining: as Google, Amazon, Microsoft and Meta develop custom AI processors, Korean suppliers could diversify their customer base.",
+      "In a further sign of the fallout, Huang's daughter, a senior Nvidia executive, called off a planned visit to Seoul. Korea's vice science minister said deliveries of government-ordered Nvidia chips remain on track, while acknowledging that the investigation's impact is uncertain.",
+      "To sum up, no new US restrictions have materialized so far, but the Nvidia affair has Korean chipmakers bracing for heightened export scrutiny.",
+      "Thank you for listening."
+     ],
+     "tr": [
+      "좋은 아침입니다. 영어로 듣는 아침 뉴스에 오신 것을 환영합니다.",
+      "세계에서 가장 가치 있는 반도체 기업이 감기에 걸리면 한국 반도체 업계도 한기를 느낄 수밖에 없습니다.",
+      "코리아헤럴드에 따르면 엔비디아와 최고경영자 젠슨 황에 대한 감시가 강화되면서, 삼성전자와 SK하이닉스가 더 엄격한 수출 규제에 휘말릴 수 있다는 우려가 커지고 있습니다. 사안의 핵심은 젠슨 황이 싱가포르 데이터센터 운영사 메가스피드의 임원이었던 중국인 여성 사업가와 가까운 관계를 유지했다는 보도입니다. 메가스피드는 수출이 제한된 엔비디아 하드웨어를 중국으로 빼돌렸다는 의혹으로 2024년부터 미국의 조사를 받고 있습니다.",
+      "뉴욕타임스는 미국 조사관들이 이 여성이 중국 정보기관에 포섭됐다고 의심했다고 보도했지만, 이 의혹은 입증되지 않았으며 중국 정부는 근거 없다고 일축했습니다. 엔비디아 사외이사들은 외부 법률 자문을 선임해 젠슨 황이 외국 정보 공작의 표적이었는지 조사하고 있지만, 이사회는 국가 안보나 영업 비밀이 유출됐다고 볼 이유가 없다며 공개적으로 그를 지지하고 있습니다. 미국 의회에서는 하원 위원장 세 명이 11월 18일 비공개 브리핑을 요청했습니다.",
+      "한국 입장에서 관건은 미국 정부가 어떻게 대응하느냐입니다. 규제 당국이 제3국을 경유하는 AI 칩 수출을 단속하면, 엔비디아 가속기의 핵심인 고대역폭 메모리를 공급하는 한국의 메모리 대기업들은 더 엄격한 최종 사용자 검증, 늘어나는 규정 준수 비용, 출하 지연에 직면할 수 있습니다. 엔비디아의 대중국 판매에 대한 제한도 한국산 HBM 수요에 파급 효과를 미칠 것입니다. 그러나 희망적인 면도 있습니다. 구글, 아마존, 마이크로소프트, 메타가 자체 AI 프로세서를 개발하면서 한국 공급업체들은 고객 기반을 다변화할 수 있습니다.",
+      "여파를 보여 주는 또 다른 신호로, 엔비디아 고위 임원인 젠슨 황의 딸은 예정됐던 서울 방문을 취소했습니다. 한국의 과학 담당 차관은 정부가 주문한 엔비디아 칩의 납품이 예정대로 진행되고 있다면서도 조사의 영향은 불확실하다고 인정했습니다.",
+      "요약하면, 미국의 새 규제는 지금까지 나오지 않았지만 엔비디아 사태로 한국 반도체 기업들은 강화된 수출 심사에 대비하고 있습니다.",
+      "들어 주셔서 감사합니다."
+     ],
+     "g": {
+      "valuable": "가치 있는",
+      "catches a cold": "감기에 걸리다(타격을 받다)",
+      "semiconductor": "반도체",
+      "bound to": "~할 수밖에 없는",
+      "chill": "한기, 냉기",
+      "according to": "~에 따르면",
+      "korea herald": "코리아헤럴드(신문)",
+      "mounting": "커지는, 늘어나는",
+      "scrutiny": "감시, 정밀 조사",
+      "chief executive": "최고경영자",
+      "stoking": "부추기는",
+      "samsung electronics": "삼성전자",
+      "sk hynix": "SK하이닉스",
+      "caught up in": "~에 휘말린",
+      "regulations": "규제",
+      "at the heart of": "~의 핵심에",
+      "maintained": "유지했다",
+      "close ties": "가까운 관계",
+      "executive": "임원",
+      "singapore-based": "싱가포르에 본사를 둔",
+      "operator": "운영사",
+      "diversion": "빼돌림, 전용",
+      "restricted": "제한된",
+      "hardware": "하드웨어, 장비",
+      "recruited": "포섭된",
+      "intelligence": "정보기관",
+      "allegation": "의혹, 혐의",
+      "unsubstantiated": "입증되지 않은",
+      "beijing": "베이징(중국 정부)",
+      "brushed off": "일축했다",
+      "groundless": "근거 없는",
+      "independent directors": "사외이사",
+      "retained": "선임했다, 고용했다",
+      "outside counsel": "외부 법률 자문",
+      "intelligence operation": "정보 공작",
+      "insists": "주장하다",
+      "trade secrets": "영업 비밀",
+      "compromised": "유출된",
+      "stood by": "지지했다",
+      "capitol hill": "미국 의회",
+      "committee chairs": "위원장들",
+      "closed-door briefing": "비공개 브리핑",
+      "seoul": "서울(한국 정부)",
+      "stakes": "관건, 이해관계",
+      "washington": "워싱턴(미국 정부)",
+      "clamp down on": "~을 단속하다",
+      "routed through": "~을 경유하는",
+      "third countries": "제3국",
+      "memory giants": "메모리 대기업",
+      "accelerators": "가속기",
+      "rigorous": "엄격한",
+      "end-user verification": "최종 사용자 검증",
+      "compliance costs": "규정 준수 비용",
+      "curbs": "제한",
+      "ripple through": "파급되다",
+      "silver lining": "희망적인 면",
+      "custom": "맞춤형의",
+      "diversify": "다변화하다",
+      "customer base": "고객 기반",
+      "fallout": "여파",
+      "called off": "취소했다",
+      "vice science minister": "과학 담당 차관",
+      "on track": "예정대로",
+      "acknowledging": "인정하는",
+      "materialized": "구체화됐다, 실현됐다",
+      "affair": "사태, 사건",
+      "bracing for": "~에 대비하는",
+      "heightened": "강화된"
+     },
+     "ph": [
+      "catches a cold",
+      "bound to",
+      "according to",
+      "korea herald",
+      "chief executive",
+      "samsung electronics",
+      "sk hynix",
+      "caught up in",
+      "at the heart of",
+      "close ties",
+      "brushed off",
+      "independent directors",
+      "outside counsel",
+      "intelligence operation",
+      "trade secrets",
+      "stood by",
+      "capitol hill",
+      "committee chairs",
+      "closed-door briefing",
+      "clamp down on",
+      "routed through",
+      "third countries",
+      "memory giants",
+      "end-user verification",
+      "compliance costs",
+      "ripple through",
+      "silver lining",
+      "customer base",
+      "called off",
+      "vice science minister",
+      "on track",
+      "bracing for"
+     ],
+     "kw": [
+      [
+       "stoke",
+       "부추기다"
+      ],
+      [
+       "unsubstantiated",
+       "입증되지 않은"
+      ],
+      [
+       "clamp down on",
+       "~을 단속하다"
+      ],
+      [
+       "rigorous",
+       "엄격한"
+      ],
+      [
+       "silver lining",
+       "희망적인 면"
+      ],
+      [
+       "fallout",
+       "여파"
+      ]
+     ],
+     "audio": "audio/2026-11-11-k1-L5.mp3",
+     "duration": 136.3,
+     "speed": 1.05,
+     "voice": "bf_emma",
+     "words": 351
+    }
+   },
+   "icon": "cpu",
+   "ko": "엔비디아 논란, 韓 반도체 수출 부담",
+   "url": "https://www.koreaherald.com/article/10930899",
+   "source": "Korea Herald"
+  }
+ ],
+ "video": {
+  "id": "TspCk-4_tUM",
+  "title": "Who Did This",
+  "url": "https://www.youtube.com/watch?v=TspCk-4_tUM",
+  "channel": "Pororo the Little Penguin",
+  "series": "Season 2",
+  "length": "5:08"
+ }
+}
