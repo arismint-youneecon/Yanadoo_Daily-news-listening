@@ -1,0 +1,1925 @@
+{
+ "date": "2026-11-12",
+ "items": [
+  {
+   "id": "2026-11-12-g1",
+   "section": "g",
+   "levels": {
+    "1": {
+     "headline": "Workers in Spain Stop Work Over Home Prices",
+     "p": [
+      "Good morning. This is your morning news in English.",
+      "What if millions of people stop work on one day?",
+      "This happened in Spain on Wednesday. Many workers did not go to work. It was the first big strike like this in 14 years. People walked in the streets of Madrid and Barcelona. Some trains and buses did not run.",
+      "Why? Homes in Spain cost too much. Rent is the money you pay to live in a home. Rent in Spain is almost two times higher than ten years ago.",
+      "The workers want the government to help. Spain will vote for new leaders on November 29.",
+      "Again, millions of workers in Spain stopped work. They want homes that cost less.",
+      "Thank you for listening."
+     ],
+     "tr": [
+      "좋은 아침입니다. 영어로 듣는 아침 뉴스입니다.",
+      "수백만 명이 하루에 함께 일을 멈추면 어떻게 될까요?",
+      "이 일이 수요일 스페인에서 일어났습니다. 많은 노동자가 일하러 가지 않았습니다. 이런 큰 파업은 14년 만에 처음이었습니다. 사람들이 마드리드와 바르셀로나 거리를 걸었습니다. 일부 기차와 버스가 다니지 않았습니다.",
+      "왜 그랬을까요? 스페인의 집값이 너무 비쌉니다. 월세는 집에 살기 위해 내는 돈입니다. 스페인의 월세는 10년 전보다 거의 두 배 높습니다.",
+      "노동자들은 정부가 도와주기를 바랍니다. 스페인은 11월 29일에 새 지도자를 뽑는 투표를 합니다.",
+      "다시 말해, 스페인의 노동자 수백만 명이 일을 멈췄습니다. 그들은 더 싼 집을 원합니다.",
+      "들어 주셔서 감사합니다."
+     ],
+     "g": {
+      "millions": "수백만",
+      "stop work": "일을 멈추다",
+      "happened": "일어났다",
+      "spain": "스페인",
+      "wednesday": "수요일",
+      "workers": "노동자",
+      "strike": "파업",
+      "first": "첫 번째",
+      "streets": "거리",
+      "madrid": "마드리드(스페인 수도)",
+      "barcelona": "바르셀로나(스페인 도시)",
+      "trains": "기차",
+      "buses": "버스",
+      "run": "운행하다",
+      "homes": "집",
+      "cost": "(값이) 들다",
+      "too much": "너무 많이",
+      "rent": "월세, 집세",
+      "money": "돈",
+      "pay": "내다",
+      "almost": "거의",
+      "two times": "두 배",
+      "higher": "더 높은",
+      "ago": "~전에",
+      "government": "정부",
+      "help": "돕다",
+      "vote": "투표하다",
+      "leaders": "지도자",
+      "november": "11월",
+      "again": "다시 (말해)",
+      "stopped": "멈췄다",
+      "less": "더 적게",
+      "like this": "이런",
+      "years": "년",
+      "people": "사람들",
+      "listening": "듣기",
+      "walked": "걸었다"
+     },
+     "ph": [
+      "stop work",
+      "too much",
+      "two times",
+      "like this"
+     ],
+     "kw": [
+      [
+       "strike",
+       "파업"
+      ],
+      [
+       "rent",
+       "월세, 집세"
+      ],
+      [
+       "workers",
+       "노동자"
+      ],
+      [
+       "government",
+       "정부"
+      ],
+      [
+       "vote",
+       "투표하다"
+      ]
+     ],
+     "audio": "audio/2026-11-12-g1-L1.mp3",
+     "duration": 59.4,
+     "speed": 0.75,
+     "voice": "af_heart",
+     "words": 123
+    },
+    "2": {
+     "headline": "Millions in Spain Strike Over High Rents",
+     "p": [
+      "Good morning. This is your morning news in English.",
+      "How do you make a whole country listen? You stop working together.",
+      "On Wednesday, millions of workers in Spain went on strike. A strike is when workers stop working to protest. It was Spain's first general strike in 14 years. Big crowds marched in Madrid and Barcelona. Some trains, buses and businesses stopped for the day.",
+      "The workers are angry about housing. According to news reports, average rent in Spain has almost doubled in ten years. Workers' groups called unions led the strike. Their message was simple: salaries, housing and prices. Some people also want fewer apartments for tourists.",
+      "The government tried to make new rules to help renters. But other parties in parliament said no. Spain will have a national election on November 29. So housing is now a very big issue. Many other countries also have this problem.",
+      "To sum up, millions of Spanish workers stopped working to protest high rents. This happened just weeks before a national election.",
+      "Thank you for listening."
+     ],
+     "tr": [
+      "좋은 아침입니다. 영어로 듣는 아침 뉴스입니다.",
+      "나라 전체가 귀를 기울이게 하려면 어떻게 할까요? 다 함께 일을 멈추는 것입니다.",
+      "수요일, 스페인에서 수백만 명의 노동자가 파업을 했습니다. 파업은 노동자들이 항의하기 위해 일을 멈추는 것입니다. 스페인에서 14년 만의 첫 총파업이었습니다. 마드리드와 바르셀로나에서 많은 사람이 행진했습니다. 일부 기차와 버스, 가게가 하루 동안 멈췄습니다.",
+      "노동자들은 주거 문제에 화가 나 있습니다. 보도에 따르면 스페인의 평균 월세는 10년 동안 거의 두 배가 되었습니다. 노동조합이라고 부르는 노동자 단체들이 파업을 이끌었습니다. 그들의 메시지는 간단했습니다. 임금, 주거, 물가입니다. 일부 사람들은 관광객용 아파트가 줄어들기를 바랍니다.",
+      "정부는 세입자를 돕는 새 규칙을 만들려고 했습니다. 하지만 의회의 다른 정당들이 반대했습니다. 스페인은 11월 29일에 총선을 치릅니다. 그래서 주거 문제는 지금 아주 큰 쟁점입니다. 다른 많은 나라에도 이런 문제가 있습니다.",
+      "정리하면, 스페인 노동자 수백만 명이 높은 월세에 항의하며 일을 멈췄습니다. 총선을 불과 몇 주 앞둔 때였습니다.",
+      "들어 주셔서 감사합니다."
+     ],
+     "g": {
+      "whole": "전체의",
+      "country": "나라",
+      "listen": "귀 기울이다",
+      "together": "함께",
+      "millions": "수백만",
+      "went on strike": "파업했다",
+      "strike": "파업",
+      "protest": "항의하다",
+      "general strike": "총파업",
+      "crowds": "군중",
+      "marched": "행진했다",
+      "madrid": "마드리드",
+      "barcelona": "바르셀로나",
+      "businesses": "가게, 사업체",
+      "angry": "화난",
+      "housing": "주거, 집",
+      "according to": "~에 따르면",
+      "news reports": "뉴스 보도",
+      "average": "평균의",
+      "rent": "월세, 집세",
+      "doubled": "두 배가 됐다",
+      "unions": "노동조합",
+      "led": "이끌었다",
+      "salaries": "임금, 월급",
+      "prices": "물가, 가격",
+      "message": "메시지",
+      "simple": "간단한",
+      "fewer": "더 적은",
+      "apartments": "아파트",
+      "tourists": "관광객",
+      "government": "정부",
+      "rules": "규칙",
+      "renters": "세입자",
+      "parties": "정당",
+      "parliament": "의회",
+      "said no": "반대했다",
+      "national election": "총선, 전국 선거",
+      "issue": "쟁점, 문제",
+      "problem": "문제",
+      "to sum up": "정리하면",
+      "spanish": "스페인의",
+      "weeks": "주",
+      "groups": "단체"
+     },
+     "ph": [
+      "went on strike",
+      "general strike",
+      "according to",
+      "news reports",
+      "said no",
+      "national election",
+      "to sum up"
+     ],
+     "kw": [
+      [
+       "general strike",
+       "총파업"
+      ],
+      [
+       "rent",
+       "월세"
+      ],
+      [
+       "unions",
+       "노동조합"
+      ],
+      [
+       "renters",
+       "세입자"
+      ],
+      [
+       "parliament",
+       "의회"
+      ],
+      [
+       "national election",
+       "총선"
+      ]
+     ],
+     "audio": "audio/2026-11-12-g1-L2.mp3",
+     "duration": 81.6,
+     "speed": 0.8,
+     "voice": "af_heart",
+     "words": 174
+    },
+    "3": {
+     "headline": "Spain Holds Its First General Strike in 14 Years Over Housing",
+     "p": [
+      "Good morning. This is your morning news in English.",
+      "What happens when millions of workers stop working on the same day?",
+      "On Wednesday, Spain had its first general strike in 14 years. A general strike means workers in many different jobs stop working together to protest. According to news reports, millions of people joined. They were angry about the high cost of housing.",
+      "Large marches filled the streets of Madrid and Barcelona, and people also gathered in other cities. Trains, buses and many businesses were affected. In Barcelona, some protesters blocked roads early in the morning. Near a market in Madrid, there were scuffles with police. A scuffle is a short, small fight.",
+      "Spain's two biggest unions organized the strike. A union is a group that speaks for workers. Their message was simple: salaries, housing and prices. According to the Associated Press, average rent in Spain has almost doubled in the last ten years. Activists want fewer apartments for tourists and stronger rules against people who buy homes only to make money.",
+      "Why does this matter? The strike came less than three weeks before a national election on November 29. The government of Prime Minister Pedro Sanchez tried to pass emergency rules to protect renters, but parliament rejected them. The opposition People's Party called the protest an election strike. Many countries also face rising rents, so people around the world are watching what Spain does next.",
+      "To sum up, millions of workers in Spain went on strike to protest high housing costs, just weeks before a national election.",
+      "Thank you for listening."
+     ],
+     "tr": [
+      "좋은 아침입니다. 영어로 듣는 아침 뉴스입니다.",
+      "수백만 명의 노동자가 같은 날 일을 멈추면 어떤 일이 벌어질까요?",
+      "수요일, 스페인에서 14년 만에 처음으로 총파업이 열렸습니다. 총파업은 여러 직종의 노동자들이 함께 일을 멈추고 항의하는 것을 뜻합니다. 보도에 따르면 수백만 명이 참여했습니다. 그들은 높은 주거 비용에 화가 나 있었습니다.",
+      "대규모 행진이 마드리드와 바르셀로나 거리를 가득 메웠고, 다른 도시에서도 사람들이 모였습니다. 기차와 버스, 많은 사업체가 영향을 받았습니다. 바르셀로나에서는 일부 시위대가 이른 아침 도로를 막았습니다. 마드리드의 한 시장 근처에서는 경찰과 몸싸움이 있었습니다. 몸싸움은 짧고 작은 다툼을 말합니다.",
+      "스페인의 양대 노동조합이 파업을 조직했습니다. 노동조합은 노동자를 대변하는 단체입니다. 그들의 메시지는 간단했습니다. 임금, 주거, 물가입니다. AP 통신에 따르면 스페인의 평균 월세는 지난 10년 동안 거의 두 배가 되었습니다. 활동가들은 관광객용 아파트를 줄이고, 돈을 벌려고만 집을 사는 사람들에 대한 규제를 강화하기를 원합니다.",
+      "이것이 왜 중요할까요? 이번 파업은 11월 29일 총선을 3주도 남기지 않고 열렸습니다. 페드로 산체스 총리 정부는 세입자를 보호하는 긴급 규칙을 통과시키려 했지만 의회가 이를 거부했습니다. 야당인 국민당은 이번 시위를 '선거용 파업'이라고 불렀습니다. 많은 나라가 오르는 월세 문제를 겪고 있어, 세계의 사람들이 스페인의 다음 행보를 지켜보고 있습니다.",
+      "정리하면, 스페인에서 수백만 명의 노동자가 총선을 몇 주 앞두고 높은 주거 비용에 항의하며 파업을 벌였습니다.",
+      "들어 주셔서 감사합니다."
+     ],
+     "g": {
+      "millions": "수백만",
+      "general strike": "총파업",
+      "protest": "항의하다",
+      "according to": "~에 따르면",
+      "news reports": "뉴스 보도",
+      "joined": "참여했다",
+      "cost": "비용",
+      "housing": "주거, 집",
+      "marches": "행진",
+      "filled": "가득 메웠다",
+      "gathered": "모였다",
+      "businesses": "사업체",
+      "affected": "영향을 받은",
+      "protesters": "시위대",
+      "blocked": "막았다",
+      "scuffles": "몸싸움",
+      "scuffle": "몸싸움",
+      "fight": "다툼",
+      "unions": "노동조합",
+      "union": "노동조합",
+      "organized": "조직했다",
+      "speaks for": "~을 대변하다",
+      "salaries": "임금, 월급",
+      "prices": "물가",
+      "associated press": "AP 통신",
+      "average": "평균의",
+      "rent": "월세",
+      "doubled": "두 배가 됐다",
+      "activists": "활동가",
+      "tourists": "관광객",
+      "stronger rules": "더 강한 규제",
+      "make money": "돈을 벌다",
+      "matter": "중요하다",
+      "national election": "총선",
+      "prime minister": "총리",
+      "pedro sanchez": "페드로 산체스(스페인 총리)",
+      "pass": "통과시키다",
+      "emergency": "긴급한",
+      "protect": "보호하다",
+      "renters": "세입자",
+      "parliament": "의회",
+      "rejected": "거부했다",
+      "opposition": "야당",
+      "people's party": "국민당(스페인 보수 야당)",
+      "face": "직면하다",
+      "rising": "오르는",
+      "to sum up": "정리하면",
+      "went on strike": "파업했다",
+      "madrid": "마드리드",
+      "barcelona": "바르셀로나",
+      "watching": "지켜보는"
+     },
+     "ph": [
+      "general strike",
+      "according to",
+      "news reports",
+      "speaks for",
+      "associated press",
+      "stronger rules",
+      "make money",
+      "national election",
+      "prime minister",
+      "pedro sanchez",
+      "people's party",
+      "to sum up",
+      "went on strike"
+     ],
+     "kw": [
+      [
+       "general strike",
+       "총파업"
+      ],
+      [
+       "union",
+       "노동조합"
+      ],
+      [
+       "rent",
+       "월세"
+      ],
+      [
+       "protesters",
+       "시위대"
+      ],
+      [
+       "scuffle",
+       "몸싸움"
+      ],
+      [
+       "renters",
+       "세입자"
+      ],
+      [
+       "rejected",
+       "거부했다"
+      ],
+      [
+       "opposition",
+       "야당"
+      ]
+     ],
+     "audio": "audio/2026-11-12-g1-L3.mp3",
+     "duration": 108.7,
+     "speed": 0.9,
+     "voice": "af_heart",
+     "words": 262
+    },
+    "4": {
+     "headline": "Spain's First General Strike in 14 Years Targets Soaring Housing Costs",
+     "p": [
+      "Good morning, and welcome to your morning news in English.",
+      "Rent in Spain has nearly doubled in a decade, and on Wednesday millions of workers walked off the job to say they have had enough.",
+      "Spain held its first nationwide general strike in 14 years, with workers across many sectors stopping work to protest the country's housing crisis. Tens of thousands marched through central Madrid and Barcelona, while smaller rallies took place in other cities. Public transportation was disrupted and many businesses shut down for the day.",
+      "The strike was called by Spain's two main labor unions, the UGT and CCOO, under the slogan \"Salaries. Housing. Prices.\" Early in the day, protesters set up roadblocks in Barcelona, some with burning tires, and there were scuffles with police near Madrid's main wholesale market. The unions claimed very high participation in industries such as car making, ports and energy, though those figures have not been independently confirmed.",
+      "According to the Associated Press, average rents have almost doubled over the past ten years. Housing activists are calling for limits on tourist apartments, a crackdown on property speculation and automatic renewal of leases. Public anger grew further last month after an 87-year-old woman was evicted from her Madrid home on national television.",
+      "The timing is politically sensitive. Spaniards go to the polls on November 29, and Prime Minister Pedro Sanchez's government recently saw emergency measures to limit evictions and support tenants rejected by right-wing parties in parliament. The main opposition party, the People's Party, dismissed the walkout as an electoral strike. With housing costs rising in many countries, the protest is being closely watched far beyond Spain.",
+      "To sum up, millions of Spanish workers joined the country's first general strike in 14 years to demand action on housing, less than three weeks before a national election.",
+      "Thank you for listening."
+     ],
+     "tr": [
+      "좋은 아침입니다. 영어로 듣는 아침 뉴스에 오신 것을 환영합니다.",
+      "스페인의 월세는 10년 사이 거의 두 배가 되었고, 수요일 수백만 명의 노동자가 더는 참을 수 없다며 일터를 떠났습니다.",
+      "스페인에서 14년 만에 처음으로 전국 총파업이 열려, 여러 업종의 노동자들이 일을 멈추고 주거 위기에 항의했습니다. 수만 명이 마드리드와 바르셀로나 도심을 행진했고, 다른 도시에서도 소규모 집회가 열렸습니다. 대중교통이 차질을 빚었고 많은 사업체가 하루 문을 닫았습니다.",
+      "이번 파업은 스페인의 양대 노조인 UGT와 CCOO가 '임금, 주거, 물가'라는 구호 아래 소집했습니다. 이른 시간 바르셀로나에서는 시위대가 도로를 막았고 일부는 타이어를 태웠으며, 마드리드의 주요 도매시장 근처에서는 경찰과 몸싸움이 있었습니다. 노조는 자동차 제조, 항만, 에너지 같은 산업에서 참여율이 매우 높았다고 주장했지만, 이 수치는 독립적으로 확인되지 않았습니다.",
+      "AP 통신에 따르면 평균 월세는 지난 10년 동안 거의 두 배가 되었습니다. 주거 활동가들은 관광객용 아파트 제한, 부동산 투기 단속, 임대 계약 자동 갱신을 요구하고 있습니다. 지난달 87세 여성이 전국에 방송되는 TV 카메라 앞에서 마드리드의 집에서 쫓겨난 뒤 대중의 분노는 더 커졌습니다.",
+      "시기도 정치적으로 민감합니다. 스페인 국민은 11월 29일 투표소로 향하며, 페드로 산체스 총리 정부가 최근 내놓은 퇴거 제한과 세입자 지원 긴급 조치는 의회에서 우파 정당들에 의해 부결되었습니다. 제1야당인 국민당은 이번 파업을 '선거용 파업'이라고 일축했습니다. 많은 나라에서 주거비가 오르고 있어, 이번 시위는 스페인 밖에서도 주목받고 있습니다.",
+      "정리하면, 스페인 노동자 수백만 명이 총선을 3주도 안 남기고 14년 만의 첫 총파업에 참여해 주거 문제 해결을 요구했습니다.",
+      "들어 주셔서 감사합니다."
+     ],
+     "g": {
+      "nearly": "거의",
+      "decade": "10년",
+      "walked off the job": "일터를 떠났다(파업했다)",
+      "had enough": "더는 못 참다",
+      "nationwide": "전국적인",
+      "general strike": "총파업",
+      "sectors": "업종, 부문",
+      "housing crisis": "주거 위기",
+      "tens of thousands": "수만 명",
+      "central": "중심부의",
+      "rallies": "집회",
+      "took place": "열렸다",
+      "public transportation": "대중교통",
+      "disrupted": "차질을 빚은",
+      "shut down": "문을 닫았다",
+      "called": "소집했다",
+      "labor unions": "노동조합",
+      "slogan": "구호",
+      "roadblocks": "도로 봉쇄",
+      "burning tires": "불타는 타이어",
+      "scuffles": "몸싸움",
+      "wholesale market": "도매시장",
+      "claimed": "주장했다",
+      "participation": "참여(율)",
+      "industries": "산업",
+      "ports": "항만",
+      "figures": "수치",
+      "independently confirmed": "독립적으로 확인된",
+      "associated press": "AP 통신",
+      "average": "평균의",
+      "rents": "월세",
+      "activists": "활동가",
+      "calling for": "~을 요구하는",
+      "limits": "제한",
+      "crackdown": "단속",
+      "property speculation": "부동산 투기",
+      "automatic renewal": "자동 갱신",
+      "leases": "임대 계약",
+      "timing": "시기",
+      "politically sensitive": "정치적으로 민감한",
+      "spaniards": "스페인 국민",
+      "go to the polls": "투표하러 가다",
+      "prime minister": "총리",
+      "pedro sanchez": "페드로 산체스",
+      "emergency measures": "긴급 조치",
+      "evictions": "퇴거, 강제 이주",
+      "tenants": "세입자",
+      "rejected": "거부된, 부결된",
+      "right-wing": "우파의",
+      "parliament": "의회",
+      "opposition": "야당",
+      "people's party": "국민당",
+      "dismissed": "일축했다",
+      "walkout": "파업",
+      "electoral": "선거의",
+      "public anger": "대중의 분노",
+      "evicted": "쫓겨난",
+      "national television": "전국 방송 TV",
+      "closely watched": "주목받는",
+      "far beyond": "~훨씬 너머",
+      "demand action": "조치를 요구하다",
+      "to sum up": "정리하면",
+      "national election": "총선"
+     },
+     "ph": [
+      "walked off the job",
+      "had enough",
+      "general strike",
+      "housing crisis",
+      "tens of thousands",
+      "took place",
+      "public transportation",
+      "shut down",
+      "labor unions",
+      "burning tires",
+      "wholesale market",
+      "independently confirmed",
+      "associated press",
+      "calling for",
+      "property speculation",
+      "automatic renewal",
+      "politically sensitive",
+      "go to the polls",
+      "prime minister",
+      "pedro sanchez",
+      "emergency measures",
+      "people's party",
+      "public anger",
+      "national television",
+      "closely watched",
+      "far beyond",
+      "demand action",
+      "to sum up",
+      "national election"
+     ],
+     "kw": [
+      [
+       "general strike",
+       "총파업"
+      ],
+      [
+       "housing crisis",
+       "주거 위기"
+      ],
+      [
+       "walkout",
+       "파업"
+      ],
+      [
+       "tenants",
+       "세입자"
+      ],
+      [
+       "evictions",
+       "퇴거"
+      ],
+      [
+       "go to the polls",
+       "투표하러 가다"
+      ]
+     ],
+     "audio": "audio/2026-11-12-g1-L4.mp3",
+     "duration": 125.2,
+     "speed": 1.1,
+     "voice": "am_michael",
+     "words": 306
+    },
+    "5": {
+     "headline": "Housing Anger Brings Spain to a Standstill in First General Strike Since 2012",
+     "p": [
+      "Good morning, and welcome to your morning news in English.",
+      "Rents in Spain have almost doubled in a decade, and on Wednesday that frustration boiled over into the country's first general strike in fourteen years.",
+      "Millions of workers downed tools in a nationwide stoppage aimed squarely at the housing crisis. Tens of thousands of demonstrators poured into the streets of Madrid and Barcelona, rallies were held in cities across the country, and public transport and commercial life were severely disrupted. The strike was the culmination of months of mounting discontent over the soaring cost of a roof over one's head.",
+      "The action was called by Spain's two largest labor federations, the UGT and CCOO, under the pared-down slogan \"Salaries. Housing. Prices.\" The day got off to a tense start: protesters erected roadblocks across Barcelona, some fuelled by burning tires, and scuffles broke out with police near Madrid's main wholesale market. The unions reported sweeping stoppages in sectors ranging from car manufacturing and ports to energy, although those participation rates are their own and have not been independently verified.",
+      "According to the Associated Press, average rents have nearly doubled over the past ten years. Campaigners are pressing for curbs on tourist rentals, a clampdown on property speculation and the automatic renewal of leases, while the unions want greater intervention in the market and a fresh minimum wage agreement with employers. Public fury intensified last month when an 87-year-old woman was evicted from her Madrid home in front of television cameras.",
+      "The political stakes could hardly be higher. Spaniards head to the polls on November 29, and Prime Minister Pedro Sanchez's government has already seen emergency decrees to curb evictions and shore up tenants voted down by right-wing parties in parliament. The conservative People's Party, the main opposition, wrote off the walkout as an electoral strike, while the left hopes the issue will galvanize its voters. With housing affordability squeezing households across much of the developed world, governments elsewhere will be watching how Spain responds.",
+      "To sum up, Spain's first general strike in fourteen years has thrust the housing crisis to the top of the agenda, less than three weeks before a pivotal national election.",
+      "Thank you for listening."
+     ],
+     "tr": [
+      "좋은 아침입니다. 영어로 듣는 아침 뉴스에 오신 것을 환영합니다.",
+      "스페인의 월세는 10년 사이 거의 두 배가 되었고, 수요일 그 좌절감이 14년 만의 첫 총파업으로 터져 나왔습니다.",
+      "수백만 명의 노동자가 주거 위기를 정면으로 겨냥한 전국적 파업에 동참해 일손을 놓았습니다. 수만 명의 시위대가 마드리드와 바르셀로나 거리로 쏟아져 나왔고, 전국 도시에서 집회가 열렸으며, 대중교통과 상업 활동이 크게 마비되었습니다. 이번 파업은 머리 위 지붕 하나를 마련하는 비용이 치솟는 데 대한 수개월간의 불만이 정점에 이른 결과였습니다.",
+      "이번 행동은 스페인 최대 노동단체인 UGT와 CCOO가 '임금, 주거, 물가'라는 간결한 구호 아래 소집했습니다. 하루는 긴장 속에 시작되었습니다. 시위대가 바르셀로나 곳곳에 바리케이드를 세웠고 일부는 타이어를 태웠으며, 마드리드의 주요 도매시장 근처에서는 경찰과 몸싸움이 벌어졌습니다. 노조는 자동차 제조, 항만, 에너지에 이르는 여러 부문에서 대대적인 작업 중단이 있었다고 밝혔지만, 이 참여율은 노조 자체 수치로 독립적으로 검증되지 않았습니다.",
+      "AP 통신에 따르면 평균 월세는 지난 10년 동안 거의 두 배로 올랐습니다. 활동가들은 관광객용 임대 제한, 부동산 투기 단속, 임대 계약 자동 갱신을 촉구하고 있으며, 노조는 시장에 대한 더 큰 개입과 사용자 측과의 새 최저임금 합의를 원합니다. 지난달 87세 여성이 TV 카메라 앞에서 마드리드의 집에서 쫓겨나면서 대중의 분노는 더욱 거세졌습니다.",
+      "정치적 이해관계는 더할 나위 없이 큽니다. 스페인 국민은 11월 29일 투표에 나서며, 페드로 산체스 총리 정부가 내놓은 퇴거 억제와 세입자 지원 긴급 법령은 이미 의회에서 우파 정당들에 의해 부결되었습니다. 제1야당인 보수 국민당은 이번 파업을 '선거용 파업'으로 깎아내렸고, 좌파는 이 문제가 지지층을 결집하기를 기대합니다. 선진국 상당수에서 주거비 부담이 가계를 압박하고 있어, 다른 나라 정부들도 스페인의 대응을 지켜볼 것입니다.",
+      "정리하면, 스페인의 14년 만의 첫 총파업은 중대한 총선을 3주도 남기지 않고 주거 위기를 핵심 의제로 끌어올렸습니다.",
+      "들어 주셔서 감사합니다."
+     ],
+     "g": {
+      "frustration": "좌절감, 불만",
+      "boiled over": "폭발했다, 터져 나왔다",
+      "general strike": "총파업",
+      "downed tools": "일손을 놓았다(파업했다)",
+      "nationwide": "전국적인",
+      "stoppage": "작업 중단, 파업",
+      "aimed squarely at": "~을 정면으로 겨냥한",
+      "housing crisis": "주거 위기",
+      "demonstrators": "시위대",
+      "poured into": "~로 쏟아져 나왔다",
+      "rallies": "집회",
+      "commercial": "상업의",
+      "severely": "심하게",
+      "disrupted": "마비된, 차질을 빚은",
+      "culmination": "정점, 결과",
+      "mounting": "커지는",
+      "discontent": "불만",
+      "soaring": "치솟는",
+      "a roof over one's head": "머리 위 지붕(살 집)",
+      "labor federations": "노동단체 연합",
+      "pared-down": "간결한, 군더더기 없는",
+      "got off to": "~으로 시작했다",
+      "tense": "긴장된",
+      "erected": "세웠다",
+      "roadblocks": "바리케이드, 도로 봉쇄",
+      "fuelled": "불붙인",
+      "scuffles": "몸싸움",
+      "broke out": "벌어졌다",
+      "wholesale market": "도매시장",
+      "sweeping": "광범위한",
+      "ranging from": "~에서 ~에 이르는",
+      "participation rates": "참여율",
+      "independently verified": "독립적으로 검증된",
+      "campaigners": "활동가",
+      "pressing for": "~을 촉구하는",
+      "curbs": "제한",
+      "clampdown": "단속",
+      "property speculation": "부동산 투기",
+      "renewal": "갱신",
+      "leases": "임대 계약",
+      "intervention": "개입",
+      "minimum wage": "최저임금",
+      "employers": "사용자, 고용주",
+      "stakes": "이해관계, 걸린 것",
+      "fury": "분노",
+      "intensified": "거세졌다",
+      "in front of": "~앞에서",
+      "could hardly be higher": "더할 나위 없이 크다",
+      "head to the polls": "투표하러 가다",
+      "emergency decrees": "긴급 법령",
+      "curb": "억제하다",
+      "evictions": "퇴거",
+      "shore up": "떠받치다, 지원하다",
+      "tenants": "세입자",
+      "voted down": "부결된",
+      "right-wing": "우파의",
+      "conservative": "보수의",
+      "wrote off": "깎아내렸다, 일축했다",
+      "walkout": "파업",
+      "electoral": "선거의",
+      "galvanize": "결집시키다",
+      "affordability": "감당할 수 있는 정도, 부담 능력",
+      "squeezing": "압박하는",
+      "households": "가계",
+      "thrust": "밀어 올렸다",
+      "top of the agenda": "최우선 의제",
+      "pivotal": "중대한",
+      "to sum up": "정리하면",
+      "pedro sanchez": "페드로 산체스",
+      "people's party": "국민당"
+     },
+     "ph": [
+      "boiled over",
+      "general strike",
+      "downed tools",
+      "aimed squarely at",
+      "housing crisis",
+      "poured into",
+      "a roof over one's head",
+      "labor federations",
+      "got off to",
+      "broke out",
+      "wholesale market",
+      "ranging from",
+      "participation rates",
+      "independently verified",
+      "pressing for",
+      "property speculation",
+      "minimum wage",
+      "in front of",
+      "could hardly be higher",
+      "head to the polls",
+      "emergency decrees",
+      "shore up",
+      "voted down",
+      "wrote off",
+      "top of the agenda",
+      "to sum up",
+      "pedro sanchez",
+      "people's party"
+     ],
+     "kw": [
+      [
+       "downed tools",
+       "일손을 놓았다"
+      ],
+      [
+       "discontent",
+       "불만"
+      ],
+      [
+       "clampdown",
+       "단속"
+      ],
+      [
+       "evictions",
+       "퇴거"
+      ],
+      [
+       "galvanize",
+       "결집시키다"
+      ],
+      [
+       "affordability",
+       "부담 능력"
+      ]
+     ],
+     "audio": "audio/2026-11-12-g1-L5.mp3",
+     "duration": 132.2,
+     "speed": 1.05,
+     "voice": "bf_emma",
+     "words": 367
+    }
+   },
+   "icon": "home-dollar",
+   "tag": "주요",
+   "ko": "스페인 14년 만의 총파업, 집값 항의",
+   "url": "https://www.csmonitor.com/News-Briefs/Millions-of-Spanish-workers-have-shut-down-businesses-disrupted-transportation-in-a-protest-over-housing-costs",
+   "source": "CS Monitor (AP)"
+  },
+  {
+   "id": "2026-11-12-g2",
+   "section": "g",
+   "levels": {
+    "1": {
+     "headline": "An Old Bent Coin Has a Secret",
+     "p": [
+      "Good morning. This is your morning news in English.",
+      "Can an old coin keep a secret for 192 years?",
+      "This coin is very small. It is from Britain. It was made in 1834. It is made of silver. But it is bent and twisted.",
+      "Someone found it at a market in England. The price was only eight pounds.",
+      "A researcher wanted to know why it was bent. Two big universities looked at it closely. They used very strong tools. The study says the coin was probably bent at the start. It was hit too hard when it was made.",
+      "Did you know? Some brides in Britain put this kind of coin in their shoe. It is for good luck!",
+      "Again, an old bent coin was not broken later. It was probably made that way.",
+      "Thank you for listening."
+     ],
+     "tr": [
+      "좋은 아침입니다. 영어로 듣는 아침 뉴스입니다.",
+      "오래된 동전 하나가 192년 동안 비밀을 간직할 수 있을까요?",
+      "이 동전은 아주 작습니다. 영국 동전입니다. 1834년에 만들어졌습니다. 은으로 만들어졌습니다. 하지만 휘어지고 뒤틀려 있습니다.",
+      "누군가 이 동전을 영국의 한 시장에서 발견했습니다. 가격은 겨우 8파운드였습니다.",
+      "한 연구자가 동전이 왜 휘었는지 알고 싶었습니다. 큰 대학 두 곳이 동전을 자세히 살펴봤습니다. 아주 성능이 좋은 도구를 썼습니다. 연구에 따르면 동전은 아마 처음부터 휘었습니다. 만들어질 때 너무 세게 눌렸다는 것입니다.",
+      "알고 계셨나요? 영국의 일부 신부들은 이런 동전을 신발 속에 넣습니다. 행운을 비는 것입니다!",
+      "다시 말해, 오래된 휜 동전은 나중에 망가진 것이 아니었습니다. 아마 처음부터 그렇게 만들어졌습니다.",
+      "들어 주셔서 감사합니다."
+     ],
+     "g": {
+      "coin": "동전",
+      "keep a secret": "비밀을 지키다",
+      "secret": "비밀",
+      "britain": "영국",
+      "made": "만들어진",
+      "made of": "~로 만든",
+      "silver": "은",
+      "bent": "휘어진",
+      "twisted": "뒤틀린",
+      "someone": "누군가",
+      "found": "발견했다",
+      "market": "시장",
+      "england": "잉글랜드, 영국",
+      "price": "가격",
+      "only": "겨우",
+      "pounds": "파운드(영국 돈)",
+      "researcher": "연구자",
+      "universities": "대학",
+      "looked at": "살펴봤다",
+      "closely": "자세히",
+      "strong": "강한",
+      "tools": "도구",
+      "study": "연구",
+      "probably": "아마",
+      "at the start": "처음에",
+      "hit": "쳤다, 눌렀다",
+      "too hard": "너무 세게",
+      "did you know": "알고 있었나요",
+      "brides": "신부",
+      "this kind of": "이런 종류의",
+      "shoe": "신발",
+      "good luck": "행운",
+      "again": "다시 (말해)",
+      "broken": "망가진",
+      "later": "나중에",
+      "that way": "그렇게",
+      "years": "년",
+      "listening": "듣기"
+     },
+     "ph": [
+      "keep a secret",
+      "made of",
+      "looked at",
+      "at the start",
+      "too hard",
+      "did you know",
+      "this kind of",
+      "good luck",
+      "that way"
+     ],
+     "kw": [
+      [
+       "coin",
+       "동전"
+      ],
+      [
+       "silver",
+       "은"
+      ],
+      [
+       "bent",
+       "휘어진"
+      ],
+      [
+       "researcher",
+       "연구자"
+      ],
+      [
+       "probably",
+       "아마"
+      ]
+     ],
+     "audio": "audio/2026-11-12-g2-L1.mp3",
+     "duration": 67.0,
+     "speed": 0.75,
+     "voice": "af_heart",
+     "words": 138
+    },
+    "2": {
+     "headline": "Scientists Solve the Mystery of a Bent 1834 Coin",
+     "p": [
+      "Good morning. This is your morning news in English.",
+      "How can a cheap coin from a flea market become a science story?",
+      "The coin is a small British silver coin called a sixpence. It was made in 1834. That is 192 years ago. The coin is badly bent and twisted. Someone found it in a coin album at a sale in Greater Manchester, England. The price tag said only eight pounds.",
+      "Most people would think it was damaged later. Maybe someone dropped it or hit it. But a researcher wanted to be sure. Labs at Brunel University of London and the University of Oxford studied the coin with special tools.",
+      "The results were surprising. The bent parts had less silver and more copper. The study says the damage probably happened at the mint. A mint is a factory that makes coins. The coin was likely pressed too hard, again and again. Still, the researcher says not every detail is certain.",
+      "Did you know? In Britain, some brides put a sixpence in their shoe for good luck.",
+      "To sum up, a bent old coin was probably not broken later. It was likely damaged on the day it was made.",
+      "Thank you for listening."
+     ],
+     "tr": [
+      "좋은 아침입니다. 영어로 듣는 아침 뉴스입니다.",
+      "벼룩시장에서 산 싼 동전이 어떻게 과학 뉴스가 될 수 있을까요?",
+      "이 동전은 식스펜스라고 부르는 작은 영국 은화입니다. 1834년에 만들어졌습니다. 192년 전입니다. 동전은 심하게 휘고 뒤틀려 있습니다. 누군가 그레이터 맨체스터의 한 중고 장터에서 동전 앨범 속에 있던 이 동전을 발견했습니다. 가격표에는 겨우 8파운드라고 적혀 있었습니다.",
+      "대부분의 사람은 나중에 망가졌다고 생각할 것입니다. 누군가 떨어뜨리거나 쳤을지도 모르죠. 하지만 한 연구자는 확실히 알고 싶었습니다. 런던 브루넬 대학교와 옥스퍼드 대학교의 연구실이 특수 도구로 동전을 조사했습니다.",
+      "결과는 놀라웠습니다. 휜 부분에는 은이 적고 구리가 많았습니다. 연구에 따르면 손상은 아마 조폐소에서 생겼습니다. 조폐소는 동전을 만드는 공장입니다. 동전이 너무 세게, 여러 번 눌렸을 가능성이 큽니다. 그래도 연구자는 모든 세부 사항이 확실하지는 않다고 말합니다.",
+      "알고 계셨나요? 영국에서는 일부 신부들이 행운을 빌며 신발 속에 식스펜스를 넣습니다.",
+      "정리하면, 휜 옛 동전은 아마 나중에 망가진 것이 아닙니다. 만들어진 바로 그날 손상되었을 가능성이 큽니다.",
+      "들어 주셔서 감사합니다."
+     ],
+     "g": {
+      "cheap": "싼",
+      "coin": "동전",
+      "flea market": "벼룩시장",
+      "science": "과학",
+      "british": "영국의",
+      "silver": "은",
+      "sixpence": "식스펜스(옛 영국 동전)",
+      "badly": "심하게",
+      "bent": "휘어진",
+      "twisted": "뒤틀린",
+      "album": "앨범",
+      "greater manchester": "그레이터 맨체스터(영국 지역)",
+      "england": "잉글랜드",
+      "price tag": "가격표",
+      "pounds": "파운드",
+      "damaged": "손상된",
+      "dropped": "떨어뜨렸다",
+      "researcher": "연구자",
+      "be sure": "확실히 알다",
+      "labs": "연구실",
+      "brunel university of london": "런던 브루넬 대학교",
+      "university of oxford": "옥스퍼드 대학교",
+      "studied": "조사했다",
+      "special": "특수한",
+      "tools": "도구",
+      "results": "결과",
+      "surprising": "놀라운",
+      "copper": "구리",
+      "damage": "손상",
+      "probably": "아마",
+      "happened": "일어났다",
+      "mint": "조폐소",
+      "factory": "공장",
+      "likely": "~할 가능성이 큰",
+      "pressed": "눌렸다",
+      "again and again": "여러 번",
+      "still": "그래도",
+      "detail": "세부 사항",
+      "certain": "확실한",
+      "did you know": "알고 있었나요",
+      "brides": "신부",
+      "good luck": "행운",
+      "to sum up": "정리하면",
+      "broken": "망가진"
+     },
+     "ph": [
+      "flea market",
+      "greater manchester",
+      "price tag",
+      "be sure",
+      "brunel university of london",
+      "university of oxford",
+      "again and again",
+      "did you know",
+      "good luck",
+      "to sum up"
+     ],
+     "kw": [
+      [
+       "flea market",
+       "벼룩시장"
+      ],
+      [
+       "sixpence",
+       "식스펜스"
+      ],
+      [
+       "copper",
+       "구리"
+      ],
+      [
+       "damage",
+       "손상"
+      ],
+      [
+       "mint",
+       "조폐소"
+      ],
+      [
+       "certain",
+       "확실한"
+      ]
+     ],
+     "audio": "audio/2026-11-12-g2-L2.mp3",
+     "duration": 88.6,
+     "speed": 0.8,
+     "voice": "af_heart",
+     "words": 202
+    },
+    "3": {
+     "headline": "A Bent 1834 Coin Reveals a 192-Year-Old Secret",
+     "p": [
+      "Good morning. This is your morning news in English.",
+      "Can a bent old coin keep a secret for almost two hundred years?",
+      "According to a new study, the answer may be yes. The coin is a small British silver sixpence made in 1834, when King William the Fourth ruled Britain. It is badly bent and twisted. It was found in a coin album at a car boot sale in Greater Manchester, England. A car boot sale is a market where people sell old things from the back of their cars. The coin had a price tag of just eight pounds.",
+      "Most people would guess that the coin was damaged later, maybe dropped or hit by something. But the researcher behind the study wanted to know for sure. Labs at Brunel University of London and the University of Oxford examined it with powerful microscopes and other tools.",
+      "They found some surprises. The king's face on the coin rises and falls by about three quarters of a millimeter. The most twisted parts also have less silver and more copper. According to the study, this damage does not look like normal wear or rust. Instead, it probably happened at the mint, the factory where coins are made. The metal may have been pressed hard again and again in one small area. The researcher says some details are still not certain.",
+      "Why is this fun? It shows that a cheap find from a market can hold real history. Did you know? Some brides in Britain still put a silver sixpence in their shoe for good luck.",
+      "To sum up, a study of a bent coin from 1834 suggests that its strange shape probably came from a problem at the mint.",
+      "Thank you for listening."
+     ],
+     "tr": [
+      "좋은 아침입니다. 영어로 듣는 아침 뉴스입니다.",
+      "휘어진 옛 동전이 거의 200년 동안 비밀을 간직할 수 있을까요?",
+      "새 연구에 따르면 그럴 수도 있습니다. 이 동전은 윌리엄 4세가 영국을 다스리던 1834년에 만들어진 작은 영국 은화 식스펜스입니다. 동전은 심하게 휘고 뒤틀려 있습니다. 이 동전은 잉글랜드 그레이터 맨체스터의 '카부츠 세일'에서 동전 앨범 속에서 발견되었습니다. 카부츠 세일은 사람들이 자동차 트렁크에서 오래된 물건을 파는 장터입니다. 동전의 가격표는 겨우 8파운드였습니다.",
+      "대부분의 사람은 동전이 나중에, 아마 떨어지거나 무언가에 맞아 망가졌다고 짐작할 것입니다. 하지만 이 연구를 한 연구자는 확실히 알고 싶었습니다. 런던 브루넬 대학교와 옥스퍼드 대학교의 연구실이 강력한 현미경과 다른 도구로 동전을 조사했습니다.",
+      "몇 가지 놀라운 점이 발견되었습니다. 동전 속 왕의 얼굴은 높낮이가 약 0.75밀리미터 차이 납니다. 가장 뒤틀린 부분은 은이 적고 구리가 많았습니다. 연구에 따르면 이 손상은 보통의 마모나 녹처럼 보이지 않습니다. 대신 아마 동전을 만드는 공장인 조폐소에서 생겼을 것입니다. 금속이 한 작은 부분에서 여러 번 세게 눌렸을 수 있습니다. 연구자는 일부 세부 사항은 아직 확실하지 않다고 말합니다.",
+      "이 이야기가 왜 재미있을까요? 시장에서 싸게 산 물건에도 진짜 역사가 담겨 있을 수 있다는 것을 보여 주기 때문입니다. 알고 계셨나요? 영국의 일부 신부들은 지금도 행운을 빌며 신발 속에 식스펜스 은화를 넣습니다.",
+      "정리하면, 1834년에 만들어진 휜 동전을 연구한 결과, 그 이상한 모양은 아마 조폐소에서 생긴 문제 때문인 것으로 보입니다.",
+      "들어 주셔서 감사합니다."
+     ],
+     "g": {
+      "bent": "휘어진",
+      "coin": "동전",
+      "keep a secret": "비밀을 지키다",
+      "according to": "~에 따르면",
+      "study": "연구",
+      "british": "영국의",
+      "silver": "은",
+      "sixpence": "식스펜스(옛 영국 동전)",
+      "king william the fourth": "윌리엄 4세(영국 왕)",
+      "ruled": "다스렸다",
+      "badly": "심하게",
+      "twisted": "뒤틀린",
+      "car boot sale": "카부츠 세일(차 트렁크 중고 장터)",
+      "greater manchester": "그레이터 맨체스터",
+      "price tag": "가격표",
+      "pounds": "파운드",
+      "guess": "짐작하다",
+      "damaged": "손상된",
+      "researcher": "연구자",
+      "for sure": "확실히",
+      "labs": "연구실",
+      "brunel university of london": "런던 브루넬 대학교",
+      "university of oxford": "옥스퍼드 대학교",
+      "examined": "조사했다",
+      "powerful": "강력한",
+      "microscopes": "현미경",
+      "surprises": "놀라운 점",
+      "rises and falls": "높아졌다 낮아졌다 하다",
+      "three quarters": "4분의 3",
+      "millimeter": "밀리미터",
+      "copper": "구리",
+      "wear": "마모, 닳음",
+      "rust": "녹",
+      "instead": "대신",
+      "probably": "아마",
+      "mint": "조폐소",
+      "factory": "공장",
+      "metal": "금속",
+      "pressed": "눌렸다",
+      "again and again": "여러 번",
+      "details": "세부 사항",
+      "certain": "확실한",
+      "find": "발견물",
+      "history": "역사",
+      "did you know": "알고 있었나요",
+      "brides": "신부",
+      "good luck": "행운",
+      "to sum up": "정리하면",
+      "suggests": "시사하다",
+      "strange": "이상한",
+      "shape": "모양"
+     },
+     "ph": [
+      "keep a secret",
+      "according to",
+      "king william the fourth",
+      "car boot sale",
+      "greater manchester",
+      "price tag",
+      "for sure",
+      "brunel university of london",
+      "university of oxford",
+      "rises and falls",
+      "three quarters",
+      "again and again",
+      "did you know",
+      "good luck",
+      "to sum up"
+     ],
+     "kw": [
+      [
+       "sixpence",
+       "식스펜스"
+      ],
+      [
+       "car boot sale",
+       "카부츠 세일"
+      ],
+      [
+       "examined",
+       "조사했다"
+      ],
+      [
+       "microscopes",
+       "현미경"
+      ],
+      [
+       "copper",
+       "구리"
+      ],
+      [
+       "wear",
+       "마모"
+      ],
+      [
+       "mint",
+       "조폐소"
+      ],
+      [
+       "certain",
+       "확실한"
+      ]
+     ],
+     "audio": "audio/2026-11-12-g2-L3.mp3",
+     "duration": 104.5,
+     "speed": 0.9,
+     "voice": "af_heart",
+     "words": 290
+    },
+    "4": {
+     "headline": "Lab Tests Suggest a Mangled 1834 Sixpence Was Damaged at the Mint",
+     "p": [
+      "Good morning, and welcome to your morning news in English.",
+      "It cost just eight pounds at a car boot sale, yet a badly mangled silver coin has now been examined in two university laboratories.",
+      "The coin is a British sixpence dated 1834, from the reign of King William the Fourth. It turned up in a coin album sold at a car boot sale in Greater Manchester, England, and its surface is so warped that it looks as if it has been crushed. The findings were published in the journal npj Heritage Science.",
+      "The obvious explanation would be damage after the coin left circulation, perhaps from a heavy blow or years of rough handling. To test that idea, the study's author sent the coin for analysis at Brunel University of London and the University of Oxford, where researchers used electron microscopy and precise surface measurements.",
+      "The results pointed in a different direction. The raised portrait in the center varies in height by about three quarters of a millimeter, and the most distorted areas contain less silver and more copper than the rest of the coin. Corrosion and wear could not explain the depth and shape of the distortion. Instead, the study concludes that the damage is more consistent with a problem during striking at the mint, when the metal may have been squeezed repeatedly in a small area. The author notes that the exact sequence of events cannot be established with certainty.",
+      "Beyond the science, the story is a reminder that bargain-bin finds can carry real historical value. Did you know? A silver sixpence in the bride's shoe is still a popular good-luck tradition at British weddings.",
+      "To sum up, laboratory tests suggest that a strangely bent 1834 sixpence was most likely damaged when it was made, not decades later.",
+      "Thank you for listening."
+     ],
+     "tr": [
+      "좋은 아침입니다. 영어로 듣는 아침 뉴스에 오신 것을 환영합니다.",
+      "카부츠 세일에서 겨우 8파운드였던, 심하게 찌그러진 은화 하나가 이제 대학 연구실 두 곳에서 정밀 조사를 받았습니다.",
+      "이 동전은 윌리엄 4세 재위 시절인 1834년이 새겨진 영국 식스펜스입니다. 잉글랜드 그레이터 맨체스터의 카부츠 세일에서 팔린 동전 앨범에서 나왔으며, 표면이 너무 뒤틀려 마치 짓눌린 것처럼 보입니다. 연구 결과는 학술지 'npj 헤리티지 사이언스'에 실렸습니다.",
+      "가장 그럴듯한 설명은 동전이 유통된 뒤에, 아마 강한 충격이나 수년간의 거친 취급으로 손상되었다는 것입니다. 이 생각을 검증하기 위해 연구 저자는 동전을 런던 브루넬 대학교와 옥스퍼드 대학교에 보내 분석을 맡겼고, 연구자들은 전자현미경과 정밀한 표면 측정을 사용했습니다.",
+      "결과는 다른 방향을 가리켰습니다. 가운데 볼록한 초상 부분은 높이가 약 0.75밀리미터 차이 나고, 가장 뒤틀린 부분은 동전의 나머지 부분보다 은이 적고 구리가 많았습니다. 부식과 마모로는 뒤틀림의 깊이와 모양을 설명할 수 없었습니다. 대신 연구는 손상이 조폐소에서 동전을 찍어 낼 때 생긴 문제, 즉 금속이 작은 부위에서 반복해서 눌렸을 가능성과 더 잘 맞는다고 결론지었습니다. 저자는 정확한 사건 순서는 확실히 밝힐 수 없다고 덧붙였습니다.",
+      "과학을 넘어, 이 이야기는 헐값에 산 물건에도 진짜 역사적 가치가 있을 수 있음을 일깨워 줍니다. 알고 계셨나요? 신부의 신발 속 식스펜스 은화는 지금도 영국 결혼식에서 인기 있는 행운의 전통입니다.",
+      "정리하면, 실험실 검사 결과 이상하게 휜 1834년 식스펜스는 수십 년 뒤가 아니라 만들어질 때 손상되었을 가능성이 가장 큽니다.",
+      "들어 주셔서 감사합니다."
+     ],
+     "g": {
+      "car boot sale": "카부츠 세일(차 트렁크 중고 장터)",
+      "mangled": "심하게 망가진",
+      "examined": "조사된",
+      "laboratories": "연구실",
+      "sixpence": "식스펜스(옛 영국 동전)",
+      "dated": "~년이 새겨진",
+      "reign": "재위 기간",
+      "king william the fourth": "윌리엄 4세",
+      "turned up": "나타났다, 발견됐다",
+      "surface": "표면",
+      "warped": "뒤틀린",
+      "as if": "마치 ~처럼",
+      "crushed": "짓눌린",
+      "findings": "연구 결과",
+      "journal": "학술지",
+      "npj heritage science": "npj 헤리티지 사이언스(학술지)",
+      "obvious": "뻔한, 그럴듯한",
+      "explanation": "설명",
+      "circulation": "유통",
+      "blow": "충격, 타격",
+      "rough handling": "거친 취급",
+      "author": "저자",
+      "analysis": "분석",
+      "brunel university of london": "런던 브루넬 대학교",
+      "university of oxford": "옥스퍼드 대학교",
+      "electron microscopy": "전자현미경 분석",
+      "precise": "정밀한",
+      "measurements": "측정",
+      "pointed in a different direction": "다른 방향을 가리켰다",
+      "raised": "볼록한",
+      "portrait": "초상",
+      "varies": "달라지다",
+      "distorted": "뒤틀린",
+      "copper": "구리",
+      "corrosion": "부식",
+      "wear": "마모",
+      "depth": "깊이",
+      "distortion": "뒤틀림",
+      "concludes": "결론짓다",
+      "consistent with": "~와 일치하는",
+      "striking": "(동전) 찍어 내기",
+      "mint": "조폐소",
+      "squeezed": "눌린",
+      "repeatedly": "반복해서",
+      "sequence": "순서",
+      "established": "밝혀진",
+      "with certainty": "확실히",
+      "beyond": "~을 넘어",
+      "reminder": "일깨워 주는 것",
+      "bargain-bin": "헐값의",
+      "historical value": "역사적 가치",
+      "did you know": "알고 있었나요",
+      "bride": "신부",
+      "tradition": "전통",
+      "weddings": "결혼식",
+      "to sum up": "정리하면",
+      "most likely": "가장 가능성이 큰",
+      "decades": "수십 년"
+     },
+     "ph": [
+      "car boot sale",
+      "king william the fourth",
+      "turned up",
+      "as if",
+      "npj heritage science",
+      "rough handling",
+      "brunel university of london",
+      "university of oxford",
+      "electron microscopy",
+      "pointed in a different direction",
+      "consistent with",
+      "with certainty",
+      "historical value",
+      "did you know",
+      "to sum up",
+      "most likely"
+     ],
+     "kw": [
+      [
+       "mangled",
+       "심하게 망가진"
+      ],
+      [
+       "circulation",
+       "유통"
+      ],
+      [
+       "corrosion",
+       "부식"
+      ],
+      [
+       "consistent with",
+       "~와 일치하는"
+      ],
+      [
+       "mint",
+       "조폐소"
+      ],
+      [
+       "with certainty",
+       "확실히"
+      ]
+     ],
+     "audio": "audio/2026-11-12-g2-L4.mp3",
+     "duration": 115.6,
+     "speed": 1.1,
+     "voice": "am_michael",
+     "words": 303
+    },
+    "5": {
+     "headline": "Forensic Study Traces a Mangled 1834 Sixpence's Scars Back to the Mint",
+     "p": [
+      "Good morning, and welcome to your morning news in English.",
+      "It was picked up for a mere eight pounds at a car boot sale, but a battered silver coin has now been put under the microscope, quite literally, and the verdict is not what most people would have guessed.",
+      "The object in question is a British sixpence struck in 1834, during the reign of King William the Fourth. It surfaced in a coin album sold at a car boot sale in Greater Manchester, England, its face so buckled and contorted that it looks as though it has been through a vice. The research, carried out by an independent investigator at a small studio, has been published in the journal npj Heritage Science.",
+      "The instinctive assumption would be that the coin was mangled long after it left the mint, whether by a hammer blow, a wheel or simply generations of rough treatment. Rather than take that at face value, the author commissioned independent analysis from Brunel University of London and the University of Oxford's materials characterisation service, which subjected the coin to scanning electron microscopy, chemical mapping and optical surface profiling.",
+      "The data told a more intriguing story. The raised portrait at the coin's center undulates by roughly three quarters of a millimeter, and the most severely deformed zones turned out to be depleted in silver and enriched in copper. Neither corrosion nor ordinary wear could account for the depth and geometry of the distortion. The study instead concludes that the damage is more consistent with a striking anomaly at the mint, in which intense, repeated pressure was concentrated on a small area while the metal had little room to flow. Commendably, the author stops short of claiming the full chain of events has been nailed down with certainty.",
+      "Quite apart from the metallurgy, the episode underscores how humble flea-market finds can harbour genuine historical intrigue. Did you know? Tucking a silver sixpence into the bride's shoe remains a cherished good-luck custom at British weddings.",
+      "To sum up, laboratory analysis indicates that a curiously twisted 1834 sixpence most likely bears the scars of a mishap at the mint rather than of rough handling over the following two centuries.",
+      "Thank you for listening."
+     ],
+     "tr": [
+      "좋은 아침입니다. 영어로 듣는 아침 뉴스에 오신 것을 환영합니다.",
+      "카부츠 세일에서 겨우 8파운드에 팔린 찌그러진 은화 하나가 이제 말 그대로 현미경 아래 놓였고, 그 결론은 대부분의 사람이 짐작했을 것과 달랐습니다.",
+      "문제의 물건은 윌리엄 4세 재위 시절인 1834년에 주조된 영국 식스펜스입니다. 잉글랜드 그레이터 맨체스터의 카부츠 세일에서 팔린 동전 앨범에서 나왔는데, 앞면이 심하게 휘고 뒤틀려 마치 바이스에 물렸던 것처럼 보입니다. 한 작은 스튜디오의 독립 연구자가 수행한 이 연구는 학술지 'npj 헤리티지 사이언스'에 실렸습니다.",
+      "본능적으로는 동전이 조폐소를 떠난 한참 뒤, 망치질이나 바퀴에 깔리거나 단순히 여러 세대에 걸친 거친 취급으로 망가졌다고 생각하기 쉽습니다. 저자는 이를 곧이곧대로 받아들이지 않고 런던 브루넬 대학교와 옥스퍼드 대학교 재료 분석 서비스에 독립적인 분석을 의뢰했으며, 이들은 주사전자현미경, 화학 성분 지도 작성, 광학 표면 측정으로 동전을 조사했습니다.",
+      "데이터는 더 흥미로운 이야기를 들려주었습니다. 동전 가운데의 볼록한 초상은 약 0.75밀리미터의 높낮이로 굴곡져 있었고, 가장 심하게 변형된 부분은 은이 줄고 구리가 많은 것으로 드러났습니다. 부식도 일반적인 마모도 뒤틀림의 깊이와 형태를 설명하지 못했습니다. 연구는 대신 손상이 조폐소에서의 주조 이상, 즉 금속이 흘러갈 공간이 거의 없는 상태에서 강하고 반복적인 압력이 작은 부위에 집중된 현상과 더 잘 맞는다고 결론지었습니다. 저자가 전체 사건의 순서를 확실히 밝혀냈다고 주장하지 않은 점도 신중합니다.",
+      "금속학을 떠나서도, 이 일은 벼룩시장의 소박한 물건에도 진짜 역사적 흥밋거리가 숨어 있을 수 있음을 보여 줍니다. 알고 계셨나요? 신부의 신발에 식스펜스 은화를 넣는 것은 지금도 영국 결혼식에서 사랑받는 행운의 풍습입니다.",
+      "정리하면, 실험실 분석 결과 이상하게 뒤틀린 1834년 식스펜스는 그 뒤 두 세기 동안의 거친 취급이 아니라 조폐소에서의 사고 흔적을 지니고 있을 가능성이 가장 큽니다.",
+      "들어 주셔서 감사합니다."
+     ],
+     "g": {
+      "a mere": "겨우 ~의",
+      "car boot sale": "카부츠 세일(차 트렁크 중고 장터)",
+      "battered": "찌그러진, 낡은",
+      "put under the microscope": "현미경 아래 놓다, 정밀 조사하다",
+      "quite literally": "말 그대로",
+      "verdict": "결론, 판정",
+      "in question": "문제의",
+      "sixpence": "식스펜스(옛 영국 동전)",
+      "struck": "주조된",
+      "reign": "재위 기간",
+      "king william the fourth": "윌리엄 4세",
+      "surfaced": "나타났다",
+      "buckled": "휜",
+      "contorted": "뒤틀린",
+      "as though": "마치 ~처럼",
+      "vice": "바이스(공작물 고정 기구)",
+      "carried out": "수행된",
+      "independent": "독립적인",
+      "investigator": "연구자, 조사자",
+      "journal": "학술지",
+      "npj heritage science": "npj 헤리티지 사이언스(학술지)",
+      "instinctive": "본능적인",
+      "assumption": "가정, 짐작",
+      "mangled": "망가진",
+      "hammer blow": "망치질",
+      "generations": "세대",
+      "rough treatment": "거친 취급",
+      "at face value": "곧이곧대로",
+      "commissioned": "의뢰했다",
+      "analysis": "분석",
+      "brunel university of london": "런던 브루넬 대학교",
+      "materials characterisation": "재료 특성 분석",
+      "subjected": "(검사 등을) 받게 했다",
+      "scanning electron microscopy": "주사전자현미경 분석",
+      "chemical mapping": "화학 성분 지도 작성",
+      "optical surface profiling": "광학 표면 측정",
+      "intriguing": "흥미로운",
+      "raised": "볼록한",
+      "portrait": "초상",
+      "undulates": "물결치듯 굴곡지다",
+      "roughly": "대략",
+      "severely": "심하게",
+      "deformed": "변형된",
+      "turned out": "드러났다",
+      "depleted": "줄어든",
+      "enriched": "많아진, 풍부해진",
+      "copper": "구리",
+      "corrosion": "부식",
+      "account for": "설명하다",
+      "geometry": "형태, 기하 구조",
+      "distortion": "뒤틀림",
+      "consistent with": "~와 일치하는",
+      "anomaly": "이상 현상",
+      "mint": "조폐소",
+      "intense": "강한",
+      "concentrated": "집중된",
+      "commendably": "칭찬할 만하게",
+      "stops short of": "~까지는 하지 않다",
+      "nailed down": "확정된",
+      "with certainty": "확실히",
+      "quite apart from": "~은 별개로 하고",
+      "metallurgy": "금속학",
+      "underscores": "강조하다",
+      "humble": "소박한",
+      "flea-market": "벼룩시장의",
+      "harbour": "품다",
+      "genuine": "진짜의",
+      "intrigue": "흥밋거리",
+      "did you know": "알고 있었나요",
+      "tucking": "밀어 넣기",
+      "cherished": "소중히 여겨지는",
+      "custom": "풍습",
+      "to sum up": "정리하면",
+      "curiously": "이상하게",
+      "bears the scars": "흔적을 지니다",
+      "mishap": "작은 사고"
+     },
+     "ph": [
+      "a mere",
+      "car boot sale",
+      "put under the microscope",
+      "quite literally",
+      "in question",
+      "king william the fourth",
+      "as though",
+      "carried out",
+      "npj heritage science",
+      "hammer blow",
+      "rough treatment",
+      "at face value",
+      "brunel university of london",
+      "materials characterisation",
+      "scanning electron microscopy",
+      "chemical mapping",
+      "optical surface profiling",
+      "turned out",
+      "account for",
+      "consistent with",
+      "stops short of",
+      "nailed down",
+      "with certainty",
+      "quite apart from",
+      "did you know",
+      "to sum up",
+      "bears the scars"
+     ],
+     "kw": [
+      [
+       "verdict",
+       "결론"
+      ],
+      [
+       "at face value",
+       "곧이곧대로"
+      ],
+      [
+       "anomaly",
+       "이상 현상"
+      ],
+      [
+       "depleted",
+       "줄어든"
+      ],
+      [
+       "account for",
+       "설명하다"
+      ],
+      [
+       "mishap",
+       "작은 사고"
+      ]
+     ],
+     "audio": "audio/2026-11-12-g2-L5.mp3",
+     "duration": 126.6,
+     "speed": 1.05,
+     "voice": "bf_emma",
+     "words": 371
+    }
+   },
+   "icon": "coin",
+   "tag": "화제",
+   "ko": "찌그러진 192년 된 은화의 비밀",
+   "url": "https://www.sciencedaily.com/releases/2026/11/261109205359.htm",
+   "source": "ScienceDaily"
+  },
+  {
+   "id": "2026-11-12-k1",
+   "section": "k",
+   "levels": {
+    "1": {
+     "headline": "Wives From Abroad Study to Become Korean",
+     "p": [
+      "Good morning. This is your morning news in English.",
+      "Can you sing the Korean national song?",
+      "Seven women had a class in Seoul on Tuesday. They are from China and Vietnam. They married Korean men. Now they want to become Korean.",
+      "First, they must pass an interview. So they study Korea. In the class, they learned about Korean money and the flag. They learned about the national flower. They also sang the national song together.",
+      "The test is not easy. One woman from China failed three times. History was very hard for her. She will try again.",
+      "Again, women in Seoul are studying hard. They want to become Korean.",
+      "Thank you for listening."
+     ],
+     "tr": [
+      "좋은 아침입니다. 영어로 듣는 아침 뉴스입니다.",
+      "한국 애국가를 부를 수 있나요?",
+      "화요일 서울에서 일곱 명의 여성이 수업을 들었습니다. 그들은 중국과 베트남에서 왔습니다. 한국 남성과 결혼했습니다. 이제 그들은 한국 국민이 되고 싶어 합니다.",
+      "먼저 면접을 통과해야 합니다. 그래서 한국에 대해 공부합니다. 수업에서 그들은 한국 돈과 국기에 대해 배웠습니다. 나라꽃에 대해서도 배웠습니다. 함께 애국가도 불렀습니다.",
+      "시험은 쉽지 않습니다. 중국에서 온 한 여성은 세 번 떨어졌습니다. 역사가 아주 어려웠습니다. 그녀는 다시 도전할 것입니다.",
+      "다시 말해, 서울의 여성들이 열심히 공부하고 있습니다. 그들은 한국 국민이 되고 싶어 합니다.",
+      "들어 주셔서 감사합니다."
+     ],
+     "g": {
+      "sing": "노래하다",
+      "national song": "국가(애국가)",
+      "seven": "일곱",
+      "women": "여성들",
+      "woman": "여성",
+      "class": "수업",
+      "seoul": "서울",
+      "tuesday": "화요일",
+      "china": "중국",
+      "vietnam": "베트남",
+      "married": "결혼했다",
+      "korean": "한국의, 한국 사람",
+      "become": "~이 되다",
+      "first": "먼저",
+      "must": "~해야 한다",
+      "pass": "통과하다",
+      "interview": "면접",
+      "study": "공부하다",
+      "learned": "배웠다",
+      "money": "돈",
+      "flag": "국기",
+      "national flower": "나라꽃",
+      "sang": "불렀다",
+      "together": "함께",
+      "test": "시험",
+      "easy": "쉬운",
+      "failed": "떨어졌다",
+      "three times": "세 번",
+      "history": "역사",
+      "hard": "어려운",
+      "try again": "다시 도전하다",
+      "again": "다시 (말해)",
+      "studying hard": "열심히 공부하는",
+      "listening": "듣기",
+      "men": "남자들"
+     },
+     "ph": [
+      "national song",
+      "national flower",
+      "three times",
+      "try again",
+      "studying hard"
+     ],
+     "kw": [
+      [
+       "interview",
+       "면접"
+      ],
+      [
+       "pass",
+       "통과하다"
+      ],
+      [
+       "flag",
+       "국기"
+      ],
+      [
+       "national flower",
+       "나라꽃"
+      ],
+      [
+       "failed",
+       "떨어졌다"
+      ]
+     ],
+     "audio": "audio/2026-11-12-k1-L1.mp3",
+     "duration": 58.2,
+     "speed": 0.75,
+     "voice": "af_heart",
+     "words": 113
+    },
+    "2": {
+     "headline": "Marriage Immigrants Prepare for Korean Citizenship Interviews",
+     "p": [
+      "Good morning. This is your morning news in English.",
+      "Do you know the four symbols on the Korean flag? For some people, this is a test question.",
+      "On Tuesday, seven women joined a special class in Seoul. They come from China and Vietnam. They are married to Korean men and live here on marriage visas. Now they want to become Korean citizens. To do that, they must pass an interview.",
+      "A social worker led the two-hour class. The women learned how to apply. They studied Korean money, the flag and the national flower, the mugunghwa. They practiced talking about themselves. They also sang the national anthem together. Six more classes will cover politics, the economy and history. The last class will be a practice interview.",
+      "The interview is hard. One woman from China, 42, failed it three times. History questions were the most difficult for her. Another woman married a Korean man in 2019. She says she must renew her visa every three years.",
+      "To sum up, women from other countries are studying Korean history and symbols. They hope to pass their citizenship interview.",
+      "Thank you for listening."
+     ],
+     "tr": [
+      "좋은 아침입니다. 영어로 듣는 아침 뉴스입니다.",
+      "태극기에 있는 네 가지 상징을 아시나요? 어떤 사람들에게 이것은 시험 문제입니다.",
+      "화요일, 일곱 명의 여성이 서울의 특별한 수업에 참여했습니다. 그들은 중국과 베트남에서 왔습니다. 한국 남성과 결혼해 결혼 비자로 이곳에 살고 있습니다. 이제 그들은 한국 국민이 되고 싶어 합니다. 그러려면 면접을 통과해야 합니다.",
+      "한 사회복지사가 두 시간 동안 수업을 이끌었습니다. 여성들은 신청 방법을 배웠습니다. 한국 돈, 국기, 그리고 나라꽃인 무궁화에 대해 공부했습니다. 자기소개도 연습했습니다. 함께 애국가도 불렀습니다. 앞으로 여섯 번의 수업에서 정치, 경제, 역사를 다룹니다. 마지막 수업은 모의 면접입니다.",
+      "면접은 어렵습니다. 중국에서 온 42세 여성은 세 번 떨어졌습니다. 그녀에게는 역사 문제가 가장 어려웠습니다. 또 다른 여성은 2019년에 한국 남성과 결혼했습니다. 그녀는 3년마다 비자를 갱신해야 한다고 말합니다.",
+      "정리하면, 다른 나라에서 온 여성들이 한국의 역사와 상징을 공부하고 있습니다. 그들은 국적 취득 면접에 합격하기를 바랍니다.",
+      "들어 주셔서 감사합니다."
+     ],
+     "g": {
+      "symbols": "상징",
+      "flag": "국기",
+      "test question": "시험 문제",
+      "joined": "참여했다",
+      "special": "특별한",
+      "seoul": "서울",
+      "china": "중국",
+      "vietnam": "베트남",
+      "married to": "~와 결혼한",
+      "marriage visas": "결혼 비자",
+      "citizens": "국민, 시민",
+      "pass": "통과하다",
+      "interview": "면접",
+      "social worker": "사회복지사",
+      "led": "이끌었다",
+      "apply": "신청하다",
+      "national flower": "나라꽃",
+      "mugunghwa": "무궁화",
+      "practiced": "연습했다",
+      "talking about themselves": "자기소개",
+      "sang": "불렀다",
+      "national anthem": "국가(애국가)",
+      "cover": "다루다",
+      "politics": "정치",
+      "economy": "경제",
+      "history": "역사",
+      "practice interview": "모의 면접",
+      "failed": "떨어졌다",
+      "difficult": "어려운",
+      "another": "또 다른",
+      "renew": "갱신하다",
+      "visa": "비자",
+      "every three years": "3년마다",
+      "to sum up": "정리하면",
+      "countries": "나라들",
+      "citizenship": "국적, 시민권",
+      "hope": "바라다"
+     },
+     "ph": [
+      "test question",
+      "married to",
+      "marriage visas",
+      "social worker",
+      "national flower",
+      "talking about themselves",
+      "national anthem",
+      "practice interview",
+      "every three years",
+      "to sum up"
+     ],
+     "kw": [
+      [
+       "citizens",
+       "국민, 시민"
+      ],
+      [
+       "interview",
+       "면접"
+      ],
+      [
+       "social worker",
+       "사회복지사"
+      ],
+      [
+       "national anthem",
+       "애국가"
+      ],
+      [
+       "renew",
+       "갱신하다"
+      ],
+      [
+       "citizenship",
+       "국적"
+      ]
+     ],
+     "audio": "audio/2026-11-12-k1-L2.mp3",
+     "duration": 86.0,
+     "speed": 0.8,
+     "voice": "af_heart",
+     "words": 188
+    },
+    "3": {
+     "headline": "Marriage Immigrants in Seoul Prepare for Their Citizenship Interview",
+     "p": [
+      "Good morning. This is your morning news in English.",
+      "How well do you know Korea's national flower or its national anthem? For some people, these questions can shape their future.",
+      "According to the Korea Herald, a special class met on Tuesday at a family center in Guro, Seoul. Seven women from China and Vietnam took part. They are all married to Koreans and live here on marriage visas. Now they want to become Korean citizens, and to do that they must pass an interview. This process is called naturalization. Naturalization means officially becoming a citizen of a new country.",
+      "In the two-hour class, a social worker named Ock He-won explained how to apply. She also taught the women about Korean bills, the four symbols on the national flag and the national flower, the mugunghwa. The students practiced introducing themselves and even sang the national anthem, Aegukga. Six more classes will cover topics like politics, the economy and history, and the last one will be a mock interview. A mock interview is a practice interview.",
+      "The interview is not easy. One student, a 42-year-old woman from China, is getting ready for her fourth try. She failed three times before, and history questions were the hardest part for her. Another student married a Korean man in 2019 and has a son. She says she has to renew her visa every three years.",
+      "Why does this matter? More and more families in Korea have members from other countries. Stories like this show how much effort people make to build a life here.",
+      "To sum up, women who married Koreans are studying Korean history, symbols and songs to pass their citizenship interview.",
+      "Thank you for listening."
+     ],
+     "tr": [
+      "좋은 아침입니다. 영어로 듣는 아침 뉴스입니다.",
+      "한국의 나라꽃이나 애국가를 얼마나 잘 아시나요? 어떤 사람들에게는 이런 질문이 미래를 좌우할 수 있습니다.",
+      "코리아헤럴드에 따르면 화요일 서울 구로의 한 가족센터에서 특별한 수업이 열렸습니다. 중국과 베트남에서 온 여성 일곱 명이 참여했습니다. 모두 한국인과 결혼해 결혼 비자로 한국에 살고 있습니다. 이제 그들은 한국 국민이 되고 싶어 하며, 그러려면 면접을 통과해야 합니다. 이 과정을 귀화라고 합니다. 귀화는 공식적으로 새 나라의 국민이 되는 것을 뜻합니다.",
+      "두 시간 수업에서 옥혜원 사회복지사가 신청 방법을 설명했습니다. 또 한국 지폐, 태극기의 네 가지 상징, 나라꽃인 무궁화에 대해 가르쳤습니다. 수강생들은 자기소개를 연습했고 애국가도 불렀습니다. 앞으로 여섯 번의 수업에서 정치, 경제, 역사 같은 주제를 다루고, 마지막 수업은 모의 면접입니다. 모의 면접은 연습용 면접입니다.",
+      "면접은 쉽지 않습니다. 중국에서 온 42세 수강생은 네 번째 도전을 준비하고 있습니다. 그녀는 이전에 세 번 떨어졌고, 역사 문제가 가장 어려웠다고 합니다. 또 다른 수강생은 2019년 한국 남성과 결혼해 아들이 있습니다. 그녀는 3년마다 비자를 갱신해야 한다고 말합니다.",
+      "이것이 왜 중요할까요? 한국에는 다른 나라 출신 가족이 있는 가정이 점점 늘고 있습니다. 이런 이야기는 사람들이 이곳에서 삶을 꾸리기 위해 얼마나 노력하는지 보여 줍니다.",
+      "정리하면, 한국인과 결혼한 여성들이 국적 취득 면접에 합격하기 위해 한국의 역사와 상징, 노래를 공부하고 있습니다.",
+      "들어 주셔서 감사합니다."
+     ],
+     "g": {
+      "national flower": "나라꽃",
+      "national anthem": "국가(애국가)",
+      "shape": "좌우하다, 형성하다",
+      "future": "미래",
+      "according to": "~에 따르면",
+      "korea herald": "코리아헤럴드(영자 신문)",
+      "family center": "가족센터",
+      "guro": "구로(서울 구)",
+      "china": "중국",
+      "vietnam": "베트남",
+      "took part": "참여했다",
+      "married to": "~와 결혼한",
+      "marriage visas": "결혼 비자",
+      "citizens": "국민, 시민",
+      "pass": "통과하다",
+      "interview": "면접",
+      "process": "과정",
+      "naturalization": "귀화",
+      "officially": "공식적으로",
+      "citizen": "국민, 시민",
+      "social worker": "사회복지사",
+      "ock he-won": "옥혜원(강사)",
+      "apply": "신청하다",
+      "bills": "지폐",
+      "symbols": "상징",
+      "flag": "국기",
+      "mugunghwa": "무궁화",
+      "practiced": "연습했다",
+      "introducing themselves": "자기소개하기",
+      "aegukga": "애국가",
+      "cover": "다루다",
+      "topics": "주제",
+      "politics": "정치",
+      "economy": "경제",
+      "mock interview": "모의 면접",
+      "getting ready": "준비하는",
+      "fourth try": "네 번째 도전",
+      "failed": "떨어졌다",
+      "hardest": "가장 어려운",
+      "renew": "갱신하다",
+      "visa": "비자",
+      "matter": "중요하다",
+      "more and more": "점점 더 많은",
+      "members": "구성원",
+      "effort": "노력",
+      "build a life": "삶을 꾸리다",
+      "to sum up": "정리하면",
+      "citizenship": "국적, 시민권"
+     },
+     "ph": [
+      "national flower",
+      "national anthem",
+      "according to",
+      "korea herald",
+      "family center",
+      "took part",
+      "married to",
+      "marriage visas",
+      "social worker",
+      "ock he-won",
+      "introducing themselves",
+      "mock interview",
+      "getting ready",
+      "fourth try",
+      "more and more",
+      "build a life",
+      "to sum up"
+     ],
+     "kw": [
+      [
+       "naturalization",
+       "귀화"
+      ],
+      [
+       "citizen",
+       "국민, 시민"
+      ],
+      [
+       "marriage visas",
+       "결혼 비자"
+      ],
+      [
+       "social worker",
+       "사회복지사"
+      ],
+      [
+       "national anthem",
+       "애국가"
+      ],
+      [
+       "mock interview",
+       "모의 면접"
+      ],
+      [
+       "renew",
+       "갱신하다"
+      ],
+      [
+       "effort",
+       "노력"
+      ]
+     ],
+     "audio": "audio/2026-11-12-k1-L3.mp3",
+     "duration": 109.4,
+     "speed": 0.9,
+     "voice": "af_heart",
+     "words": 282
+    },
+    "4": {
+     "headline": "Inside a Seoul Classroom Where Marriage Immigrants Rehearse for Naturalization",
+     "p": [
+      "Good morning, and welcome to your morning news in English.",
+      "Could you name the four trigrams on the Korean flag, or sing every verse of the national anthem? For a group of women in Seoul, those are questions that could decide whether they become Korean citizens.",
+      "The Korea Herald reports that seven marriage immigrants from China and Vietnam gathered on Tuesday for a naturalization interview preparation class at a family center in Seoul's Guro district. All of them are married to Korean nationals and currently live in the country on marriage visas.",
+      "The two-hour session was run single-handedly by social worker Ock He-won. She walked the participants through the application process and covered topics such as Korean banknotes, the trigrams on the national flag, the mugunghwa, the national flower, and proper flag etiquette. The women also rehearsed self-introductions and sang the national anthem, Aegukga, together. The course continues with six more sessions on politics, the economy, history and other subjects, ending with a mock interview.",
+      "For some participants, the stakes are high. Zou Chunyang, a 42-year-old from China, is preparing for her fourth attempt after failing three times, saying the history questions gave her the most trouble. Another participant, 38-year-old Wang Yue, who married a Korean man in 2019 and has a son, said she currently needs to renew her visa every three years.",
+      "As the number of multicultural families in Korea continues to grow, classes like this offer a glimpse of the practical and emotional effort that goes into making the country a permanent home. It also shows how much knowledge of Korean history and culture applicants are expected to demonstrate before they can call themselves citizens.",
+      "To sum up, marriage immigrants in Seoul are studying Korean history, national symbols and civic etiquette as they prepare for the naturalization interview.",
+      "Thank you for listening."
+     ],
+     "tr": [
+      "좋은 아침입니다. 영어로 듣는 아침 뉴스에 오신 것을 환영합니다.",
+      "태극기의 네 괘를 말할 수 있나요? 애국가를 모든 절까지 부를 수 있나요? 서울의 한 여성 모임에게 이런 질문은 한국 국민이 될 수 있는지를 가를 수 있습니다.",
+      "코리아헤럴드에 따르면, 중국과 베트남 출신 결혼이민자 일곱 명이 화요일 서울 구로구의 한 가족센터에서 귀화 면접 준비 수업에 모였습니다. 모두 한국 국적자와 결혼했으며 현재 결혼 비자로 한국에 살고 있습니다.",
+      "두 시간 수업은 옥혜원 사회복지사가 혼자 진행했습니다. 그녀는 참가자들에게 신청 절차를 차근차근 안내하고 한국 지폐, 태극기의 괘, 나라꽃 무궁화, 올바른 국기 예절 같은 주제를 다뤘습니다. 여성들은 자기소개를 연습하고 함께 애국가를 불렀습니다. 과정은 정치, 경제, 역사 등을 다루는 여섯 번의 수업으로 이어지며 모의 면접으로 마무리됩니다.",
+      "일부 참가자에게는 걸린 것이 큽니다. 42세 중국 출신 저우춘양 씨는 세 번 떨어진 뒤 네 번째 도전을 준비하고 있으며, 역사 문제가 가장 힘들었다고 말했습니다. 2019년 한국 남성과 결혼해 아들이 있는 38세 왕웨 씨는 현재 3년마다 비자를 갱신해야 한다고 말했습니다.",
+      "한국의 다문화 가정이 계속 늘어나는 가운데, 이런 수업은 한국을 영원한 보금자리로 만들기 위해 들이는 현실적이고 정서적인 노력을 엿보게 해 줍니다. 또한 스스로를 한국 국민이라 부르기 전에 한국의 역사와 문화에 대해 얼마나 많은 지식을 보여 줘야 하는지도 알 수 있습니다.",
+      "정리하면, 서울의 결혼이민자들이 귀화 면접을 준비하며 한국 역사와 국가 상징, 시민 예절을 공부하고 있습니다.",
+      "들어 주셔서 감사합니다."
+     ],
+     "g": {
+      "trigrams": "(태극기의) 괘",
+      "verse": "절(노래의 한 부분)",
+      "national anthem": "국가(애국가)",
+      "citizens": "국민, 시민",
+      "korea herald": "코리아헤럴드",
+      "marriage immigrants": "결혼이민자",
+      "gathered": "모였다",
+      "naturalization": "귀화",
+      "preparation": "준비",
+      "family center": "가족센터",
+      "guro district": "구로구",
+      "korean nationals": "한국 국적자",
+      "currently": "현재",
+      "marriage visas": "결혼 비자",
+      "session": "수업, 회차",
+      "was run": "진행되었다",
+      "social worker": "사회복지사",
+      "ock he-won": "옥혜원(강사)",
+      "walked the participants through": "참가자들에게 차근차근 안내했다",
+      "application process": "신청 절차",
+      "banknotes": "지폐",
+      "mugunghwa": "무궁화",
+      "national flower": "나라꽃",
+      "proper": "올바른",
+      "etiquette": "예절",
+      "rehearsed": "연습했다",
+      "self-introductions": "자기소개",
+      "aegukga": "애국가",
+      "subjects": "주제, 과목",
+      "mock interview": "모의 면접",
+      "stakes": "걸린 것",
+      "attempt": "시도",
+      "gave her the most trouble": "가장 힘들게 했다",
+      "renew": "갱신하다",
+      "multicultural families": "다문화 가정",
+      "offer a glimpse of": "~을 엿보게 하다",
+      "practical": "현실적인",
+      "emotional": "정서적인",
+      "goes into": "~에 들어가다",
+      "permanent": "영원한, 영구적인",
+      "single-handedly": "혼자서",
+      "zou chunyang": "저우춘양(참가자)",
+      "wang yue": "왕웨(참가자)",
+      "applicants": "신청자",
+      "demonstrate": "보여 주다",
+      "call themselves": "스스로를 ~라 부르다",
+      "national symbols": "국가 상징",
+      "civic": "시민의",
+      "to sum up": "정리하면"
+     },
+     "ph": [
+      "national anthem",
+      "korea herald",
+      "marriage immigrants",
+      "family center",
+      "guro district",
+      "korean nationals",
+      "marriage visas",
+      "was run",
+      "social worker",
+      "ock he-won",
+      "walked the participants through",
+      "application process",
+      "national flower",
+      "mock interview",
+      "gave her the most trouble",
+      "multicultural families",
+      "offer a glimpse of",
+      "goes into",
+      "zou chunyang",
+      "wang yue",
+      "call themselves",
+      "national symbols",
+      "to sum up"
+     ],
+     "kw": [
+      [
+       "naturalization",
+       "귀화"
+      ],
+      [
+       "marriage immigrants",
+       "결혼이민자"
+      ],
+      [
+       "application process",
+       "신청 절차"
+      ],
+      [
+       "etiquette",
+       "예절"
+      ],
+      [
+       "mock interview",
+       "모의 면접"
+      ],
+      [
+       "multicultural families",
+       "다문화 가정"
+      ]
+     ],
+     "audio": "audio/2026-11-12-k1-L4.mp3",
+     "duration": 124.5,
+     "speed": 1.1,
+     "voice": "am_michael",
+     "words": 305
+    },
+    "5": {
+     "headline": "Anthem, Flag and History: Marriage Immigrants Cram for Korea's Naturalization Interview",
+     "p": [
+      "Good morning, and welcome to your morning news in English.",
+      "Reciting the national anthem and explaining the trigrams on the Taegeukgi might sound like a primary school exercise, but for one group of women in Seoul it is the gateway to Korean citizenship.",
+      "According to the Korea Herald, seven marriage immigrants from China and Vietnam convened on Tuesday at a family center in Seoul's Guro district for a class designed to prepare them for the naturalization interview. Each of them is married to a Korean national and resides in the country on a marriage visa, a status that must be periodically renewed.",
+      "Social worker Ock He-won ran the two-hour session single-handedly. She guided the women through the nuts and bolts of the application process before turning to the symbols of the state: the country's banknotes, the trigrams on the national flag, the mugunghwa, which is the national flower, and the etiquette of displaying the flag. Participants polished their self-introductions and, by the end, were singing Aegukga in unison. The programme runs to six further sessions covering politics, the economy, history and more, culminating in a mock interview.",
+      "For some in the room, the hurdle is all too familiar. Zou Chunyang, a 42-year-old participant from China, is gearing up for her fourth attempt, having fallen short three times, with history questions proving her stumbling block. Another, 38-year-old Wang Yue, who married a Korean man in 2019 and is raising a son, noted that under her current status she must renew her visa every three years, a recurring reminder of her provisional footing.",
+      "With multicultural households forming an ever larger share of Korean society, scenes like this shed light on the quiet determination, and the considerable homework, involved in turning a place of residence into a place of belonging. They also reveal just how much fluency in the nation's past and its customs applicants are expected to command before the state will welcome them as citizens.",
+      "To sum up, marriage immigrants in Seoul are immersing themselves in Korean history, civic etiquette and national symbols as they work toward passing the naturalization interview and becoming citizens.",
+      "Thank you for listening."
+     ],
+     "tr": [
+      "좋은 아침입니다. 영어로 듣는 아침 뉴스에 오신 것을 환영합니다.",
+      "애국가를 외우고 태극기의 괘를 설명하는 것은 초등학교 과제처럼 들릴 수 있지만, 서울의 한 여성 모임에게는 한국 국적으로 가는 관문입니다.",
+      "코리아헤럴드에 따르면, 중국과 베트남 출신 결혼이민자 일곱 명이 화요일 서울 구로구의 한 가족센터에 모여 귀화 면접 대비 수업을 들었습니다. 이들은 모두 한국 국적자와 결혼했으며, 주기적으로 갱신해야 하는 결혼 비자로 한국에 거주하고 있습니다.",
+      "옥혜원 사회복지사가 두 시간 수업을 혼자 진행했습니다. 그녀는 먼저 신청 절차의 세부 사항을 안내한 뒤 국가의 상징으로 넘어갔습니다. 한국 지폐, 태극기의 괘, 나라꽃 무궁화, 그리고 국기 게양 예절입니다. 참가자들은 자기소개를 다듬었고, 수업이 끝날 무렵에는 다 함께 애국가를 불렀습니다. 과정은 정치, 경제, 역사 등을 다루는 여섯 번의 수업으로 이어지며 모의 면접으로 마무리됩니다.",
+      "교실의 몇몇에게 이 관문은 너무도 익숙합니다. 42세 중국 출신 참가자 저우춘양 씨는 세 번 고배를 마신 뒤 네 번째 도전을 준비하고 있으며, 역사 문제가 걸림돌이었다고 합니다. 2019년 한국 남성과 결혼해 아들을 키우는 38세 왕웨 씨는 현재 신분으로는 3년마다 비자를 갱신해야 한다며, 이는 자신의 불안정한 처지를 거듭 떠올리게 한다고 말했습니다.",
+      "다문화 가정이 한국 사회에서 차지하는 비중이 점점 커지는 가운데, 이런 장면은 거주지를 소속감 있는 곳으로 바꾸는 데 필요한 조용한 결의와 상당한 공부를 보여 줍니다. 또한 국가가 이들을 국민으로 받아들이기 전에 신청자들이 한국의 과거와 관습을 얼마나 능숙하게 알아야 하는지도 드러냅니다.",
+      "정리하면, 서울의 결혼이민자들이 귀화 면접을 통과해 국민이 되기 위해 한국 역사와 시민 예절, 국가 상징 공부에 몰두하고 있습니다.",
+      "들어 주셔서 감사합니다."
+     ],
+     "g": {
+      "reciting": "암송하기",
+      "national anthem": "국가(애국가)",
+      "trigrams": "(태극기의) 괘",
+      "taegeukgi": "태극기",
+      "primary school": "초등학교",
+      "exercise": "과제, 연습",
+      "gateway": "관문",
+      "citizenship": "국적, 시민권",
+      "according to": "~에 따르면",
+      "korea herald": "코리아헤럴드",
+      "marriage immigrants": "결혼이민자",
+      "convened": "모였다",
+      "family center": "가족센터",
+      "guro district": "구로구",
+      "designed to": "~하도록 만들어진",
+      "naturalization": "귀화",
+      "korean national": "한국 국적자",
+      "resides": "거주하다",
+      "marriage visa": "결혼 비자",
+      "status": "신분, 지위",
+      "periodically": "주기적으로",
+      "renewed": "갱신된",
+      "social worker": "사회복지사",
+      "ock he-won": "옥혜원(강사)",
+      "single-handedly": "혼자서",
+      "nuts and bolts": "세부 사항, 기본 요소",
+      "application process": "신청 절차",
+      "banknotes": "지폐",
+      "mugunghwa": "무궁화",
+      "etiquette": "예절",
+      "displaying": "게양하기, 내걸기",
+      "polished": "다듬었다",
+      "self-introductions": "자기소개",
+      "aegukga": "애국가",
+      "in unison": "다 함께, 한목소리로",
+      "programme": "과정, 프로그램",
+      "further": "추가의",
+      "culminating in": "~으로 마무리되는",
+      "mock interview": "모의 면접",
+      "hurdle": "장애물, 관문",
+      "all too familiar": "너무도 익숙한",
+      "gearing up": "준비하는",
+      "attempt": "시도",
+      "fallen short": "실패했다, 미치지 못했다",
+      "stumbling block": "걸림돌",
+      "raising": "키우는",
+      "recurring": "되풀이되는",
+      "reminder": "상기시키는 것",
+      "provisional": "임시의",
+      "footing": "입지, 처지",
+      "multicultural households": "다문화 가정",
+      "share": "비중",
+      "shed light on": "~을 조명하다",
+      "determination": "결의",
+      "considerable": "상당한",
+      "residence": "거주지",
+      "belonging": "소속감",
+      "zou chunyang": "저우춘양(참가자)",
+      "wang yue": "왕웨(참가자)",
+      "fluency": "능숙함",
+      "customs": "관습",
+      "applicants": "신청자",
+      "command": "(지식을) 갖추다",
+      "immersing themselves": "몰두하는",
+      "civic": "시민의",
+      "to sum up": "정리하면"
+     },
+     "ph": [
+      "national anthem",
+      "primary school",
+      "according to",
+      "korea herald",
+      "marriage immigrants",
+      "family center",
+      "guro district",
+      "designed to",
+      "korean national",
+      "marriage visa",
+      "social worker",
+      "ock he-won",
+      "nuts and bolts",
+      "application process",
+      "in unison",
+      "culminating in",
+      "mock interview",
+      "all too familiar",
+      "gearing up",
+      "fallen short",
+      "stumbling block",
+      "multicultural households",
+      "shed light on",
+      "zou chunyang",
+      "wang yue",
+      "immersing themselves",
+      "to sum up"
+     ],
+     "kw": [
+      [
+       "gateway",
+       "관문"
+      ],
+      [
+       "naturalization",
+       "귀화"
+      ],
+      [
+       "nuts and bolts",
+       "세부 사항"
+      ],
+      [
+       "stumbling block",
+       "걸림돌"
+      ],
+      [
+       "provisional",
+       "임시의"
+      ],
+      [
+       "belonging",
+       "소속감"
+      ]
+     ],
+     "audio": "audio/2026-11-12-k1-L5.mp3",
+     "duration": 125.1,
+     "speed": 1.05,
+     "voice": "bf_emma",
+     "words": 357
+    }
+   },
+   "icon": "flag",
+   "ko": "귀화 면접 준비하는 결혼이민자들",
+   "url": "https://www.koreaherald.com/article/10933934",
+   "source": "Korea Herald"
+  }
+ ],
+ "video": {
+  "id": "K03YBri80zM",
+  "title": "Hello, Friends",
+  "url": "https://www.youtube.com/watch?v=K03YBri80zM",
+  "channel": "Pororo the Little Penguin",
+  "series": "Season 2",
+  "length": "5:07"
+ }
+}

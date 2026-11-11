@@ -1,6 +1,57 @@
 {
- "updated": "2026-11-10T21:21:01Z",
+ "updated": "2026-11-11T21:20:33Z",
  "days": [
+  {
+   "date": "2026-11-12",
+   "items": [
+    {
+     "id": "2026-11-12-g1",
+     "section": "g",
+     "icon": "home-dollar",
+     "tag": "주요",
+     "ko": "스페인 14년 만의 총파업, 집값 항의",
+     "h": {
+      "1": "Workers in Spain Stop Work Over Home Prices",
+      "2": "Millions in Spain Strike Over High Rents",
+      "3": "Spain Holds Its First General Strike in 14 Years Over Housing",
+      "4": "Spain's First General Strike in 14 Years Targets Soaring Housing Costs",
+      "5": "Housing Anger Brings Spain to a Standstill in First General Strike Since 2012"
+     }
+    },
+    {
+     "id": "2026-11-12-g2",
+     "section": "g",
+     "icon": "coin",
+     "tag": "화제",
+     "ko": "찌그러진 192년 된 은화의 비밀",
+     "h": {
+      "1": "An Old Bent Coin Has a Secret",
+      "2": "Scientists Solve the Mystery of a Bent 1834 Coin",
+      "3": "A Bent 1834 Coin Reveals a 192-Year-Old Secret",
+      "4": "Lab Tests Suggest a Mangled 1834 Sixpence Was Damaged at the Mint",
+      "5": "Forensic Study Traces a Mangled 1834 Sixpence's Scars Back to the Mint"
+     }
+    },
+    {
+     "id": "2026-11-12-k1",
+     "section": "k",
+     "icon": "flag",
+     "tag": null,
+     "ko": "귀화 면접 준비하는 결혼이민자들",
+     "h": {
+      "1": "Wives From Abroad Study to Become Korean",
+      "2": "Marriage Immigrants Prepare for Korean Citizenship Interviews",
+      "3": "Marriage Immigrants in Seoul Prepare for Their Citizenship Interview",
+      "4": "Inside a Seoul Classroom Where Marriage Immigrants Rehearse for Naturalization",
+      "5": "Anthem, Flag and History: Marriage Immigrants Cram for Korea's Naturalization Interview"
+     }
+    }
+   ],
+   "video": {
+    "id": "K03YBri80zM",
+    "title": "Hello, Friends"
+   }
+  },
   {
    "date": "2026-11-11",
    "items": [
