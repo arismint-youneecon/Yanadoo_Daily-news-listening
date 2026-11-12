@@ -1,6 +1,57 @@
 {
- "updated": "2026-11-11T21:20:33Z",
+ "updated": "2026-11-12T21:09:37Z",
  "days": [
+  {
+   "date": "2026-11-13",
+   "items": [
+    {
+     "id": "2026-11-13-g1",
+     "section": "g",
+     "icon": "users-group",
+     "tag": "주요",
+     "ko": "러·우, 대규모 포로 교환 합의",
+     "h": {
+      "1": "Russia and Ukraine Will Trade Prisoners",
+      "2": "Russia and Ukraine Agree to Trade Prisoners",
+      "3": "Russia and Ukraine Agree to a Large Prisoner Exchange",
+      "4": "Russia and Ukraine Agree to Major Prisoner Swap in Abu Dhabi",
+      "5": "Abu Dhabi Talks Yield Major POW Swap but No Ceasefire"
+     }
+    },
+    {
+     "id": "2026-11-13-g2",
+     "section": "g",
+     "icon": "ship",
+     "tag": "화제",
+     "ko": "전설의 여객선, 세계 최대 인공 암초로",
+     "h": {
+      "1": "A Big Old Ship Is Now a Home for Fish",
+      "2": "Famous Ocean Liner Becomes a Giant Home for Fish",
+      "3": "A Famous Old Ship Becomes the World's Largest Artificial Reef",
+      "4": "SS United States Sunk to Become World's Largest Artificial Reef",
+      "5": "Record-Breaking Liner Scuttled to Create World's Largest Artificial Reef"
+     }
+    },
+    {
+     "id": "2026-11-13-k1",
+     "section": "k",
+     "icon": "id",
+     "tag": null,
+     "ko": "F-4 동포 비자, 할 수 있는 일은?",
+     "h": {
+      "1": "Korean Roots, New Jobs in Korea",
+      "2": "F-4 Visa Holders Can Now Do More Jobs in Korea",
+      "3": "Working in Korea on an F-4 Visa: What Is Allowed?",
+      "4": "What F-4 Visa Holders Can and Cannot Do at Work in Korea",
+      "5": "F-4 Visa Reforms Widen Job Options for Overseas Koreans, With Caveats"
+     }
+    }
+   ],
+   "video": {
+    "id": "A-nB2Z4UeU4",
+    "title": "Petty’s House"
+   }
+  },
   {
    "date": "2026-11-12",
    "items": [
