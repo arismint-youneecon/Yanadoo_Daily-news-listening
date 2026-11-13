@@ -1,6 +1,57 @@
 {
- "updated": "2026-11-12T21:09:37Z",
+ "updated": "2026-11-13T21:19:03Z",
  "days": [
+  {
+   "date": "2026-11-14",
+   "items": [
+    {
+     "id": "2026-11-14-g1",
+     "section": "g",
+     "icon": "cloud-off",
+     "tag": "주요",
+     "ko": "MS 365 전 세계 장애, 이틀째",
+     "h": {
+      "1": "Microsoft Email Stops for Many People",
+      "2": "Big Microsoft Outage Stops Email and Teams",
+      "3": "Microsoft Outage Hits Email and Teams Around the World",
+      "4": "Microsoft 365 Outage Disrupts Email and Teams Worldwide",
+      "5": "Sweeping Microsoft 365 Outage Leaves Users Worldwide Cut Off"
+     }
+    },
+    {
+     "id": "2026-11-14-g2",
+     "section": "g",
+     "icon": "ball-football",
+     "tag": "화제",
+     "ko": "포체티노, 맨유 새 감독 됐다",
+     "h": {
+      "1": "American Team Coach Goes to Manchester United",
+      "2": "Pochettino Leaves American Team for Manchester United",
+      "3": "U.S. Soccer Coach Pochettino Leaves to Lead Manchester United",
+      "4": "Pochettino Quits U.S. Job to Take Charge at Manchester United",
+      "5": "Pochettino Trades U.S. Post for the Old Trafford Hot Seat"
+     }
+    },
+    {
+     "id": "2026-11-14-k1",
+     "section": "k",
+     "icon": "soup",
+     "tag": null,
+     "ko": "멕시코 셰프, 구미 라면대회 우승",
+     "h": {
+      "1": "Mexican Cook Wins Ramyeon Contest",
+      "2": "Mexican Chef Wins Gumi Ramyeon Contest with Beer",
+      "3": "Mexican Chef's Beer Ramyeon Wins Contest in Gumi",
+      "4": "Beer-Infused Shin Ramyun Wins Gumi's Global Ramyun Challenge",
+      "5": "Chipotle, Butter and Beer: A Mexican Twist Takes Gumi's Ramyun Crown"
+     }
+    }
+   ],
+   "video": {
+    "id": "U0ciugN4mDs",
+    "title": "Learning How to Swim"
+   }
+  },
   {
    "date": "2026-11-13",
    "items": [
