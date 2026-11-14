@@ -86,6 +86,15 @@
     function newCode() { var a = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789", s = ""; for (var i = 0; i < 8; i++) s += a[Math.floor(Math.random() * a.length)]; return s; }
     function p(v) { return new Promise(function (res) { setTimeout(function () { res(v); }, 60); }); }
     function since(days) { return kst(new Date(Date.now() - days * 864e5)); }
+    function wkStart() { var t = new Date(kst() + "T12:00:00Z"); return shift(kst(), -((t.getUTCDay() + 6) % 7)); }
+    // 서버 update-4와 같은 하루 점수: 접속 1 + 첫 뉴스 3 + 두·세 번째 2씩 + 그 뒤 다시 듣기·뽀로로 1씩, 하루 최대 10
+    function pts(d, mid, from, to) {
+      var o = {};
+      d.visits.forEach(function (v) { if (v.member_id === mid && v.day >= from && v.day <= to) o[v.day] = { all: 0, dist: {}, vid: 0 }; });
+      d.events.forEach(function (e) { if (e.member_id !== mid) return; var x = o[kst(new Date(e.at))]; if (!x) return; if (e.kind === "complete") { x.all++; x.dist[e.briefing_id] = 1; } else if (e.kind === "video") x.vid++; });
+      return Object.keys(o).reduce(function (sum, k) { var x = o[k], nd = Object.keys(x.dist).length; return sum + Math.min(10, 1 + (nd ? 3 + 2 * (Math.min(nd, 3) - 1) : 0) + Math.max(x.all - Math.min(nd, 3), 0) + x.vid); }, 0);
+    }
+    function shift(day, n) { return new Date(new Date(day + "T12:00:00Z").getTime() + n * 864e5).toISOString().slice(0, 10); }
     return {
       login: function (c) { var d = db(), m = find(d, c); if (!m) return p(null); visit(d, m); put(d); return p({ name: m.name, is_admin: m.is_admin, level: m.level || null, notify_time: m.notify_time || "06:40" }); },
       pushSubscribe: function () { return p(true); },
@@ -102,7 +111,8 @@
         while (set[kst(t)]) { streak++; t = new Date(t.getTime() - 864e5); }
         var ev = d.events.filter(function (e) { return e.member_id === m.id; });
         var uniq = function (k) { var o = {}; ev.filter(function (e) { return e.kind === k; }).forEach(function (e) { o[e.briefing_id] = 1; }); return Object.keys(o); };
-        return p({ name: m.name, streak: streak, days_total: days.length, days_30: days.filter(function (x) { return x > since(30); }).length, visit_days: days.filter(function (x) { return x > since(35); }).sort(), played: uniq("play").length, completed: uniq("complete"), lookups: ev.filter(function (e) { return e.kind === "lookup"; }).length });
+        return p({ name: m.name, streak: streak, days_total: days.length, days_30: days.filter(function (x) { return x > since(30); }).length, visit_days: days.filter(function (x) { return x > since(35); }).sort(), played: uniq("play").length, completed: uniq("complete"), lookups: ev.filter(function (e) { return e.kind === "lookup"; }).length,
+          goal: 20, today_points: pts(d, m.id, kst(), kst()), week_points: pts(d, m.id, wkStart(), kst()), prev_points: pts(d, m.id, shift(wkStart(), -7), shift(kst(), -7)), total_points: pts(d, m.id, "0000", kst()) });
       },
       board: function (c) {
         var d = db(), me = find(d, c); if (!me) return p(null);
@@ -113,8 +123,11 @@
           var streak = 0, t = new Date(); if (!set[kst(t)]) t = new Date(t.getTime() - 864e5);
           while (set[kst(t)]) { streak++; t = new Date(t.getTime() - 864e5); }
           var done = function (from, to) { var o = {}; d.events.filter(function (e) { var day = kst(new Date(e.at)); return e.member_id === m.id && e.kind === "complete" && day >= from && (!to || day <= to); }).forEach(function (e) { o[e.briefing_id] = 1; }); return Object.keys(o).length; };
-          return { name: m.name, level: m.level || null, is_me: m.id === me.id, month_days: vs.filter(function (x) { return x >= mo; }).length, month_done: done(mo), week_days: vs.filter(function (x) { return x >= wk; }).length, week_visits: vs.filter(function (x) { return x >= wk; }).sort(), week_done: done(wk), today_done: done(today, today), today_visit: !!set[today], total_done: done("0000"), streak: streak };
-        }).sort(function (a, b) { return b.week_done - a.week_done || b.week_days - a.week_days || b.streak - a.streak || a.name.localeCompare(b.name); }) });
+          var cnt = function (k, from) { return d.events.filter(function (e) { return e.member_id === m.id && e.kind === k && kst(new Date(e.at)) >= from; }).length; };
+          return { name: m.name, level: m.level || null, is_me: m.id === me.id, week_days: vs.filter(function (x) { return x >= wk; }).length, week_visits: vs.filter(function (x) { return x >= wk; }).sort(),
+            week_done: cnt("complete", wk), week_videos: cnt("video", wk), today_done: done(today, today), today_visit: !!set[today], streak: streak,
+            week_points: pts(d, m.id, wk, today), prev_points: pts(d, m.id, shift(wk, -7), shift(today, -7)), total_points: pts(d, m.id, "0000", today), today_points: pts(d, m.id, today, today) };
+        }).sort(function (a, b) { return b.week_points - a.week_points || b.week_days - a.week_days || a.name.localeCompare(b.name); }) }).then(function (r) { r.goal = 20; r.club_goal = 15 * r.members.length; r.club_points = r.members.reduce(function (a, x) { return a + x.week_points; }, 0); return r; });
       },
       boardMonth: function (c, ym) {
         var d = db(), me = find(d, c); if (!me) return p(null);
@@ -126,7 +139,7 @@
           members: d.members.filter(function (m) { return m.active; }).map(function (m) {
             var vs = d.visits.filter(function (v) { return v.member_id === m.id && v.day >= mo && v.day < nxt; });
             var o = {}, t = {}; d.events.forEach(function (e) { var day = kst(new Date(e.at)); if (e.member_id === m.id && e.kind === "complete" && day >= mo && day < nxt) { o[e.briefing_id] = 1; if (day === today) t[e.briefing_id] = 1; } });
-            return { name: m.name, level: m.level || null, is_me: m.id === me.id, days: vs.length, done: Object.keys(o).length, today_done: isCur ? Object.keys(t).length : 0, today_visit: isCur && vs.some(function (v) { return v.day === today; }), streak: 0 };
+            return { name: m.name, level: m.level || null, is_me: m.id === me.id, days: vs.length, done: Object.keys(o).length, today_done: isCur ? Object.keys(t).length : 0, today_visit: isCur && vs.some(function (v) { return v.day === today; }), streak: 0, points: pts(d, m.id, mo, shift(nxt, -1)), total_points: pts(d, m.id, "0000", today) };
           }) });
       },
       members: function (c) {
@@ -200,8 +213,9 @@
 
   var logged = {};
   function logOnce(bid, kind, detail) {
+    // 단어 찾기, 끝까지 듣기(반복 포함), 뽀로로 끝까지 보기는 할 때마다 기록합니다. 나머지는 한 번만.
     var k = bid + "|" + kind + "|" + (detail || "");
-    if (kind !== "lookup" && logged[k]) return; logged[k] = 1;
+    if (kind !== "lookup" && kind !== "complete" && kind !== "video" && logged[k]) return; logged[k] = 1;
     api.log(state.code, bid, kind, detail).catch(function () {});
   }
 
@@ -250,18 +264,64 @@
   }
 
   // 오늘의 뽀로로: 공식 채널 영상을 앱 안에서 봅니다. 데이터를 아끼려고 누를 때 플레이어를 엽니다.
-  function videoCard(v, label) {
+  // YouTube 공식 플레이어 연결(IFrame API)로 본 시간을 세어, 80% 넘게 보면 '끝까지 봄'(점수 +1)으로 기록합니다.
+  var ytReady = null;
+  function loadYT() {
+    if (window.YT && window.YT.Player) return Promise.resolve(window.YT);
+    if (ytReady) return ytReady;
+    ytReady = new Promise(function (res, rej) {
+      var prev = window.onYouTubeIframeAPIReady;
+      window.onYouTubeIframeAPIReady = function () { if (typeof prev === "function") { try { prev(); } catch (e) {} } res(window.YT); };
+      var s = document.createElement("script");
+      s.src = "https://www.youtube.com/iframe_api"; s.async = true;
+      s.onerror = function () { ytReady = null; rej(new Error("yt_load")); };
+      document.head.appendChild(s);
+      setTimeout(function () { if (!(window.YT && window.YT.Player)) { ytReady = null; rej(new Error("yt_timeout")); } }, 10000);
+    });
+    return ytReady;
+  }
+  function plainEmbed(v) {
+    return el("iframe", {
+      src: "https://www.youtube-nocookie.com/embed/" + encodeURIComponent(v.id) + "?autoplay=1&playsinline=1&rel=0&cc_load_policy=1&cc_lang_pref=en&hl=ko",
+      title: v.title, allow: "autoplay; encrypted-media; picture-in-picture; fullscreen", allowfullscreen: true, referrerpolicy: "strict-origin-when-cross-origin"
+    });
+  }
+  function ytPlayer(box, v, date) {
+    var holder = el("div");
+    box.innerHTML = ""; box.appendChild(holder);
+    var pl, watched = 0, lastT = 0, done = false, timer = null;
+    function tick() {
+      if (!pl || !pl.getCurrentTime) return;
+      var t = pl.getCurrentTime() || 0, d = pl.getDuration() || 0, r = (pl.getPlaybackRate && pl.getPlaybackRate()) || 1;
+      if (done && t < 2) { done = false; watched = 0; }   // 처음부터 다시 보면 한 번 더 셉니다
+      var dt = t - lastT; lastT = t;
+      if (dt > 0 && dt < 3 * r) watched += dt;              // 건너뛴 부분은 세지 않습니다
+      if (!done && d > 0 && watched / d > 0.8) { done = true; logOnce(v.id, "video", date || ""); }
+    }
+    pl = new window.YT.Player(holder, {
+      host: "https://www.youtube-nocookie.com", videoId: v.id, width: "100%", height: "100%",
+      playerVars: { autoplay: 1, playsinline: 1, rel: 0, cc_load_policy: 1, cc_lang_pref: "en", hl: "ko" },
+      events: {
+        onReady: function (e) { try { e.target.getIframe().setAttribute("title", v.title); e.target.playVideo(); } catch (er) {} },
+        onStateChange: function (e) {
+          if (e.data === window.YT.PlayerState.PLAYING) { lastT = pl.getCurrentTime() || 0; if (!timer) timer = setInterval(tick, 1000); }
+          else { if (timer) { clearInterval(timer); timer = null; } tick(); }
+        }
+      }
+    });
+  }
+  function videoCard(v, label, date) {
     var box = el("div", { class: "vbox" });
     var thumb = el("button", { type: "button", class: "vthumb", "aria-label": "영상 재생: " + v.title }, [
       el("img", { src: "https://i.ytimg.com/vi/" + encodeURIComponent(v.id) + "/hqdefault.jpg", alt: "", loading: "lazy" }),
       el("span", { class: "vplay", "aria-hidden": "true" }, [icon("player-play")])
     ]);
+    loadYT().catch(function () {}); // 누르기 전에 미리 불러 두면 누르자마자 재생됩니다
     thumb.addEventListener("click", function () {
-      box.innerHTML = "";
-      box.appendChild(el("iframe", {
-        src: "https://www.youtube-nocookie.com/embed/" + encodeURIComponent(v.id) + "?autoplay=1&playsinline=1&rel=0&cc_load_policy=1&cc_lang_pref=en&hl=ko",
-        title: v.title, allow: "autoplay; encrypted-media; picture-in-picture; fullscreen", allowfullscreen: true, referrerpolicy: "strict-origin-when-cross-origin"
-      }));
+      if (window.YT && window.YT.Player) { ytPlayer(box, v, date); return; }
+      box.innerHTML = ""; box.appendChild(el("div", { class: "small", style: "color:#fff;padding:12px", text: "영상을 여는 중…" }));
+      loadYT().then(function () { ytPlayer(box, v, date); })
+        .catch(function () { box.innerHTML = ""; box.appendChild(plainEmbed(v)); }); // 연결이 안 되면 영상만 보여 줍니다(점수 기록 없음)
     });
     box.appendChild(thumb);
     return el("section", { class: "card pad vcard", "aria-label": label }, [
@@ -272,7 +332,7 @@
       el("div", { class: "row", style: "gap:8px;flex-wrap:wrap" }, [
         el("a", { class: "btn small", href: v.url || ("https://www.youtube.com/watch?v=" + encodeURIComponent(v.id)), target: "_blank", rel: "noopener" }, [icon("brand-youtube"), "YouTube에서 보기"])
       ]),
-      el("p", { class: "small muted", style: "margin:0", text: "영어 자막이 켜져서 시작해요. 안 보이면 영상의 CC(자막) 버튼을 누르세요. 대사 전체를 글로 보려면 YouTube 앱에서 영상 설명 → '스크립트 표시'를 누르세요." })
+      el("p", { class: "small muted", style: "margin:0", text: "끝까지 보면 점수 +1점이에요. 영어 자막이 켜져서 시작해요. 안 보이면 영상의 CC(자막) 버튼을 누르세요. 대사 전체를 글로 보려면 YouTube 앱에서 영상 설명 → '스크립트 표시'를 누르세요." })
     ]);
   }
 
@@ -280,7 +340,7 @@
     setTab("archive");
     getDay(date).then(function (day) {
       if (!day.video) { render([errBox("이 날은 영상이 없어요.")]); return; }
-      render([el("a", { class: "small", href: "#/archive", text: "← 지난 뉴스" }), videoCard(day.video, "뽀로로 · " + fmtDate(date))]);
+      render([el("a", { class: "small", href: "#/archive", text: "← 지난 뉴스" }), videoCard(day.video, "뽀로로 · " + fmtDate(date), date)]);
     }).catch(function () { render([errBox("영상을 불러오지 못했어요.")]); });
   }
 
@@ -304,7 +364,7 @@
           ]),
           el("div", { class: "list" }, day.items.map(function (it) { return briefingCard(it, latest.date); })),
           el("p", { class: "small muted", text: "대본 없이 한 번 듣고, 대본을 열어 모르는 단어를 확인한 뒤, 다시 한 번 들어 보세요." }),
-          day.video ? videoCard(day.video, "오늘의 뽀로로") : null
+          day.video ? videoCard(day.video, "오늘의 뽀로로", latest.date) : null
         ]);
       });
     }).catch(function () { render([errBox("브리핑을 불러오지 못했어요. 잠시 뒤 다시 열어 주세요.")]); });
@@ -339,6 +399,8 @@
     a.addEventListener("seeking", function () { if (player.ctx) player.ctx.lastT = a.currentTime; });
     a.addEventListener("timeupdate", function () {
       var c = player.ctx; if (!c) return;
+      // 끝까지 들은 뒤 처음으로 돌아오면(다시 듣기, 다시 재생) 새로 한 번 더 세기 시작합니다.
+      if (c.completeSent && a.currentTime < 2) { c.completeSent = false; c.listened = 0; }
       var t = a.currentTime, dt = t - c.lastT; c.lastT = t;
       if (dt > 0 && dt < 1.5 * (a.playbackRate || 1)) c.listened += dt;
       if (!c.completeSent && a.duration && c.listened / a.duration > 0.85) { c.completeSent = true; logOnce(c.id, "complete", c.tag); }
@@ -651,12 +713,37 @@
     ]));
   }
 
-  // 함께: 회원들의 학습 현황. 기본은 이번 달(‹ ›로 지난 달도 볼 수 있음), 이번 주로도 볼 수 있습니다.
+  // 함께: 회원들의 점수. 기본은 이번 주(월요일마다 0점에서 새로 시작), 달별로도 볼 수 있습니다.
+  // 하루 점수: 접속 1 + 그날 첫 뉴스 3 + 두·세 번째 뉴스 2씩 + 그 뒤 다시 듣기·뽀로로 1씩, 하루 최대 10 (계산은 서버 update-4).
+  var XP = [
+    { min: 0, name: "새싹", icon: "plant-2", cls: "x0" },
+    { min: 30, name: "브론즈", icon: "medal", cls: "x1" },
+    { min: 100, name: "실버", icon: "medal-2", cls: "x2" },
+    { min: 250, name: "골드", icon: "trophy", cls: "x3" },
+    { min: 500, name: "다이아", icon: "diamond", cls: "x4" }
+  ];
+  function xpOf(p) { var cur = XP[0], next = null; for (var i = 0; i < XP.length; i++) { if (p >= XP[i].min) cur = XP[i]; else { next = XP[i]; break; } } return { cur: cur, next: next }; }
+  function xpChip(p) { var x = xpOf(p || 0).cur; return el("span", { class: "bd " + x.cls, title: "레벨 " + x.name + " · 누적 " + (p || 0) + "점" }, [icon(x.icon), x.name]); }
+  function gbar(pct, label, cls) { pct = Math.max(0, Math.min(100, Math.round(pct))); return el("div", { class: "gbar" + (cls ? " " + cls : ""), role: "img", "aria-label": label }, [el("div", { class: "gbar-in", style: "width:" + pct + "%" })]); }
+  function rulesBox() {
+    return el("details", { class: "card pad rules" }, [
+      el("summary", { text: "점수는 이렇게 매겨요" }),
+      el("ul", null, [
+        el("li", { text: "접속하면 1점" }),
+        el("li", { text: "그날 처음 끝까지 들은 뉴스 +3점" }),
+        el("li", { text: "두 번째·세 번째 뉴스 +2점씩" }),
+        el("li", { text: "그 뒤 다시 듣기, 뽀로로 끝까지 보기 1번에 +1점" }),
+        el("li", { text: "하루 최대 10점. 매주 월요일에 모두 0점에서 새로 시작해요." }),
+        el("li", { text: "이번 주 20점이면 ‘목표 달성’ 배지를 받아요." }),
+        el("li", { text: "레벨은 지금까지 모은 점수예요(내려가지 않아요). 새싹 → 브론즈 30 → 실버 100 → 골드 250 → 다이아 500" })
+      ])
+    ]);
+  }
   function ymShift(ym, d) { var y = Number(ym.slice(0, 4)), m = Number(ym.slice(5, 7)) - 1 + d; y += Math.floor(m / 12); m = ((m % 12) + 12) % 12; return y + "-" + (m < 9 ? "0" : "") + (m + 1); }
   function clubRows(ms, opts) {
-    // ms: [{name, level, is_me, done, days, today_done, today_visit, streak, week_visits}] 정렬된 상태
+    // ms: 점수 순으로 정렬된 회원 [{name, level, is_me, points, total_points, days, done, videos, today_points, today_done, today_visit, streak, week_visits, delta, goal_met}]
     var rank = 0, prev = null;
-    ms.forEach(function (m, i) { var key = m.done + "/" + m.days; if (key !== prev) { rank = i + 1; prev = key; } m.rank = rank; });
+    ms.forEach(function (m, i) { if (m.points !== prev) { rank = i + 1; prev = m.points; } m.rank = rank; });
     return ms.map(function (m) {
       var visual;
       if (opts.days) {
@@ -671,92 +758,120 @@
           el("span", { text: m.days + " / " + opts.elapsed + "일 접속 · " + pct + "%" })
         ]);
       }
-      var status = m.today_done > 0 ? el("span", { class: "bd ok", text: "오늘 " + m.today_done + "개 들음" }) : (m.today_visit ? el("span", { class: "bd", text: "오늘 접속" }) : null);
+      var status = opts.days
+        ? (m.today_points > 0 ? el("span", { class: "bd ok", text: "오늘 +" + m.today_points + "점" }) : null)
+        : (m.today_done > 0 ? el("span", { class: "bd ok", text: "오늘 " + m.today_done + "번 들음" }) : (m.today_visit ? el("span", { class: "bd", text: "오늘 접속" }) : null));
       return el("div", { class: "card mrow" + (m.is_me ? " me" : "") }, [
-        el("span", { class: "rank" + (m.rank <= 3 && m.done > 0 ? " podium" : ""), text: String(m.rank) }),
+        el("span", { class: "rank" + (m.rank <= 3 && m.points > 0 ? " podium" : ""), text: String(m.rank) }),
         el("div", null, [
-          el("div", { class: "mtop" }, [el("span", { class: "mname", text: m.name }), m.is_me ? el("span", { class: "bd done", text: "나" }) : null, m.level ? el("span", { class: "bd", text: m.level + "단계" }) : null, status]),
+          el("div", { class: "mtop" }, [
+            el("span", { class: "mname", text: m.name }), m.is_me ? el("span", { class: "bd done", text: "나" }) : null,
+            xpChip(m.total_points), m.goal_met ? el("span", { class: "bd goal" }, [icon("target-arrow"), "목표 달성"]) : null, status
+          ]),
           visual,
           el("div", { class: "mstat" }, [
-            el("span", null, [opts.unit + " 끝까지 들음 ", el("b", { text: m.done + "개" })]),
+            el("span", null, ["끝까지 ", el("b", { text: m.done + "번" })]),
+            m.videos ? el("span", null, ["뽀로로 ", el("b", { text: m.videos + "번" })]) : null,
             opts.days ? el("span", null, ["접속 ", el("b", { text: m.days + "일" })]) : null,
+            m.level ? el("span", { text: m.level + "단계" }) : null,
+            m.delta > 0 ? el("span", { class: "up" }, [icon("trending-up"), "지난주 이맘때보다 +" + m.delta + "점"]) : null,
             m.streak > 1 ? el("span", { class: "row", style: "gap:2px" }, [icon("flame"), "연속 " + m.streak + "일"]) : null
           ])
-        ])
+        ]),
+        el("div", { class: "mpts" }, [String(m.points), el("small", { text: "점" })])
       ]);
     });
   }
   function clubCheer(ms, unit, past) {
     var me = ms.filter(function (m) { return m.is_me; })[0];
     if (!me) return "";
-    if (past) return unit + " 최종 " + me.rank + "위였어요. 끝까지 들은 브리핑 " + me.done + "개, 접속 " + me.days + "일.";
-    if (me.done === 0) return "오늘 브리핑 하나로 " + (unit === "이번 주" ? "이번 주를" : "이번 달을") + " 시작해 보세요.";
+    if (past) return unit + " 최종 " + me.rank + "위였어요. " + me.points + "점, 접속 " + me.days + "일.";
+    if (me.points === 0) return "접속하고 뉴스 하나만 끝까지 들어도 4점이에요.";
     if (me.rank === 1) return unit + " 1위예요. 지금처럼 이어 가세요.";
     var above = ms.filter(function (m) { return m.rank < me.rank; }).pop();
-    var gap = above ? above.done - me.done : 0;
-    return unit + " " + me.rank + "위예요. " + (gap > 0 ? "브리핑 " + (gap + 1) + "개를 더 끝까지 들으면 " + above.rank + "위로 올라가요." : "하루 더 접속하면 순위가 올라갈 수 있어요.");
-  }
-  function clubPage(range, switcher, nav, tiles, cheer, rows, note) {
-    render([
-      el("div", null, [el("p", { class: "eyebrow", text: range }), el("h1", { text: "함께 듣기" })]),
-      switcher, nav, tiles,
-      cheer ? el("p", { class: "small", style: "margin:0", text: cheer }) : null,
-      el("div", { class: "board" }, rows),
-      el("p", { class: "small muted", text: note })
-    ]);
+    return unit + " " + me.rank + "위예요. " + (above.points - me.points + 1) + "점만 더 모으면 " + above.rank + "위로 올라가요.";
   }
   function clubSwitcher(week) {
     return el("div", { class: "speeds", role: "group", "aria-label": "기간" }, [
-      el("a", { class: "pill", href: "#/club", "aria-current": week ? null : "true", text: "달별" }),
-      el("a", { class: "pill", href: "#/club/week", "aria-current": week ? "true" : null, text: "이번 주" })
+      el("a", { class: "pill", href: "#/club", "aria-current": week ? "true" : null, text: "이번 주" }),
+      el("a", { class: "pill", href: "#/club/month", "aria-current": week ? null : "true", text: "달별" })
     ]);
   }
   function clubFail(e) {
-    render([el("h1", { text: "함께 듣기" }), errBox(setupMissing(e) ? "관리자 설정(업데이트 3)이 아직 끝나지 않았어요. 조금만 기다려 주세요." : "불러오지 못했어요. 잠시 뒤 다시 열어 주세요.")]);
+    render([el("h1", { text: "함께 듣기" }), errBox(setupMissing(e) ? "관리자 설정(업데이트)이 아직 끝나지 않았어요. 조금만 기다려 주세요." : "불러오지 못했어요. 잠시 뒤 다시 열어 주세요.")]);
   }
+  function needUpdate4() { render([el("h1", { text: "함께 듣기" }), errBox("점수 기능을 준비하고 있어요. 관리자가 업데이트 4를 실행하면 바로 열려요.")]); }
   function viewClub(period, ym) {
     setTab("club");
     render([el("p", { class: "muted", text: "불러오는 중…" })]);
     if (period === "week") {
       api.board(state.code).then(function (b) {
         if (!b) { render([errBox("다시 로그인해 주세요.")]); return; }
+        if (b.goal === undefined) { needUpdate4(); return; }
         var days = [], wk = new Date(b.week_start + "T12:00:00Z");
         for (var i = 0; i < 7; i++) days.push(new Date(wk.getTime() + i * 864e5).toISOString().slice(0, 10));
-        var ms = (b.members || []).map(function (m) { return { name: m.name, level: m.level, is_me: m.is_me, done: m.week_done, days: m.week_days, week_visits: m.week_visits, today_done: m.today_done, today_visit: m.today_visit, streak: m.streak }; });
-        ms.sort(function (a, c) { return c.done - a.done || c.days - a.days || c.streak - a.streak || a.name.localeCompare(c.name); });
-        var rows = clubRows(ms, { days: days, today: b.today, unit: "이번 주" });
-        clubPage("이번 주 · " + fmtDate(days[0]) + " ~ " + fmtDate(days[6]), clubSwitcher(true), null,
-          el("div", { class: "tiles" }, [
-            el("div", { class: "stat" }, [el("div", { class: "n", text: ms.filter(function (m) { return m.today_done > 0; }).length + "/" + ms.length + "명" }), el("div", { class: "l", text: "오늘 들은 회원" })]),
-            el("div", { class: "stat" }, [el("div", { class: "n", text: ms.reduce(function (a, m) { return a + m.done; }, 0) + "개" }), el("div", { class: "l", text: "이번 주 함께 들은 브리핑" })])
-          ]),
-          clubCheer(ms, "이번 주", false), rows,
-          "월요일마다 새로 시작해요. 순위는 끝까지 들은 브리핑 수, 접속한 날 순서예요. 다른 회원에게는 이름, 단계, 접속일, 들은 개수만 보여요.");
+        var ms = (b.members || []).map(function (m) {
+          return { name: m.name, level: m.level, is_me: m.is_me, points: m.week_points, total_points: m.total_points, days: m.week_days, done: m.week_done, videos: m.week_videos,
+            today_points: m.today_points, today_done: m.today_done, today_visit: m.today_visit, streak: m.streak, week_visits: m.week_visits,
+            delta: m.week_points - m.prev_points, goal_met: m.week_points >= b.goal };
+        });
+        ms.sort(function (a, c) { return c.points - a.points || c.days - a.days || c.streak - a.streak || a.name.localeCompare(c.name); });
+        var rows = clubRows(ms, { days: days, today: b.today });
+        var me = ms.filter(function (m) { return m.is_me; })[0] || { points: 0, delta: 0 };
+        var clubLeft = Math.max(0, b.club_goal - b.club_points), myLeft = Math.max(0, b.goal - me.points);
+        var clubCard = el("div", { class: "card pad" }, [
+          el("div", { class: "ghead" }, [el("b", null, [icon("users-group"), "이번 주 동아리 목표"]), el("span", { class: "small", text: b.club_points + " / " + b.club_goal + "점" })]),
+          gbar(100 * b.club_points / Math.max(1, b.club_goal), "동아리 목표 " + b.club_goal + "점 중 " + b.club_points + "점", "club"),
+          el("p", { class: "small muted", style: "margin:0", text: clubLeft === 0 ? "다 같이 이번 주 목표를 채웠어요!" : "다 같이 " + clubLeft + "점 더 모으면 목표 달성이에요. 1점도 보탬이 돼요." })
+        ]);
+        var myCard = el("div", { class: "card pad" }, [
+          el("div", { class: "ghead" }, [el("b", null, [icon("target-arrow"), "이번 주 내 점수"]), el("span", { class: "small", text: me.points + " / " + b.goal + "점" })]),
+          gbar(100 * me.points / Math.max(1, b.goal), "주간 목표 " + b.goal + "점 중 " + me.points + "점"),
+          el("p", { class: "small", style: "margin:0" }, [
+            myLeft === 0 ? "이번 주 목표 달성! " : "목표까지 " + myLeft + "점. ",
+            clubCheer(ms, "이번 주", false),
+            me.delta > 0 ? el("span", { class: "up", style: "margin-left:4px" }, [icon("trending-up"), "지난주 이맘때보다 +" + me.delta + "점"]) : null
+          ])
+        ]);
+        render([
+          el("div", null, [el("p", { class: "eyebrow", text: "이번 주 · " + fmtDate(days[0]) + " ~ " + fmtDate(days[6]) }), el("h1", { text: "함께 듣기" })]),
+          clubSwitcher(true), clubCard, myCard,
+          el("div", { class: "board" }, rows),
+          rulesBox(),
+          el("p", { class: "small muted", text: "월요일마다 모두 0점에서 새로 시작해요. 다른 회원에게는 이름, 단계, 레벨, 접속일, 점수, 들은 횟수만 보여요." })
+        ]);
       }).catch(clubFail);
       return;
     }
     api.boardMonth(state.code, ym || null).then(function (b) {
       if (!b) { render([errBox("다시 로그인해 주세요.")]); return; }
+      if ((b.members || []).length && b.members[0].points === undefined) { needUpdate4(); return; }
       var cur = b.month_start.slice(0, 7), thisMonth = b.today.slice(0, 7), mon = Number(cur.slice(5, 7)) + "월";
       var unit = b.is_current ? "이번 달" : mon, past = !b.is_current;
       var ms = (b.members || []).slice();
-      ms.sort(function (a, c) { return c.done - a.done || c.days - a.days || c.streak - a.streak || a.name.localeCompare(c.name); });
-      var rows = clubRows(ms, { elapsed: b.elapsed, unit: unit });
+      ms.sort(function (a, c) { return c.points - a.points || c.days - a.days || c.streak - a.streak || a.name.localeCompare(c.name); });
+      var rows = clubRows(ms, { elapsed: b.elapsed });
       var hasPrev = b.first_month && cur > b.first_month, hasNext = cur < thisMonth;
       var nav = el("div", { class: "mnav" }, [
         el("a", { class: "btn small" + (hasPrev ? "" : " off"), href: hasPrev ? "#/club/m/" + ymShift(cur, -1) : null, "aria-label": "지난 달", "aria-disabled": hasPrev ? null : "true", text: "‹ " + Number(ymShift(cur, -1).slice(5, 7)) + "월" }),
         el("span", { class: "mnav-t", text: cur.slice(0, 4) + "년 " + mon }),
-        el("a", { class: "btn small" + (hasNext ? "" : " off"), href: hasNext ? (ymShift(cur, 1) === thisMonth ? "#/club" : "#/club/m/" + ymShift(cur, 1)) : null, "aria-label": "다음 달", "aria-disabled": hasNext ? null : "true", text: Number(ymShift(cur, 1).slice(5, 7)) + "월 ›" })
+        el("a", { class: "btn small" + (hasNext ? "" : " off"), href: hasNext ? (ymShift(cur, 1) === thisMonth ? "#/club/month" : "#/club/m/" + ymShift(cur, 1)) : null, "aria-label": "다음 달", "aria-disabled": hasNext ? null : "true", text: Number(ymShift(cur, 1).slice(5, 7)) + "월 ›" })
       ]);
       var avg = ms.length ? Math.round(100 * ms.reduce(function (a, m) { return a + m.days; }, 0) / (ms.length * Math.max(1, b.elapsed))) : 0;
       var last = new Date(Date.UTC(Number(cur.slice(0, 4)), Number(cur.slice(5, 7)), 0, 12)).toISOString().slice(0, 10);
-      clubPage((past ? "지난 기록 · " : "이번 달 · ") + fmtDate(b.month_start) + " ~ " + fmtDate(last), clubSwitcher(false), nav,
+      var cheer = clubCheer(ms, unit, past);
+      render([
+        el("div", null, [el("p", { class: "eyebrow", text: (past ? "지난 기록 · " : "이번 달 · ") + fmtDate(b.month_start) + " ~ " + fmtDate(last) }), el("h1", { text: "함께 듣기" })]),
+        clubSwitcher(false), nav,
         el("div", { class: "tiles" }, [
           el("div", { class: "stat" }, [el("div", { class: "n", text: avg + "%" }), el("div", { class: "l", text: unit + " 평균 접속률" })]),
-          el("div", { class: "stat" }, [el("div", { class: "n", text: ms.reduce(function (a, m) { return a + m.done; }, 0) + "개" }), el("div", { class: "l", text: unit + " 함께 들은 브리핑" })])
+          el("div", { class: "stat" }, [el("div", { class: "n", text: ms.reduce(function (a, m) { return a + m.points; }, 0) + "점" }), el("div", { class: "l", text: unit + " 다 같이 모은 점수" })])
         ]),
-        clubCheer(ms, unit, past), rows,
-        (past ? mon + " " + b.days_in_month + "일 기준 최종 기록이에요. " : "매달 1일에 새로 시작해요. 접속률은 오늘까지 " + b.elapsed + "일 기준이에요. ") + "순위는 끝까지 들은 브리핑 수, 접속한 날 순서예요. 다른 회원에게는 이름, 단계, 접속일, 들은 개수만 보여요.");
+        cheer ? el("p", { class: "small", style: "margin:0", text: cheer }) : null,
+        el("div", { class: "board" }, rows),
+        rulesBox(),
+        el("p", { class: "small muted", text: (past ? mon + " " + b.days_in_month + "일 기준 최종 기록이에요. " : "매달 1일에 새로 시작해요. 접속률은 오늘까지 " + b.elapsed + "일 기준이에요. ") + "순위는 점수, 접속한 날 순서예요." })
+      ]);
     }).catch(clubFail);
   }
 
@@ -776,8 +891,29 @@
       }
       function stat(n, l) { return el("div", { class: "stat" }, [el("div", { class: "n", text: String(n) }), el("div", { class: "l", text: l })]); }
       var li = levelInfo(state.level);
+      // 레벨(누적 점수)과 이번 주 점수: 업데이트 4 전에는 숨깁니다.
+      var pointCards = [];
+      if (s.total_points !== undefined) {
+        var xp = xpOf(s.total_points), goal = s.goal || 20, wkLeft = Math.max(0, goal - s.week_points), delta = s.week_points - s.prev_points;
+        pointCards = [
+          el("div", { class: "card pad" }, [
+            el("div", { class: "ghead" }, [el("b", null, [icon(xp.cur.icon), "내 레벨 · " + xp.cur.name]), el("span", { class: "small", text: "누적 " + s.total_points + "점" })]),
+            xp.next ? gbar(100 * (s.total_points - xp.cur.min) / (xp.next.min - xp.cur.min), xp.next.name + "까지 " + (xp.next.min - s.total_points) + "점 남음") : gbar(100, "최고 레벨"),
+            el("p", { class: "small muted", style: "margin:0", text: xp.next ? xp.next.name + "까지 " + (xp.next.min - s.total_points) + "점 남았어요. 레벨은 내려가지 않아요." : "최고 레벨이에요. 대단해요!" })
+          ]),
+          el("div", { class: "card pad" }, [
+            el("div", { class: "ghead" }, [el("b", null, [icon("target-arrow"), "이번 주 점수"]), el("span", { class: "small", text: s.week_points + " / " + goal + "점" })]),
+            gbar(100 * s.week_points / goal, "주간 목표 " + goal + "점 중 " + s.week_points + "점"),
+            el("p", { class: "small", style: "margin:0" }, [
+              (wkLeft === 0 ? "이번 주 목표 달성! " : "목표까지 " + wkLeft + "점. ") + "오늘 " + s.today_points + "점 모았어요.",
+              delta > 0 ? el("span", { class: "up", style: "margin-left:4px" }, [icon("trending-up"), "지난주 이맘때보다 +" + delta + "점"]) : null
+            ])
+          ])
+        ];
+      }
       render([
-        el("h1", { text: s.name + "님의 기록" }),
+        el("h1", { text: s.name + "님의 기록" })
+      ].concat(pointCards).concat([
         el("div", { class: "card pad row", style: "justify-content:space-between;flex-wrap:wrap" }, [
           el("div", null, [el("div", { class: "small muted", text: "내 단계" }), el("div", { style: "font-weight:700;font-size:17px", text: li.n + "단계 · " + li.toeic })]),
           el("a", { class: "btn small", href: "#/level", text: "단계 바꾸기" })
@@ -790,7 +926,7 @@
           var off = (!DEMO && pushEnv().supported) ? pushOff().catch(function () {}) : Promise.resolve();
           off.then(function () { save(KEY, null); save(LKEY, null); state.code = null; state.me = null; state.level = null; state.stats = null; logged = {}; history.replaceState(null, "", location.pathname); viewLogin(); });
         } })
-      ]);
+      ]));
     });
   }
 
@@ -874,8 +1010,8 @@
     if (h === "/archive") return viewArchive();
     if ((m = h.match(/^\/v\/(\d{4}-\d{2}-\d{2})$/))) return viewVideo(m[1]);
     if (h === "/me") return viewMe();
-    if (h === "/club") return viewClub("month");
-    if (h === "/club/week") return viewClub("week");
+    if (h === "/club" || h === "/club/week") return viewClub("week");
+    if (h === "/club/month") return viewClub("month");
     if ((m = h.match(/^\/club\/m\/(\d{4}-\d{2})$/))) return viewClub("month", m[1]);
     if (h === "/admin") return viewAdmin();
     return viewToday();
