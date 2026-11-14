@@ -1,6 +1,57 @@
 {
- "updated": "2026-11-13T21:19:03Z",
+ "updated": "2026-11-14T21:19:00Z",
  "days": [
+  {
+   "date": "2026-11-15",
+   "items": [
+    {
+     "id": "2026-11-15-g1",
+     "section": "g",
+     "icon": "users-group",
+     "tag": "주요",
+     "ko": "트럼프·시진핑·푸틴 첫 3자 회담",
+     "h": {
+      "1": "Three Big Leaders Will Meet in China",
+      "2": "Leaders of the US, China and Russia to Meet Together",
+      "3": "Trump, Xi and Putin Plan First Three-Way Meeting",
+      "4": "White House Confirms First Trump-Xi-Putin Meeting",
+      "5": "Trump, Xi and Putin to Hold Unprecedented Summit in Shenzhen"
+     }
+    },
+    {
+     "id": "2026-11-15-g2",
+     "section": "g",
+     "icon": "coffee",
+     "tag": "화제",
+     "ko": "커피 찌꺼기로 바이오 연료를",
+     "h": {
+      "1": "Old Coffee Can Become Fuel",
+      "2": "Scientists Turn Used Coffee into Fuel",
+      "3": "A Simple Way to Turn Coffee Waste into Fuel",
+      "4": "Researchers Find Simple Method to Turn Coffee Waste into Fuel",
+      "5": "From Cup to Tank: Coffee Grounds Offer a Simple Route to Biodiesel"
+     }
+    },
+    {
+     "id": "2026-11-15-k1",
+     "section": "k",
+     "icon": "snowflake",
+     "tag": null,
+     "ko": "수능 아침, 6년 만에 영하 예보",
+     "h": {
+      "1": "A Cold Morning for the Big Test",
+      "2": "Suneung Morning May Be Below Zero",
+      "3": "Seoul May See First Subzero Suneung Morning in Six Years",
+      "4": "Seoul Braces for First Subzero Suneung Morning Since 2020",
+      "5": "Exam Day Chill: Seoul Faces First Subzero Suneung Morning in Six Years"
+     }
+    }
+   ],
+   "video": {
+    "id": "_oCF-A9P5GE",
+    "title": "Poby the Photographer"
+   }
+  },
   {
    "date": "2026-11-14",
    "items": [
