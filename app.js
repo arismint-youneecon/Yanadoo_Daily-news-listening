@@ -213,7 +213,7 @@
 
   var logged = {};
   function logOnce(bid, kind, detail) {
-    // 단어 찾기, 끝까지 듣기(반복 포함), 뽀로로 끝까지 보기는 할 때마다 기록합니다. 나머지는 한 번만.
+    // 단어 찾기, 끝까지 듣기(반복 포함), 뽀로로 끝까지 보기, 명장면 5단계 끝내기는 할 때마다 기록합니다. 나머지는 한 번만.
     var k = bid + "|" + kind + "|" + (detail || "");
     if (kind !== "lookup" && kind !== "complete" && kind !== "video" && logged[k]) return; logged[k] = 1;
     api.log(state.code, bid, kind, detail).catch(function () {});
@@ -344,10 +344,275 @@
     }).catch(function () { render([errBox("영상을 불러오지 못했어요.")]); });
   }
 
+  /* ---------- 명장면 영어 ----------
+     공식 YouTube 영상에서 10초 안팎의 구간(시작·끝 초)만 정해 두고, 단계마다 자막과 속도를 바꿔 반복 재생합니다.
+     영상 파일은 복사하지 않습니다. 장면 목록은 data/clips.json. 5단계를 모두 끝내면 점수 +1(기록 종류 video). */
+  var CLIP_STEPS = [
+    { name: "자막 없이 듣기", tip: "뜻을 몰라도 괜찮아요. 소리에만 집중하세요.", en: false, ko: false, rate: 1, reps: 2 },
+    { name: "영어 자막 보며 듣기", tip: "들리는 소리와 글자를 맞춰 보세요.", en: true, ko: false, rate: 1, reps: 2 },
+    { name: "영어 자막 · 천천히", tip: "0.75배 속도예요. 단어 하나하나를 들어 보세요.", en: true, ko: false, rate: 0.75, reps: 2 },
+    { name: "한 줄씩 따라 말하기", tip: "한국어 해석도 함께 나와요. 한 줄이 끝나면 멈추니 소리 내어 따라 하세요.", en: true, ko: true, rate: 1, reps: 1, shadow: true },
+    { name: "자막 없이 다시 듣기", tip: "이제 들리나요? 입으로 같이 말해 보세요.", en: false, ko: false, rate: 1, reps: 1 }
+  ];
+  var clipsCache = null, clipRun = null;
+  function getClips() { return clipsCache ? Promise.resolve(clipsCache) : getJSON("data/clips.json").then(function (j) { clipsCache = j.clips || []; return clipsCache; }); }
+  function stopClip() { if (clipRun) { try { clipRun.stop(); } catch (e) {} clipRun = null; } }
+  function clipSecs(c) { return Math.round(c.end - c.start); }
+  function clipItem(c) {
+    return el("a", { class: "card item v", href: "#/clip/" + c.id }, [
+      el("span", { class: "tile" }, [icon("movie")]),
+      el("span", { class: "txt" }, [
+        el("span", { class: "hl", text: c.title }),
+        el("span", { class: "sub" }, [el("span", { class: "bd v", text: "명장면 영어" }), c.show + " · " + clipSecs(c) + "초 · 5단계 반복"])
+      ]),
+      el("i", { class: "ti ti-chevron-right chev", "aria-hidden": "true" })
+    ]);
+  }
+
+  function viewClip(id) {
+    setTab("today");
+    getClips().then(function (list) {
+      var c = list.filter(function (x) { return x.id === id; })[0] || (id ? null : list[0]);
+      if (!c) { render([errBox("장면을 찾을 수 없어요.")]); return; }
+      clipPage(c);
+    }).catch(function () { render([errBox("장면을 불러오지 못했어요. 잠시 뒤 다시 열어 주세요.")]); });
+  }
+
+  function clipPage(c) {
+    var box = el("div", { class: "vbox" });
+    var subEn = el("p", { class: "csub-en" }), subKo = el("p", { class: "csub-ko" }), subHint = el("p", { class: "csub-hint" });
+    var sub = el("div", { class: "csub", "aria-live": "off" }, [subHint, subEn, subKo]);
+    var stat = el("p", { class: "cstat", role: "status" });
+    var mainBtn = el("button", { class: "btn primary", type: "button" });
+    var againBtn = el("button", { class: "btn", type: "button" }, [icon("repeat"), "이 단계 다시"]);
+    var doneBox = el("div", { class: "note ok", hidden: true });
+    var stepBtns = CLIP_STEPS.map(function (s, i) {
+      return el("button", { type: "button", class: "step", onclick: function () { eng.begin(i, i === 0); } }, [
+        el("span", { class: "no", text: String(i + 1) }),
+        el("span", null, [el("span", { class: "nm", text: s.name }), el("span", { class: "tp", text: s.tip })]),
+        el("span", { class: "rp", text: s.reps + "번" })
+      ]);
+    });
+    var eng = clipEngine(c, {
+      box: box,
+      sub: function (t, s) {
+        // 단계에 맞는 자막: 지금 시간에 시작된 마지막 줄을 다음 줄이 시작될 때까지 보여 줍니다.
+        var line = null;
+        if (t >= c.lines[0].t - 0.25 && t <= c.end + 1.5) c.lines.forEach(function (l) { if (t >= l.t - 0.25) line = l; });
+        var en = s && s.en && line ? line.en : "", ko = s && s.ko && line ? line.ko : "";
+        var hint = !s ? (eng && eng.state.finished ? "잘했어요! 아래 표현도 익혀 보세요" : "") : (!s.en ? "자막 없이 소리에 집중하세요" : "");
+        if (subEn.textContent !== en) subEn.textContent = en;
+        if (subKo.textContent !== ko) subKo.textContent = ko;
+        if (subHint.textContent !== hint) subHint.textContent = hint;
+      },
+      status: function (txt, ic) { stat.innerHTML = ""; if (txt) { stat.appendChild(icon(ic || "player-play")); stat.appendChild(document.createTextNode(txt)); } },
+      update: function (st) {
+        stepBtns.forEach(function (b, i) {
+          b.className = "step" + (i === st.step && st.started && !st.finished ? " cur" : "") + (st.done[i] ? " done" : "");
+          b.firstChild.textContent = st.done[i] && !(i === st.step && st.started && !st.finished) ? "✓" : String(i + 1);
+          if (i === st.step && st.started && !st.finished) b.setAttribute("aria-current", "step"); else b.removeAttribute("aria-current");
+        });
+        mainBtn.innerHTML = "";
+        if (!st.started || st.finished) { mainBtn.appendChild(icon("player-play")); mainBtn.appendChild(document.createTextNode(st.finished ? "처음부터 다시" : "1단계부터 시작")); }
+        else if (st.running) { mainBtn.appendChild(icon("player-pause")); mainBtn.appendChild(document.createTextNode("잠깐 멈춤")); }
+        else { mainBtn.appendChild(icon("player-play")); mainBtn.appendChild(document.createTextNode("이어서 하기")); }
+        againBtn.hidden = !st.started || st.finished;
+      },
+      finish: function (counted) {
+        doneBox.hidden = false; doneBox.innerHTML = "";
+        doneBox.appendChild(el("b", null, [icon("confetti"), counted ? " 5단계 끝! 점수 +1점" : " 5단계 끝!"]));
+        doneBox.appendChild(el("span", { text: counted ? " 아래 표현까지 익혀 보세요. 처음부터 다시 하면 한 번 더 셀 수 있어요." : " 1단계부터 이어서 모두 들으면 점수 +1점이에요." }));
+      }
+    });
+    clipRun = eng;
+    mainBtn.addEventListener("click", function () { eng.main(); });
+    againBtn.addEventListener("click", function () { eng.begin(eng.state.step, false); });
+
+    var thumb = el("button", { type: "button", class: "vthumb", "aria-label": "1단계부터 시작" }, [
+      el("img", { src: "https://i.ytimg.com/vi/" + encodeURIComponent(c.video) + "/hqdefault.jpg", alt: "", loading: "lazy" }),
+      el("span", { class: "vplay", "aria-hidden": "true" }, [icon("player-play")])
+    ]);
+    thumb.addEventListener("click", function () { eng.main(); });
+    box.appendChild(thumb);
+    loadYT().catch(function () {}); // 누르기 전에 미리 불러 둡니다
+    eng.ui.update(eng.state);
+    eng.ui.sub(-1, null); subHint.textContent = "▶를 누르면 1단계가 시작돼요";
+
+    var lines = el("div", { class: "cl" }, c.lines.map(function (l) {
+      return el("div", { class: "cl-row" }, [l.who ? el("span", { class: "bd", text: l.who }) : null, el("p", { class: "ex-en", text: l.en }), el("p", { class: "ex-ko", text: l.ko })]);
+    }));
+    var phr = el("div", { class: "phr" }, (c.phrases || []).map(function (p) {
+      return el("div", null, [el("p", { class: "phr-en", text: p.en }), el("p", { class: "phr-ko", text: p.ko }),
+        p.ex ? el("p", { class: "phx" }, [el("i", { text: p.ex }), " " + (p.ex_ko || "")]) : null]);
+    }));
+    var snd = (c.sound || []).length ? el("ul", { class: "snd" }, c.sound.map(function (s) { return el("li", null, [el("b", { text: s.en }), " " + s.ko]); })) : null;
+
+    render([
+      el("a", { class: "small", href: "#/", text: "← 오늘" }),
+      el("div", { style: "display:flex;flex-direction:column;gap:4px" }, [
+        el("p", { class: "eyebrow" }, [el("span", { class: "bd v", text: "명장면 영어" }), c.show + " · " + clipSecs(c) + "초"]),
+        el("h1", { class: "hl", style: "font-size:21px", text: c.title }),
+        el("p", { class: "small muted", style: "margin:0", text: c.ko_title })
+      ]),
+      el("div", { class: "card pad", style: "display:flex;flex-direction:column;gap:4px" }, [el("h2", { text: "어떤 장면이냐면" }), el("p", { style: "margin:0;font-size:14px;line-height:1.7", text: c.situation })]),
+      el("section", { class: "card pad", style: "display:flex;flex-direction:column;gap:10px", "aria-label": "장면 재생" }, [
+        el("div", { class: "clipbox" }, [box, sub]),
+        stat,
+        el("div", { class: "row", style: "gap:8px;flex-wrap:wrap" }, [mainBtn, againBtn]),
+        doneBox,
+        el("ol", { class: "steps" }, stepBtns.map(function (b) { return el("li", null, [b]); }))
+      ]),
+      el("section", { class: "card pad", style: "display:flex;flex-direction:column;gap:12px", "aria-label": "표현 익히기" }, [
+        el("h2", { text: "표현 익히기" }), lines,
+        c.phrases && c.phrases.length ? el("h2", { text: "꼭 챙길 표현" }) : null, phr,
+        snd ? el("h2", { text: "이렇게 들려요" }) : null, snd
+      ]),
+      el("p", { class: "small muted", style: "margin:0" }, [
+        c.episode + ". 공식 YouTube 영상에서 이 " + clipSecs(c) + "초만 반복해서 보여 줘요. 구간은 " + (c.pick || "YouTube에서 많이 본 부분") + "에서 골랐어요. ",
+        el("a", { href: "https://www.youtube.com/watch?v=" + encodeURIComponent(c.video) + "&t=" + Math.floor(c.start) + "s", target: "_blank", rel: "noopener", text: "YouTube에서 앞뒤 장면 보기" })
+      ])
+    ]);
+  }
+
+  // 재생 순서: 단계마다 정해진 횟수만큼 구간을 재생하고, 따라 말하기 단계는 줄이 끝날 때 잠깐 멈춥니다.
+  function clipEngine(c, ui) {
+    var pl = null, poll = null, timer = null, pending = null, quietUntil = 0, dead = false;
+    var st = { step: 0, rep: 0, started: false, running: false, finished: false, armed: false, pauseIdx: 0, done: {}, fresh: false };
+    // 끝나기 직전 줄은 구간이 끝난 뒤에 멈춥니다(따로 멈추지 않음).
+    var stops = [], from = c.lines[0].t;
+    c.lines.forEach(function (l) { if (l.pause) { stops.push({ at: l.e, wait: Math.round(((l.e - from) * 1.3 + 1) * 1000) }); from = (c.lines[c.lines.indexOf(l) + 1] || {}).t || l.e; } });
+    var endWait = 0;
+    if (stops.length && stops[stops.length - 1].at > c.end - 1.5) endWait = stops.pop().wait;
+    function S() { return CLIP_STEPS[st.step]; }
+    function t() { try { return pl.getCurrentTime() || 0; } catch (e) { return 0; } }
+    function hold() { quietUntil = Date.now() + 1500; try { pl.pauseVideo(); } catch (e) {} }
+    function wait(ms, fn) { clearTimeout(timer); pending = fn; timer = setTimeout(function () { var f = pending; pending = null; timer = null; if (f) f(); }, ms); }
+    function cancelWait() { clearTimeout(timer); timer = null; var f = pending; pending = null; return f; }
+    function label() { var s = S(); return (st.step + 1) + "단계 · " + s.name + (s.reps > 1 ? " (" + (st.rep + 1) + "/" + s.reps + ")" : ""); }
+    function tick() {
+      if (!pl) return;
+      var now = t(); ui.sub(now, st.started && !st.finished ? S() : null);
+      if (!st.running || pending) return;
+      if (!st.armed) { if (now >= c.start - 0.3 && now < c.end - 0.5) st.armed = true; else return; }
+      if (now < c.start - 1) { st.armed = false; try { pl.seekTo(c.start, true); } catch (e) {} return; }
+      var s = S();
+      if (s.shadow && st.pauseIdx < stops.length && now >= stops[st.pauseIdx].at) {
+        var w = stops[st.pauseIdx++].wait; hold(); countdown(w, function () { quietUntil = Date.now() + 800; try { pl.playVideo(); } catch (e) {} ui.status(label(), "player-play"); });
+        return;
+      }
+      if (now >= c.end) endRep();
+    }
+    function countdown(ms, fn) {
+      var left = Math.ceil(ms / 1000);
+      ui.status("따라 말해 보세요 · " + left, "microphone");
+      var iv = setInterval(function () { left--; if (left > 0 && pending) ui.status("따라 말해 보세요 · " + left, "microphone"); else clearInterval(iv); }, 1000);
+      wait(ms, function () { clearInterval(iv); fn(); });
+    }
+    function startRep() {
+      var s = S();
+      st.armed = false; st.pauseIdx = 0; st.running = true;
+      try { if (pl.getPlaybackRate() !== s.rate) pl.setPlaybackRate(s.rate); } catch (e) {}
+      quietUntil = Date.now() + 800;
+      try { pl.seekTo(c.start, true); pl.playVideo(); } catch (e) {}
+      ui.status(label(), "player-play"); ui.update(st);
+    }
+    function endRep() {
+      var s = S(); hold(); st.rep++;
+      var extra = s.shadow ? endWait : 0;
+      function after(fn, ms, msg) { if (extra) countdown(extra, function () { ui.status(msg, "arrow-right"); wait(ms, fn); }); else { ui.status(msg, "arrow-right"); wait(ms, fn); } }
+      if (st.rep < s.reps) { after(startRep, 900, "한 번 더 들어요"); return; }
+      st.done[st.step] = true; ui.update(st);
+      if (st.step < CLIP_STEPS.length - 1) {
+        var nx = st.step + 1;
+        after(function () { st.step = nx; st.rep = 0; startRep(); }, 1600, "다음: " + (nx + 1) + "단계 · " + CLIP_STEPS[nx].name);
+        return;
+      }
+      after(finish, 300, "");
+    }
+    function finish() {
+      st.running = false; st.finished = true;
+      var all = st.fresh && CLIP_STEPS.every(function (x, i) { return st.done[i]; });
+      if (all) logOnce("clip:" + c.id, "video", "clip");
+      ui.status("다 했어요!", "check"); ui.sub(-1, null); ui.update(st); ui.finish(all);
+    }
+    function begin(i, fresh) {
+      if (player.el && !player.el.paused) { try { player.el.pause(); } catch (e) {} }
+      cancelWait();
+      if (fresh || st.finished) { st.done = {}; st.fresh = i === 0; }
+      st.step = i; st.rep = 0; st.started = true; st.finished = false;
+      if (!pl) { create(); ui.update(st); return; }
+      startRep();
+    }
+    var creating = false;
+    function create() {
+      if (creating) return; creating = true;
+      ui.status("영상을 여는 중…", "loader-2");
+      loadYT().then(function () {
+        if (dead) return;   // 그사이 다른 화면으로 갔으면 만들지 않습니다
+        var holder = el("div"); ui.box.innerHTML = ""; ui.box.appendChild(holder);
+        pl = new window.YT.Player(holder, {
+          host: "https://www.youtube-nocookie.com", videoId: c.video, width: "100%", height: "100%",
+          playerVars: { autoplay: 1, playsinline: 1, rel: 0, fs: 0, disablekb: 1, iv_load_policy: 3, cc_load_policy: 0, start: Math.floor(c.start), hl: "ko" },
+          events: {
+            onReady: function (e) {
+              try { e.target.getIframe().setAttribute("title", c.title); } catch (er) {}
+              if (!poll) poll = setInterval(tick, 100);
+              startRep();
+              // 아이폰처럼 자동 재생을 막는 기기: 영상 가운데 ▶를 한 번 누르면 이어서 진행돼요.
+              setTimeout(function () { if (pl && st.running && pl.getPlayerState && pl.getPlayerState() !== 1 && !pending) ui.status("영상 가운데 ▶를 한 번 눌러 주세요", "hand-finger"); }, 2500);
+            },
+            onStateChange: function (e) {
+              var PS = window.YT.PlayerState;
+              if (e.data === PS.PLAYING) {
+                if (pending) {
+                  if (Date.now() < quietUntil) { hold(); return; }          // 멈춘 직전에 늦게 온 재생 알림
+                  var f = cancelWait(); if (f) f(); return;                  // 기다리는 중에 ▶를 누르면 바로 넘어갑니다
+                }
+                if (st.started && !st.finished) {
+                  if (!st.running) { st.running = true; ui.update(st); }
+                  ui.status(label(), "player-play");
+                  var now = t(); if (now < c.start - 1 || now > c.end + 0.5) startRep();
+                }
+                else if (st.finished) { hold(); }
+              } else if (e.data === PS.PAUSED) {
+                if (Date.now() < quietUntil || pending) return;           // 앱이 멈춘 것(줄 사이, 반복 사이)
+                if (st.running) { st.running = false; ui.update(st); ui.status("멈췄어요. ‘이어서 하기’를 누르세요.", "player-pause"); }
+              } else if (e.data === PS.ENDED) {
+                if (st.running && !pending) endRep();
+              }
+            }
+          }
+        });
+      }).catch(function () {
+        creating = false;
+        // 연결이 안 되면 구간이 정해진 영상만 보여 줍니다(점수 기록 없음).
+        ui.box.innerHTML = "";
+        ui.box.appendChild(el("iframe", { src: "https://www.youtube-nocookie.com/embed/" + encodeURIComponent(c.video) + "?start=" + Math.floor(c.start) + "&end=" + Math.ceil(c.end) + "&playsinline=1&rel=0&autoplay=1", title: c.title, allow: "autoplay; encrypted-media", referrerpolicy: "strict-origin-when-cross-origin" }));
+        st.started = false; st.running = false; ui.update(st);
+        ui.status("단계 재생을 쓸 수 없어 영상만 보여 줘요. 아래 대본을 보며 반복해 보세요.", "alert-circle");
+      });
+    }
+    function main() {
+      if (!st.started || st.finished) return begin(0, true);
+      if (!pl) return;
+      if (st.running) {
+        var f = cancelWait(); st.resume = f; st.running = false; hold(); ui.update(st); ui.status("멈췄어요", "player-pause");
+      } else {
+        st.running = true; ui.update(st);
+        var r = st.resume; st.resume = null;
+        if (r) r(); else { var now = t(); if (now < c.start - 0.5 || now >= c.end) startRep(); else { quietUntil = Date.now() + 800; try { pl.playVideo(); } catch (e) {} ui.status(label(), "player-play"); } }
+      }
+    }
+    return {
+      state: st, ui: ui, begin: begin, main: main,
+      stop: function () { dead = true; cancelWait(); clearInterval(poll); poll = null; try { if (pl) pl.destroy(); } catch (e) {} pl = null; }
+    };
+  }
+
   function viewToday() {
     setTab("today");
-    Promise.all([getIndex(), refreshStats()]).then(function (r) {
-      var idx = r[0]; var latest = idx.days && idx.days[0];
+    Promise.all([getIndex(), refreshStats(), getClips().catch(function () { return []; })]).then(function (r) {
+      var idx = r[0]; var latest = idx.days && idx.days[0]; var clips = r[2] || [];
       if (!latest) { render([el("div", { class: "card empty", text: "아직 올라온 브리핑이 없어요. 내일 아침에 다시 와 주세요." })]); return; }
       return getDay(latest.date).then(function (day) {
         var s = state.stats || {};
@@ -364,6 +629,7 @@
           ]),
           el("div", { class: "list" }, day.items.map(function (it) { return briefingCard(it, latest.date); })),
           el("p", { class: "small muted", text: "대본 없이 한 번 듣고, 대본을 열어 모르는 단어를 확인한 뒤, 다시 한 번 들어 보세요." }),
+          clips.length ? el("section", { class: "list", "aria-label": "명장면 영어" }, [el("h2", { text: "명장면 영어 · 10초 장면 외우기" }), clipItem(clips[0])]) : null,
           day.video ? videoCard(day.video, "오늘의 뽀로로", latest.date) : null
         ]);
       });
@@ -372,10 +638,12 @@
 
   function viewArchive() {
     setTab("archive");
-    Promise.all([getIndex(), refreshStats()]).then(function (r) {
-      var days = (r[0].days || []);
+    Promise.all([getIndex(), refreshStats(), getClips().catch(function () { return []; })]).then(function (r) {
+      var days = (r[0].days || []), clips = r[2] || [];
       if (!days.length) { render([el("div", { class: "card empty", text: "지난 브리핑이 아직 없어요." })]); return; }
-      render([el("h1", { text: "지난 뉴스" })].concat(days.map(function (d) {
+      render([el("h1", { text: "지난 뉴스" }),
+        clips.length ? el("section", { class: "list" }, [el("h2", { text: "명장면 영어" })].concat(clips.map(clipItem))) : null
+      ].concat(days.map(function (d) {
         var vrow = d.video ? el("a", { class: "card item v", href: "#/v/" + d.date }, [
           el("span", { class: "tile" }, [icon("player-play")]),
           el("span", { class: "txt" }, [el("span", { class: "hl", text: d.video.title }), el("span", { class: "sub" }, [el("span", { class: "bd v", text: "뽀로로 영상" })])])
@@ -732,7 +1000,7 @@
         el("li", { text: "접속하면 1점" }),
         el("li", { text: "그날 처음 끝까지 들은 뉴스 +3점" }),
         el("li", { text: "두 번째·세 번째 뉴스 +2점씩" }),
-        el("li", { text: "그 뒤 다시 듣기, 뽀로로 끝까지 보기 1번에 +1점" }),
+        el("li", { text: "그 뒤 다시 듣기, 뽀로로 끝까지 보기, 명장면 5단계 끝내기 1번에 +1점" }),
         el("li", { text: "하루 최대 10점. 매주 월요일에 모두 0점에서 새로 시작해요." }),
         el("li", { text: "이번 주 20점이면 ‘목표 달성’ 배지를 받아요." }),
         el("li", { text: "레벨은 지금까지 모은 점수예요(내려가지 않아요). 새싹 → 브론즈 30 → 실버 100 → 골드 250 → 다이아 500" })
@@ -771,7 +1039,7 @@
           visual,
           el("div", { class: "mstat" }, [
             el("span", null, ["끝까지 ", el("b", { text: m.done + "번" })]),
-            m.videos ? el("span", null, ["뽀로로 ", el("b", { text: m.videos + "번" })]) : null,
+            m.videos ? el("span", null, ["영상 ", el("b", { text: m.videos + "번" })]) : null,
             opts.days ? el("span", null, ["접속 ", el("b", { text: m.days + "일" })]) : null,
             m.level ? el("span", { text: m.level + "단계" }) : null,
             m.delta > 0 ? el("span", { class: "up" }, [icon("trending-up"), "지난주 이맘때보다 +" + m.delta + "점"]) : null,
@@ -1004,8 +1272,9 @@
     if (!state.code) return;
     var h = location.hash.replace(/^#/, "") || "/";
     var m;
-    stopSample();
+    stopSample(); stopClip();
     if (h === "/level" || !state.level) return viewLevel();
+    if ((m = h.match(/^\/clip(?:\/([\w-]+))?$/))) return viewClip(m[1] || null);
     if ((m = h.match(/^\/b\/(\d{4}-\d{2}-\d{2})\/([\w-]+?)(?:\/([1-5]))?$/))) return viewBriefing(m[1], m[2], m[3] ? Number(m[3]) : null);
     if (h === "/archive") return viewArchive();
     if ((m = h.match(/^\/v\/(\d{4}-\d{2}-\d{2})$/))) return viewVideo(m[1]);

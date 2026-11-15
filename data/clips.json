@@ -1,0 +1,32 @@
+{
+  "clips": [
+    {
+      "id": "friends-s05e14-they-know",
+      "added": "2026-11-15",
+      "show": "Friends",
+      "episode": "Season 5 Episode 14 · The One Where Everybody Finds Out",
+      "video": "jFlzE6tg0S8",
+      "title": "They don't know that we know they know we know",
+      "ko_title": "우리가 안다는 걸 걔네가 안다는 걸 우리가 안다는 걸, 걔네는 몰라",
+      "start": 106.7,
+      "end": 116.8,
+      "pick": "YouTube '가장 많이 다시 본 구간' 1:46~1:58 (가장 높은 곳 1:53~1:56)",
+      "situation": "모니카와 챈들러가 몰래 사귀는 걸 친구들이 알아챘어요. 그런데 두 사람도 '친구들이 안다'는 걸 눈치채고, 일부러 피비를 유혹하는 척하며 골탕을 먹이려 해요. 그 속셈까지 알아챈 피비의 한마디예요.",
+      "lines": [
+        { "who": "피비", "t": 106.9, "e": 108.6, "en": "They thought that they could mess with us.", "ko": "우리를 갖고 놀 수 있을 줄 알았나 봐." },
+        { "who": "피비", "t": 108.64, "e": 110.4, "en": "They're trying to mess with us.", "ko": "우리를 골탕 먹이려는 거야.", "pause": true },
+        { "who": "피비", "t": 113.3, "e": 115.9, "en": "They don't know that we know they know we know.", "ko": "우리가 안다는 걸 걔네가 안다는 걸 우리가 안다는 걸, 걔네는 몰라.", "pause": true }
+      ],
+      "phrases": [
+        { "en": "mess with ~", "ko": "~를 골탕 먹이다, 놀리다, 건드리다", "ex": "Don't mess with me.", "ex_ko": "나 건드리지 마." },
+        { "en": "They thought (that) they could ~", "ko": "자기들이 ~할 수 있을 줄 알았나 봐 (착각했다는 느낌)", "ex": "He thought he could fool me.", "ex_ko": "날 속일 수 있을 줄 알았나 봐." },
+        { "en": "be trying to ~", "ko": "(지금) ~하려고 하다", "ex": "I'm trying to help you.", "ex_ko": "나 지금 너 도와주려는 거야." },
+        { "en": "know (that) + 문장", "ko": "~라는 걸 알다. that 뒤에 문장을 계속 붙이면 꼬리에 꼬리를 무는 말이 돼요.", "ex": "I know that you know.", "ex_ko": "네가 안다는 거 나도 알아." }
+      ],
+      "sound": [
+        { "en": "mess with us", "ko": "'메스 위더스'처럼 한 덩어리로 이어 말해요." },
+        { "en": "don't know that we know", "ko": "'돈노 댓 위노'처럼 know의 k는 소리 나지 않고, don't의 t는 거의 들리지 않아요." }
+      ]
+    }
+  ]
+}
