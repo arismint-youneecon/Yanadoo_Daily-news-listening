@@ -1,6 +1,57 @@
 {
- "updated": "2026-11-14T21:19:00Z",
+ "updated": "2026-11-15T21:16:30Z",
  "days": [
+  {
+   "date": "2026-11-16",
+   "items": [
+    {
+     "id": "2026-11-16-g1",
+     "section": "g",
+     "icon": "drone",
+     "tag": "주요",
+     "ko": "바레인, 이란 드론 공격 막았다",
+     "h": {
+      "1": "Bahrain Says It Stopped Attacks From Iran",
+      "2": "Bahrain Says It Stopped Iranian Drone Attacks",
+      "3": "Bahrain Says It Shot Down Iranian Drone Attacks",
+      "4": "Bahrain Intercepts Iranian Drones as Tehran Claims Strike on U.S. Base",
+      "5": "Bahrain Repels Iranian Drone Barrage as Tehran Claims Hit on U.S. Radar"
+     }
+    },
+    {
+     "id": "2026-11-16-g2",
+     "section": "g",
+     "icon": "rocket",
+     "tag": "화제",
+     "ko": "스타십, 발사탑 팔에 공중 포획",
+     "h": {
+      "1": "Giant Arms Catch a Spaceship",
+      "2": "SpaceX Catches Starship in the Air for the First Time",
+      "3": "SpaceX Catches a Returning Starship in Midair for the First Time",
+      "4": "SpaceX Catches Starship in Midair After Orbital Flight",
+      "5": "Starship Plucked From the Sky in a Spaceflight First"
+     }
+    },
+    {
+     "id": "2026-11-16-k1",
+     "section": "k",
+     "icon": "certificate",
+     "tag": null,
+     "ko": "세무사 시험 수석, AI 부정행위 자백",
+     "h": {
+      "1": "Top Test Taker Says He Cheated With AI",
+      "2": "Tax Exam's Top Scorer Admits Cheating With AI",
+      "3": "Tax Exam's Top Scorer Admits to AI-Assisted Cheating",
+      "4": "Top Scorer on Korea's Tax Accountant Exam Admits AI Cheating",
+      "5": "Tax Exam Topper's AI Cheating Confession Rattles Korea Ahead of Suneung"
+     }
+    }
+   ],
+   "video": {
+    "id": "y8DT4tI8B48",
+    "title": "It’s a Dinosaur!"
+   }
+  },
   {
    "date": "2026-11-15",
    "items": [
