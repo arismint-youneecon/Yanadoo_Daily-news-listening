@@ -501,9 +501,18 @@
     function wait(ms, fn) { clearTimeout(timer); pending = fn; timer = setTimeout(function () { var f = pending; pending = null; timer = null; if (f) f(); }, ms); }
     function cancelWait() { clearTimeout(timer); timer = null; var f = pending; pending = null; return f; }
     function label() { var s = S(); return (st.step + 1) + "단계 · " + s.name + (s.reps > 1 ? " (" + (st.rep + 1) + "/" + s.reps + ")" : ""); }
+    // YouTube가 알려 주는 재생 시간은 0.25초쯤마다만 바뀝니다. 재생 중에는 마지막 값에서 흐른 시간을 더해 어림해서
+    // 줄 끝과 구간 끝을 덜 넘기게 합니다(다음 사람 첫마디가 바로 붙어 있는 장면 대비).
+    var lastRaw = -1, lastWall = 0;
+    function est() {
+      var raw = t(), w = Date.now();
+      if (raw !== lastRaw) { lastRaw = raw; lastWall = w; return raw; }
+      var playing = false; try { playing = pl.getPlayerState() === 1; } catch (e) {}
+      return playing ? raw + Math.min(0.4, (w - lastWall) / 1000 * (S().rate || 1)) : raw;
+    }
     function tick() {
       if (!pl) return;
-      var now = t(); ui.sub(now, st.started && !st.finished ? S() : null);
+      var now = est(); ui.sub(now, st.started && !st.finished ? S() : null);
       if (!st.running || pending) return;
       if (!st.armed) { if (now >= c.start - 0.3 && now < c.end - 0.5) st.armed = true; else return; }
       if (now < c.start - 1) { st.armed = false; try { pl.seekTo(c.start, true); } catch (e) {} return; }
@@ -568,7 +577,7 @@
           events: {
             onReady: function (e) {
               try { e.target.getIframe().setAttribute("title", c.title); } catch (er) {}
-              if (!poll) poll = setInterval(tick, 100);
+              if (!poll) poll = setInterval(tick, 50);
               startRep();
               // 장면이 시작되기 전: 광고가 나오면(시간이 0초부터 흐름) 기다리고, 아이폰처럼 자동 재생을 막으면 ▶를 한 번 눌러 달라고 알립니다.
               var prev = null, n = 0;

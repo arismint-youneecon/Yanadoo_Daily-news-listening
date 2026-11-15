@@ -14,20 +14,567 @@
       "pick": "1화 첫 장면(공식 클립 'The Opening Scene of Friends')의 첫 대사",
       "situation": "프렌즈 1화의 첫 장면이에요. 센트럴 퍼크에 모인 친구들이 모니카가 오늘 밤 데이트한다는 걸 알고 어떤 남자냐고 캐물어요. 모니카는 별일 아니라고 손사래를 치고, 조이는 모니카랑 데이트할 정도면 분명 어딘가 이상한 남자일 거라며 놀려요.",
       "lines": [
-        { "who": "모니카", "t": 2.48, "e": 5.25, "en": "There's nothing to tell! He's just some guy I work with!", "ko": "별거 없다니까! 그냥 같이 일하는 남자야!", "pause": true },
-        { "who": "조이", "t": 5.68, "e": 9.8, "en": "C'mon, you're going out with the guy! There's gotta be something wrong with him!", "ko": "에이, 그 남자랑 데이트하는 거잖아! 분명 뭔가 문제가 있는 남자일 거야!", "pause": true }
+        {
+          "who": "모니카",
+          "t": 2.48,
+          "e": 5.25,
+          "en": "There's nothing to tell! He's just some guy I work with!",
+          "ko": "별거 없다니까! 그냥 같이 일하는 남자야!",
+          "pause": true
+        },
+        {
+          "who": "조이",
+          "t": 5.68,
+          "e": 9.8,
+          "en": "C'mon, you're going out with the guy! There's gotta be something wrong with him!",
+          "ko": "에이, 그 남자랑 데이트하는 거잖아! 분명 뭔가 문제가 있는 남자일 거야!",
+          "pause": true
+        }
       ],
       "phrases": [
-        { "en": "There's nothing to ~", "ko": "~할 게 없어. 할 말이나 걱정이 '하나도 없다'고 손사래 칠 때 써요.", "ex": "There's nothing to worry about. It's just a cold.", "ex_ko": "걱정할 거 하나도 없어. 그냥 감기야." },
-        { "en": "just some guy I work with", "ko": "그냥 같이 일하는 (별것 아닌) 남자. some은 '그냥 어떤', I work with는 who 없이 바로 붙어 '내가 같이 일하는'이에요.", "ex": "She's just someone I met at the gym.", "ex_ko": "그냥 헬스장에서 만난 사람이야." },
-        { "en": "go out with ~", "ko": "~와 데이트하다, 사귀다", "ex": "Are you going out with him tonight?", "ex_ko": "오늘 밤 그 사람이랑 데이트해?" },
-        { "en": "There's gotta be ~ (= There's got to be ~)", "ko": "분명 ~가 있을 거야. 확신이 섞인 추측이에요.", "ex": "There's gotta be a better way.", "ex_ko": "분명 더 좋은 방법이 있을 거야." },
-        { "en": "something wrong with ~", "ko": "~에 뭔가 문제가 있는", "ex": "There's something wrong with my phone.", "ex_ko": "내 폰에 뭔가 문제가 있어." }
+        {
+          "en": "There's nothing to ~",
+          "ko": "~할 게 없어. 할 말이나 걱정이 '하나도 없다'고 손사래 칠 때 써요.",
+          "ex": "There's nothing to worry about. It's just a cold.",
+          "ex_ko": "걱정할 거 하나도 없어. 그냥 감기야."
+        },
+        {
+          "en": "just some guy I work with",
+          "ko": "그냥 같이 일하는 (별것 아닌) 남자. some은 '그냥 어떤', I work with는 who 없이 바로 붙어 '내가 같이 일하는'이에요.",
+          "ex": "She's just someone I met at the gym.",
+          "ex_ko": "그냥 헬스장에서 만난 사람이야."
+        },
+        {
+          "en": "go out with ~",
+          "ko": "~와 데이트하다, 사귀다",
+          "ex": "Are you going out with him tonight?",
+          "ex_ko": "오늘 밤 그 사람이랑 데이트해?"
+        },
+        {
+          "en": "There's gotta be ~ (= There's got to be ~)",
+          "ko": "분명 ~가 있을 거야. 확신이 섞인 추측이에요.",
+          "ex": "There's gotta be a better way.",
+          "ex_ko": "분명 더 좋은 방법이 있을 거야."
+        },
+        {
+          "en": "something wrong with ~",
+          "ko": "~에 뭔가 문제가 있는",
+          "ex": "There's something wrong with my phone.",
+          "ex_ko": "내 폰에 뭔가 문제가 있어."
+        }
       ],
       "sound": [
-        { "en": "some guy I work with", "ko": "'썸가이 아이 웍윗'처럼 한 숨에 이어 말해요. with의 th는 거의 들리지 않아요." },
-        { "en": "going out with the guy", "ko": "out의 t가 약해져 '고잉 아우릿 더 가이'처럼 들려요." },
-        { "en": "There's gotta be", "ko": "gotta는 got to를 줄인 말이에요. '가러 비'처럼 t가 부드러운 ㄹ 소리로 바뀌어요." }
+        {
+          "en": "some guy I work with",
+          "ko": "'썸가이 아이 웍윗'처럼 한 숨에 이어 말해요. with의 th는 거의 들리지 않아요."
+        },
+        {
+          "en": "going out with the guy",
+          "ko": "out의 t가 약해져 '고잉 아우릿 더 가이'처럼 들려요."
+        },
+        {
+          "en": "There's gotta be",
+          "ko": "gotta는 got to를 줄인 말이에요. '가러 비'처럼 t가 부드러운 ㄹ 소리로 바뀌어요."
+        }
+      ]
+    },
+    {
+      "id": "friends-s01e01-ice-cream",
+      "date": "2026-11-18",
+      "show": "Friends",
+      "ep_short": "시즌1 1화",
+      "episode": "Season 1 Episode 1 · The Pilot",
+      "video": "Drs_zyVb68M",
+      "title": "That's like saying there's only one flavor of ice cream for you.",
+      "ko_title": "그건 세상에 너한테 맞는 아이스크림 맛이 딱 하나뿐이라는 말이랑 똑같아.",
+      "start": 66.6,
+      "end": 77.9,
+      "pick": "1화 공식 클립 'The Boys Help Ross Through His Breakup with Carol' 1:06~1:18",
+      "situation": "로스는 아내 캐럴이 다른 여자를 사랑하게 되면서 이혼했어요. 새집에서 가구를 조립하던 로스가 '사람마다 짝이 딱 한 명뿐이면 어쩌지?' 하고 걱정하자, 조이가 아이스크림에 빗대어 위로해요.",
+      "lines": [
+        {
+          "who": "조이",
+          "t": 66.96,
+          "e": 69.5,
+          "en": "What are you talking about? \"One woman\"?",
+          "ko": "무슨 소리야? '딱 한 여자'라니?",
+          "pause": true
+        },
+        {
+          "who": "조이",
+          "t": 71.0,
+          "e": 74.45,
+          "en": "That's like saying there's only one flavor of ice cream for you.",
+          "ko": "그건 너한테 맞는 아이스크림 맛이 딱 하나뿐이라고 하는 거랑 같아."
+        },
+        {
+          "who": "조이",
+          "t": 74.68,
+          "e": 77.9,
+          "en": "Let me tell you something, Ross. There's lots of flavors out there.",
+          "ko": "내 말 잘 들어, 로스. 세상엔 맛이 엄청 많아.",
+          "pause": true
+        }
+      ],
+      "phrases": [
+        {
+          "en": "What are you talking about?",
+          "ko": "무슨 소리야? 말도 안 된다는 느낌으로 되물을 때 써요.",
+          "ex": "What are you talking about? I was home all day.",
+          "ex_ko": "무슨 소리야? 나 하루 종일 집에 있었어."
+        },
+        {
+          "en": "That's like saying ~",
+          "ko": "그건 ~라고 말하는 거랑 같아. 비유를 들어 반박할 때 써요.",
+          "ex": "That's like saying all dogs are the same.",
+          "ex_ko": "그건 개는 다 똑같다고 말하는 거랑 같아."
+        },
+        {
+          "en": "Let me tell you something.",
+          "ko": "내 말 좀 들어 봐. 진지하게 한마디 하기 전에 꺼내는 말이에요.",
+          "ex": "Let me tell you something. Money isn't everything.",
+          "ex_ko": "내 말 들어 봐. 돈이 전부는 아니야."
+        },
+        {
+          "en": "There's lots of ~ out there",
+          "ko": "세상에 ~가 많아. out there는 '바깥세상에'라는 뜻이에요. 문법대로면 There are지만 말할 때는 There's를 많이 써요.",
+          "ex": "There are lots of good jobs out there.",
+          "ex_ko": "세상에 좋은 일자리 많아."
+        }
+      ],
+      "sound": [
+        {
+          "en": "What are you talking about",
+          "ko": "what are가 붙어 '와러유 토킹어바웃'처럼 들려요."
+        },
+        {
+          "en": "Let me tell you something",
+          "ko": "let me가 '레미'로 줄어 '레미 텔유 썸띵'처럼 들려요."
+        },
+        {
+          "en": "flavors out there",
+          "ko": "'플레이버즈 아웃데어'에서 out의 t는 거의 들리지 않아요."
+        }
+      ]
+    },
+    {
+      "id": "friends-s01e01-give-her-a-break",
+      "date": "2026-11-20",
+      "show": "Friends",
+      "ep_short": "시즌1 1화",
+      "episode": "Season 1 Episode 1 · The Pilot",
+      "video": "x2QR1peFJGU",
+      "title": "Give her a break. It's hard being on your own for the first time.",
+      "ko_title": "좀 봐줘. 처음으로 혼자 사는 건 힘든 거야.",
+      "start": 87.6,
+      "end": 97.5,
+      "pick": "1화 공식 클립 'Welcome to the Real World, Rachel Green' 1:27~1:37",
+      "situation": "결혼식장에서 도망쳐 나온 레이첼은 아직도 부모님 신용카드로 살고 있어요. 모니카가 평생 부모님한테 기대 살 수는 없다고 하자, 레이첼은 그래서 결혼하려던 거라고 받아치고, 피비가 레이첼 편을 들어 줘요.",
+      "lines": [
+        {
+          "who": "모니카",
+          "t": 87.92,
+          "e": 90.1,
+          "en": "Come on, you can't live off your parents your whole life.",
+          "ko": "에이, 평생 부모님한테 기대 살 수는 없잖아."
+        },
+        {
+          "who": "레이첼",
+          "t": 90.16,
+          "e": 93.0,
+          "en": "I know that. That's why I was getting married.",
+          "ko": "나도 알아. 그래서 결혼하려던 거잖아.",
+          "pause": true
+        },
+        {
+          "who": "피비",
+          "t": 94.32,
+          "e": 97.2,
+          "en": "Give her a break. It's hard being on your own for the first time.",
+          "ko": "좀 봐줘. 처음으로 혼자 사는 건 힘든 거야.",
+          "pause": true
+        }
+      ],
+      "phrases": [
+        {
+          "en": "live off ~",
+          "ko": "~에 기대어 살다, ~로 먹고살다",
+          "ex": "He still lives off his parents.",
+          "ex_ko": "그는 아직도 부모님한테 얹혀살아."
+        },
+        {
+          "en": "your whole life",
+          "ko": "평생",
+          "ex": "I've lived here my whole life.",
+          "ex_ko": "난 평생 여기서 살았어."
+        },
+        {
+          "en": "That's why ~",
+          "ko": "그래서 ~한 거야. 앞에서 말한 게 이유일 때 써요.",
+          "ex": "I was tired. That's why I went to bed early.",
+          "ex_ko": "피곤했어. 그래서 일찍 잔 거야."
+        },
+        {
+          "en": "Give someone a break",
+          "ko": "~를 좀 봐주다, 그만 몰아붙이다",
+          "ex": "Give me a break. I'm doing my best.",
+          "ex_ko": "좀 봐줘. 나 최선을 다하고 있어."
+        },
+        {
+          "en": "It's hard being on your own",
+          "ko": "혼자 사는 건 힘들어. It's hard being ~는 '~인 건 힘들어', on your own은 '혼자서, 독립해서'예요.",
+          "ex": "It's hard being a parent.",
+          "ex_ko": "부모 노릇은 힘들어."
+        }
+      ],
+      "sound": [
+        {
+          "en": "live off your parents",
+          "ko": "live와 off가 붙어 '리보프 유어 페어런츠'처럼 들려요."
+        },
+        {
+          "en": "That's why I was",
+          "ko": "'댓츠와이 아워즈'처럼 빠르게 이어져요."
+        },
+        {
+          "en": "Give her a break",
+          "ko": "her의 h가 빠져 '기버러 브레익'처럼 들려요."
+        }
+      ]
+    },
+    {
+      "id": "friends-s01e01-drifted-apart",
+      "date": "2026-11-23",
+      "show": "Friends",
+      "ep_short": "시즌1 1화",
+      "episode": "Season 1 Episode 1 · The Pilot",
+      "video": "sIZ91tq8Lr0",
+      "title": "You and I have kinda drifted apart, but you're the only person I knew who lived here in the city.",
+      "ko_title": "너랑 나랑 좀 멀어지긴 했지만, 이 도시에 사는 사람 중에 내가 아는 건 너뿐이었어.",
+      "start": 247.5,
+      "end": 260.0,
+      "pick": "1화 첫 장면 클립 'The Opening Scene of Friends' 4:07~4:20",
+      "situation": "결혼식 직전에 도망쳐 나온 레이첼이 웨딩드레스 차림으로 센트럴 퍼크에 와서, 고등학교 친구였지만 한동안 연락이 뜸했던 모니카를 찾아온 이유를 말해요. 모니카는 결혼식에 초대받지 못한 걸 슬쩍 꼬집어요.",
+      "lines": [
+        {
+          "who": "레이첼",
+          "t": 247.84,
+          "e": 255.2,
+          "en": "So anyway, I just didn't know where to go, and I know that you and I have kinda drifted apart, but you're the only person I knew who lived here in the city.",
+          "ko": "아무튼, 어디로 가야 할지 몰랐어. 너랑 나랑 좀 멀어진 건 알지만, 이 도시에 사는 사람 중에 내가 아는 건 너뿐이었거든.",
+          "pause": true
+        },
+        {
+          "who": "모니카",
+          "t": 255.6,
+          "e": 257.2,
+          "en": "Who wasn't invited to the wedding.",
+          "ko": "결혼식에 초대 못 받은 사람이기도 하지.",
+          "pause": true
+        },
+        {
+          "who": "레이첼",
+          "t": 257.52,
+          "e": 259.6,
+          "en": "Ooh, I was kinda hoping that wouldn't be an issue.",
+          "ko": "아, 그 얘기는 안 나오길 바랐는데.",
+          "pause": true
+        }
+      ],
+      "phrases": [
+        {
+          "en": "I didn't know where to go",
+          "ko": "어디로 가야 할지 몰랐어. where to + 동사 = 어디로 ~할지",
+          "ex": "I didn't know what to say.",
+          "ex_ko": "무슨 말을 해야 할지 몰랐어."
+        },
+        {
+          "en": "drift apart",
+          "ko": "(사이가) 점점 멀어지다",
+          "ex": "We drifted apart after college.",
+          "ex_ko": "대학 졸업하고 사이가 멀어졌어."
+        },
+        {
+          "en": "kinda (= kind of)",
+          "ko": "좀, 약간. 말을 부드럽게 만들어요.",
+          "ex": "I'm kinda tired today.",
+          "ex_ko": "오늘 좀 피곤해."
+        },
+        {
+          "en": "the only person I knew who ~",
+          "ko": "내가 아는 사람 중 ~한 사람은 너뿐. I knew 앞에 who/that이 빠져 있어요.",
+          "ex": "You're the only person I know who likes this song.",
+          "ex_ko": "이 노래 좋아하는 사람은 내가 아는 사람 중에 너뿐이야."
+        },
+        {
+          "en": "I was hoping that wouldn't be an issue",
+          "ko": "그게 문제가 안 되길 바랐어. 곤란한 얘기가 나왔을 때 넉살 좋게 받는 말이에요.",
+          "ex": "I was hoping you wouldn't ask.",
+          "ex_ko": "안 물어보길 바랐는데."
+        }
+      ],
+      "sound": [
+        {
+          "en": "didn't know where to go",
+          "ko": "'디든노 웨얼투고'처럼 didn't의 t가 거의 들리지 않아요."
+        },
+        {
+          "en": "kinda drifted apart",
+          "ko": "'카인다 드리프티더파트'처럼 한 덩어리로 이어져요."
+        },
+        {
+          "en": "the only person I knew who",
+          "ko": "'디 온리 펄슨 아이뉴 후' — knew의 k는 소리 나지 않아요."
+        }
+      ]
+    },
+    {
+      "id": "friends-s01e01-maybe",
+      "date": "2026-11-25",
+      "show": "Friends",
+      "ep_short": "시즌1 1화",
+      "episode": "Season 1 Episode 1 · The Pilot",
+      "video": "x2QR1peFJGU",
+      "title": "Well, maybe I don't need your money. Wait, wait, I said maybe!",
+      "ko_title": "그럼, 아빠 돈 필요 없을지도 모르죠. 잠깐, 잠깐만요, '어쩌면'이라고 했잖아요!",
+      "start": 42.9,
+      "end": 50.9,
+      "pick": "1화 공식 클립 'Welcome to the Real World, Rachel Green' 0:43~0:51",
+      "situation": "결혼식에서 도망친 레이첼이 모니카네 집에서 아빠와 통화해요. 이제 내 인생은 내가 정하겠다며 큰소리를 치다가, 아빠가 돈을 끊겠다고 하자 바로 꼬리를 내려요.",
+      "lines": [
+        {
+          "who": "레이첼",
+          "t": 43.52,
+          "e": 45.4,
+          "en": "Well, maybe that's my decision.",
+          "ko": "그럼, 그건 제가 정할 일일 수도 있죠.",
+          "pause": true
+        },
+        {
+          "who": "레이첼",
+          "t": 46.96,
+          "e": 48.95,
+          "en": "Well, maybe I don't need your money.",
+          "ko": "그럼, 아빠 돈 필요 없을지도 모르죠.",
+          "pause": true
+        },
+        {
+          "who": "레이첼",
+          "t": 49.36,
+          "e": 50.7,
+          "en": "Wait! Wait, I said maybe!",
+          "ko": "잠깐! 잠깐만요, '어쩌면'이라고 했잖아요!",
+          "pause": true
+        }
+      ],
+      "phrases": [
+        {
+          "en": "maybe",
+          "ko": "어쩌면. 말을 세게 하면서도 빠져나갈 구멍을 남기는 말이에요. 이 장면의 웃음 포인트예요."
+        },
+        {
+          "en": "That's my decision.",
+          "ko": "그건 내가 정할 일이야",
+          "ex": "It's my life. That's my decision.",
+          "ex_ko": "내 인생이야. 그건 내가 정해."
+        },
+        {
+          "en": "I don't need your ~",
+          "ko": "네 ~ 필요 없어",
+          "ex": "I don't need your help.",
+          "ex_ko": "네 도움 필요 없어."
+        },
+        {
+          "en": "I said ~!",
+          "ko": "내가 ~라고 했잖아! 내 말을 다시 강조할 때 써요.",
+          "ex": "I said I'm sorry!",
+          "ex_ko": "미안하다고 했잖아!"
+        }
+      ],
+      "sound": [
+        {
+          "en": "maybe that's my decision",
+          "ko": "'메이비 댓츠 마이 디시젼'처럼 maybe에 힘을 줘요."
+        },
+        {
+          "en": "I don't need your money",
+          "ko": "need your가 붙어 '아이 돈 니쥬어 머니'처럼 들려요."
+        },
+        {
+          "en": "Wait, wait",
+          "ko": "wait의 t는 거의 들리지 않아 '웨이 웨이'처럼 들려요."
+        }
+      ]
+    },
+    {
+      "id": "friends-s01e01-scariest-part",
+      "date": "2026-11-27",
+      "show": "Friends",
+      "ep_short": "시즌1 1화",
+      "episode": "Season 1 Episode 1 · The Pilot",
+      "video": "Drs_zyVb68M",
+      "title": "You know what the scariest part is? What if there's only one woman for everybody?",
+      "ko_title": "제일 무서운 게 뭔지 알아? 사람마다 짝이 딱 한 명뿐이면 어떡해?",
+      "start": 53.5,
+      "end": 66.2,
+      "pick": "1화 공식 클립 'The Boys Help Ross Through His Breakup with Carol' 0:53~1:06",
+      "situation": "로스는 아내 캐럴이 다른 여자를 사랑하게 되면서 이혼했어요. 새집에서 친구들과 가구를 조립하다가, 사람마다 정해진 짝이 딱 한 명뿐이면 어쩌나 하고 털어놓아요. 이 장면 바로 뒤가 11월 18일에 배운 조이의 '아이스크림' 장면이에요.",
+      "lines": [
+        {
+          "who": "로스",
+          "t": 53.88,
+          "e": 58.2,
+          "en": "You know what the scariest part is? What if there's only one woman for everybody, you know?",
+          "ko": "제일 무서운 게 뭔지 알아? 사람마다 짝이 딱 한 명뿐이면 어떡해?"
+        },
+        {
+          "who": "로스",
+          "t": 58.28,
+          "e": 61.0,
+          "en": "I mean, what if you get one woman, and that's it?",
+          "ko": "내 말은, 한 여자를 만났는데 그걸로 끝이면?",
+          "pause": true
+        },
+        {
+          "who": "로스",
+          "t": 61.68,
+          "e": 65.7,
+          "en": "Unfortunately, in my case, there was only one woman... for her.",
+          "ko": "불행히도 내 경우엔 딱 한 여자가 있었지… 캐럴한테 말이야.",
+          "pause": true
+        }
+      ],
+      "phrases": [
+        {
+          "en": "You know what the scariest part is?",
+          "ko": "제일 무서운 게 뭔지 알아? You know what + 명사절?로 말을 꺼내요.",
+          "ex": "You know what the best part is?",
+          "ex_ko": "제일 좋은 게 뭔지 알아?"
+        },
+        {
+          "en": "What if ~?",
+          "ko": "~면 어떡해?",
+          "ex": "What if it rains tomorrow?",
+          "ex_ko": "내일 비 오면 어떡해?"
+        },
+        {
+          "en": "I mean,",
+          "ko": "내 말은. 방금 한 말을 다시 풀어서 설명할 때 써요.",
+          "ex": "I mean, it's not a big deal.",
+          "ex_ko": "내 말은, 별일 아니라는 거야."
+        },
+        {
+          "en": "and that's it",
+          "ko": "그걸로 끝",
+          "ex": "One more game, and that's it.",
+          "ex_ko": "한 판만 더 하고 끝."
+        },
+        {
+          "en": "in my case",
+          "ko": "내 경우엔",
+          "ex": "In my case, I take the bus to work.",
+          "ex_ko": "내 경우엔 버스로 출근해."
+        }
+      ],
+      "sound": [
+        {
+          "en": "You know what the scariest part is",
+          "ko": "part is가 붙어 '유노 왓더 스케리스트 파리즈'처럼 들려요."
+        },
+        {
+          "en": "What if",
+          "ko": "'와리프'처럼 t가 부드러운 ㄹ 소리로 바뀌어요."
+        },
+        {
+          "en": "that's it",
+          "ko": "'댓츠잇'처럼 한 단어처럼 이어져요."
+        }
+      ]
+    },
+    {
+      "id": "friends-s01e01-boots",
+      "date": "2026-11-30",
+      "show": "Friends",
+      "ep_short": "시즌1 1화",
+      "episode": "Season 1 Episode 1 · The Pilot",
+      "video": "x2QR1peFJGU",
+      "title": "Well, you would be too if you found Joan & David boots on sale, fifty percent off!",
+      "ko_title": "너도 그랬을걸? 조앤앤데이비드 부츠를 반값 세일로 찾았다면!",
+      "start": 58.5,
+      "end": 68.4,
+      "pick": "1화 공식 클립 'Welcome to the Real World, Rachel Green' 0:58~1:08",
+      "situation": "레이첼이 하루 종일 면접 열두 군데에서 줄줄이 퇴짜를 맞았어요. 그런데도 기분이 좋아 보이자 챈들러가 의아해하고, 레이첼은 명품 부츠를 반값에 샀다며 신나 해요.",
+      "lines": [
+        {
+          "who": "레이첼",
+          "t": 58.96,
+          "e": 61.0,
+          "en": "I was laughed out of twelve interviews today.",
+          "ko": "오늘 면접 열두 군데에서 비웃음만 사고 나왔어.",
+          "pause": true
+        },
+        {
+          "who": "챈들러",
+          "t": 61.2,
+          "e": 62.85,
+          "en": "And yet you're surprisingly upbeat.",
+          "ko": "그런데 의외로 신나 보이네.",
+          "pause": true
+        },
+        {
+          "who": "레이첼",
+          "t": 63.12,
+          "e": 67.85,
+          "en": "Well, you would be too if you found Joan & David boots on sale, fifty percent off!",
+          "ko": "너도 그랬을걸? 조앤앤데이비드 부츠를 반값 세일로 찾았다면!",
+          "pause": true
+        }
+      ],
+      "phrases": [
+        {
+          "en": "be laughed out of ~",
+          "ko": "(비웃음을 사며) ~에서 쫓겨나다",
+          "ex": "His idea was laughed out of the meeting.",
+          "ex_ko": "그의 아이디어는 회의에서 비웃음만 샀어."
+        },
+        {
+          "en": "And yet ~",
+          "ko": "그런데도, 그럼에도",
+          "ex": "He failed the test, and yet he's smiling.",
+          "ex_ko": "시험에 떨어졌는데도 웃고 있네."
+        },
+        {
+          "en": "surprisingly ~",
+          "ko": "의외로 ~한",
+          "ex": "The test was surprisingly easy.",
+          "ex_ko": "시험이 의외로 쉬웠어."
+        },
+        {
+          "en": "You would be too if ~",
+          "ko": "너도 ~였다면 그랬을 거야. 상대가 놀랄 때 '너라도 그랬을걸' 하고 받는 말이에요.",
+          "ex": "You'd be tired too if you worked all night.",
+          "ex_ko": "너도 밤새 일했으면 피곤했을걸."
+        },
+        {
+          "en": "on sale, fifty percent off",
+          "ko": "세일해서 50% 할인",
+          "ex": "These shoes are on sale, thirty percent off.",
+          "ex_ko": "이 신발 세일해서 30% 할인이야."
+        }
+      ],
+      "sound": [
+        {
+          "en": "laughed out of",
+          "ko": "'래프타우로브'처럼 세 단어가 한 덩어리로 이어져요."
+        },
+        {
+          "en": "you would be too if",
+          "ko": "'유욷비 투 이프'처럼 would가 약하게 들려요."
+        },
+        {
+          "en": "fifty percent off",
+          "ko": "'피프티 펄센토프'처럼 percent와 off가 붙어요."
+        }
       ]
     },
     {
@@ -45,19 +592,65 @@
       "pick": "YouTube '가장 많이 다시 본 구간' 1:46~1:58 (가장 높은 곳 1:53~1:56)",
       "situation": "모니카와 챈들러가 몰래 사귀는 걸 친구들이 알아챘어요. 그런데 두 사람도 '친구들이 안다'는 걸 눈치채고, 일부러 피비를 유혹하는 척하며 골탕을 먹이려 해요. 그 속셈까지 알아챈 피비의 한마디예요.",
       "lines": [
-        { "who": "피비", "t": 106.9, "e": 108.6, "en": "They thought that they could mess with us.", "ko": "우리를 갖고 놀 수 있을 줄 알았나 봐." },
-        { "who": "피비", "t": 108.64, "e": 110.4, "en": "They're trying to mess with us.", "ko": "우리를 골탕 먹이려는 거야.", "pause": true },
-        { "who": "피비", "t": 113.3, "e": 115.9, "en": "They don't know that we know they know we know.", "ko": "우리가 안다는 걸 걔네가 안다는 걸 우리가 안다는 걸, 걔네는 몰라.", "pause": true }
+        {
+          "who": "피비",
+          "t": 106.9,
+          "e": 108.6,
+          "en": "They thought that they could mess with us.",
+          "ko": "우리를 갖고 놀 수 있을 줄 알았나 봐."
+        },
+        {
+          "who": "피비",
+          "t": 108.64,
+          "e": 110.4,
+          "en": "They're trying to mess with us.",
+          "ko": "우리를 골탕 먹이려는 거야.",
+          "pause": true
+        },
+        {
+          "who": "피비",
+          "t": 113.3,
+          "e": 115.9,
+          "en": "They don't know that we know they know we know.",
+          "ko": "우리가 안다는 걸 걔네가 안다는 걸 우리가 안다는 걸, 걔네는 몰라.",
+          "pause": true
+        }
       ],
       "phrases": [
-        { "en": "mess with ~", "ko": "~를 골탕 먹이다, 놀리다, 건드리다", "ex": "Don't mess with me.", "ex_ko": "나 건드리지 마." },
-        { "en": "They thought (that) they could ~", "ko": "자기들이 ~할 수 있을 줄 알았나 봐 (착각했다는 느낌)", "ex": "He thought he could fool me.", "ex_ko": "날 속일 수 있을 줄 알았나 봐." },
-        { "en": "be trying to ~", "ko": "(지금) ~하려고 하다", "ex": "I'm trying to help you.", "ex_ko": "나 지금 너 도와주려는 거야." },
-        { "en": "know (that) + 문장", "ko": "~라는 걸 알다. that 뒤에 문장을 계속 붙이면 꼬리에 꼬리를 무는 말이 돼요.", "ex": "I know that you know.", "ex_ko": "네가 안다는 거 나도 알아." }
+        {
+          "en": "mess with ~",
+          "ko": "~를 골탕 먹이다, 놀리다, 건드리다",
+          "ex": "Don't mess with me.",
+          "ex_ko": "나 건드리지 마."
+        },
+        {
+          "en": "They thought (that) they could ~",
+          "ko": "자기들이 ~할 수 있을 줄 알았나 봐 (착각했다는 느낌)",
+          "ex": "He thought he could fool me.",
+          "ex_ko": "날 속일 수 있을 줄 알았나 봐."
+        },
+        {
+          "en": "be trying to ~",
+          "ko": "(지금) ~하려고 하다",
+          "ex": "I'm trying to help you.",
+          "ex_ko": "나 지금 너 도와주려는 거야."
+        },
+        {
+          "en": "know (that) + 문장",
+          "ko": "~라는 걸 알다. that 뒤에 문장을 계속 붙이면 꼬리에 꼬리를 무는 말이 돼요.",
+          "ex": "I know that you know.",
+          "ex_ko": "네가 안다는 거 나도 알아."
+        }
       ],
       "sound": [
-        { "en": "mess with us", "ko": "'메스 위더스'처럼 한 덩어리로 이어 말해요." },
-        { "en": "don't know that we know", "ko": "'돈노 댓 위노'처럼 know의 k는 소리 나지 않고, don't의 t는 거의 들리지 않아요." }
+        {
+          "en": "mess with us",
+          "ko": "'메스 위더스'처럼 한 덩어리로 이어 말해요."
+        },
+        {
+          "en": "don't know that we know",
+          "ko": "'돈노 댓 위노'처럼 know의 k는 소리 나지 않고, don't의 t는 거의 들리지 않아요."
+        }
       ]
     }
   ]
