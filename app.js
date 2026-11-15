@@ -476,7 +476,7 @@
 
   // 재생 순서: 단계마다 정해진 횟수만큼 구간을 재생하고, 따라 말하기 단계는 줄이 끝날 때 잠깐 멈춥니다.
   function clipEngine(c, ui) {
-    var pl = null, poll = null, timer = null, pending = null, quietUntil = 0, dead = false;
+    var pl = null, poll = null, timer = null, pending = null, quietUntil = 0, dead = false, startWait = null;
     var st = { step: 0, rep: 0, started: false, running: false, finished: false, armed: false, pauseIdx: 0, done: {}, fresh: false };
     // 끝나기 직전 줄은 구간이 끝난 뒤에 멈춥니다(따로 멈추지 않음).
     var stops = [], from = c.lines[0].t;
@@ -558,8 +558,18 @@
               try { e.target.getIframe().setAttribute("title", c.title); } catch (er) {}
               if (!poll) poll = setInterval(tick, 100);
               startRep();
-              // 아이폰처럼 자동 재생을 막는 기기: 영상 가운데 ▶를 한 번 누르면 이어서 진행돼요.
-              setTimeout(function () { if (pl && st.running && pl.getPlayerState && pl.getPlayerState() !== 1 && !pending) ui.status("영상 가운데 ▶를 한 번 눌러 주세요", "hand-finger"); }, 2500);
+              // 장면이 시작되기 전: 광고가 나오면(시간이 0초부터 흐름) 기다리고, 아이폰처럼 자동 재생을 막으면 ▶를 한 번 눌러 달라고 알립니다.
+              var prev = null, n = 0;
+              startWait = setInterval(function () {
+                if (!pl || dead || !st.running || pending) return;
+                var now = t(), playing = pl.getPlayerState && pl.getPlayerState() === 1;
+                if (playing && now >= c.start - 1) { clearInterval(startWait); startWait = null; return; }
+                if (++n >= 3) {
+                  if (prev !== null && now !== prev && now < c.start - 1) ui.status("광고가 끝나면 장면이 시작돼요. ‘건너뛰기’가 보이면 눌러도 돼요.", "clock");
+                  else if (!playing) ui.status("영상 가운데 ▶를 한 번 눌러 주세요", "hand-finger");
+                }
+                prev = now;
+              }, 1000);
             },
             onStateChange: function (e) {
               var PS = window.YT.PlayerState;
@@ -571,7 +581,8 @@
                 if (st.started && !st.finished) {
                   if (!st.running) { st.running = true; ui.update(st); }
                   ui.status(label(), "player-play");
-                  var now = t(); if (now < c.start - 1 || now > c.end + 0.5) startRep();
+                  // 구간 밖에서 재생되면 처음으로. 막 이동한 직후에는 시간이 늦게 바뀌므로 잠깐 기다립니다.
+                  var now = t(); if (Date.now() > quietUntil && (now < c.start - 1 || now > c.end + 0.5) && !(startWait && now < c.start - 1)) startRep();
                 }
                 else if (st.finished) { hold(); }
               } else if (e.data === PS.PAUSED) {
@@ -605,7 +616,7 @@
     }
     return {
       state: st, ui: ui, begin: begin, main: main,
-      stop: function () { dead = true; cancelWait(); clearInterval(poll); poll = null; try { if (pl) pl.destroy(); } catch (e) {} pl = null; }
+      stop: function () { dead = true; cancelWait(); clearInterval(poll); poll = null; clearInterval(startWait); try { if (pl) pl.destroy(); } catch (e) {} pl = null; }
     };
   }
 
