@@ -358,12 +358,20 @@
   function getClips() { return clipsCache ? Promise.resolve(clipsCache) : getJSON("data/clips.json").then(function (j) { clipsCache = j.clips || []; return clipsCache; }); }
   function stopClip() { if (clipRun) { try { clipRun.stop(); } catch (e) {} clipRun = null; } }
   function clipSecs(c) { return Math.round(c.end - c.start); }
-  function clipItem(c) {
+  function clipDate(c) { return c.date || c.added || ""; }
+  // 올리는 날짜(한국 시간)가 된 장면만, 최근 날짜부터. 맨 앞이 오늘의 장면입니다(월·수·금에 새 장면).
+  function clipsNow(list) {
+    var d = kstToday();
+    return (list || []).filter(function (c) { return clipDate(c) <= d; })
+      .sort(function (a, b) { return clipDate(b).localeCompare(clipDate(a)); });
+  }
+  function clipItem(c, withDate) {
     return el("a", { class: "card item v", href: "#/clip/" + c.id }, [
       el("span", { class: "tile" }, [icon("movie")]),
       el("span", { class: "txt" }, [
         el("span", { class: "hl", text: c.title }),
-        el("span", { class: "sub" }, [el("span", { class: "bd v", text: "명장면 영어" }), c.show + " · " + clipSecs(c) + "초 · 5단계 반복"])
+        el("span", { class: "sub" }, [el("span", { class: "bd v", text: "명장면 영어" }),
+          (withDate ? fmtDate(clipDate(c)) + " · " : "") + c.show + (c.ep_short ? " " + c.ep_short : "") + " · " + clipSecs(c) + "초 · 5단계 반복"])
       ]),
       el("i", { class: "ti ti-chevron-right chev", "aria-hidden": "true" })
     ]);
@@ -372,7 +380,7 @@
   function viewClip(id) {
     setTab("today");
     getClips().then(function (list) {
-      var c = list.filter(function (x) { return x.id === id; })[0] || (id ? null : list[0]);
+      var c = list.filter(function (x) { return x.id === id; })[0] || (id ? null : clipsNow(list)[0]);
       if (!c) { render([errBox("장면을 찾을 수 없어요.")]); return; }
       clipPage(c);
     }).catch(function () { render([errBox("장면을 불러오지 못했어요. 잠시 뒤 다시 열어 주세요.")]); });
@@ -432,7 +440,11 @@
       el("img", { src: "https://i.ytimg.com/vi/" + encodeURIComponent(c.video) + "/hqdefault.jpg", alt: "", loading: "lazy" }),
       el("span", { class: "vplay", "aria-hidden": "true" }, [icon("player-play")])
     ]);
-    thumb.addEventListener("click", function () { eng.main(); });
+    thumb.addEventListener("click", function () {
+      eng.main();
+      // 영상, 자막 띠, 진행 상황이 한 화면에 들어오도록 재생 칸을 위로 올립니다.
+      var sec = box.closest("section"); if (sec) { try { window.scrollTo({ top: sec.getBoundingClientRect().top + window.scrollY - 64, behavior: "smooth" }); } catch (e) {} }
+    });
     box.appendChild(thumb);
     loadYT().catch(function () {}); // 누르기 전에 미리 불러 둡니다
     eng.ui.update(eng.state);
@@ -450,7 +462,7 @@
     render([
       el("a", { class: "small", href: "#/", text: "← 오늘" }),
       el("div", { style: "display:flex;flex-direction:column;gap:4px" }, [
-        el("p", { class: "eyebrow" }, [el("span", { class: "bd v", text: "명장면 영어" }), c.show + " · " + clipSecs(c) + "초"]),
+        el("p", { class: "eyebrow" }, [el("span", { class: "bd v", text: "명장면 영어" }), c.show + (c.ep_short ? " " + c.ep_short : "") + " · " + clipSecs(c) + "초"]),
         el("h1", { class: "hl", style: "font-size:21px", text: c.title }),
         el("p", { class: "small muted", style: "margin:0", text: c.ko_title })
       ]),
@@ -623,7 +635,7 @@
   function viewToday() {
     setTab("today");
     Promise.all([getIndex(), refreshStats(), getClips().catch(function () { return []; })]).then(function (r) {
-      var idx = r[0]; var latest = idx.days && idx.days[0]; var clips = r[2] || [];
+      var idx = r[0]; var latest = idx.days && idx.days[0]; var clips = clipsNow(r[2]);
       if (!latest) { render([el("div", { class: "card empty", text: "아직 올라온 브리핑이 없어요. 내일 아침에 다시 와 주세요." })]); return; }
       return getDay(latest.date).then(function (day) {
         var s = state.stats || {};
@@ -640,7 +652,7 @@
           ]),
           el("div", { class: "list" }, day.items.map(function (it) { return briefingCard(it, latest.date); })),
           el("p", { class: "small muted", text: "대본 없이 한 번 듣고, 대본을 열어 모르는 단어를 확인한 뒤, 다시 한 번 들어 보세요." }),
-          clips.length ? el("section", { class: "list", "aria-label": "명장면 영어" }, [el("h2", { text: "명장면 영어 · 10초 장면 외우기" }), clipItem(clips[0])]) : null,
+          clips.length ? el("section", { class: "list", "aria-label": "명장면 영어" }, [el("h2", { text: "명장면 영어 · 월·수·금 새 장면" }), clipItem(clips[0])]) : null,
           day.video ? videoCard(day.video, "오늘의 뽀로로", latest.date) : null
         ]);
       });
@@ -650,10 +662,10 @@
   function viewArchive() {
     setTab("archive");
     Promise.all([getIndex(), refreshStats(), getClips().catch(function () { return []; })]).then(function (r) {
-      var days = (r[0].days || []), clips = r[2] || [];
+      var days = (r[0].days || []), clips = clipsNow(r[2]);
       if (!days.length) { render([el("div", { class: "card empty", text: "지난 브리핑이 아직 없어요." })]); return; }
       render([el("h1", { text: "지난 뉴스" }),
-        clips.length ? el("section", { class: "list" }, [el("h2", { text: "명장면 영어" })].concat(clips.map(clipItem))) : null
+        clips.length ? el("section", { class: "list" }, [el("h2", { text: "명장면 영어" })].concat(clips.map(function (c) { return clipItem(c, true); }))) : null
       ].concat(days.map(function (d) {
         var vrow = d.video ? el("a", { class: "card item v", href: "#/v/" + d.date }, [
           el("span", { class: "tile" }, [icon("player-play")]),

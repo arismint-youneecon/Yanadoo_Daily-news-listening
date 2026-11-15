@@ -1,9 +1,41 @@
 {
   "clips": [
     {
+      "id": "friends-s01e01-nothing-to-tell",
+      "date": "2026-11-16",
+      "show": "Friends",
+      "ep_short": "시즌1 1화",
+      "episode": "Season 1 Episode 1 · The Pilot",
+      "video": "sIZ91tq8Lr0",
+      "title": "There's nothing to tell! He's just some guy I work with!",
+      "ko_title": "별거 없다니까! 그냥 같이 일하는 남자야!",
+      "start": 2.1,
+      "end": 10.3,
+      "pick": "1화 첫 장면(공식 클립 'The Opening Scene of Friends')의 첫 대사",
+      "situation": "프렌즈 1화의 첫 장면이에요. 센트럴 퍼크에 모인 친구들이 모니카가 오늘 밤 데이트한다는 걸 알고 어떤 남자냐고 캐물어요. 모니카는 별일 아니라고 손사래를 치고, 조이는 모니카랑 데이트할 정도면 분명 어딘가 이상한 남자일 거라며 놀려요.",
+      "lines": [
+        { "who": "모니카", "t": 2.48, "e": 5.25, "en": "There's nothing to tell! He's just some guy I work with!", "ko": "별거 없다니까! 그냥 같이 일하는 남자야!", "pause": true },
+        { "who": "조이", "t": 5.68, "e": 9.8, "en": "C'mon, you're going out with the guy! There's gotta be something wrong with him!", "ko": "에이, 그 남자랑 데이트하는 거잖아! 분명 뭔가 문제가 있는 남자일 거야!", "pause": true }
+      ],
+      "phrases": [
+        { "en": "There's nothing to ~", "ko": "~할 게 없어. 할 말이나 걱정이 '하나도 없다'고 손사래 칠 때 써요.", "ex": "There's nothing to worry about. It's just a cold.", "ex_ko": "걱정할 거 하나도 없어. 그냥 감기야." },
+        { "en": "just some guy I work with", "ko": "그냥 같이 일하는 (별것 아닌) 남자. some은 '그냥 어떤', I work with는 who 없이 바로 붙어 '내가 같이 일하는'이에요.", "ex": "She's just someone I met at the gym.", "ex_ko": "그냥 헬스장에서 만난 사람이야." },
+        { "en": "go out with ~", "ko": "~와 데이트하다, 사귀다", "ex": "Are you going out with him tonight?", "ex_ko": "오늘 밤 그 사람이랑 데이트해?" },
+        { "en": "There's gotta be ~ (= There's got to be ~)", "ko": "분명 ~가 있을 거야. 확신이 섞인 추측이에요.", "ex": "There's gotta be a better way.", "ex_ko": "분명 더 좋은 방법이 있을 거야." },
+        { "en": "something wrong with ~", "ko": "~에 뭔가 문제가 있는", "ex": "There's something wrong with my phone.", "ex_ko": "내 폰에 뭔가 문제가 있어." }
+      ],
+      "sound": [
+        { "en": "some guy I work with", "ko": "'썸가이 아이 웍윗'처럼 한 숨에 이어 말해요. with의 th는 거의 들리지 않아요." },
+        { "en": "going out with the guy", "ko": "out의 t가 약해져 '고잉 아우릿 더 가이'처럼 들려요." },
+        { "en": "There's gotta be", "ko": "gotta는 got to를 줄인 말이에요. '가러 비'처럼 t가 부드러운 ㄹ 소리로 바뀌어요." }
+      ]
+    },
+    {
       "id": "friends-s05e14-they-know",
       "added": "2026-11-15",
+      "date": "2026-11-15",
       "show": "Friends",
+      "ep_short": "시즌5 14화",
       "episode": "Season 5 Episode 14 · The One Where Everybody Finds Out",
       "video": "jFlzE6tg0S8",
       "title": "They don't know that we know they know we know",
