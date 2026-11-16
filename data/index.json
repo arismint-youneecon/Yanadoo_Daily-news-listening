@@ -1,6 +1,57 @@
 {
- "updated": "2026-11-15T21:16:30Z",
+ "updated": "2026-11-16T21:21:58Z",
  "days": [
+  {
+   "date": "2026-11-17",
+   "items": [
+    {
+     "id": "2026-11-17-g1",
+     "section": "g",
+     "icon": "robot-off",
+     "tag": "주요",
+     "ko": "'킬러 로봇' 규제, 제네바 회의",
+     "h": {
+      "1": "Countries Talk About Rules for Killer Robots",
+      "2": "Countries Meet to Discuss Rules for Killer Robots",
+      "3": "Geneva Talks Weigh Rules for Weapons That Choose Their Own Targets",
+      "4": "Geneva Conference Weighs Talks on Lethal Autonomous Weapons",
+      "5": "Geneva Weighs First Global Talks on 'Killer Robots' as Major Powers Hesitate"
+     }
+    },
+    {
+     "id": "2026-11-17-g2",
+     "section": "g",
+     "icon": "movie",
+     "tag": "화제",
+     "ko": "새 제임스 본드, 로버트 패틴슨",
+     "h": {
+      "1": "Robert Pattinson Is the New James Bond",
+      "2": "Fans Finally Know the Next James Bond: Robert Pattinson",
+      "3": "Robert Pattinson Named the Next James Bond",
+      "4": "Robert Pattinson Cast as the Seventh James Bond",
+      "5": "Pattinson Lands the Licence: Amazon Era of 007 Begins"
+     }
+    },
+    {
+     "id": "2026-11-17-k1",
+     "section": "k",
+     "icon": "building-community",
+     "tag": null,
+     "ko": "유학생 늘자 서울 주거에 해외 투자 관심",
+     "h": {
+      "1": "More Foreign Students in Seoul Need Homes",
+      "2": "Foreign Student Boom Draws Global Investors to Seoul Housing",
+      "3": "Seoul's Foreign Student Boom Catches Global Investors' Eye",
+      "4": "Foreign Student Surge Puts Seoul Housing on Global Investors' Radar",
+      "5": "Seoul's International Student Boom Lures Global Capital into Campus Housing"
+     }
+    }
+   ],
+   "video": {
+    "id": "HVJXovyFOnA",
+    "title": "Snow White, Loopy"
+   }
+  },
   {
    "date": "2026-11-16",
    "items": [
