@@ -512,8 +512,10 @@
     }
     function tick() {
       if (!pl) return;
-      var now = est(); ui.sub(now, st.started && !st.finished ? S() : null);
-      if (!st.running || pending) return;
+      var now = est();
+      if (pending) return;   // 기다리는 동안에는 마지막 자막을 그대로 둡니다(그사이 영상은 미리 처음으로 돌려 둠)
+      ui.sub(now, st.started && !st.finished ? S() : null);
+      if (!st.running) return;
       if (!st.armed) { if (now >= c.start - 0.3 && now < c.end - 0.5) st.armed = true; else return; }
       if (now < c.start - 1) { st.armed = false; try { pl.seekTo(c.start, true); } catch (e) {} return; }
       var s = S();
@@ -529,19 +531,30 @@
       var iv = setInterval(function () { left--; if (left > 0 && pending) ui.status("따라 말해 보세요 · " + left, "microphone"); else clearInterval(iv); }, 1000);
       wait(ms, function () { clearInterval(iv); fn(); });
     }
+    // 처음으로 되돌리기(seek)는 YouTube가 영상 조각을 다시 받아야 해서 잠깐 멈칫할 수 있습니다.
+    // 그래서 반복 사이에 쉬는 동안(안내 문구·따라 말하기 카운트다운) 미리 처음으로 돌려 두고, 재생할 때는 바로 틉니다.
+    var preseeked = false;
+    function preseek(rate) {
+      try { if (rate && pl.getPlaybackRate() !== rate) pl.setPlaybackRate(rate); } catch (e) {}
+      try { pl.seekTo(c.start, true); preseeked = true; } catch (e) { preseeked = false; }
+    }
     function startRep() {
       var s = S();
       st.armed = false; st.pauseIdx = 0; st.running = true;
       try { if (pl.getPlaybackRate() !== s.rate) pl.setPlaybackRate(s.rate); } catch (e) {}
       quietUntil = Date.now() + 800;
-      try { pl.seekTo(c.start, true); pl.playVideo(); } catch (e) {}
+      var ready = preseeked && Math.abs(t() - c.start) < 0.5; preseeked = false;
+      ui.sub(c.start - 1, s);   // 앞 단계 자막을 지우고 이번 단계 안내로
+      try { if (!ready) pl.seekTo(c.start, true); pl.playVideo(); } catch (e) {}
       ui.status(label(), "player-play"); ui.update(st);
     }
     function endRep() {
       var s = S(); hold(); st.rep++;
       var extra = s.shadow ? endWait : 0;
+      var more = st.rep < s.reps, last = !more && st.step >= CLIP_STEPS.length - 1;
+      if (!last) preseek(more ? s.rate : CLIP_STEPS[st.step + 1].rate);
       function after(fn, ms, msg) { if (extra) countdown(extra, function () { ui.status(msg, "arrow-right"); wait(ms, fn); }); else { ui.status(msg, "arrow-right"); wait(ms, fn); } }
-      if (st.rep < s.reps) { after(startRep, 900, "한 번 더 들어요"); return; }
+      if (more) { after(startRep, 1000, "한 번 더 들어요"); return; }
       st.done[st.step] = true; ui.update(st);
       if (st.step < CLIP_STEPS.length - 1) {
         var nx = st.step + 1;
@@ -606,6 +619,9 @@
                   var now = t(); if (Date.now() > quietUntil && (now < c.start - 1 || now > c.end + 0.5) && !(startWait && now < c.start - 1)) startRep();
                 }
                 else if (st.finished) { hold(); }
+              } else if (e.data === PS.BUFFERING) {
+                // 0.7초 넘게 받는 중이면 멈춘 게 아니라 불러오는 중이라고 알려 줍니다(재생되면 원래 안내로).
+                setTimeout(function () { try { if (pl && !pending && st.running && pl.getPlayerState() === PS.BUFFERING) ui.status("영상을 불러오는 중…", "loader-2"); } catch (er) {} }, 700);
               } else if (e.data === PS.PAUSED) {
                 if (Date.now() < quietUntil || pending) return;           // 앱이 멈춘 것(줄 사이, 반복 사이)
                 if (st.running) { st.running = false; ui.update(st); ui.status("멈췄어요. ‘이어서 하기’를 누르세요.", "player-pause"); }
