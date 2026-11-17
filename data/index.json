@@ -1,6 +1,57 @@
 {
- "updated": "2026-11-16T21:21:58Z",
+ "updated": "2026-11-17T21:16:02Z",
  "days": [
+  {
+   "date": "2026-11-18",
+   "items": [
+    {
+     "id": "2026-11-18-g1",
+     "section": "g",
+     "icon": "ship",
+     "tag": "주요",
+     "ko": "사우디, 예멘 전쟁 사령관 교체",
+     "h": {
+      "1": "Saudi Arabia Changes Its War Commander",
+      "2": "Saudi King Replaces Commander as Rebels Gain Ground in Yemen",
+      "3": "Saudi Arabia Replaces Its Yemen War Commander as Houthis Advance",
+      "4": "Saudi King Replaces Yemen Coalition Commander After Battlefield Setbacks",
+      "5": "Riyadh Shakes Up Yemen Command as Houthis Press Toward Aden"
+     }
+    },
+    {
+     "id": "2026-11-18-g2",
+     "section": "g",
+     "icon": "fish",
+     "tag": "화제",
+     "ko": "심해 돌덩이 속 작은 생물 세상",
+     "h": {
+      "1": "Tiny Animals Live Inside Deep-Sea Rocks",
+      "2": "Scientists Find Hidden Animal Homes Inside Deep-Sea Rocks",
+      "3": "A Deep-Sea Rock Turns Out to Be Home to 245 Tiny Animals",
+      "4": "Deep-Sea Nodules Found to Shelter Unique Communities of Tiny Animals",
+      "5": "Deep-Sea Nodules Harbor Hidden Worlds, Complicating the Case for Mining"
+     }
+    },
+    {
+     "id": "2026-11-18-k1",
+     "section": "k",
+     "icon": "crown",
+     "tag": null,
+     "ko": "K드라마, 서양풍 왕실 판타지 유행",
+     "h": {
+      "1": "Korean Actors Play Kings and Queens in Europe-Style Dramas",
+      "2": "K-Dramas Move to Make-Believe European Kingdoms",
+      "3": "Why K-Dramas Are Heading to Imaginary European Courts",
+      "4": "K-Drama Embraces European-Style Royal Fantasy",
+      "5": "From Joseon to Make-Believe Empires: K-Drama's Royal Romantasy Moment"
+     }
+    }
+   ],
+   "video": {
+    "id": "Qed9A7E_fkY",
+    "title": "Sailing in the Forest"
+   }
+  },
   {
    "date": "2026-11-17",
    "items": [
