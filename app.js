@@ -492,7 +492,7 @@
     var st = { step: 0, rep: 0, started: false, running: false, finished: false, armed: false, pauseIdx: 0, done: {}, fresh: false };
     // 끝나기 직전 줄은 구간이 끝난 뒤에 멈춥니다(따로 멈추지 않음).
     var stops = [], from = c.lines[0].t;
-    c.lines.forEach(function (l) { if (l.pause) { stops.push({ at: l.e, wait: Math.round(((l.e - from) * 1.3 + 1) * 1000) }); from = (c.lines[c.lines.indexOf(l) + 1] || {}).t || l.e; } });
+    c.lines.forEach(function (l) { if (l.pause) { stops.push({ at: l.e, line: l, wait: Math.round(((l.e - from) * 1.3 + 1) * 1000) }); from = (c.lines[c.lines.indexOf(l) + 1] || {}).t || l.e; } });
     var endWait = 0;
     if (stops.length && stops[stops.length - 1].at > c.end - 1.5) endWait = stops.pop().wait;
     function S() { return CLIP_STEPS[st.step]; }
@@ -508,7 +508,9 @@
       var raw = t(), w = Date.now();
       if (raw !== lastRaw) { lastRaw = raw; lastWall = w; return raw; }
       var playing = false; try { playing = pl.getPlayerState() === 1; } catch (e) {}
-      return playing ? raw + Math.min(0.4, (w - lastWall) / 1000 * (S().rate || 1)) : raw;
+      // 멈춰 있는 동안에는 기준 시각을 계속 옮겨 둡니다(다시 재생할 때 0.4초를 한꺼번에 앞서 가지 않도록).
+      if (!playing) { lastWall = w; return raw; }
+      return raw + Math.min(0.4, (w - lastWall) / 1000 * (S().rate || 1));
     }
     function tick() {
       if (!pl) return;
@@ -520,7 +522,10 @@
       if (now < c.start - 1) { st.armed = false; try { pl.seekTo(c.start, true); } catch (e) {} return; }
       var s = S();
       if (s.shadow && st.pauseIdx < stops.length && now >= stops[st.pauseIdx].at) {
-        var w = stops[st.pauseIdx++].wait; hold(); countdown(w, function () { quietUntil = Date.now() + 800; try { pl.playVideo(); } catch (e) {} ui.status(label(), "player-play"); });
+        var sp = stops[st.pauseIdx++]; hold();
+        // 다음 사람 대사가 바로 붙어 있어도, 따라 말할 동안에는 방금 끝난 줄을 보여 줍니다.
+        ui.sub((sp.line.t + sp.line.e) / 2, s);
+        countdown(sp.wait, function () { quietUntil = Date.now() + 800; try { pl.playVideo(); } catch (e) {} ui.status(label(), "player-play"); });
         return;
       }
       if (now >= c.end) endRep();
@@ -535,6 +540,7 @@
     // 그래서 반복 사이에 쉬는 동안(안내 문구·따라 말하기 카운트다운) 미리 처음으로 돌려 두고, 재생할 때는 바로 틉니다.
     var preseeked = false;
     function preseek(rate) {
+      quietUntil = Date.now() + 1500;   // 이동하면서 생기는 재생·멈춤 알림은 무시
       try { if (rate && pl.getPlaybackRate() !== rate) pl.setPlaybackRate(rate); } catch (e) {}
       try { pl.seekTo(c.start, true); preseeked = true; } catch (e) { preseeked = false; }
     }
@@ -552,8 +558,13 @@
       var s = S(); hold(); st.rep++;
       var extra = s.shadow ? endWait : 0;
       var more = st.rep < s.reps, last = !more && st.step >= CLIP_STEPS.length - 1;
-      if (!last) preseek(more ? s.rate : CLIP_STEPS[st.step + 1].rate);
-      function after(fn, ms, msg) { if (extra) countdown(extra, function () { ui.status(msg, "arrow-right"); wait(ms, fn); }); else { ui.status(msg, "arrow-right"); wait(ms, fn); } }
+      var nextRate = more ? s.rate : (CLIP_STEPS[st.step + 1] || s).rate;
+      // 따라 말하기(4단계)의 마지막 줄 카운트다운 동안에는 화면을 그 장면에 그대로 둡니다.
+      // 처음으로 미리 돌려 두는 건 카운트다운이 끝난 뒤 '다음 단계' 안내가 나오는 동안에 합니다.
+      function after(fn, ms, msg) {
+        function go() { if (!last) preseek(nextRate); ui.status(msg, "arrow-right"); wait(ms, fn); }
+        if (extra) countdown(extra, go); else go();
+      }
       if (more) { after(startRep, 1000, "한 번 더 들어요"); return; }
       st.done[st.step] = true; ui.update(st);
       if (st.step < CLIP_STEPS.length - 1) {
