@@ -525,6 +525,10 @@
         var sp = stops[st.pauseIdx++]; hold();
         // 다음 사람 대사가 바로 붙어 있어도, 따라 말할 동안에는 방금 끝난 줄을 보여 줍니다.
         ui.sub((sp.line.t + sp.line.e) / 2, s);
+        // 몇 초 멈췄다가 그대로 이어 틀면 아이폰에서 다시 불러오느라 멈칫합니다. 반복 사이처럼 멈춘 동안 다음 줄 바로 앞으로
+        // 미리 이동해 두면 그 자리를 준비해 두어서 바로 재생됩니다(1~3단계에서 효과를 본 방법).
+        var nl = c.lines[c.lines.indexOf(sp.line) + 1];
+        seekPaused(nl ? Math.max(sp.at, nl.t - 0.25) : sp.at);
         countdown(sp.wait, function () { quietUntil = Date.now() + 800; try { pl.playVideo(); } catch (e) {} ui.status(label(), "player-play"); });
         return;
       }
@@ -539,10 +543,13 @@
     // 처음으로 되돌리기(seek)는 YouTube가 영상 조각을 다시 받아야 해서 잠깐 멈칫할 수 있습니다.
     // 그래서 반복 사이에 쉬는 동안(안내 문구·따라 말하기 카운트다운) 미리 처음으로 돌려 두고, 재생할 때는 바로 틉니다.
     var preseeked = false;
-    function preseek(rate) {
+    function seekPaused(x) {
       quietUntil = Date.now() + 1500;   // 이동하면서 생기는 재생·멈춤 알림은 무시
+      try { pl.seekTo(x, true); return true; } catch (e) { return false; }
+    }
+    function preseek(rate) {
       try { if (rate && pl.getPlaybackRate() !== rate) pl.setPlaybackRate(rate); } catch (e) {}
-      try { pl.seekTo(c.start, true); preseeked = true; } catch (e) { preseeked = false; }
+      preseeked = seekPaused(c.start);
     }
     function startRep() {
       var s = S();
