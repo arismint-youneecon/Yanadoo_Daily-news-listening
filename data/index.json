@@ -1,6 +1,57 @@
 {
- "updated": "2026-11-17T21:16:02Z",
+ "updated": "2026-11-18T21:23:45Z",
  "days": [
+  {
+   "date": "2026-11-19",
+   "items": [
+    {
+     "id": "2026-11-19-g1",
+     "section": "g",
+     "icon": "messages",
+     "tag": "주요",
+     "ko": "파키스탄, 미·이란 중재 계속",
+     "h": {
+      "1": "Pakistan Wants Peace for the United States and Iran",
+      "2": "Pakistan Promises to Keep Helping US-Iran Peace Talks",
+      "3": "Pakistan Vows to Keep Pushing for US-Iran Peace",
+      "4": "Pakistan Pledges to Pursue US-Iran Diplomacy at Regional Bloc Meeting",
+      "5": "Pakistan Doubles Down on US-Iran Mediation as Hormuz Stays Shut"
+     }
+    },
+    {
+     "id": "2026-11-19-g2",
+     "section": "g",
+     "icon": "paw",
+     "tag": "화제",
+     "ko": "세계 최대 동물 다리, 첫 손님은 코요테",
+     "h": {
+      "1": "A Big Bridge for Animals Near Los Angeles",
+      "2": "The World's Biggest Animal Bridge Gets Its First Visitor",
+      "3": "A Coyote Tries Out the World's Largest Wildlife Crossing",
+      "4": "Coyote Beats the Ribbon-Cutting at World's Largest Wildlife Crossing",
+      "5": "Wildlife Bridge Over LA Freeway Welcomes First Coyote Ahead of Debut"
+     }
+    },
+    {
+     "id": "2026-11-19-k1",
+     "section": "k",
+     "icon": "home-heart",
+     "tag": null,
+     "ko": "다문화 가정의 성인 입양",
+     "h": {
+      "1": "Adult Adoption in Multicultural Families",
+      "2": "More Multicultural Families Turn to Adult Adoption",
+      "3": "Adult Adoption: A New Side of Korea's Multicultural Families",
+      "4": "Adult Adoptions Emerge as a New Trend in Korea's Multicultural Families",
+      "5": "Adult Adoption Quietly Reshapes Korea's Multicultural Households"
+     }
+    }
+   ],
+   "video": {
+    "id": "SI9SdH2FLXM",
+    "title": "My Name is Harry"
+   }
+  },
   {
    "date": "2026-11-18",
    "items": [
