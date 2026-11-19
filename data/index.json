@@ -1,6 +1,57 @@
 {
- "updated": "2026-11-18T21:23:45Z",
+ "updated": "2026-11-19T21:17:37Z",
  "days": [
+  {
+   "date": "2026-11-20",
+   "items": [
+    {
+     "id": "2026-11-20-g1",
+     "section": "g",
+     "icon": "chart-line",
+     "tag": "주요",
+     "ko": "앤트로픽, 사상 최대 규모 상장",
+     "h": {
+      "1": "An AI Company Sets a Big Record",
+      "2": "AI Company Anthropic Sets a Stock Market Record",
+      "3": "Anthropic's Stock Market Debut Breaks a Record",
+      "4": "Anthropic Raises About $80 Billion in Record IPO",
+      "5": "Anthropic Shatters IPO Fundraising Record as Shares Soar"
+     }
+    },
+    {
+     "id": "2026-11-20-g2",
+     "section": "g",
+     "icon": "palette",
+     "tag": "화제",
+     "ko": "고흐 그림, 경매 최고가 기록",
+     "h": {
+      "1": "A Van Gogh Painting Sells for a Record Price",
+      "2": "Van Gogh Painting Sells for a Record $190 Million",
+      "3": "Van Gogh's Blossoming Trees Sell for a Record $190.4 Million",
+      "4": "Van Gogh Painting Fetches Record $190.4 Million at Sotheby's",
+      "5": "Late Van Gogh Landscape Smashes Auction Record at $190.4 Million"
+     }
+    },
+    {
+     "id": "2026-11-20-k1",
+     "section": "k",
+     "icon": "device-mobile",
+     "tag": null,
+     "ko": "수능날 전국 휴대폰 경보 울려",
+     "h": {
+      "1": "Phones in Korea Ring Loudly on Test Day",
+      "2": "Loud Phone Alerts Sound Across Korea on Exam Day",
+      "3": "Korea Uses Emergency Phone Alerts to Fight Exam Cheating",
+      "4": "South Korea Sounds Nationwide Alerts to Catch Exam Cheats",
+      "5": "Sirens on Silent: Korea Turns Disaster Alerts Against Exam Cheats"
+     }
+    }
+   ],
+   "video": {
+    "id": "SAz3MgItmWM",
+    "title": "I Love Singing"
+   }
+  },
   {
    "date": "2026-11-19",
    "items": [
