@@ -1,6 +1,57 @@
 {
- "updated": "2026-11-19T21:17:37Z",
+ "updated": "2026-11-20T21:17:30Z",
  "days": [
+  {
+   "date": "2026-11-21",
+   "items": [
+    {
+     "id": "2026-11-21-g1",
+     "section": "g",
+     "icon": "shield",
+     "tag": "주요",
+     "ko": "일본·인도, 군사 협력 강화 합의",
+     "h": {
+      "1": "Japan and India Will Train Together",
+      "2": "Japan and India Agree to Train Together With Real Missiles",
+      "3": "Japan and India Agree on Live-Fire Missile Training and Faster Tech Sharing",
+      "4": "Japan, India Deepen Defense Ties With Live-Fire Drills and Antenna Talks",
+      "5": "Tokyo and New Delhi Step Up Military Ties With Live-Fire Drills and Tech Transfer Talks"
+     }
+    },
+    {
+     "id": "2026-11-21-g2",
+     "section": "g",
+     "icon": "rocket",
+     "tag": "화제",
+     "ko": "보이저 1호, 지구서 1광일 도달",
+     "h": {
+      "1": "Voyager 1 Is One Light-Day Away",
+      "2": "Voyager 1 Reaches One Light-Day From Earth",
+      "3": "Voyager 1 Becomes the First Human-Made Object One Light-Day From Earth",
+      "4": "Voyager 1 Crosses the One Light-Day Mark in Interstellar Space",
+      "5": "Voyager 1 Drifts Past the One Light-Day Threshold, a First for Humanity"
+     }
+    },
+    {
+     "id": "2026-11-21-k1",
+     "section": "k",
+     "icon": "users",
+     "tag": null,
+     "ko": "한국의 '다문화 가정'이란",
+     "h": {
+      "1": "What Is a Multicultural Family in Korea?",
+      "2": "What Korea Means by a Multicultural Family",
+      "3": "Who Counts as 'Multicultural' in Korea? More People Than You Might Think",
+      "4": "Korea's Broad Definition of 'Multicultural' Shapes Who Gets Support",
+      "5": "Beyond Borders and Passports: How Korea Defines a 'Multicultural' Family"
+     }
+    }
+   ],
+   "video": {
+    "id": "YtdZtWrzVYw",
+    "title": "Crong the Great Painter"
+   }
+  },
   {
    "date": "2026-11-20",
    "items": [
