@@ -1,6 +1,57 @@
 {
- "updated": "2026-11-20T21:17:30Z",
+ "updated": "2026-11-21T21:33:50Z",
  "days": [
+  {
+   "date": "2026-11-22",
+   "items": [
+    {
+     "id": "2026-11-22-g1",
+     "section": "g",
+     "icon": "shield",
+     "tag": "주요",
+     "ko": "덴마크, 그린란드 안보 협정 승인",
+     "h": {
+      "1": "Denmark Says Yes to a Greenland Deal",
+      "2": "Denmark Approves a Security Deal on Greenland",
+      "3": "Denmark Approves Security Deal With Greenland and the US",
+      "4": "Denmark Ratifies Greenland Security Pact With the US",
+      "5": "Denmark Ratifies Greenland Pact, Seeking to End a Transatlantic Rift"
+     }
+    },
+    {
+     "id": "2026-11-22-g2",
+     "section": "g",
+     "icon": "moon",
+     "tag": "화제",
+     "ko": "달 흙으로 레고 같은 벽돌을",
+     "h": {
+      "1": "Toy-Like Blocks Made From Moon Dust",
+      "2": "Scientists Turn Copied Moon Dust Into LEGO-Like Blocks",
+      "3": "Scientists Make LEGO-Like Blocks From Fake Moon Dust",
+      "4": "Engineers 3D-Print Interlocking Blocks From Simulated Moon Soil",
+      "5": "Binder-Free Moon Bricks Hint at Lunar Homes Built Like a Toy Set"
+     }
+    },
+    {
+     "id": "2026-11-22-k1",
+     "section": "k",
+     "icon": "music",
+     "tag": null,
+     "ko": "공연장 춤 금지, 풀릴까",
+     "h": {
+      "1": "Korea May Let Fans Dance at Small Music Clubs",
+      "2": "Korea Plans to Let Fans Dance Freely at Live Music Clubs",
+      "3": "Culture Minister Wants to Make Dancing Legal at Live Music Clubs",
+      "4": "Korea Moves to Lift the Dance Ban at Small Live Venues",
+      "5": "Korea Moves to End a Regulatory Quirk That Outlaws Dancing at Gigs"
+     }
+    }
+   ],
+   "video": {
+    "id": "OfMs5avjeOc",
+    "title": "A Pretty Hair Pin"
+   }
+  },
   {
    "date": "2026-11-21",
    "items": [
