@@ -1,6 +1,57 @@
 {
- "updated": "2026-11-21T21:33:50Z",
+ "updated": "2026-11-22T21:24:41Z",
  "days": [
+  {
+   "date": "2026-11-23",
+   "items": [
+    {
+     "id": "2026-11-23-g1",
+     "section": "g",
+     "icon": "world",
+     "tag": "주요",
+     "ko": "COP31 기후 회의, 합의 없이 끝나",
+     "h": {
+      "1": "Big Climate Meeting Ends With No Deal",
+      "2": "UN Climate Talks in Turkey End Without a Deal",
+      "3": "UN Climate Talks End Without a Main Deal Over Fossil Fuels",
+      "4": "COP31 Collapses Without a Deal After Fossil Fuel Dispute",
+      "5": "COP31 Ends in Deadlock as Fossil Fuel Language Splits Nations"
+     }
+    },
+    {
+     "id": "2026-11-23-g2",
+     "section": "g",
+     "icon": "building-arch",
+     "tag": "화제",
+     "ko": "로마 고대 도서관 일반 공개",
+     "h": {
+      "1": "A Very Old Library in Rome Opens Again",
+      "2": "Ancient Library in Rome Opens to Visitors",
+      "3": "Rome's Long-Buried Ulpia Library Opens to the Public",
+      "4": "Ancient Ulpia Library Reopens in Rome After Nearly a Century",
+      "5": "Rome Unveils the Restored Ulpia Library, Lost to View for a Century"
+     }
+    },
+    {
+     "id": "2026-11-23-k1",
+     "section": "k",
+     "icon": "scale",
+     "tag": null,
+     "ko": "북한 엘리트와 주민의 격차",
+     "h": {
+      "1": "Rich and Poor in North Korea",
+      "2": "Luxury for a Few, Hard Times for Many in North Korea",
+      "3": "North Korea's Elite Show Off Luxury as Ordinary People Face Rising Prices",
+      "4": "Report Highlights a Widening Divide Between North Korea's Elite and Its People",
+      "5": "Opulence at the Top, Austerity Below: North Korea's Deepening Economic Divide"
+     }
+    }
+   ],
+   "video": {
+    "id": "ffjnVzcqD8c",
+    "title": "I Can Fly"
+   }
+  },
   {
    "date": "2026-11-22",
    "items": [
