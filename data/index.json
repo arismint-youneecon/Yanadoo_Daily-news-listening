@@ -1,6 +1,57 @@
 {
- "updated": "2026-11-22T21:24:41Z",
+ "updated": "2026-11-23T21:09:40Z",
  "days": [
+  {
+   "date": "2026-11-24",
+   "items": [
+    {
+     "id": "2026-11-24-g1",
+     "section": "g",
+     "icon": "cpu",
+     "tag": "주요",
+     "ko": "엔비디아, 젠슨 황 CEO 복귀",
+     "h": {
+      "1": "Nvidia Brings Back Its Old Boss",
+      "2": "Nvidia Brings Back Jensen Huang as CEO",
+      "3": "Nvidia Brings Back Jensen Huang as CEO",
+      "4": "Nvidia Reinstates Jensen Huang as Chief Executive",
+      "5": "Nvidia Reinstates Huang as CEO as Intelligence Probe Continues"
+     }
+    },
+    {
+     "id": "2026-11-24-g2",
+     "section": "g",
+     "icon": "ball-football",
+     "tag": "화제",
+     "ko": "2031 여자 월드컵, 4개국 공동 개최",
+     "h": {
+      "1": "Four Countries Will Host the 2031 Women's World Cup",
+      "2": "Four Countries Will Share the 2031 Women's World Cup",
+      "3": "Four Countries Will Share the 2031 Women's World Cup",
+      "4": "US, Mexico, Costa Rica and Jamaica to Co-Host 2031 Women's World Cup",
+      "5": "FIFA Hands 2031 Women's World Cup to Four-Nation Bid"
+     }
+    },
+    {
+     "id": "2026-11-24-k1",
+     "section": "k",
+     "icon": "school",
+     "tag": null,
+     "ko": "교육부 장관, 수능 혼란에 사퇴",
+     "h": {
+      "1": "Korea's Education Minister Quits After Exam Trouble",
+      "2": "Korea's Education Minister Steps Down Over Exam Confusion",
+      "3": "Korea's Education Minister Steps Down Over Suneung Confusion",
+      "4": "Education Minister Resigns Amid Suneung Controversy",
+      "5": "Korea's Education Chief Falls on His Sword Over Suneung Chaos"
+     }
+    }
+   ],
+   "video": {
+    "id": "l3bxK_7G0BA",
+    "title": "Eddy on the Moon"
+   }
+  },
   {
    "date": "2026-11-23",
    "items": [
