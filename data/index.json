@@ -1,6 +1,57 @@
 {
- "updated": "2026-11-23T21:09:40Z",
+ "updated": "2026-11-24T21:28:31Z",
  "days": [
+  {
+   "date": "2026-11-25",
+   "items": [
+    {
+     "id": "2026-11-25-g1",
+     "section": "g",
+     "icon": "ship",
+     "tag": "주요",
+     "ko": "우크라이나, 리비아서 러시아 군함 타격",
+     "h": {
+      "1": "Ukraine Hits a Russian Warship in Libya",
+      "2": "Ukraine Says Its Sea Drones Hit a Russian Warship in Libya",
+      "3": "Ukraine Says Its Sea Drones Struck a Russian Warship in Libya",
+      "4": "Zelenskyy Says Ukrainian Naval Drones Struck Russian Corvette in Benghazi",
+      "5": "Ukraine Takes Its Drone War to a Libyan Harbor"
+     }
+    },
+    {
+     "id": "2026-11-25-g2",
+     "section": "g",
+     "icon": "telescope",
+     "tag": "화제",
+     "ko": "빅뱅 직후 가장 먼 퀘이사 발견",
+     "h": {
+      "1": "Scientists Find a Very Old Light in Space",
+      "2": "Scientists Find the Most Distant Quasar Ever",
+      "3": "Scientists Spot the Most Distant Quasar Ever Seen",
+      "4": "Euclid Telescope Helps Find the Most Distant Quasar on Record",
+      "5": "Euclid Pushes the Cosmic Frontier Back With a Record-Breaking Quasar"
+     }
+    },
+    {
+     "id": "2026-11-25-k1",
+     "section": "k",
+     "icon": "spy",
+     "tag": null,
+     "ko": "첫 여성 국정원장 후보 지명",
+     "h": {
+      "1": "Korea May Get Its First Woman Spy Chief",
+      "2": "President Lee Picks a Woman to Lead Korea's Spy Agency",
+      "3": "Lee Changes His Security Team and Names a Woman as Spy Chief",
+      "4": "Lee Reshuffles Security Team, Taps Kang Kum-sil as First Female NIS Chief",
+      "5": "Lee Overhauls His Security Lineup, Tapping Kang Kum-sil to Break the NIS Glass Ceiling"
+     }
+    }
+   ],
+   "video": {
+    "id": "zmKkE3ZOZhQ",
+    "title": "I Envy You"
+   }
+  },
   {
    "date": "2026-11-24",
    "items": [
