@@ -1,6 +1,57 @@
 {
- "updated": "2026-11-24T21:28:31Z",
+ "updated": "2026-11-25T21:20:06Z",
  "days": [
+  {
+   "date": "2026-11-26",
+   "items": [
+    {
+     "id": "2026-11-26-g1",
+     "section": "g",
+     "icon": "receipt-tax",
+     "tag": "주요",
+     "ko": "미국, 중국 등 14곳에 새 관세 추진",
+     "h": {
+      "1": "America Plans New Taxes on Goods From China",
+      "2": "US Plans New Tariffs on China, South Korea and Others",
+      "3": "US Plans New Tariffs on China, South Korea and Many Others",
+      "4": "Washington Proposes New Tariffs on China and 13 Other Partners",
+      "5": "Washington Opens a New Front in Its Trade Battles"
+     }
+    },
+    {
+     "id": "2026-11-26-g2",
+     "section": "g",
+     "icon": "building-museum",
+     "tag": "화제",
+     "ko": "세계 최대 도시 박물관, 런던 개관",
+     "h": {
+      "1": "London Opens a Very Big New Museum",
+      "2": "The World's Largest City Museum Opens in London",
+      "3": "London Opens What It Calls the World's Largest City Museum",
+      "4": "London Museum Opens in a Historic Meat Market",
+      "5": "Two Millennia of London History Under One Roof"
+     }
+    },
+    {
+     "id": "2026-11-26-k1",
+     "section": "k",
+     "icon": "microphone-2",
+     "tag": null,
+     "ko": "BTS, 대만서 아시아 투어 시작",
+     "h": {
+      "1": "A City in Taiwan Turns Purple for BTS",
+      "2": "BTS Starts the Asian Part of Its World Tour in Taiwan",
+      "3": "BTS Begins Its Asia-Pacific Tour as Kaohsiung Turns Purple",
+      "4": "BTS Launches Asia-Pacific Leg of Its Arirang World Tour",
+      "5": "Kaohsiung Rolls Out the Purple Carpet as BTS Begins Its Asian Swing"
+     }
+    }
+   ],
+   "video": {
+    "id": "GDez90-otxQ",
+    "title": "The Biggest Snowman"
+   }
+  },
   {
    "date": "2026-11-25",
    "items": [
