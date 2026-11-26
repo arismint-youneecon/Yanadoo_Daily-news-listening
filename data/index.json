@@ -1,6 +1,57 @@
 {
- "updated": "2026-11-25T21:20:06Z",
+ "updated": "2026-11-26T21:20:29Z",
  "days": [
+  {
+   "date": "2026-11-27",
+   "items": [
+    {
+     "id": "2026-11-27-g1",
+     "section": "g",
+     "icon": "sailboat",
+     "tag": "주요",
+     "ko": "카나리아 제도, 하루 이주민 최다 기록",
+     "h": {
+      "1": "A Record Number of People Come to Islands Near Africa",
+      "2": "Record Number of Migrants Reach Spain's Canary Islands",
+      "3": "Record 1,990 Migrants Reach Spain's Canary Islands in One Day",
+      "4": "Canary Islands Record Nearly 2,000 Migrant Arrivals in a Single Day",
+      "5": "Canary Islands Log Busiest Day on Record for Migrant Arrivals"
+     }
+    },
+    {
+     "id": "2026-11-27-g2",
+     "section": "g",
+     "icon": "satellite",
+     "tag": "화제",
+     "ko": "스페이스X 위성 100만 기 계획 승인",
+     "h": {
+      "1": "SpaceX Can Send One Million Satellites Into Space",
+      "2": "SpaceX Gets a Yes for One Million Satellites",
+      "3": "SpaceX Wins Approval for One Million Data Center Satellites",
+      "4": "US Regulator Clears SpaceX Plan for a Million Data Center Satellites",
+      "5": "SpaceX Cleared to Pursue a Million-Satellite Computing Network"
+     }
+    },
+    {
+     "id": "2026-11-27-k1",
+     "section": "k",
+     "icon": "building-skyscraper",
+     "tag": null,
+     "ko": "한남3구역 재개발 착공",
+     "h": {
+      "1": "Work Starts on Thousands of New Homes Near Itaewon",
+      "2": "Seoul Starts a Huge Housing Project Near Itaewon",
+      "3": "Work Begins on Seoul's Biggest Redevelopment, Next to Itaewon",
+      "4": "Seoul Breaks Ground on Its Largest Redevelopment as Itaewon Faces Change",
+      "5": "Seoul's Biggest-Ever Redevelopment Breaks Ground Beside Itaewon"
+     }
+    }
+   ],
+   "video": {
+    "id": "OlgngxcUb_Y",
+    "title": "Petty, You are So Cool!"
+   }
+  },
   {
    "date": "2026-11-26",
    "items": [
