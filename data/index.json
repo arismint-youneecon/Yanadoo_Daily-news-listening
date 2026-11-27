@@ -1,6 +1,57 @@
 {
- "updated": "2026-11-26T21:20:29Z",
+ "updated": "2026-11-27T21:20:24Z",
  "days": [
+  {
+   "date": "2026-11-28",
+   "items": [
+    {
+     "id": "2026-11-28-g1",
+     "section": "g",
+     "icon": "gavel",
+     "tag": "주요",
+     "ko": "미국 배심원단, 화웨이 유죄 평결",
+     "h": {
+      "1": "A US Jury Says Huawei Is Guilty",
+      "2": "US Jury Finds Huawei Guilty of Stealing Secrets",
+      "3": "Huawei Found Guilty in Landmark US Trial",
+      "4": "Huawei Convicted on 10 of 12 Counts in Brooklyn Trial",
+      "5": "Huawei Convicted of Trade Secret Theft and Fraud in Landmark US Case"
+     }
+    },
+    {
+     "id": "2026-11-28-g2",
+     "section": "g",
+     "icon": "fish",
+     "tag": "화제",
+     "ko": "일각고래 엄니 속 이중 나선 비밀",
+     "h": {
+      "1": "The Secret Inside a Narwhal's Tooth",
+      "2": "Scientists Find a Double Spiral in the Narwhal's Tusk",
+      "3": "Narwhal Tusk Hides Two Opposite Spirals, Study Finds",
+      "4": "Twin Spirals Explain the Strength of the Narwhal's Tusk",
+      "5": "A Tale With a Twist: Opposing Helices Give the Narwhal Tusk Its Strength"
+     }
+    },
+    {
+     "id": "2026-11-28-k1",
+     "section": "k",
+     "icon": "shopping-cart",
+     "tag": null,
+     "ko": "홈플러스, 대형마트 전 점포 임시 휴업",
+     "h": {
+      "1": "Homeplus Closes All Its Big Stores for Now",
+      "2": "Homeplus Shuts All 67 Hypermarkets Because of Money Problems",
+      "3": "Homeplus Temporarily Closes All Its Hypermarkets",
+      "4": "Cash-Strapped Homeplus Suspends Operations at All 67 Hypermarkets",
+      "5": "Homeplus Shutters Every Hypermarket as Liquidity Crisis Deepens"
+     }
+    }
+   ],
+   "video": {
+    "id": "SylEpI7ptvs",
+    "title": "Pororo Shrunk"
+   }
+  },
   {
    "date": "2026-11-27",
    "items": [
